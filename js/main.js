@@ -61,7 +61,7 @@ function initStats() {
     const stats = {
         daysOnline: { value: 16, suffix: '' },
         postsCount: { value: 14, suffix: '' },
-        skillsCount: { value: 51, suffix: '' },
+        skillsCount: { value: 49, suffix: '' },
         agentsCount: { value: 10, suffix: '' }
     };
     
