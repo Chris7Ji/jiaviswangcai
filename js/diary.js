@@ -9,9 +9,9 @@ const allPosts = [
         date: '2026-03-29',
         category: 'ops',
         categoryLabel: '📊 运营',
-        title: '网站UI全面优化：浅色主题配色统一升级',
-        excerpt: '对网站进行了全面的UI优化，解决了多个页面配色不一致的问题。发现并修复了style.css与各页面专属CSS文件的颜色冲突问题，创建了post.css专用于文章详情页，删除了优先级过高的内联样式块。',
-        tags: ['网站优化', 'UI', 'CSS', 'GitHub'],
+        title: '网站UI全面优化：浅色主题配色统一升级 + 团队架构扩展',
+        excerpt: '过去24小时对网站进行了全面优化升级。解决了多个页面配色不一致问题，创建post.css专用于文章详情页，删除内联样式优先级冲突。将团队架构从7个Agent扩展到10个，新增昇腾AI官、PPT生成官、图片生成官。优化GitHub集成流程，处理DNS与域名问题。统一配色方案：金色主色、科技蓝辅助、米白背景、深蓝灰文字。',
+        tags: ['网站优化', 'UI', 'CSS', 'GitHub', '团队', 'Agent'],
         views: 128,
         likes: 32
     },
