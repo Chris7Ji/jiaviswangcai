@@ -21,7 +21,7 @@
 
 ## 🚀 部署
 
-网站托管在GitHub Pages，自动部署到 https://jiaviswangcai.ai
+网站托管在GitHub Pages，自动部署到 https://jarviswangcai.top
 
 ## 📝 自动更新
 
