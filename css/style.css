@@ -1,26 +1,45 @@
 /* ============================================
-   旺财Jarvis - CSS Styles
-   Theme: Gold (#FFD700) + Tech Blue (#00CED1)
+   旺财Jarvis - CSS Styles (浅色系优化版)
+   Theme: 温暖浅色系 + 金色 (#FFD700) + 科技蓝 (#00CED1)
    ============================================ */
 
-/* CSS Variables */
+/* CSS Variables - 浅色系配色 */
 :root {
-    --primary-gold: #FFD700;
-    --primary-gold-dark: #E6C200;
-    --primary-gold-light: #FFF3B0;
-    --tech-blue: #00CED1;
-    --tech-blue-dark: #00A6A9;
+    /* 主色调 */
+    --primary-gold: #E6A800;
+    --primary-gold-dark: #CC9600;
+    --primary-gold-light: #FFE57A;
+    --tech-blue: #00A6B2;
+    --tech-blue-dark: #008A96;
     --tech-blue-light: #7FEFEF;
-    --bg-dark: #0a0a0f;
-    --bg-card: rgba(255, 255, 255, 0.03);
-    --bg-card-hover: rgba(255, 255, 255, 0.06);
-    --text-primary: #ffffff;
-    --text-secondary: rgba(255, 255, 255, 0.7);
-    --text-muted: rgba(255, 255, 255, 0.5);
-    --border-color: rgba(255, 215, 0, 0.2);
+    
+    /* 背景色 - 温暖浅色系 */
+    --bg-primary: #FEFBF6;
+    --bg-secondary: #FFF8F0;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #FFF5EB;
+    --bg-section: #F5F0E8;
+    --bg-footer: #2D2A26;
+    
+    /* 文字色 */
+    --text-primary: #2D2A26;
+    --text-secondary: #5C554D;
+    --text-muted: #8C857A;
+    --text-light: #FFFFFF;
+    
+    /* 边框与阴影 */
+    --border-color: rgba(230, 168, 0, 0.2);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-glow: 0 4px 30px rgba(230, 168, 0, 0.15);
+    --shadow-card: 0 8px 40px rgba(0, 0, 0, 0.06);
+    
+    /* 渐变 */
     --gradient-gold: linear-gradient(135deg, var(--primary-gold), var(--tech-blue));
-    --gradient-bg: linear-gradient(180deg, var(--bg-dark) 0%, #0f1729 100%);
-    --shadow-glow: 0 0 30px rgba(255, 215, 0, 0.3);
+    --gradient-text: linear-gradient(135deg, var(--primary-gold-dark), var(--tech-blue));
+    --gradient-bg: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    --gradient-card: linear-gradient(145deg, #FFFFFF, #FFF8F0);
+    
+    /* 过渡 */
     --transition: all 0.3s ease;
 }
 
@@ -36,7 +55,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--gradient-bg);
     color: var(--text-primary);
     line-height: 1.7;
@@ -51,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
 }
 
 .container {
@@ -66,7 +85,7 @@ img {
 }
 
 /* ============================================
-   Navigation
+   Navigation - 浅色导航栏
    ============================================ */
 .navbar {
     position: fixed;
@@ -74,9 +93,10 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 10, 15, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
 }
 
 .nav-container {
@@ -93,13 +113,13 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
     font-weight: 700;
     font-size: 1.3rem;
 }
 
 .nav-logo:hover {
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
 }
 
 .logo-icon {
@@ -137,7 +157,7 @@ img {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: var(--text-primary);
+    color: var(--primary-gold-dark);
 }
 
 .nav-toggle {
@@ -158,7 +178,7 @@ img {
 }
 
 /* ============================================
-   Hero Section
+   Hero Section - 浅色英雄区
    ============================================ */
 .hero {
     min-height: 100vh;
@@ -168,6 +188,20 @@ img {
     padding: 100px 20px 60px;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #FEFBF6 0%, #FFF8F0 50%, #FFF5E6 100%);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 206, 209, 0.08) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .hero-content {
@@ -189,149 +223,23 @@ img {
     height: 300px;
 }
 
-.mascot-body {
+.mascot-svg {
     width: 100%;
     height: 100%;
-    background: linear-gradient(145deg, #FFD700, #E6B800);
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 
-        0 0 60px rgba(255, 215, 0, 0.5),
-        inset 0 -20px 40px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 10px 40px rgba(230, 168, 0, 0.3));
+}
+
+.mascot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 40px rgba(230, 168, 0, 0.3));
     animation: float 3s ease-in-out infinite;
-}
-
-.mascot-face {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-}
-
-.mascot-eyes {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 20px;
-}
-
-.eye {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(180deg, #00CED1, #008B8B);
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0 0 20px rgba(0, 206, 209, 0.8);
-    animation: blink 4s ease-in-out infinite;
-}
-
-.eye::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-}
-
-.mascot-nose {
-    width: 30px;
-    height: 20px;
-    background: #333;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.mascot-mouth {
-    width: 60px;
-    height: 20px;
-    border-bottom: 3px solid #333;
-    border-radius: 0 0 30px 30px;
-    margin: 5px auto 0;
-}
-
-.mascot-bowtie {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 25px;
-    background: #E63946;
-    clip-path: polygon(0 50%, 40% 0, 40% 100%, 60% 0, 60% 100%, 100% 50%, 60% 100%, 60% 0, 40% 100%, 40% 0);
-}
-
-.mascot-ingot {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    width: 35px;
-    height: 45px;
-    background: linear-gradient(145deg, #FFD700, #DAA520);
-    border-radius: 5px 5px 10px 10px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-.mascot-ingot::before {
-    content: '福';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    color: #8B4513;
-    font-weight: bold;
-}
-
-.mascot-cane {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-    width: 8px;
-    height: 80px;
-    background: linear-gradient(180deg, #888, #444);
-    border-radius: 4px;
-    transform: rotate(-15deg);
-}
-
-.mascot-cane::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -8px;
-    width: 24px;
-    height: 24px;
-    border: 4px solid var(--tech-blue);
-    border-radius: 50%;
-    box-shadow: 0 0 15px var(--tech-blue);
-}
-
-.mascot-glow {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
-    animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
-}
-
-@keyframes blink {
-    0%, 45%, 55%, 100% { transform: scaleY(1); }
-    50% { transform: scaleY(0.1); }
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.05); }
 }
 
 .hero-text {
@@ -346,10 +254,11 @@ img {
     display: block;
     font-size: 3.5rem;
     font-weight: 700;
-    background: var(--gradient-gold);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 .title-en {
@@ -399,18 +308,18 @@ img {
 
 .btn-primary {
     background: var(--gradient-gold);
-    color: #000;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(230, 168, 0, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.6);
-    color: #000;
+    box-shadow: 0 6px 30px rgba(230, 168, 0, 0.4);
+    color: #FFFFFF;
 }
 
 .btn-secondary {
-    background: transparent;
+    background: var(--bg-card);
     color: var(--text-primary);
     border: 2px solid var(--border-color);
 }
@@ -420,48 +329,15 @@ img {
     color: var(--tech-blue);
 }
 
-/* Hero Particles */
-.hero-particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: var(--primary-gold);
-    border-radius: 50%;
-    opacity: 0.6;
-    animation: particleFloat 8s ease-in-out infinite;
-}
-
-.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
-.particle:nth-child(2) { left: 30%; animation-delay: 1s; }
-.particle:nth-child(3) { left: 50%; animation-delay: 2s; }
-.particle:nth-child(4) { left: 70%; animation-delay: 3s; }
-.particle:nth-child(5) { left: 90%; animation-delay: 4s; }
-
-@keyframes particleFloat {
-    0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.6; }
-    90% { opacity: 0.6; }
-    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
-}
-
 /* ============================================
-   Stats Section
+   Stats Section - 浅色统计区
    ============================================ */
 .stats {
     padding: 60px 0;
     background: var(--bg-card);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
 }
 
 .stats-grid {
@@ -485,7 +361,7 @@ img {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
     line-height: 1.2;
 }
 
@@ -497,7 +373,7 @@ img {
 }
 
 /* ============================================
-   Sections Common
+   Sections Common - 通用区块
    ============================================ */
 .section {
     padding: 100px 0;
@@ -508,10 +384,11 @@ img {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 60px;
-    background: var(--gradient-gold);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 .section-header {
@@ -532,11 +409,11 @@ img {
 }
 
 .view-all:hover {
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
 }
 
 /* ============================================
-   About Section
+   About Section - 浅色关于区
    ============================================ */
 .about-content {
     display: grid;
@@ -563,6 +440,7 @@ img {
     border-radius: 16px;
     padding: 25px;
     transition: var(--transition);
+    box-shadow: var(--shadow-card);
 }
 
 .feature-card:hover {
@@ -580,7 +458,7 @@ img {
 .feature-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
 }
 
 .feature-card p {
@@ -589,10 +467,10 @@ img {
 }
 
 /* ============================================
-   Capabilities Section
+   Capabilities Section - 浅色能力区
    ============================================ */
 .capabilities {
-    background: var(--bg-card);
+    background: var(--bg-section);
 }
 
 .capabilities-grid {
@@ -602,17 +480,18 @@ img {
 }
 
 .capability-card {
-    background: rgba(10, 10, 15, 0.8);
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 30px;
     transition: var(--transition);
+    box-shadow: var(--shadow-card);
 }
 
 .capability-card:hover {
     border-color: var(--tech-blue);
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 206, 209, 0.2);
+    box-shadow: 0 8px 40px rgba(0, 166, 178, 0.15);
 }
 
 .capability-header {
@@ -644,15 +523,15 @@ img {
 }
 
 .cap-tags span {
-    background: rgba(255, 215, 0, 0.1);
-    color: var(--primary-gold);
+    background: rgba(230, 168, 0, 0.1);
+    color: var(--primary-gold-dark);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
 }
 
 /* ============================================
-   Recent Posts Section
+   Recent Posts Section - 浅色文章区
    ============================================ */
 .posts-grid {
     display: grid;
@@ -666,6 +545,7 @@ img {
     border-radius: 16px;
     overflow: hidden;
     transition: var(--transition);
+    box-shadow: var(--shadow-card);
 }
 
 .post-card:hover {
@@ -675,7 +555,7 @@ img {
 
 .post-image {
     height: 180px;
-    background: linear-gradient(135deg, var(--primary-gold), var(--tech-blue));
+    background: linear-gradient(135deg, var(--primary-gold-light), var(--tech-blue-light));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -719,10 +599,10 @@ img {
 }
 
 /* ============================================
-   Architecture Section
+   Architecture Section - 浅色架构区
    ============================================ */
 .architecture {
-    background: var(--bg-card);
+    background: var(--bg-section);
 }
 
 .arch-intro {
@@ -745,10 +625,11 @@ img {
     grid-template-rows: auto auto;
     gap: 5px 15px;
     padding: 20px;
-    background: rgba(10, 10, 15, 0.8);
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     transition: var(--transition);
+    box-shadow: var(--shadow-card);
 }
 
 .agent-item:hover {
@@ -757,7 +638,7 @@ img {
 
 .agent-role {
     font-weight: 600;
-    color: var(--primary-gold);
+    color: var(--primary-gold-dark);
     grid-row: 1 / 3;
     display: flex;
     align-items: center;
@@ -775,11 +656,11 @@ img {
 }
 
 /* ============================================
-   Footer
+   Footer - 深色页脚
    ============================================ */
 .footer {
-    background: rgba(0, 0, 0, 0.5);
-    border-top: 1px solid var(--border-color);
+    background: var(--bg-footer);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 60px 0 30px;
 }
 
@@ -793,14 +674,14 @@ img {
 }
 
 .footer-brand p {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.6);
     margin-top: 10px;
     font-size: 0.9rem;
 }
 
 .footer-logo {
     font-size: 1.5rem;
-    color: var(--primary-gold);
+    color: var(--primary-gold-light);
 }
 
 .footer-links {
@@ -809,12 +690,12 @@ img {
 }
 
 .footer-links a {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
 }
 
 .footer-links a:hover {
-    color: var(--primary-gold);
+    color: var(--primary-gold-light);
 }
 
 .footer-social {
@@ -834,11 +715,11 @@ img {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.85rem;
 }
 
@@ -892,7 +773,7 @@ img {
         top: 70px;
         left: 0;
         right: 0;
-        background: rgba(10, 10, 15, 0.98);
+        background: rgba(255, 255, 255, 0.98);
         flex-direction: column;
         padding: 30px;
         gap: 20px;
