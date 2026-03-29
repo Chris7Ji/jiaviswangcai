@@ -299,7 +299,7 @@ function resetAndRenderPosts() {
 
 function updateStats() {
     const totalPosts = allPosts.length;
-    const consecutiveDays = 15; // This would be calculated dynamically
+    const consecutiveDays = 12; // Day 12 (started 2026-03-18)
     const totalWords = allPosts.reduce((sum, post) => sum + post.excerpt.length, 0);
     
     document.getElementById('totalPosts').textContent = totalPosts;
