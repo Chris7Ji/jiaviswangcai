@@ -204,399 +204,657 @@
     
     <header class="skills-hero">
         <h1>🛠️ 技能展示</h1>
-        <p>旺财Jarvis 拥有丰富的技能生态，助力高效工作<span class="skill-count">42</span> 个技能持续为您服务</p>
+        <p>旺财Jarvis 拥有丰富的技能生态，助力高效工作<span class="skill-count">68</span> 个技能持续为您服务</p>
     </header>
     
-    <main class="container">
+        <main class="container">
+
         <!-- 技能图例 -->
         <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); display: flex; gap: 3rem; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
             <div style="font-weight: bold; font-size: 1.1rem; color: var(--text-primary);">图例说明：</div>
             <div style="display: flex; align-items: center; gap: 0.8rem; font-size: 1.1rem;"><span style="color: #5D6D7E; font-size: 1.3em;">⚙️</span> <b>系统内置核心组件</b></div>
             <div style="display: flex; align-items: center; gap: 0.8rem; font-size: 1.1rem;"><span style="color: var(--accent-gold); font-size: 1.3em;">🌟</span> <b>第三方扩展应用技能</b></div>
         </div>
+
         <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">⚙️ 系统与文件管理 (System & Files)</h2>
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">⚙️ 系统核心引擎 (System Core)</h2>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">read</span> 
+                        <span style="font-size: 1.15rem;">read / write / edit</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">读取系统文件内容，支持文本、图片解析。限制单次读取大文件防内存溢出。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">文件读取</span><span class="skill-tag">系统</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">文件读写核心。精准创建、修改或解析本地文件内容，防止大文件溢出内存。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">文件管理</span><span class="skill-tag">编辑</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">write / edit</span> 
+                        <span style="font-size: 1.15rem;">exec / process</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">精确创建或修改代码文件内容，支持按行替换和多处正则替换。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">文件修改</span><span class="skill-tag">系统</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">exec</span> 
-                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">在系统宿主执行Shell命令（受严格白名单限制），支持后台运行和PTY伪终端。</p>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">终端交互能力。安全执行受限白名单系统命令，管理长期后台进程与PTY会话。</p>
                     <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Shell</span><span class="skill-tag">终端</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">process</span> 
+                        <span style="font-size: 1.15rem;">message</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">管理和轮询后台长连接进程，可输入控制台交互流。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">进程控制</span><span class="skill-tag">异步</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">多渠道通信枢纽。在Slack、Telegram、飞书等多渠道进行图文并茂、跨频道的通讯。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">通讯</span><span class="skill-tag">原生</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">gateway</span> 
+                        <span style="font-size: 1.15rem;">canvas</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">查看或修改系统级配置，触发热重载或重启。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">配置</span><span class="skill-tag">管理</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">浏览器渲染引擎呈现。快照、渲染和呈现Web视图给用户端。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">界面</span><span class="skill-tag">交互</span></div>
                 </div>
             </div>
         </section>
         <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🤖 智能Agent编排 (Agent Orchestration)</h2>
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🤖 智能编排与代理 (Orchestration)</h2>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">sessions_spawn</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">创建子Agent运行特定任务，支持挂载独立目录和流式输出。</p>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">子代理繁殖引擎。实时拉起专用子Agent来并行处理长时或复杂分层任务。</p>
                     <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">并发</span><span class="skill-tag">多代理</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">subagents / sessions_list</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">管理或列出正在运行的子代理状态，必要时可强制终止。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">监控</span><span class="skill-tag">代理管理</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">代理监控与生命周期。监控子代理的执行状态，提供接管或强制终止的能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">管理</span><span class="skill-tag">监控</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">cron</span> 
+                        <span style="font-size: 1.15rem;">sessions_send</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">管理全系统的定时任务(Cron Jobs)，可定时触发系统事件或独立执行代码。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">自动化</span><span class="skill-tag">定时任务</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">session_status</span> 
-                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">查询当前会话的状态、Token消耗和使用的推理大模型。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">监控</span><span class="skill-tag">计费</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">跨会话通信系统。实现在不同的平行会话与代理之间发送定向通讯。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">通信</span><span class="skill-tag">同步</span></div>
                 </div>
             </div>
         </section>
         <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🧠 长期记忆系统 (LCM Memory)</h2>
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🧠 无损记忆与上下文 (Lossless Memory)</h2>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">lcm_grep</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">跨会话搜索过往记忆（支持正则表达式或全文搜索），快速定位历史文档。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">LCM</span><span class="skill-tag">搜索</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">记忆模糊搜寻。快速使用正则表达式或全文从被折叠压缩的历史记忆中检索蛛丝马迹。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">检索</span><span class="skill-tag">记忆</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">lcm_expand_query</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">通过独立的Agent查询并展开已被压缩的上下文折叠记忆节点。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">记忆检索</span><span class="skill-tag">细节展开</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">lcm_describe</span> 
-                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">分析特定折叠记忆的摘要、血缘关系及上下文关联。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">记忆探针</span><span class="skill-tag">上下文</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">深层记忆唤醒。将记忆节点的摘要完整回溯到其子树，找回被压缩的精确上下文细节。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">扩展</span><span class="skill-tag">上下文</span></div>
                 </div>
             </div>
         </section>
         <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">💼 飞书原生集成 (Feishu Workspace)</h2>
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">👁️ 视觉与感知系统 (Perception)</h2>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">feishu_doc / wiki</span> 
+                        <span style="font-size: 1.15rem;">image</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">深度集成飞书云文档与知识库，可读取、插入、追加、建表、上传图片等。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">飞书</span><span class="skill-tag">文档</span><span class="skill-tag">知识库</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">原生视觉理解模型分析。传入图片进行分析与逻辑推演，看懂图表和界面设计。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">视觉</span><span class="skill-tag">AI</span></div>
                 </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">image_generate</span> 
+                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">图像创造引擎。调用文生图或图生图模型，将灵感具现为高分辨率画作。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">生成</span><span class="skill-tag">绘图</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">tts</span> 
+                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">原生文本转语音合成。提供自然人声朗读长文本的能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">语音</span><span class="skill-tag">合成</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">pdf</span> 
+                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">文档结构拆解。分析并摄取PDF文档，保留文字排版与插图语境进行解读。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">文档</span><span class="skill-tag">理解</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">📱 飞书全家桶集成 (Feishu Integration)</h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">feishu_doc / feishu_wiki</span> 
+                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">飞书云文档/知识库操控。实现对飞书文档的逐段读写和知识库结构的完整重组。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">飞书</span><span class="skill-tag">文档</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">feishu_bitable</span> 
+                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">飞书多维表格引擎。创建新表格应用、插入字段、增删改查上千条数据记录。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">表格</span><span class="skill-tag">数据</span></div>
+                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">feishu_drive</span> 
                         <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">云空间文件和文件夹管理，获取云空间Token。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">飞书</span><span class="skill-tag">云盘</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">feishu_bitable_*</span> 
-                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">多维表格操作全家桶：建表、建字段、增删改查数据，适合轻量级应用数据库。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">飞书</span><span class="skill-tag">多维表格</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">feishu_chat</span> 
-                        <span style="color: #5D6D7E; font-size: 1.2em;" title="系统内置核心技能">⚙️</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">获取飞书群聊信息、成员名单及用户权限。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">飞书</span><span class="skill-tag">群组</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">飞书云盘挂载。全面管理飞书个人云盘的文件结构与生命周期。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">云盘</span><span class="skill-tag">文件</span></div>
                 </div>
             </div>
         </section>
         <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">📊 市场分析与研究 (Market Research)</h2>
+            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🌟 第三方扩展应用技能 (Extension Skills)</h2>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">competitor-analysis</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">12306</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">分析竞争对手的SEO与GEO策略，揭示反链、关键词及市场缺口。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">竞品</span><span class="skill-tag">SEO</span><span class="skill-tag">市场</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">12306</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">market-analysis-cn</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">Competitor Research</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">企业市场趋势与用户行为洞察，支持深度调研。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">市场趋势</span><span class="skill-tag">商业</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Deep competitor audits with market positioning, gap analysis, and actionable insights for winning strategies.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Competitor Research</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">stock-analysis</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">Games</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">股票监控与量化评分，使用雅虎财经API，支持美股港股、实时价格异常告警。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">股票</span><span class="skill-tag">金融</span><span class="skill-tag">监控</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Build a personal gaming system for video games, board games, party games, and family activities.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Games</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">bilibili-monitor</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">Office</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">抓取B站热门视频趋势并生成日报数据。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">B站</span><span class="skill-tag">热门</span><span class="skill-tag">视频</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Master Excel, Word, PowerPoint, and Google Workspace with formulas, formatting, and automation.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Office</span></div>
                 </div>
-            </div>
-        </section>
-        <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🌐 爬虫与网络资源 (Web & Scraping)</h2>
-            <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">multi-search-engine</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">Self-Improving Agent (With Self-Reflection)</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">整合17种国内外搜索引擎（无需API Key），支持高级算子过滤。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">搜索</span><span class="skill-tag">多引擎</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Self-reflection + Self-criticism + Self-learning + Self-organizing memory. Agent evaluates its own work, catches mistakes, and improves permanently. Use before starting work and after responding to the user.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Self</span></div>
                 </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">scrapling-skill</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">基于Scrapling的强力爬虫，完美绕过Cloudflare并支持动态JS渲染。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">爬虫</span><span class="skill-tag">CF绕过</span><span class="skill-tag">动态页面</span></div>
-                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">agent-browser</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">无头浏览器自动化控制，支持填表、点击、截图和端到端Web测试。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">浏览器</span><span class="skill-tag">自动化</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Headless browser automation CLI for AI agents. Use when interacting with websites — navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, scraping, testing web apps, downloading files, or automating any browser task. Triggers on requests to "open a website", "fill out a form", "click a button", "take a screenshot", "scrape data", "test this web app", "login to a site", "monitor a page", or any task requiring programmatic web interaction.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">agent</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">xurl</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">ai-data-analyst-cn</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">推特(X)平台的API操作，可发推、读取、回复及监控数据。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Twitter</span><span class="skill-tag">社交媒体</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">AI数据分析助手 - 智能图表生成、预测分析、异常检测、一键生成报告</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">ai</span></div>
                 </div>
-            </div>
-        </section>
-        <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">✍️ 内容创作与多媒体 (Content & Media)</h2>
-            <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">nano-banana-pro</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">bilibili-monitor</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">调用Gemini Pro API生成超高清图片，支持文生图、图生图编辑及参考图。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">AI绘画</span><span class="skill-tag">文生图</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">生成B站热门视频日报并发送邮件。触发词：B站热门、bilibili日报、视频日报、热门视频</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">bilibili</span><span class="skill-tag">监控</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">content-writer</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">clawsec</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">生成适用于小红书、知乎、抖音等国内社交平台的Native排版图文。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">文案</span><span class="skill-tag">小红书</span><span class="skill-tag">自媒体</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">clawsec</span></div>
                 </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">competitor-analysis</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">This skill should be used when the user asks to "analyze competitors", "competitor SEO", "who ranks for", "competitive analysis", "what are my competitors doing", "what are they doing differently", "why do they rank higher", or "spy on competitor SEO". Analyzes competitor SEO and GEO strategies including their ranking keywords, content approaches, backlink profiles, and AI citation patterns. Reveals opportunities to outperform competition. For content-focused gap analysis, see content-gap-analysis. For link profile specifics, see backlink-analyzer.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">competitor</span></div>
+                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">content-brainstorm</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">社交媒体爆款选题库生成，结合趋势构建7天发布计划。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">选题</span><span class="skill-tag">创意</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Social media content ideation engine. Generates a 7-day topic plan with titles, angles, SEO keywords, and trend scores for any niche and platform.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">content</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">video-summary</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">content-writer</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">B站/YouTube/抖音等视频内容深度总结，直接提取文字干货。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">视频</span><span class="skill-tag">总结</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Multi-platform content generator for Chinese social media. Produces publish-ready posts for 小红书, 知乎, 公众号, and 抖音 with platform-native formatting, hooks, and CTAs.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">content</span></div>
                 </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">md-to-pdf-cjk</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">高质量Markdown转PDF，完美支持中日韩排版，适合商务报告输出。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">PDF</span><span class="skill-tag">排版</span><span class="skill-tag">文档</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">python-ppt-generator</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">麦肯锡风格PPT自动生成，支持多模版和图表矩阵排版。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">PPT</span><span class="skill-tag">汇报</span></div>
-                </div>
-            </div>
-        </section>
-        <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🚀 效率提升与自动化 (Productivity)</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">n8n-workflow</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">设计并输出工业级的n8n自动化流（JSON），包含重试、容错和日志。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">n8n</span><span class="skill-tag">自动化</span><span class="skill-tag">工作流</span></div>
-                </div>
-                <div class="skill-card">
-                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">obsidian-sync</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
-                    </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Obsidian知识库自动管理，双向同步本体图谱(Ontology)，构建知识网。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">Obsidian</span><span class="skill-tag">知识图谱</span></div>
-                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">daily-report</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">一键提取当天/当周任务，自动生成格式化报表并发送邮件。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">报表</span><span class="skill-tag">办公</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">|</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">daily</span><span class="skill-tag">报告</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">schedule-feishu</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">debug-checklist</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">自动管理个人飞书日历，创建会议并推送到日程表。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">日程</span><span class="skill-tag">飞书</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">debug</span></div>
                 </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">distil</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Fetch web pages as clean Markdown and search the web via the distil.net proxy</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">distil</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">duckduckgo-search</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">duckduckgo</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">email-manager</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">email</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">evolink-music</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">AI music generation with Suno v4, v4.5, v5. Text-to-music, custom lyrics, instrumental, vocal control. 5 models, one API key.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">evolink</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">evolink-video</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">AI video generation — Sora, Kling, Veo 3, Seedance, Hailuo, WAN, Grok. Text-to-video, image-to-video, video editing. 37 models, one API key.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">evolink</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">feishu-bitable</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">feishu</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">feishu-calendar</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">feishu</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">find-skills</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">find</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">github</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">github</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">gog</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">gog</span></div>
+                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">healthcheck</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">睡眠与饮水等个人身体健康记录，存储为结构化本地数据。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">健康</span><span class="skill-tag">生活记录</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Track water and sleep with JSON file storage</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">healthcheck</span></div>
                 </div>
-            </div>
-        </section>
-        <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🛠 开发与安全 (Dev & Security)</h2>
-            <div class="skills-grid">
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">github-issues</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">local-whisper</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">GitHub生态集成：跨仓库查询PR、指派Issue，甚至派发子Agent自动修Bug并提PR。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">GitHub</span><span class="skill-tag">CI/CD</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Local speech-to-text using OpenAI Whisper. Runs fully offline after model download. High quality transcription with multiple model sizes.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">local</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">security-auditor</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">market-analysis-cn</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">安全代码审计，检查OWASP Top 10漏洞、CORS、SQL注入及鉴权缺陷。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">安全</span><span class="skill-tag">代码审计</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">市场分析服务 | Market Analysis Service. 企业市场趋势分析 | Enterprise market trend analysis. 竞品分析 | Competitor analysis. 用户行为洞察 | User behavior insights. 触发词：市场分析、竞品分析、market analysis、趋势.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">market</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">skill-vetter</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">mayguard</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Agent安全扫描仪，检测第三方Skill中是否存在提权、网络外泄及危险指令。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">安全防线</span><span class="skill-tag">漏洞扫描</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">A security auditor for agent skills. Scans skill directories for malicious patterns (credential theft, suspicious network calls, destructive commands) and provides a safety score. Use before installing unknown skills.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">mayguard</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">vercel-react-best</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">md-to-pdf-cjk</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">遵循Vercel最佳实践的React/Next.js性能优化和组件代码Review。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">React</span><span class="skill-tag">前端</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Convert Markdown files to professional PDF documents with full CJK (Chinese/Japanese/Korean) support. Uses reportlab for reliable rendering without external dependencies like wkhtmltopdf or LaTeX.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">md</span></div>
                 </div>
-            </div>
-        </section>
-        <section class="category">
-            <h2 style="font-size: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px dashed var(--border-color); margin-bottom: 1.5rem;">🧬 认知与自我进化 (Cognitive & Evolution)</h2>
-            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">multi-search-engine</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Multi search engine integration with 17 engines (8 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">multi</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">n8n-workflow-automation</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Designs and outputs n8n workflow JSON with robust triggers, idempotency, error handling, logging, retries, and human-in-the-loop review queues. Use when you need an auditable automation that won’t silently fail.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">n8n</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">nano-banana-pro</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Generate/edit images with Nano Banana Pro (Gemini 3 Pro Image). Use for image create/modify requests incl. edits. Supports text-to-image + image-to-image; 1K/2K/4K; use --input-image.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">nano</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">obsidian-ontology-sync</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Bidirectional sync between Obsidian PKM (human-friendly notes) and structured ontology (machine-queryable graph). Automatically extracts entities and relationships from markdown, maintains ontology graph, and provides feedback to improve note structure. Run sync every few hours via cron.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">obsidian</span></div>
+                </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 1.15rem;">proactive-agent</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">赋予AI主动思考能力，建立WAL缓冲池、自运转Cron及周期性惊喜检查。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">主动性</span><span class="skill-tag">智能进化</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">proactive</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">Self-Improving</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">reminder</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">基于错误自我修正：捕捉用户纠错并固化至SOUL.md/AGENTS.md等系统规则中。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">反思</span><span class="skill-tag">知识固化</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Natural-language reminder secretary: capture events into git-synced workspace (data/logic separated), schedule Telegram reminders via OpenClaw cron, and answer "what's coming up" queries. Use when user mentions meetings, birthdays, deadlines, or asks for schedule/plans.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">reminder</span></div>
                 </div>
+
                 <div class="skill-card">
                     <h3 style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 1.15rem;">skill-creator</span> 
-                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="第三方扩展应用技能">🌟</span>
+                        <span style="font-size: 1.15rem;">schedule-feishu</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
                     </h3>
-                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">AI技能自生长引擎，自动编写、清理、重构新的AgentSkills。</p>
-                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">技能创作</span><span class="skill-tag">自包含</span></div>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">飞书日程管理技能，自动创建飞书文档日程表，支持日程新增、状态更新、自动提醒，适配个人飞书账号使用</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">schedule</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">scrapling-skill</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">基于Scrapling的网页抓取，支持动态渲染和Cloudflare绕过。触发词：抓取、爬取、绕过Cloudflare、动态页面、JS渲染页面</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">scrapling</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">security-auditor</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Use when reviewing code for security vulnerabilities, implementing authentication flows, auditing OWASP Top 10, configuring CORS/CSP headers, handling secrets, input validation, SQL injection prevention, XSS protection, or any security-related code review.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">security</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">security-hardener</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Audit and harden OpenClaw configuration for security. Scans openclaw.json for vulnerabilities, exposed credentials, insecure gateway settings, overly permissive exec rules, and missing security best practices. Use when asked to audit security, harden configuration, check for vulnerabilities, or secure an OpenClaw deployment.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">security</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">self-improvement</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">self</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">serpapi</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">serpapi</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">skill-vetter</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks for red flags, permission scope, and suspicious patterns.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">skill</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">stock-analysis</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Analyze stocks and cryptocurrencies using Yahoo Finance data. Supports portfolio management, watchlists with alerts, dividend analysis, 8-dimension stock scoring, viral trend detection (Hot Scanner), and rumor/early signal detection. Use for stock analysis, portfolio tracking, earnings reactions, crypto monitoring, trending stocks, or finding rumors before they hit mainstream.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">stock</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">stock-industry-analyzer</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">stock</span><span class="skill-tag">监控</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">stock-monitor</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">股票价格实时监控。支持多只股票监控，使用 Yahoo Finance API 获取实时股价，自定义涨跌阈值提醒。当股价波动超过设定阈值时自动发送提醒，支持首次预警和续警机制。用于：(1) 监控持仓股票价格波动 (2) 设置价格提醒 (3) 定期检查股价变化</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">stock</span><span class="skill-tag">监控</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">stock-monitor-hkus</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">港股/美股/加密货币实时监控。使用 Yahoo Finance (yfinance) 获取实时价格、技术指标监控。支持自定义股票池、涨跌提醒、均线/RSI/MACD信号。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">stock</span><span class="skill-tag">监控</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">summarize</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">summarize</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">tavily-search</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">tavily</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">tophot-chinese</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">第三方扩展功能包，提供专项场景下的处理与自动化能力。</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">tophot</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">video-summary</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Video summarization for Bilibili, Xiaohongshu, Douyin, and YouTube. Extract insights from video content through transcription and summarization.</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">video</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">weather</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">Get current weather and forecasts (no API key required).</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">weather</span></div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.15rem;">weekly-report</span> 
+                        <span style="color: var(--accent-gold); font-size: 1.2em;" title="扩展应用技能">🌟</span>
+                    </h3>
+                    <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">周报生成器，自动汇总本周工作</p>
+                    <div class="skill-tags" style="margin-top: 1rem;"><span class="skill-tag">weekly</span><span class="skill-tag">报告</span></div>
                 </div>
             </div>
         </section>
@@ -604,7 +862,7 @@
     
     <footer class="footer">
         <p>🐶 旺财Jarvis - 钢铁侠的专属AI助手</p>
-        <p style="margin-top: 0.5rem; opacity: 0.7;">共 42 个技能，持续学习进化中...</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">共 68 个技能，持续学习进化中...</p>
     </footer>
 </body>
 </html>
