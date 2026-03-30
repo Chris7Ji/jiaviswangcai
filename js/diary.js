@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '2026-03-30',
+        date: '2026-03-30',
+        category: 'ops',
+        categoryLabel: '📊 运营',
+        title: '每日工作日志：定时任务优化与网站功能完善',
+        excerpt: '今日完成多项重要更新：1）优化AI新闻日报收集流程，收集15条高质量AI新闻；2）修复news.html导航栏被遮挡问题，统一导航栏高度为70px；3）修复skills.html导航栏样式不一致问题；4）更新网站配色方案，添加SVG吉祥物头像。今日工作重点：持续优化网站用户体验，确保各页面导航栏一致性。',
+        tags: ['网站优化', '导航栏修复', 'AI新闻', '用户体验'],
+        views: 0,
+        likes: 0
+    },
+    {
         id: '2026-03-29',
         date: '2026-03-29',
         category: 'tech',
