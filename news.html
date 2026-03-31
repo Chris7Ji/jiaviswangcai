@@ -39,7 +39,6 @@
         .nav-links a:hover, .nav-links a.active { color: #d4a84b; }
         
         .day-news-container { display: none; animation: fadeIn 0.4s ease; }
-        /* When active, show the container */
         .day-news-container.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -71,14 +70,17 @@
     <main class="news-container">
         
         <div id="news-2026-03-31" class="day-news-container active">
-            <div class="update-info"><p>📅 日报日期: 2026-03-31 · 共有 6 条资讯</p></div>
+            <div class="update-info"><p>📅 日报日期: 2026-03-31 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
                 <span class="tag">🔥 重点头条</span>
                 <h2>加州无视特朗普呼吁，将实施新的人工智能监管规定</h2>
-                <p class="summary">加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而特朗普总统则试图阻止“繁琐”的规则。这一举措标志着加州在人工智能监管方面采取独立立场，可能对全美AI政策产生示范效应。新规旨在平衡技术创新与公共安全，可能引发联邦与州政府间的政策冲突，影响AI企业的合规成本和市场布局。</p>
+                <p class="summary">加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而总统特朗普则试图阻止“繁琐”的规则。这一举措的核心在于加州与联邦政府在人工智能监管上的分歧，加州强调通过严格监管保障公众利益，而联邦层面则担忧过度监管可能抑制创新。此举可能加剧州与联邦之间的政策冲突，影响人工智能产业的发展方向，同时引发关于技术创新与公共安全平衡的广泛讨论。</p>
                 <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <span class="source">The Guardian</span>
+                    <div>
+                        <span class="source">The Guardian</span>
+                        <span style="margin-left:1rem; color:#888;">14 hours ago</span>
+                    </div>
                     <a href="https://www.theguardian.com/us-news/2026/mar/30/california-ai-regulations-trump" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
                 </div>
             </div>
@@ -86,46 +88,85 @@
             <h3 class="news-section-title">📰 更多资讯</h3>
             <div class="news-grid">
                 <a href="https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html" target="_blank" class="news-item">
-                    <h3>加州人工智能行政令要点解读</h3>
-                    <p>加州州长、民主党人加文·纽瑟姆签署行政令，要求与州政府合作的人工智能公司必须建立安全与隐私保护机制。该指令旨在规范AI技术在公共领域的应用，通过设立明确的技术标准与数据管理要求，防止算法偏见、隐私泄露等风险。此举将直接影响加州政府部门的AI采购流程，推动企业加强合规建设，同时为全美AI监管提供政策参考，可能引发其他州或联邦层面的效仿，对AI产业发展与政府数字化治理产生深远影响。</p>
+                    <h3>加州发布人工智能行政令：你需要了解的内容</h3>
+                    <p>加州州长加文·纽森（民主党）签署了一项行政命令，要求与州政府合作的人工智能公司必须遵守安全和隐私保护措施。该命令旨在确保人工智能技术在公共部门应用时，能够保障数据安全和个人隐私，防止技术滥用。此举预计将推动人工智能行业建立更严格的伦理标准，并可能影响其他州及联邦层面的相关政策制定，对科技公司而言意味着更高的合规要求和潜在成本增加，但也将促进更负责任的人工智能发展。</p>
                     <div class="meta">
-                        <span class="source">The New York Times</span>
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">13 hours ago</span>
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
             
                 <a href="https://www.prnewswire.com/news-releases/netsuite-extends-commitment-to-helping-businesses-use-ai-their-way-302729229.html" target="_blank" class="news-item">
                     <h3>NetSuite 深化助力企业按需运用人工智能的承诺</h3>
-                    <p>在伦敦举行的SuiteConnect大会上，Oracle NetSuite作为领先的AI云端ERP系统，宣布了NetSuite AI连接器服务的最新功能扩展。这些新增功能旨在帮助企业更灵活地集成和利用人工智能技术，以适应各自独特的业务需求和流程。此举不仅强化了NetSuite在智能企业资源规划领域的领导地位，还可能推动更多企业采用定制化AI解决方案，从而提升运营效率、优化决策过程，并在竞争激烈的市场中获得差异化优势。</p>
+                    <p>在伦敦举办的SuiteConnect大会上，作为领先的人工智能云ERP系统，Oracle NetSuite宣布对其NetSuite AI连接器服务进行最新升级，旨在帮助企业更灵活地整合和运用人工智能技术。这一举措的核心在于通过增强的连接器服务，使企业能够根据自身业务需求定制AI解决方案，从而提升运营效率、优化决策过程并加速数字化转型。此举不仅巩固了NetSuite在AI驱动ERP领域的领导地位，还可能推动更多企业采纳AI技术，促进行业整体智能化水平的提升，对中小型企业尤其具有积极意义，因为它们现在能以更低的门槛和更高的灵活性利用AI优化业务流程。</p>
                     <div class="meta">
-                        <span class="source">PR Newswire</span>
+                        <div>
+                            <span class="source">PR Newswire</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
             
                 <a href="https://www.cnbc.com/2026/03/31/cnbcs-china-connection-newsletter-ai-race-enters-a-new-phase.html" target="_blank" class="news-item">
                     <h3>CNBC《中国连线》通讯：中国人工智能竞赛进入新阶段</h3>
-                    <p>CNBC《中国连线》通讯指出，中国的人工智能竞赛已迈入新阶段，企业正探索通过人工智能盈利的新前沿。这一转变意味着AI技术正从研发走向商业化应用，企业需在技术创新与市场落地间找到平衡。新阶段将加速AI在各行业的渗透，推动产业升级，同时也带来数据安全、伦理规范等挑战，对中国科技发展和全球经济格局产生深远影响。</p>
+                    <p>随着人工智能技术商业化进程加速，企业正面临全新的盈利机遇。中国在AI领域的竞争已迈入关键转型期，各大科技公司纷纷布局前沿技术研发与应用场景拓展。这一趋势不仅将重塑国内产业结构，还可能影响全球AI技术发展格局，推动相关产业链升级，并对就业市场、数据安全及伦理规范提出新的挑战。</p>
                     <div class="meta">
-                        <span class="source">CNBC</span>
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">15 hours ago</span>
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
             
                 <a href="https://www.vogue.com/story/technology/the-vogue-business-ai-tracker" target="_blank" class="news-item">
-                    <h3>《Vogue商业AI追踪》</h3>
-                    <p>《Vogue商业AI追踪》每周为您带来人工智能领域最值得关注的重要动态。该栏目持续聚焦AI技术在时尚、商业等领域的创新应用与发展趋势，帮助读者及时掌握行业前沿信息。通过精选报道，它不仅揭示了AI如何重塑商业模式和消费体验，还分析了其对产业链各环节的潜在影响，为从业者提供有价值的洞察参考。</p>
+                    <h3>《Vogue商业》人工智能追踪周报</h3>
+                    <p>《Vogue商业》每周为您带来人工智能领域最值得关注的前沿动态。本期聚焦AI在时尚、零售及创意产业的创新应用，涵盖算法设计、虚拟试衣、供应链优化等热点话题。这些技术不仅重塑了行业生产模式，还推动了消费体验的个性化升级，对时尚产业的数字化转型具有深远影响，值得从业者持续追踪。</p>
                     <div class="meta">
-                        <span class="source">Vogue</span>
+                        <div>
+                            <span class="source">Vogue</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nbcnews.com/video/new-documentary-asks-if-we-are-doomed-by-ai-260410437714" target="_blank" class="news-item">
+                    <h3>新纪录片探讨人工智能是否将人类引向末日</h3>
+                    <p>《人工智能纪录片：或我如何成为末日乐观主义者》是一部探讨人工智能未来及其对人类影响的新纪录片。影片通过深入访谈专家和分析技术发展趋势，既揭示了AI可能带来的失业、隐私侵犯和伦理风险等严峻挑战，也展现了其在医疗、教育和环保等领域的巨大潜力。该纪录片的核心在于引发公众对AI发展的辩证思考：我们是否注定被AI毁灭，还是能通过合理监管和技术创新实现共生？其影响在于推动社会各界更理性地讨论AI治理，促使政策制定者平衡创新与风险，为人类在智能时代的未来提供多元视角。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NBC News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 hours ago</span>
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
             
                 <a href="https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/oracles-new-ai-restaurant-suite-adds-a-fresh-angle-to-growth" target="_blank" class="news-item">
                     <h3>甲骨文推出全新AI餐厅套件，为增长注入新动力</h3>
-                    <p>甲骨文公司（纽约证券交易所代码：ORCL）近日推出了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅打造的AI驱动商业平台。该平台整合了后台关键运营环节，通过人工智能技术优化库存管理、员工排班和顾客服务等流程，帮助餐厅提升运营效率并降低成本。此举标志着甲骨文在餐饮行业数字化转型领域的进一步布局，预计将推动全球连锁餐厅向智能化、数据驱动的运营模式转变，对餐饮业的科技应用和竞争格局产生深远影响。</p>
+                    <p>甲骨文公司（NYSE:ORCL）近日发布了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅设计的AI驱动商业平台。该平台整合了后台关键运营功能，通过人工智能技术优化餐厅管理流程，包括库存控制、订单处理和客户数据分析等核心环节。此举旨在帮助餐饮企业提升运营效率、降低成本，并利用数据洞察推动业务增长。这一创新解决方案预计将重塑餐饮行业的技术应用格局，特别是在后疫情时代，为连锁餐厅提供更智能、更灵活的数字化工具，以应对市场变化和消费者需求。</p>
                     <div class="meta">
-                        <span class="source">Simply Wall Street</span>
+                        <div>
+                            <span class="source">Simply Wall Street</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.bbc.com/news/articles/c5ywrlkw2k4o" target="_blank" class="news-item">
+                    <h3>人工智能与数字证据正在重塑根西岛的警务工作</h3>
+                    <p>随着涉及数字证据的案件数量不断增加，技术已成为根西岛几乎所有警方调查的核心。警方表示，人工智能和数字取证工具正在彻底改变传统的警务模式，从手机数据提取到社交媒体分析，数字证据在破案中的比重显著上升。这一转变不仅提高了案件侦破效率，也对警员的数字技能提出了更高要求，同时引发了关于数据隐私和证据合法性的新讨论。根西岛警方正在加强相关培训并更新设备，以适应这一数字化执法新时代。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">BBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
@@ -140,7 +181,10 @@
                 <h2>微软 Copilot 让 Anthropic 的 Claude 和 OpenAI 的 GPT 联手</h2>
                 <p class="summary">为了推出其最新的 Copilot 功能，微软正同时依赖于 OpenAI 和 Anthropic 两家顶尖的 AI 实验室。微软押注其核心竞争优势不在于底层的大语言模型，而在于其庞大的数据和生态系统。这意味着未来用户在 Copilot 中可能会体验到多个顶级 AI 模型协同工作的效果。</p>
                 <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <span class="source">The New Stack</span>
+                    <div>
+                        <span class="source">The New Stack</span>
+                        
+                    </div>
                     <a href="https://thenewstack.io/microsofts-copilot-llm-team/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
                 </div>
             </div>
@@ -151,7 +195,10 @@
                     <h3>英伟达CEO黄仁勋称“我们已实现AGI”，但业界对AGI的定义仍存分歧</h3>
                     <p>上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认知分类等）仍然没有达成共识，反映出行业在评估 AI 真正智能水平时的挑战。</p>
                     <div class="meta">
-                        <span class="source">Fortune</span>
+                        <div>
+                            <span class="source">Fortune</span>
+                            
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
@@ -160,7 +207,10 @@
                     <h3>为什么 Anthropic 泄露的 AI 模型 'Mythos' 会带来网络安全风险</h3>
                     <p>由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力也引发了前所未有的网络安全担忧，业界正密切关注其对现有网络防御体系的冲击。</p>
                     <div class="meta">
-                        <span class="source">Euronews</span>
+                        <div>
+                            <span class="source">Euronews</span>
+                            
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
@@ -169,7 +219,10 @@
                     <h3>GeForce Now 在 Apple Vision Pro 上的串流表现优于 Meta 头显</h3>
                     <p>英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著提升了流媒体传输的稳定性和延迟表现，为空间计算平台带来了更强大的游戏生态支持。</p>
                     <div class="meta">
-                        <span class="source">AppleInsider</span>
+                        <div>
+                            <span class="source">AppleInsider</span>
+                            
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
@@ -178,7 +231,10 @@
                     <h3>为什么说英伟达的股票图表是世界上最重要的</h3>
                     <p>如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的关键风向标。</p>
                     <div class="meta">
-                        <span class="source">Yahoo Finance</span>
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
@@ -187,7 +243,10 @@
                     <h3>玩家据称在沃尔玛仅花费 80 美元买到英伟达 RTX 5060 Ti 显卡</h3>
                     <p>近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩家们纷纷前往当地超市清仓区“寻宝”的热潮。</p>
                     <div class="meta">
-                        <span class="source">TechRadar</span>
+                        <div>
+                            <span class="source">TechRadar</span>
+                            
+                        </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
                 </a>
