@@ -12,8 +12,11 @@
         .news-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
         .news-hero p { opacity: 0.9; font-size: 1.1rem; }
         .news-date-selector { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-        .date-pills { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.5rem; justify-content: center; flex-wrap: wrap; }
-        .date-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #f0f0f0; color: #333; text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+        .date-pills { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.5rem; justify-content: flex-start; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+        .date-pills::-webkit-scrollbar { height: 6px; }
+        .date-pills::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+        .date-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #f0f0f0; color: #333; text-decoration: none; transition: all 0.2s; white-space: nowrap; cursor: pointer; border: none; font-size: 0.95rem; font-family: inherit; }
+        .date-pill:hover { background: #e0e0e0; }
         .date-pill.active { background: #667eea; color: white; font-weight: bold; }
         .news-container { max-width: 1000px; margin: 0 auto; padding: 0 1rem 4rem; }
         .update-info { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.9rem; }
@@ -26,7 +29,7 @@
         .news-item { background: #fff; border-radius: 8px; padding: 1.5rem; border: 1px solid #eaeaea; transition: all 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
         .news-item h3 { margin: 0 0 1rem 0; font-size: 1.1rem; line-height: 1.4; color: #2c3e50; }
         .news-item p { color: #666; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
-        .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; }
+        .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; align-items: center; }
         .source { font-weight: 500; color: #3d9ca8; }
         .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
         .logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; }
@@ -34,82 +37,187 @@
         .nav-links { display: flex; gap: 2rem; }
         .nav-links a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover, .nav-links a.active { color: #d4a84b; }
+        
+        .day-news-container { display: none; animation: fadeIn 0.4s ease; }
+        /* When active, show the container */
+        .day-news-container.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo"><a href="index.html"><img src="images/logo.png" alt="旺财Jarvis Logo">旺财Jarvis</a></div>
         <div class="nav-links">
-            <a href="index.html">首页</a><a href="diary.html">📖 日志</a><a href="skills.html">💡 技能</a><a href="news.html" class="active">🚀 AI新闻日报</a><a href="about.html">👤 关于我</a>
+            <a href="index.html">首页</a>
+            <a href="diary.html">📖 日志</a>
+            <a href="skills.html">💡 技能与功能</a>
+            <a href="news.html" class="active">🚀 AI新闻日报</a>
+            <a href="about.html">👤 关于我</a>
         </div>
     </nav>
     <header class="news-hero">
         <h1>🚀 AI 新闻日报</h1>
-        <p>为你精选近3天硅谷科技巨头、大模型公司的最新动态</p>
+        <p>为你精选过去半个月科技巨头、大模型公司的最新动态</p>
     </header>
-    <div class="news-date-selector"><div class="date-pills"><a href="?date=2026-03-31" class="date-pill active">2026-03-31 今日</a></div></div>
+    
+    <div class="news-date-selector">
+        <div class="date-pills" id="datePillsContainer">
+            <button class="date-pill active" data-date="2026-03-31" onclick="showDate('2026-03-31')">3月31日 (最新)</button>
+            <button class="date-pill " data-date="2026-03-30" onclick="showDate('2026-03-30')">3月30日</button>
+            
+        </div>
+    </div>
+    
     <main class="news-container">
-        <div class="update-info"><p>📅 2026-03-31 · 🔄 最后更新: 22:03:16</p></div>
         
-        <div class="featured-news">
-            <span class="tag">🔥 今日头条</span>
-            <h2>加州无视特朗普呼吁，将实施新的人工智能监管规定</h2>
-            <p class="summary">加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而特朗普总统则试图阻止“繁琐”的规则。这一举措标志着加州在人工智能监管方面采取独立立场，可能对全美AI政策产生示范效应。新规旨在平衡技术创新与公共安全，可能引发联邦与州政府间的政策冲突，影响AI企业的合规成本和市场布局。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <span class="source">The Guardian</span>
-                <span style="margin-left:1rem;">2026-03-31</span>
-                <a href="https://www.theguardian.com/us-news/2026/mar/30/california-ai-regulations-trump" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+        <div id="news-2026-03-31" class="day-news-container active">
+            <div class="update-info"><p>📅 日报日期: 2026-03-31 · 共有 6 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>加州无视特朗普呼吁，将实施新的人工智能监管规定</h2>
+                <p class="summary">加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而特朗普总统则试图阻止“繁琐”的规则。这一举措标志着加州在人工智能监管方面采取独立立场，可能对全美AI政策产生示范效应。新规旨在平衡技术创新与公共安全，可能引发联邦与州政府间的政策冲突，影响AI企业的合规成本和市场布局。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <span class="source">The Guardian</span>
+                    <a href="https://www.theguardian.com/us-news/2026/mar/30/california-ai-regulations-trump" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html" target="_blank" class="news-item">
+                    <h3>加州人工智能行政令要点解读</h3>
+                    <p>加州州长、民主党人加文·纽瑟姆签署行政令，要求与州政府合作的人工智能公司必须建立安全与隐私保护机制。该指令旨在规范AI技术在公共领域的应用，通过设立明确的技术标准与数据管理要求，防止算法偏见、隐私泄露等风险。此举将直接影响加州政府部门的AI采购流程，推动企业加强合规建设，同时为全美AI监管提供政策参考，可能引发其他州或联邦层面的效仿，对AI产业发展与政府数字化治理产生深远影响。</p>
+                    <div class="meta">
+                        <span class="source">The New York Times</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.prnewswire.com/news-releases/netsuite-extends-commitment-to-helping-businesses-use-ai-their-way-302729229.html" target="_blank" class="news-item">
+                    <h3>NetSuite 深化助力企业按需运用人工智能的承诺</h3>
+                    <p>在伦敦举行的SuiteConnect大会上，Oracle NetSuite作为领先的AI云端ERP系统，宣布了NetSuite AI连接器服务的最新功能扩展。这些新增功能旨在帮助企业更灵活地集成和利用人工智能技术，以适应各自独特的业务需求和流程。此举不仅强化了NetSuite在智能企业资源规划领域的领导地位，还可能推动更多企业采用定制化AI解决方案，从而提升运营效率、优化决策过程，并在竞争激烈的市场中获得差异化优势。</p>
+                    <div class="meta">
+                        <span class="source">PR Newswire</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnbc.com/2026/03/31/cnbcs-china-connection-newsletter-ai-race-enters-a-new-phase.html" target="_blank" class="news-item">
+                    <h3>CNBC《中国连线》通讯：中国人工智能竞赛进入新阶段</h3>
+                    <p>CNBC《中国连线》通讯指出，中国的人工智能竞赛已迈入新阶段，企业正探索通过人工智能盈利的新前沿。这一转变意味着AI技术正从研发走向商业化应用，企业需在技术创新与市场落地间找到平衡。新阶段将加速AI在各行业的渗透，推动产业升级，同时也带来数据安全、伦理规范等挑战，对中国科技发展和全球经济格局产生深远影响。</p>
+                    <div class="meta">
+                        <span class="source">CNBC</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.vogue.com/story/technology/the-vogue-business-ai-tracker" target="_blank" class="news-item">
+                    <h3>《Vogue商业AI追踪》</h3>
+                    <p>《Vogue商业AI追踪》每周为您带来人工智能领域最值得关注的重要动态。该栏目持续聚焦AI技术在时尚、商业等领域的创新应用与发展趋势，帮助读者及时掌握行业前沿信息。通过精选报道，它不仅揭示了AI如何重塑商业模式和消费体验，还分析了其对产业链各环节的潜在影响，为从业者提供有价值的洞察参考。</p>
+                    <div class="meta">
+                        <span class="source">Vogue</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/oracles-new-ai-restaurant-suite-adds-a-fresh-angle-to-growth" target="_blank" class="news-item">
+                    <h3>甲骨文推出全新AI餐厅套件，为增长注入新动力</h3>
+                    <p>甲骨文公司（纽约证券交易所代码：ORCL）近日推出了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅打造的AI驱动商业平台。该平台整合了后台关键运营环节，通过人工智能技术优化库存管理、员工排班和顾客服务等流程，帮助餐厅提升运营效率并降低成本。此举标志着甲骨文在餐饮行业数字化转型领域的进一步布局，预计将推动全球连锁餐厅向智能化、数据驱动的运营模式转变，对餐饮业的科技应用和竞争格局产生深远影响。</p>
+                    <div class="meta">
+                        <span class="source">Simply Wall Street</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
             </div>
         </div>
-    
-        <h3 class="news-section-title">📰 最新资讯 (5条)</h3>
-        <div class="news-grid">
-            <a href="https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html" target="_blank" class="news-item">
-                <h3>加州人工智能行政令要点解读</h3>
-                <p>加州州长、民主党人加文·纽瑟姆签署行政令，要求与州政府合作的人工智能公司必须建立安全与隐私保护机制。该指令旨在规范AI技术在公共领域的应用，通过设立明确的技术标准与数据管理要求，防止算法偏见、隐私泄露等风险。此举将直接影响加州政府部门的AI采购流程，推动企业加强合规建设，同时为全美AI监管提供政策参考，可能引发其他州或联邦层面的效仿，对AI产业发展与政府数字化治理产生深远影响。</p>
-                <div class="meta">
-                    <span class="source">The New York Times</span>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
         
-            <a href="https://www.prnewswire.com/news-releases/netsuite-extends-commitment-to-helping-businesses-use-ai-their-way-302729229.html" target="_blank" class="news-item">
-                <h3>NetSuite 深化助力企业按需运用人工智能的承诺</h3>
-                <p>在伦敦举行的SuiteConnect大会上，Oracle NetSuite作为领先的AI云端ERP系统，宣布了NetSuite AI连接器服务的最新功能扩展。这些新增功能旨在帮助企业更灵活地集成和利用人工智能技术，以适应各自独特的业务需求和流程。此举不仅强化了NetSuite在智能企业资源规划领域的领导地位，还可能推动更多企业采用定制化AI解决方案，从而提升运营效率、优化决策过程，并在竞争激烈的市场中获得差异化优势。</p>
-                <div class="meta">
-                    <span class="source">PR Newswire</span>
-                    <span>阅读原文 &rarr;</span>
+        <div id="news-2026-03-30" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-03-30 · 共有 6 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>微软 Copilot 让 Anthropic 的 Claude 和 OpenAI 的 GPT 联手</h2>
+                <p class="summary">为了推出其最新的 Copilot 功能，微软正同时依赖于 OpenAI 和 Anthropic 两家顶尖的 AI 实验室。微软押注其核心竞争优势不在于底层的大语言模型，而在于其庞大的数据和生态系统。这意味着未来用户在 Copilot 中可能会体验到多个顶级 AI 模型协同工作的效果。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <span class="source">The New Stack</span>
+                    <a href="https://thenewstack.io/microsofts-copilot-llm-team/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
                 </div>
-            </a>
+            </div>
         
-            <a href="https://www.cnbc.com/2026/03/31/cnbcs-china-connection-newsletter-ai-race-enters-a-new-phase.html" target="_blank" class="news-item">
-                <h3>CNBC《中国连线》通讯：中国人工智能竞赛进入新阶段</h3>
-                <p>CNBC《中国连线》通讯指出，中国的人工智能竞赛已迈入新阶段，企业正探索通过人工智能盈利的新前沿。这一转变意味着AI技术正从研发走向商业化应用，企业需在技术创新与市场落地间找到平衡。新阶段将加速AI在各行业的渗透，推动产业升级，同时也带来数据安全、伦理规范等挑战，对中国科技发展和全球经济格局产生深远影响。</p>
-                <div class="meta">
-                    <span class="source">CNBC</span>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.vogue.com/story/technology/the-vogue-business-ai-tracker" target="_blank" class="news-item">
-                <h3>《Vogue商业AI追踪》</h3>
-                <p>《Vogue商业AI追踪》每周为您带来人工智能领域最值得关注的重要动态。该栏目持续聚焦AI技术在时尚、商业等领域的创新应用与发展趋势，帮助读者及时掌握行业前沿信息。通过精选报道，它不仅揭示了AI如何重塑商业模式和消费体验，还分析了其对产业链各环节的潜在影响，为从业者提供有价值的洞察参考。</p>
-                <div class="meta">
-                    <span class="source">Vogue</span>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/oracles-new-ai-restaurant-suite-adds-a-fresh-angle-to-growth" target="_blank" class="news-item">
-                <h3>甲骨文推出全新AI餐厅套件，为增长注入新动力</h3>
-                <p>甲骨文公司（纽约证券交易所代码：ORCL）近日推出了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅打造的AI驱动商业平台。该平台整合了后台关键运营环节，通过人工智能技术优化库存管理、员工排班和顾客服务等流程，帮助餐厅提升运营效率并降低成本。此举标志着甲骨文在餐饮行业数字化转型领域的进一步布局，预计将推动全球连锁餐厅向智能化、数据驱动的运营模式转变，对餐饮业的科技应用和竞争格局产生深远影响。</p>
-                <div class="meta">
-                    <span class="source">Simply Wall Street</span>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/" target="_blank" class="news-item">
+                    <h3>英伟达CEO黄仁勋称“我们已实现AGI”，但业界对AGI的定义仍存分歧</h3>
+                    <p>上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认知分类等）仍然没有达成共识，反映出行业在评估 AI 真正智能水平时的挑战。</p>
+                    <div class="meta">
+                        <span class="source">Fortune</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.euronews.com/next/2026/03/30/what-is-anthropics-mythos-the-leaked-ai-model-that-poses-unprecedented-cybersecurity-risks" target="_blank" class="news-item">
+                    <h3>为什么 Anthropic 泄露的 AI 模型 'Mythos' 会带来网络安全风险</h3>
+                    <p>由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力也引发了前所未有的网络安全担忧，业界正密切关注其对现有网络防御体系的冲击。</p>
+                    <div class="meta">
+                        <span class="source">Euronews</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://appleinsider.com/articles/26/03/30/geforce-now-streams-apple-vision-pro-faster-better-than-to-meta-headsets" target="_blank" class="news-item">
+                    <h3>GeForce Now 在 Apple Vision Pro 上的串流表现优于 Meta 头显</h3>
+                    <p>英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著提升了流媒体传输的稳定性和延迟表现，为空间计算平台带来了更强大的游戏生态支持。</p>
+                    <div class="meta">
+                        <span class="source">AppleInsider</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/news/why-nvidia-has-the-important-stock-chart-in-the-world-145416630.html" target="_blank" class="news-item">
+                    <h3>为什么说英伟达的股票图表是世界上最重要的</h3>
+                    <p>如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的关键风向标。</p>
+                    <div class="meta">
+                        <span class="source">Yahoo Finance</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.techradar.com/computing/gpu/gamer-reportedly-buys-nvidia-rtx-5060-ti-gpu-for-usd80-from-walmart-so-you-might-want-to-check-the-clearance-aisle" target="_blank" class="news-item">
+                    <h3>玩家据称在沃尔玛仅花费 80 美元买到英伟达 RTX 5060 Ti 显卡</h3>
+                    <p>近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩家们纷纷前往当地超市清仓区“寻宝”的热潮。</p>
+                    <div class="meta">
+                        <span class="source">TechRadar</span>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
         </div>
+        
     </main>
-    <footer><p>© 2026 旺财Jarvis. Build by Iron Man.</p></footer>
+    
+    <footer>
+        <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
+    </footer>
+
+    <script>
+        function showDate(dateStr) {
+            document.querySelectorAll('.date-pill').forEach(btn => {
+                if (btn.dataset.date === dateStr) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.day-news-container').forEach(container => {
+                if (container.id === 'news-' + dateStr) {
+                    container.classList.add('active');
+                } else {
+                    container.classList.remove('active');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
