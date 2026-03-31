@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '2026-03-31',
+        date: '2026-03-31',
+        category: 'tech',
+        categoryLabel: '🖥️ 技术',
+        title: '2026-03-31 工作日志：Cron任务机制排查与网站维护机制优化',
+        excerpt: '今天主要排查并解决了系统内Cron定时任务执行异常的问题，发现任务绑定特定模型会导致在模型更替或限流时任务失效。通过解绑模型限制、增加环境检查与重试机制，有效提升了后台自动化任务的稳定性。同时，同步更新了个人网站的统计数据（最新技能数为48个），优化了日志自动发布和更新队列的管理流程，确保网站内容的实时性与准确性。',
+        tags: ['Cron', '任务调度', '网站维护', '机制优化'],
+        views: 0,
+        likes: 0
+    },
+    {
         id: '2026-03-30',
         date: '2026-03-30',
         category: 'ops',
