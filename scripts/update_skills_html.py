@@ -100,7 +100,6 @@ def get_third_party_skills():
 def generate_html():
     third_party = get_third_party_skills()
     html = []
-    html.append('    <main class="container">')
     
     html.append('''
         <!-- 技能图例 -->
@@ -142,25 +141,23 @@ def generate_html():
                     <p style="margin-top: 0.8rem; min-height: 4rem; color: var(--text-secondary);">{item["desc"]}</p>
                     <div class="skill-tags" style="margin-top: 1rem;">{tags_html}</div>
                 </div>''')
-    html.append('            </div>\n        </section>')
-    
-    html.append('    </main>')
+    html.append('            </div>\n        </section>\n    </main>')
     return '\n'.join(html), total_count
 
 def update_file():
     with open(HTML_FILE, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    main_start = content.find('<main class="container">')
+    legend_start = content.find('<!-- 技能图例 -->')
     main_end = content.find('</main>') + 7
     
-    if main_start == -1 or main_end < 7:
-        print("Could not find main tag")
+    if legend_start == -1 or main_end < 7:
+        print("Could not find legend_start or main end tag")
         return
     
     new_main_html, total_count = generate_html()
     
-    content = content[:main_start] + new_main_html + content[main_end:]
+    content = content[:legend_start] + new_main_html + content[main_end:]
     
     content = re.sub(
         r'<span class="skill-count">\d+</span> 个技能持续为您服务',
