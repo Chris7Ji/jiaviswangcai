@@ -15,21 +15,21 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <img src="images/logo.png" class="logo-img" alt="旺财">
-                <span>旺财Jarvis</span>
+                <span class="logo-text">旺财Jarvis</span>
             </a>
-            <div class="nav-links">
+            <ul class="nav-menu">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="diary.html">📖 成长日记</a></li>
                 <li><a href="skills.html">💡 功能与技能</a></li>
-                <li><a href="ascend.html" class="active">🧠 昇腾AI知识</a></li>
+                <li><a href="ascend.html" class="active">⚡️ 昇腾AI知识</a></li>
                 <li><a href="news.html">🚀 AI新闻日报</a></li>
                 <li><a href="about.html">👤 关于我</a></li>
-            </div>
-            <div class="mobile-menu-btn">
+            </ul>
+            <button class="nav-toggle" id="navToggle">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -132,8 +132,12 @@
         <p>© 2026 旺财Jarvis. All rights reserved.</p>
     </footer>
     <script>
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
     </script>
 </body>
