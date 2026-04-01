@@ -8,7 +8,7 @@ function loadMessages() {
     const listEl = document.getElementById('gb-list');
     
     // 从静态数据源加载审核通过的留言
-    fetch('https://7d8b125d9f8147.lhr.life/messages', {
+    fetch('https://rfdkn-1-165-15-111.a.free.pinggy.link/messages', {
         headers: {
             'Bypass-Tunnel-Reminder': 'true'
         }
@@ -72,7 +72,7 @@ function submitGuestbook() {
     submitBtn.disabled = true;
     submitBtn.innerText = "上传合规审核系统...";
     
-    fetch('https://7d8b125d9f8147.lhr.life/messages', {
+    fetch('https://rfdkn-1-165-15-111.a.free.pinggy.link/messages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
