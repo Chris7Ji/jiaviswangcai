@@ -1,0 +1,21 @@
+{
+  "name": "AI新闻每日摘要",
+  "schedule": {
+    "kind": "cron",
+    "expr": "30 6 * * *",
+    "tz": "Asia/Shanghai"
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "执行AI新闻搜索任务：1. 使用web_search搜索最新AI和科技新闻（关键词：最新人工智能新闻、AI技术突破、科技新闻今日、机器学习最新进展）。2. 整理成中文摘要，包含5-8条重要新闻。3. 通过himalaya邮件客户端发送到86940135@qq.com和jiyingguo@huawei.com邮箱，发件人使用86940135@qq.com。4. 邮件主题格式：AI与科技新闻摘要 - YYYY年MM月DD日。5. 邮件内容包含简要摘要和来源链接。",
+    "model": "deepseek/deepseek-chat",
+    "timeoutSeconds": 300
+  },
+  "sessionTarget": "isolated",
+  "delivery": {
+    "mode": "announce",
+    "channel": "webchat",
+    "to": "Boss"
+  },
+  "enabled": true
+}

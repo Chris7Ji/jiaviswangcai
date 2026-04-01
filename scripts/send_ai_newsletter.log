@@ -1,0 +1,104 @@
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:313] - ==================================================
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:314] - 高校分队AI新闻简报邮件发送脚本启动
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:315] - ==================================================
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:320] - HTML文件: /Users/jiyingguo/.openclaw/workspace/scripts/test_newsletter.html
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:321] - 邮件主题: 【测试】高校分队AI新闻简报 - 脚本功能验证
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: /Users/jiyingguo/.openclaw/workspace/scripts/test_newsletter.html
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 3210 字符
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: 【测试】高校分队AI新闻简报 - 脚本功能验证
+2026-03-19 10:15:57 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-03-19 10:15:57 - AINewsletter - INFO - [send_ai_newsletter.py:181] - 第 1/3 次尝试发送...
+2026-03-19 10:15:57 - AINewsletter - DEBUG - [send_ai_newsletter.py:184] - 连接SMTP服务器: smtp.qq.com:587
+2026-03-19 10:15:58 - AINewsletter - DEBUG - [send_ai_newsletter.py:189] - 启动TLS加密...
+2026-03-19 10:15:58 - AINewsletter - DEBUG - [send_ai_newsletter.py:193] - 登录邮箱: 86940135@qq.com
+2026-03-19 10:15:58 - AINewsletter - DEBUG - [send_ai_newsletter.py:197] - 发送邮件...
+2026-03-19 10:15:59 - AINewsletter - INFO - [send_ai_newsletter.py:204] - ✅ 邮件发送成功！共发送给 3 位收件人
+2026-03-19 10:15:59 - AINewsletter - INFO - [send_ai_newsletter.py:328] - ==================================================
+2026-03-19 10:15:59 - AINewsletter - INFO - [send_ai_newsletter.py:329] - ✅ 任务完成！
+2026-03-19 10:15:59 - AINewsletter - INFO - [send_ai_newsletter.py:330] - ==================================================
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:313] - ==================================================
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:314] - 高校分队AI新闻简报邮件发送脚本启动
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:315] - ==================================================
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:320] - HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:321] - 邮件主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 14678 字符
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:16:32 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-03-19 10:16:32 - AINewsletter - INFO - [send_ai_newsletter.py:181] - 第 1/3 次尝试发送...
+2026-03-19 10:16:32 - AINewsletter - DEBUG - [send_ai_newsletter.py:184] - 连接SMTP服务器: smtp.qq.com:587
+2026-03-19 10:16:32 - AINewsletter - DEBUG - [send_ai_newsletter.py:189] - 启动TLS加密...
+2026-03-19 10:16:32 - AINewsletter - DEBUG - [send_ai_newsletter.py:193] - 登录邮箱: 86940135@qq.com
+2026-03-19 10:16:33 - AINewsletter - DEBUG - [send_ai_newsletter.py:197] - 发送邮件...
+2026-03-19 10:16:34 - AINewsletter - INFO - [send_ai_newsletter.py:204] - ✅ 邮件发送成功！共发送给 3 位收件人
+2026-03-19 10:16:34 - AINewsletter - INFO - [send_ai_newsletter.py:328] - ==================================================
+2026-03-19 10:16:34 - AINewsletter - INFO - [send_ai_newsletter.py:329] - ✅ 任务完成！
+2026-03-19 10:16:34 - AINewsletter - INFO - [send_ai_newsletter.py:330] - ==================================================
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:313] - ==================================================
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:314] - 高校分队AI新闻简报邮件发送脚本启动
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:315] - ==================================================
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:320] - HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:321] - 邮件主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 14678 字符
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:20:05 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-03-19 10:20:05 - AINewsletter - INFO - [send_ai_newsletter.py:181] - 第 1/3 次尝试发送...
+2026-03-19 10:20:05 - AINewsletter - DEBUG - [send_ai_newsletter.py:184] - 连接SMTP服务器: smtp.qq.com:587
+2026-03-19 10:20:05 - AINewsletter - DEBUG - [send_ai_newsletter.py:189] - 启动TLS加密...
+2026-03-19 10:20:05 - AINewsletter - DEBUG - [send_ai_newsletter.py:193] - 登录邮箱: 86940135@qq.com
+2026-03-19 10:20:06 - AINewsletter - DEBUG - [send_ai_newsletter.py:197] - 发送邮件...
+2026-03-19 10:20:07 - AINewsletter - INFO - [send_ai_newsletter.py:204] - ✅ 邮件发送成功！共发送给 3 位收件人
+2026-03-19 10:20:07 - AINewsletter - INFO - [send_ai_newsletter.py:328] - ==================================================
+2026-03-19 10:20:07 - AINewsletter - INFO - [send_ai_newsletter.py:329] - ✅ 任务完成！
+2026-03-19 10:20:07 - AINewsletter - INFO - [send_ai_newsletter.py:330] - ==================================================
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:313] - ==================================================
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:314] - 高校分队AI新闻简报邮件发送脚本启动
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:315] - ==================================================
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:320] - HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19_simple.html
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:321] - 邮件主题: 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19_simple.html
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 13932 字符
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: 2026年3月19日 高校分队- AI 新闻每日简报：GPT-5.4超越人类表现
+2026-03-19 10:27:00 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-03-19 10:27:00 - AINewsletter - INFO - [send_ai_newsletter.py:181] - 第 1/3 次尝试发送...
+2026-03-19 10:27:00 - AINewsletter - DEBUG - [send_ai_newsletter.py:184] - 连接SMTP服务器: smtp.qq.com:587
+2026-03-19 10:27:01 - AINewsletter - DEBUG - [send_ai_newsletter.py:189] - 启动TLS加密...
+2026-03-19 10:27:01 - AINewsletter - DEBUG - [send_ai_newsletter.py:193] - 登录邮箱: 86940135@qq.com
+2026-03-19 10:27:01 - AINewsletter - DEBUG - [send_ai_newsletter.py:197] - 发送邮件...
+2026-03-19 10:27:02 - AINewsletter - INFO - [send_ai_newsletter.py:204] - ✅ 邮件发送成功！共发送给 3 位收件人
+2026-03-19 10:27:02 - AINewsletter - INFO - [send_ai_newsletter.py:328] - ==================================================
+2026-03-19 10:27:02 - AINewsletter - INFO - [send_ai_newsletter.py:329] - ✅ 任务完成！
+2026-03-19 10:27:02 - AINewsletter - INFO - [send_ai_newsletter.py:330] - ==================================================
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:321] - ==================================================
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:322] - 高校分队AI新闻简报邮件发送脚本启动
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:323] - ==================================================
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:328] - HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:329] - 邮件主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报 [重新发送测试]
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 14678 字符
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:176] - ⚠️ 注意：使用QQ邮箱(86940135@qq.com)发送邮件到华为邮箱可能被拦截
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:177] - ⚠️ 建议：华为邮箱用户检查垃圾邮件文件夹或联系IT部门
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: 🚀 2026年3月19日 高校分队- AI 新闻每日简报 [重新发送测试]
+2026-03-19 12:10:22 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-03-19 12:10:22 - AINewsletter - INFO - [send_ai_newsletter.py:183] - 第 1/3 次尝试发送...
+2026-03-19 12:10:22 - AINewsletter - DEBUG - [send_ai_newsletter.py:186] - 连接SMTP服务器: smtp.qq.com:587
+2026-03-19 12:10:22 - AINewsletter - DEBUG - [send_ai_newsletter.py:191] - 启动TLS加密...
+2026-03-19 12:10:22 - AINewsletter - DEBUG - [send_ai_newsletter.py:195] - 登录邮箱: 86940135@qq.com
+2026-03-19 12:10:22 - AINewsletter - DEBUG - [send_ai_newsletter.py:199] - 发送邮件...
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:209] - ✅ SMTP服务器接受所有收件人地址
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:211] - ✅ 邮件已提交到SMTP服务器！共 3 位收件人
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:212] - ⚠️ 注意：SMTP接受不代表收件人实际收到，可能被垃圾邮件过滤
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:336] - ==================================================
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:337] - ✅ 任务完成！
+2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:338] - ==================================================

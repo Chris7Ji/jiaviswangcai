@@ -1,0 +1,106 @@
+{
+  "smart_streaming_strategy": {
+    "version": "1.0.0",
+    "created_at": "2026-03-16",
+    "description": "智能分段策略配置 - 根据内容类型自动选择发送方式",
+    
+    "content_type_detection": {
+      "daily_conversation": {
+        "keywords": ["?", "吗", "呢", "吧", "啊", "你好", "早上好", "谢谢"],
+        "max_length": 200,
+        "strategy": "fast_streaming",
+        "delay_ms": 100,
+        "chunk_size": 50
+      },
+      "technical_explanation": {
+        "keywords": ["如何", "怎么", "为什么", "原理", "机制", "步骤", "方法"],
+        "max_length": 500,
+        "strategy": "structured_segmentation",
+        "delay_ms": 200,
+        "chunk_size": 100
+      },
+      "formal_report": {
+        "keywords": ["报告", "总结", "分析", "评估", "建议", "方案", "计划"],
+        "max_length": 1000,
+        "strategy": "complete_send",
+        "delay_ms": 0,
+        "format_optimization": true
+      },
+      "code_example": {
+        "keywords": ["代码", "示例", "脚本", "函数", "类", "import", "def", "class"],
+        "max_length": 800,
+        "strategy": "hybrid_mode",
+        "delay_ms": 150,
+        "explain_first": true
+      },
+      "data_analysis": {
+        "keywords": ["数据", "统计", "图表", "趋势", "百分比", "增长率"],
+        "max_length": 600,
+        "strategy": "structured_segmentation",
+        "delay_ms": 250,
+        "include_tables": true
+      }
+    },
+    
+    "streaming_strategies": {
+      "fast_streaming": {
+        "description": "快速流式 - 适合日常对话",
+        "chunk_detection": "sentence_based",
+        "max_chunk_size": 60,
+        "min_chunk_size": 20,
+        "delay_range_ms": [80, 150],
+        "progress_indicator": true,
+        "typing_simulation": true
+      },
+      "structured_segmentation": {
+        "description": "结构化分段 - 适合技术内容",
+        "chunk_detection": "paragraph_based",
+        "max_chunk_size": 150,
+        "min_chunk_size": 50,
+        "delay_range_ms": [150, 300],
+        "section_headers": true,
+        "bullet_points": true
+      },
+      "hybrid_mode": {
+        "description": "混合模式 - 先思路后完整",
+        "thinking_phase": "fast_streaming",
+        "delivery_phase": "complete_send",
+        "transition_delay_ms": 500,
+        "summary_first": true
+      },
+      "complete_send": {
+        "description": "完整发送 - 适合正式报告",
+        "format_optimization": true,
+        "markdown_support": true,
+        "table_formatting": true,
+        "section_organization": true,
+        "executive_summary": true
+      }
+    },
+    
+    "user_preferences": {
+      "default_strategy": "auto_detect",
+      "max_messages_per_minute": 20,
+      "min_delay_between_messages_ms": 80,
+      "progress_indicator_style": "emoji_progress",
+      "typing_indicator_enabled": true,
+      "format_optimization_level": "high",
+      "fallback_to_complete": true
+    },
+    
+    "performance_settings": {
+      "content_analysis_timeout_ms": 1000,
+      "chunking_algorithm": "semantic_chunking",
+      "cache_recent_strategies": true,
+      "adaptive_delay": true,
+      "quality_monitoring": true
+    },
+    
+    "fallback_mechanisms": {
+      "network_issues": "complete_send",
+      "api_limits": "structured_segmentation",
+      "user_interruption": "pause_and_summarize",
+      "content_too_complex": "complete_send_with_toc"
+    }
+  }
+}

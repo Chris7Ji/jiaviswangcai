@@ -1,0 +1,218 @@
+{
+  "date": "2026-03-10",
+  "total_results": 220,
+  "unique_results": 201,
+  "high_quality_results": 15,
+  "authoritative_sources": 220,
+  "validated_results": 101,
+  "international_count": 15,
+  "domestic_count": 0,
+  "research_types": {
+    "clinical_trial": 14,
+    "review_study": 1,
+    "basic_research": 0,
+    "lifestyle": 0
+  },
+  "results": [
+    {
+      "url": "https://bmjopen.bmj.com/content/bmjopen/15/5/e098018.draft-revisions.pdf",
+      "title": "BMJ Open is committed to open peer review. As part of this ...",
+      "content": "From 2011 to 2019, there was a remarkable increase in the number of TKA cases, soaring from 53,880 to 374,833—an increase of about 600%. Impaired sleep quality is prevalent among patients undergoing TKA.2 3 Previous epidemiological studies have shown that up to 40-70% of the elderly have sleep problems.4 Furthermore, a meta-analysis showed that compared with other age groups, elderly people over 65 years old were more likely to have sleep disorders, with the incidence of difficulties in maintaining sleep and waking up early being as high as 20.2% and 23.5%, respectively.5 The elderly, as the main group of TKA treatment, commonly experience impaired sleep quality after TKA, which should not be ignored. A prospective cohort study, which included 109 patients with an average age of 69.0±8.6 [...] METHODS AND ANALYSIS Study design and patients This randomized, double-blind, placebo-controlled trial will be conducted at Weifang People's Hospital. The study flowchart is presented in Figure 1. The research protocol has received approval from the local biomedical research ethics committee on May 23, 2024, and is registered with the Chinese Clinical Trial Registry on June 4, 2024 (ChiCTR2400085253). All participants will signe a written informed consent prior to their inclusion in the trial.",
+      "score": 0.14138834,
+      "raw_content": null,
+      "quality_score": 0.9,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind",
+        "cohort study",
+        "meta-analysis"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10692436/",
+      "title": "Dietary Supplementation With NAD+-Boosting Compounds in Humans",
+      "content": "In a multicenter, double-blind, placebo-controlled, parallel-group design clinical trial, Huang investigated the effects of 60 days of supplementation with NMN (300 mg/d) in 62 healthy men and women (age 40–65 years) (57). NAD+ levels in the serum (assessed by a colorimetric quantification kit) increased (~10%) after the intervention but functional outcomes, including the 6-minute walk test, blood pressure, insulin sensitivity, and well-being, were unchanged. Overall, this study supports the efficacy of NMN for increasing serum NAD+ abundance in healthy adults, though no clinical benefits were observed. [...] Another multicenter, randomized controlled trial by Yi et al. assessed the effects of daily oral supplementation with 300, 600, and 900 mg of NMN or placebo for 60 days in 80 midlife/older adults (age 40–65 years) (58). Blood NAD+ concentrations (assessed by a colorimetric quantification kit) increased in the 300 mg (approximately threefold), 600 mg (approximately sixfold), and 900 mg (approximately fivefold) groups but were unchanged in the placebo group. Participants in the 600 mg and 900 mg groups walked ~1.5-fold further during the 6-minute walk test after the intervention. Insulin sensitivity was not affected by supplementation with NMN. Blood-based analysis of biological age (Aging.Ai 3.0 calculator) was unchanged in the NMN-treated groups, but increased significantly in the placebo [...] 1 year of supplementation. ALS functional rating scores and muscle function were maintained whereas pulmonary function slightly declined; however, no placebo group was included for comparison at the 1-year mark. Although NAD+ levels were not measured in this trial, the functional improvements observed suggest the initial promise of NR plus pterostilbene for patients with ALS.",
+      "score": 0.9999707,
+      "raw_content": null,
+      "quality_score": 0.85,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12114605/",
+      "title": "The Antiaging Potential of Dietary Plant-Based Polyphenols - PMC",
+      "content": "Notably, RES is capable of crossing the blood–brain barrier, where it may exert neuroprotective effects by inhibiting amyloid-β deposition and plaque formation . It also promotes the viability and proliferation of hUC-MSCs in a dose-dependent manner, delaying cellular senescence and upregulating SIRT1 expression while downregulating pro-senescence markers such as p53 and p16 . Despite encouraging preclinical evidence, the efficacy of RES in humans remains controversial. A 26-week clinical trial in 23 overweight elderly participants suggested potential benefits, including improved glucose metabolism, enhanced hippocampal connectivity, and better memory performance . However, contrasting findings have emerged from a recent meta-analysis and a larger follow-up study involving 225 patients, [...] The literature search was carried out using the electronic databases PubMed, Scopus, Web of Science, and Google Scholar. Search terms included combinations of keywords related to dietary polyphenols and cellular senescence, using Boolean operators (“AND”, “OR”) to refine the results. Only peer-review articles written in English were considered. Eligible studies included original research articles, systematic reviews, and meta-analyses including in vitro, in vivo (animal), and clinical research that evaluated the antiaging implications of dietary polyphenols and their effects on markers or mechanisms of cellular senescence. After removing duplicates, titles and abstracts were screened for relevance, followed by full-text analysis of eligible articles. Data were extracted and organized [...] affecting flavonoid metabolism and transport may lead to inconsistent therapeutic outcomes. As such, innovative strategies are urgently needed to overcome these pharmacokinetic limitations. Potential solutions include co-administration with bioavailability enhancers, structural modification of parent compounds, and the application of advanced drug delivery systems such as nanoparticle encapsulation, liposomal carriers, cocrystallization, and other nanotechnological platforms. Large-scale, randomized clinical trials are also essential to validate the efficacy, safety, and mechanistic action of these compounds in human populations and to pave the way for the development of next-generation senotherapeutics. Polyphenols are generally considered safe for healthy individuals when consumed as",
+      "score": 0.79293,
+      "raw_content": null,
+      "quality_score": 0.85,
+      "validation_keywords": [
+        "clinical trial",
+        "meta-analysis",
+        "systematic review"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41091280/",
+      "title": "Efficacy and safety of 570/590 Nm yellow light combined with red ...",
+      "content": "1. 1. Gilchrest BA, Photoaging (2013) Photoaging. J Invest Dermatol 133(1):2–6.  -  DOI\n2. 1. Glass GE (2021) Photobiomodulation: the clinical applications of low-level light therapy. Aesthet Surg J 41(6):723–738.  -  DOI  -  PubMed\n3. 1. Houreld NN (2019) The use of lasers and light sources in skin rejuvenation. Clin Dermatol 37(4):358–364.  -  DOI  -  PubMed\n4. 1. Mota LR, Duarte IDS, Galache TR, Pretti KMDS, Neto OC, Motta LJ, Horliana ACRT, Silva DFTD, Pavani C (2023) Photobiomodulation reduces periocular wrinkle volume by 30%: a randomized controlled trial. Photobiomodul Photomed Laser Surg 41(2):48–56.  -  DOI  -  PubMed [...] This study compared the efficacy of 570 nm and 590 nm yellow light, combined with red light and infrared LED phototherapy, in treating facial skin photoaging. Thirty patients with skin photoaging were enrolled between December 2024 and January 2025 and randomly assigned to two groups: the 570 nm combined LED group (hereafter referred to as the 570 group) and the 590 nm combined LED group (hereafter referred to as the 590 group), with 15 patients in each. The 570 group received treatment using 570 nm yellow light, 620 nm red light, and 850 nm infrared light (power density: 7.1 mW/cm²; total energy: 6.39 J/cm²), while the 590 group was treated with 590 nm yellow light alongside the same red and infrared wavelengths and identical parameters. Treatments were administered three times weekly [...] parameters. Treatments were administered three times weekly for 8 weeks. GSP scores and VISIA skin imaging analyzer assessments (pores, wrinkles, texture, brown spots) were recorded pre- and post-treatment. Twenty-eight subjects (93.3%) completed the study. After 8 weeks, the 570 group showed significant reductions in GSP scores, wrinkle scores, and brown spot scores compared to baseline (P < 0.05). The 590 group also demonstrated reductions in GSP and wrinkle scores (P < 0.05). The difference in wrinkle scores between the two groups post-treatment was statistically significant (P < 0.05). Both 570 nm and 590 nm yellow light, combined with red light and infrared LED therapy, effectively reduce pores, wrinkles, texture, and brown spots, improving skin photoaging. The 570 nm yellow",
+      "score": 0.6100127,
+      "raw_content": null,
+      "quality_score": 0.85,
+      "validation_keywords": [
+        "randomized controlled trial",
+        "statistically significant",
+        "p < 0.05"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31542391/",
+      "title": "Senolytics decrease senescent cells in humans - PubMed - NIH",
+      "content": "D + Q decreases human adipose tissue senescent cells. (a). D + Q significantly reduced (p = 0·001) abdominal subcutaneous adipose tissue p16INK4A+ cells. Raw values were reduced by 35% in sections of adipose tissue biopsied at Day 14 (11 days after the last dose of a 3-day course of the senolytics) vs. at baseline (Day 0). At Day 0, there were 3·18 ± 0·64 p16INK4A+ cells/100 adipocytes (means ± SEM in 30 fields [400 × 300 μm] at 40× magnification). Means, standard errors, and standard deviations are shown in these “box and whisker” plots. The y axis shows p16INK4A+ cells in the 2 biopsies from each subject at Days 0 and 14 as % of each other (Arbitrary Units). N = 9 subjects; Welch's unpaired 2-tailed t-test for unequal variances. Representative images at Days 0 and 14 are shown. (b). [...] Methods:  In an open label Phase 1 pilot study, we administered 3 days of oral D 100 mg and Q 1000 mg to subjects with diabetic kidney disease (N = 9; 68·7 ± 3·1 years old; 2 female; BMI:33·9 ± 2·3 kg/m2; eGFR:27·0 ± 2·1 mL/min/1·73m2). Adipose tissue, skin biopsies, and blood were collected before and 11 days after completing senolytic treatment. Senescent cell and macrophage/Langerhans cell markers and circulating SASP factors were assayed. [...] ## Abstract\n\nBackground:  Senescent cells, which can release factors that cause inflammation and dysfunction, the senescence-associated secretory phenotype (SASP), accumulate with ageing and at etiological sites in multiple chronic diseases. Senolytics, including the combination of Dasatinib and Quercetin (D + Q), selectively eliminate senescent cells by transiently disabling pro-survival networks that defend them against their own apoptotic environment. In the first clinical trial of senolytics, D + Q improved physical function in patients with idiopathic pulmonary fibrosis (IPF), a fatal senescence-associated disease, but to date, no peer-reviewed study has directly demonstrated that senolytics decrease senescent cells in humans.",
+      "score": 0.9998666,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "peer-reviewed"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41655607/",
+      "title": "NAD⁺ supplementation for anti-aging and wellness - PubMed",
+      "content": "inflammatory, and functional outcomes, although effects varied across models and endpoints. In humans, oral NR and NMN consistently demonstrated biochemical target engagement (circulating (plasma/whole blood) or cellular (e.g., PBMC) NAD-related metabolites) and were generally well tolerated over weeks to months; however, effects on functional, metabolic, vascular, and other healthspan-relevant outcomes were heterogeneous and often null or endpoint-specific. No eligible outcomes trials evaluated intravenous or intramuscular NAD⁺ itself for anti-aging or wellness indications. One nonrandomized intravenous NMN study met inclusion criteria and primarily contributed short-term safety and biomarker information. An intravenous NAD⁺ pharmacokinetic pilot lacking eligible clinical outcomes was [...] Nicotinamide adenine dinucleotide (NAD⁺) declines with age, motivating \"NAD⁺-boosting\" strategies ranging from lifestyle interventions to supplementation with NAD⁺ precursors (e.g., nicotinamide riboside [NR], nicotinamide mononucleotide [NMN]) and, in some wellness settings, parenteral NAD⁺ administration. We conducted a PRISMA-guided systematic review of peer-reviewed human and rodent intervention studies (January 2010-October 2025) evaluating NAD-related compounds administered orally or parenterally. We identified 113 eligible studies: 33 human intervention studies (28 randomized; 5 nonrandomized) and 80 rodent studies. In rodent models, NAD⁺ augmentation was frequently associated with improvements in metabolic, mitochondrial, inflammatory, and functional outcomes, although effects [...] pilot lacking eligible clinical outcomes was identified as contextual evidence only. Overall, NAD⁺ augmentation shows clear biological activity, but clinical effectiveness for anti-aging or wellness outcomes remains inconclusive. Larger, well-designed randomized trials with longer follow-up and prespecified clinically meaningful endpoints are needed, particularly for parenteral approaches.",
+      "score": 0.999892,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "peer-reviewed",
+        "systematic review"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://www.nature.com/articles/s43856-025-00904-9",
+      "title": "Rapamycin treatment for Alzheimer's disease and related dementias",
+      "content": "Given the mechanistic overlap between aging and AD, there has been growing interest in targeting the biology of aging for the treatment of AD4.\"),17.\"). Rapamycin is one of the best studied longevity-enhancing drugs in animal models with pleiotropic effects that may modulate multiple processes dysregulated in ADRD, including autophagy, cellular metabolism, inflammation, and cellular senescence47.\"). We herein present the results of an in-human trial of rapamycin for clinical AD. As an open-label pilot study, our primary aim was to evaluate CSF levels and the safety of rapamycin in older adults with ADRD. Our mass spectrometry assays did not detect rapamycin in study participant CSF, which is consistent with the agent’s high lipophilicity48.\"). There were, however, statistically [...] The drug rapamycin has been shown to increase longevity and reverse changes in the brain associated with Alzheimer’s disease and related dementias in animal models. However, rapamycin’s role in the clinical setting is unclear. Here we show data from a phase 1 clinical trial in ten participants with mild cognitive impairment or Alzheimer’s disease who were treated with rapamycin (1 mg/day) for eight weeks. Findings show that rapamycin levels were not detectable in cerebrospinal fluid before or after treatment. All participants knew they were receiving rapamycin and did not experience any serious negative health events due to the treatment. Additionally, several Alzheimer’s disease and inflammatory biomarkers were increased from baseline to post-treatment. These results highlight the need [...] Regarding the secondary outcomes of cognition, functional status, and physical functioning, there were no statistically significant changes from baseline to post-treatment over the 8-week intervention. Due to the gradually progressive disease course and heterogeneity in rates of decline and underlying neuropathologies across individuals, large sample sizes and follow-up durations of at least 18-months have been recommended for detecting clinically meaningful cognitive change in trials for AD95.\"). Therefore, future work is necessary to further evaluate the effect of rapamycin on cognition among individuals with ADRD. In our prior clinical trial of rapamycin in generally healthy older adults, there were no significant differences in cognition between the active treatment and",
+      "score": 0.9992084,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "statistically significant"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S2468294225002096",
+      "title": "The impact of metformin use on survival outcomes in colorectal cancer",
+      "content": "Skip to article\n\nElsevier logo\n\nMy account\n\nSign in\n\n View PDF\n\nElsevier\n\n## Cancer Treatment and Research Communications\n\nVolume 46, 2026, 101073\n\nCancer Treatment and Research Communications\n\n# The impact of metformin use on survival outcomes in colorectal cancer: A systematic review and meta-analysis\n\nAuthor links open overlay panel, , , , , , , , , ,\n\n rights and content\n\nUnder a Creative Commons license\n\nOpen access\n\n## Highlights\n\n •\n\n  Metformin reduces all-cause and cancer-specific mortality in CRC patients.\n •\n\n  Survival benefits are stronger in diabetic than in non-diabetic populations.\n •\n\n  No significant effect of metformin observed on recurrence-free survival.\n •\n\n  Disease-free survival shows only a non-significant trend toward benefit.\n\n## Abstract\n\n### Background",
+      "score": 0.7382357,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "meta-analysis",
+        "systematic review"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38378685/",
+      "title": "Fasting-mimicking diet causes hepatic and blood markers changes ...",
+      "content": "In mice, periodic cycles of a fasting mimicking diet (FMD) protect normal cells while killing damaged cells including cancer and autoimmune cells, reduce inflammation, promote multi-system regeneration, and extend longevity. Here, we performed secondary and exploratory analysis of blood samples from a randomized clinical trial (NCT02158897) and show that 3 FMD cycles in adult study participants are associated with reduced insulin resistance and other pre-diabetes markers, lower hepatic fat (as determined by magnetic resonance imaging) and increased lymphoid to myeloid ratio: an indicator of immune system age. Based on a validated measure of biological age predictive of morbidity and mortality, 3 FMD cycles were associated with a decrease of 2.5 years in median biological age, independent [...] # Contributed equally.\n\n PMID:  38378685\n PMCID:   PMC10879164\n DOI:   10.1038/s41467-024-45260-9\n\nItem in Clipboard\n\nRandomized Controlled Trial\n\n# Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk\n\nSebastian Brandhorst et al.   Nat Commun.   .\n\nDisplay options\n\nFormat\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2024 Feb 20;15(1):1309.\n\n doi: 10.1038/s41467-024-45260-9.\n\n### Authors\n\nSebastian Brandhorst#1 , Morgan E Levine#2 , Min Wei1 , Mahshid Shelehchi1 , Todd E Morgan1 , Krishna S Nayak3 , Tanya Dorff4 , Kurt Hong5 , Eileen M Crimmins1   6 , Pinchas Cohen1 , Valter D Longo7   8\n\n### Affiliations [...] decrease of 2.5 years in median biological age, independent of weight loss. Nearly identical findings resulted from a second clinical study (NCT04150159). Together these results provide initial support for beneficial effects of the FMD on multiple cardiometabolic risk factors and biomarkers of biological age.",
+      "score": 0.89501935,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41286474/",
+      "title": "Effects of TA-65 on telomere length, functional outcomes ... - PubMed",
+      "content": "Results:\nTA-65 supplementation induced moderate telomere elongation (SMD = 0.47, 95% CI: 0.31-0.62; p < 0.00001), with amplified effects in adults > 60 years (SMD = 0.63 vs. 0.36; p = 0.03). Industry-funded trials reported inflated efficacy (SMD = 0.63 vs. 0.40; p = 0.03). Critically, telomere elongation did not translate to functional improvements in frailty (SMD = 0.09, p = 0.15) or inflammation (CRP/IL-6 SMD = - 0.11, p = 0.07), revealing a telomere-function disconnect. Safety analysis (n = 487) identified mild gastrointestinal toxicity (12.4% incidence; nausea: 7.1%, abdominal discomfort: 5.3%) but no severe adverse events (e.g., oncogenesis) over 12 months. Dose-response relationships (10-50 mg/day) and measurement-method variations were non-significant (p > 0.05). [...] Methods:\nThis PRISMA-guided meta-analysis evaluated 8 randomized controlled trials (RCTs, n = 750 participants; mean age 63.3 years) assessing TA-65's effects on telomere dynamics, functional aging indices, and safety outcomes. Primary outcomes included leukocyte telomere length (LTL) measured by Southern blot or qPCR/or flow-FISH; secondary outcomes encompassed frailty metrics (SPPB, grip strength, 6MWT), inflammatory markers (hs-CRP, IL-6), and adverse events (CTCAE v5.0). Statistical synthesis employed random-effects models (RevMan 5.3), subgroup analyses, and GRADE evidence grading.",
+      "score": 0.9959299,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "randomized controlled trial",
+        "meta-analysis"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10116573/",
+      "title": "Recent clinical trials with stem cells to slow or reverse normal aging ...",
+      "content": "Keywords: aging, clinical trial, frailty, lomecel-B, mesenchymal stem cells, rejuvenation, skin aging, stem cells\n\n## 1 Introduction\n\nStem cells (SCs) are undifferentiated cells which can proliferate indefinitely or differentiate into progenitor cells and end-phase differentiated cells (becoming pluripotent) (Mayo, 2021; Slack, 2022). Human embryonic SCs (hE-SCs) are found in the inner cell mass of the blastocyst; hE-SC research raises ethical concerns (Lo and Parham, 2009), and hE-SC transplantation in vivo can lead to the formation of large tumors called teratomas (Blum and Benvenisty, 2008). [...] frailty. In the CRATUS trial, serum TNF-alpha levels were significantly decreased in the Lomecel-B groups, but no significant changes in IL-6 were observed (Golpanian et al., 2017; Tompkins et al., 2017). [...] Most of the studies were randomized controlled trials (see text for details).\n\nAbbreviations: 6 MWD, 6-min walk distance; allo-hMSCs, allogeneic mesenchymal stem cells; FOREM, Foundation for Orthopaedics and Regenerative Medicine; hBM-MSCs, human bone-marrow mesenchymal SCs. Hosp, hospital. hUCM-SCs, human umbilical cord mesenchymal stem cells; NC, not communicated.\n\nNumber of participants.\n\nLomecel-B (also called “allo-hMSCs”).\n\nPhase I safety trial, including frailty outcomes.\n\nPhase II RCT, investigating 1-month safety and 6-month efficacy on aging frailty.\n\nPrimary completion date (past or estimated).\n\nPhase II RCT, to test the efficacy of Lomecel-B to improve influenza vaccine responses (12 months), including an initial phase I safety trial (30 days). Vertebral hBM-MSCs.",
+      "score": 0.9999263,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10111287/",
+      "title": "Time-restricted eating: What we know and where the field is going",
+      "content": "of caloric restriction, protein pacing, and temporal eating pattern; (4) a RCT to assess glucose regulation in a population that has obesity; and (5) assessments of other dietary changes and behaviors, mood, and sleep when practicing TRE. Reviews in this special issue include a meta-analysis comparing the effectiveness of intermittent fasting and TRE, a review of energetics in mice, circadian regulation of cardiometabolic disorders in aging, and the feasibility of TRE in adults with overweight or type 2 diabetes. [...] The field of TRE clinical trials is very new, and research on the topic has increased dramatically in the past 3 years, with many more studies under way. From 2015 to 2019, there were a total of 12 publications on clinical trials assessing TRE . In the past 3 years (2020–2022), there have been 42 clinical trials published with the term TRE or TRF (PubMed search). Currently, Clinicaltrials.gov has 165 studies (all stages) that use the term “time-restricted.” [...] The TRE clinical trials started with small, noninvasive studies in a population of generally healthy adults who frequently had overweight or obesity. The eating window of the TRE intervention of these studies typically ranged from 6 to 10 hours (with exceptions of 4 hours and 12 hours) and lasted for about 4 to 12 weeks . A total of 4 hours did not show additional benefits but did have an increase in minor adverse events (e.g., headaches, moodiness, nausea) . The 12-hour eating window did not yield health benefits . Trials with an eating window of 6 to 10 hours found that TRE was generally safe and well received and that it had a variety of health benefits. Health benefits were dependent on the population and study outcomes and they included (but were not limited to) the following: weight",
+      "score": 0.5366292,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "meta-analysis"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11352085/",
+      "title": "A Randomised, Double-Blind, Placebo-Controlled, Cross-Over ...",
+      "content": "Copy icon\nOpen article navigation icon\nAntioxidants logo\n\n# A Randomised, Double-Blind, Placebo-Controlled, Cross-Over Clinical Trial to Evaluate the Biological Effects and Safety of a Polyphenol Supplement on Healthy Ageing\n\n### Joyce Ruifen Chong\n\n### Chiara de Lucia\n\n### Diego Alejandro Tovar-Rios\n\n### Nicolas Castellanos-Perilla\n\n### Christopher Collins\n\n### Silje Meihack Kvernberg\n\n### Clive Ballard\n\n### Richard C Siow\n\n### Dag Aarsland\n\nCorrespondence: phcjcr@nus.edu.sg (J.R.C.); chiara.de\\_lucia@kcl.ac.uk (C.d.L.)\n\nThese authors contributed equally to this work.\n\nThese authors contributed equally to this work.\n\n#### Roles\n\nReceived 2024 Jun 14; Revised 2024 Aug 8; Accepted 2024 Aug 9; Collection date 2024 Aug. [...] This study recruited participants who were 55 to 80 years of age and willing to complete the questionnaires, records, and diaries associated with this study and all clinic visits. Furthermore, the participants had to have a body mass index (BMI) over 25. The exclusion criteria included alcohol or drug abuse in the past year; a known allergy to the test material’s active or inactive ingredients; unstable or life-threatening medical conditions; the use of polyphenol or phytochemical supplements; the use of dietary supplements in the last month, except for the normal intake of cod liver oil or other vitamin D supplements; vegetarians and vegans; clinically significant abnormal laboratory results at screening; participation in a clinical research trial within 30 days before randomisation;",
+      "score": 0.8390101,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12630120/",
+      "title": "Polyphenols, aging, and health: What can we expect from the food ...",
+      "content": "Evidence suggests that dietary interventions with polyphenol-rich foods or polyphenol-rich extracts contribute positively to the management of OP (65). In the randomized study (12-month, double-blinded, placebo-controlled clinical trial of 78 postmenopausal osteopenic women aged 60–85 years), the effect of red clover extract (RCE), rich in isoflavone aglycones and probiotics was evaluated. The participants were divided into the RCE treatment group (Herrens Mark ApS - 60 mg aglycones/day) and the control group. After an observation period of 12 months, the RCE group presented an attenuated loss of BMD in the lumbar spine, femoral neck, and trochanter and reduced plasma CTX. More than that, the RCE group did not present altered levels of other bone turnover markers. It stimulated equol [...] A study evaluated the effect of Resveratrol (RV) supplementation in 124 older subjects (men and women) aged between 60 and 74 years and with type 2 DM in a double-blind randomized clinical trial for 6 months. As a result, it was observed a reduction in triglyceride levels, a lower oxidative stress index, and an increase in the concentration of sirtuin 1 (30). [...] In parallel, a single-blind, parallel-group, randomized controlled clinical trial consisting of a 6-month treatment period was conducted by Mahjabeen et al. (31) in 472 elderly patients with type 2 DM. Of these, 242 subjects received 500 mg/day of RV and had decreased levels of glycated hemoglobin/hemoglobin A1c, C-reactive protein, and pro-inflammatory cytokines (IL-6, TNF-α, and IL-1β) compared to placebo. RV administration also improved renal function by levels of glutamic oxaloacetic transaminase, serum glutamic pyruvic transaminase, alkaline phosphatase, albumin, blood urea nitrogen, and creatinine (31). Furthermore, a randomized, double-blind, placebo-controlled, parallel-group trial with diabetic patients (≥ 50 years old), 45 of whom received 200 mg/day of RV for 24 weeks. RV",
+      "score": 0.826278,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6779524/",
+      "title": "Metformin as Anti-Aging Therapy: Is It for Everyone? - PMC",
+      "content": "Metformin is the most widely-prescribed oral hypoglycemic medication for type 2 diabetes worldwide. Metformin also retards aging in model organisms and reduces the incidence of aging-related diseases such as neurodegenerative disease and cancer in humans. In spite of its widespread use, the mechanisms by which metformin exerts favorable effects on aging remain largely unknown. Further, not all individuals prescribed metformin derive the same benefit, and some develop side effects. Before metformin finds its way to mainstay therapy for anti-aging, a more granular understanding of the effects of the drug in humans is needed. This review provides an overview of recent findings from metformin studies in aging and longevity and discusses the use of metformin to combat aging and aging-related [...] ## Metformin and Extension of Human Longevity\n\nIn addition to the lifespan-promoting activity of metformin in various model organisms, metformin has the capability to reduce the mortality rate of diabetic patients from all causes independent of its effect on diabetes control  (Figures 1 and 2). These findings have prompted great interest among researchers and physicians in setting up human trials with non-diabetic participants to evaluate metformin as an agent to extend human longevity. [...] The Metformin in Longevity Study (MILES) is a double-blind, placebo-controlled crossover clinical trial with 14 human participants launched in 2014 to determine whether taking metformin 1700 mg/day can restore more youthful gene expression in elderly people with impaired glucose tolerance (). Recent publication of gene expression profiling of skeletal muscle and adipose tissue from the MILES study provided the first direct evidence that metformin modulates metabolic and non-metabolic gene expression linked to aging . The far larger double-blind, placebo-controlled multicenter trial Targeting Aging with Metformin (TAME), plans to enroll 3,000 individuals aged 65–79 with a primary endpoint of the time until presence of any aging-related morbidity (including coronary heart disease, stroke,",
+      "score": 0.8655088,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    }
+  ]
+}

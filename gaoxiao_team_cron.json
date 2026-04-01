@@ -1,0 +1,12 @@
+{
+  "cron_jobs": [
+    {
+      "id": "gaoxiao-team-ai-news",
+      "name": "高校分队AI新闻每日简报",
+      "schedule": "cron 15 6 * * * @ Asia/Shanghai",
+      "command": "python3 /Users/jiyingguo/.openclaw/workspace/gaoxiao_team_ai_news.py",
+      "enabled": true,
+      "description": "每天06:15生成并发送AI新闻简报给高校分队成员"
+    }
+  ]
+}

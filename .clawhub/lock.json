@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "skills": {
+    "office-xyz": {
+      "version": "1.0.0",
+      "installedAt": 1772411648719
+    },
+    "find-skills-robin": {
+      "version": "0.1.0",
+      "installedAt": 1774249069777
+    },
+    "games": {
+      "version": "1.0.0",
+      "installedAt": 1772415122175
+    },
+    "bilibili-hot-monitor": {
+      "version": "1.0.21",
+      "installedAt": 1772554267634
+    },
+    "local-whisper": {
+      "version": "1.0.0",
+      "installedAt": 1772555592027
+    },
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1773341853932
+    },
+    "stock-monitor": {
+      "version": "1.3.0",
+      "installedAt": 1773683912766
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1773070553313
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1773070569954
+    },
+    "debug-checklist": {
+      "version": "1.0.0",
+      "installedAt": 1773070585248
+    },
+    "clawsec": {
+      "version": "1.0.0",
+      "installedAt": 1773071640836
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1773071656506
+    },
+    "office": {
+      "version": "1.0.0",
+      "installedAt": 1773071841715
+    },
+    "obsidian-ontology-sync": {
+      "version": "1.0.1",
+      "installedAt": 1773071845207
+    },
+    "self-improving-agent": {
+      "version": "3.0.0",
+      "installedAt": 1773122082716
+    },
+    "nano-banana-2": {
+      "version": "0.1.1",
+      "installedAt": 1773342559201
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1773426134382
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1773428380757
+    },
+    "md-to-pdf-cjk": {
+      "version": "1.0.0",
+      "installedAt": 1773680193635
+    },
+    "video-summary": {
+      "version": "1.6.4",
+      "installedAt": 1773681248465
+    },
+    "weekly-report": {
+      "version": "1.0.0",
+      "installedAt": 1773681619082
+    },
+    "daily-report-skill": {
+      "version": "1.0.0",
+      "installedAt": 1773681627637
+    },
+    "evolink-music": {
+      "version": "2.0.0",
+      "installedAt": 1773681781156
+    },
+    "music-generation": {
+      "version": "1.0.0",
+      "installedAt": 1773681786068
+    },
+    "evolink-video": {
+      "version": "2.0.1",
+      "installedAt": 1773681991553
+    },
+    "competitor-analysis": {
+      "version": "3.0.0",
+      "installedAt": 1773682407745
+    },
+    "competitor-research": {
+      "version": "1.0.0",
+      "installedAt": 1773682413044
+    },
+    "market-analysis-cn": {
+      "version": "1.0.0",
+      "installedAt": 1773682434836
+    },
+    "distil": {
+      "version": "2.0.1",
+      "installedAt": 1773682514874
+    },
+    "tophot-chinese": {
+      "version": "1.0.0",
+      "installedAt": 1773682696126
+    },
+    "n8n-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1773682957686
+    },
+    "feishu-bitable": {
+      "version": "1.0.0",
+      "installedAt": 1773683049262
+    },
+    "reminder": {
+      "version": "0.1.1",
+      "installedAt": 1773683058803
+    },
+    "github-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1773683121631
+    },
+    "mayguard": {
+      "version": "1.0.0",
+      "installedAt": 1773683209993
+    },
+    "healthcheck": {
+      "version": "1.0.2",
+      "installedAt": 1773683218078
+    },
+    "security-auditor": {
+      "version": "1.0.0",
+      "installedAt": 1773683229805
+    },
+    "oc-security-hardener": {
+      "version": "1.0.0",
+      "installedAt": 1773683236698
+    },
+    "content-writer": {
+      "version": "1.0.0",
+      "installedAt": 1773683462883
+    },
+    "content-brainstorm": {
+      "version": "1.0.0",
+      "installedAt": 1773683466604
+    },
+    "schedule-feishu": {
+      "version": "1.1.4",
+      "installedAt": 1773683529332
+    },
+    "twitter-operations": {
+      "version": "1.0.0",
+      "installedAt": 1773683533676
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1773683914532
+    },
+    "stock-industry-analyzer": {
+      "version": "1.0.0",
+      "installedAt": 1773684136835
+    },
+    "stock-monitor-hkus": {
+      "version": "1.1.0",
+      "installedAt": 1773684365750
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1773804171992
+    },
+    "notion-api-automation": {
+      "version": "1.0.0",
+      "installedAt": 1773804240076
+    },
+    "openclaw-agent-browser": {
+      "version": "1.0.0",
+      "installedAt": 1774248251029
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1774660203738
+    },
+    "ai-data-analyst-cn": {
+      "version": "1.0.0",
+      "installedAt": 1774660276050
+    }
+  }
+}

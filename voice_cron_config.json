@@ -1,0 +1,22 @@
+{
+  "name": "飞书语音消息自动处理",
+  "description": "定期检查并处理飞书语音消息，实现自动语音识别和回复",
+  "schedule": {
+    "kind": "every",
+    "everyMs": 30000
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "检查并处理飞书语音消息。使用以下命令：python3 /Users/jiyingguo/.openclaw/workspace/feishu_voice_handler.py --once",
+    "model": "deepseek/deepseek-reasoner",
+    "timeoutSeconds": 60
+  },
+  "delivery": {
+    "mode": "announce",
+    "channel": "feishu",
+    "to": "ou_b6c7778820b20031cd97bdc45d1cd9fa",
+    "bestEffort": true
+  },
+  "enabled": true
+}

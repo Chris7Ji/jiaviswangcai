@@ -1,0 +1,26 @@
+{
+  "title": "我的AI助手旺财：三天时间构建的四大能力体系",
+  "description": "AI助手能力进化封面图 - 展示AI机器人、四大能力图标、科技蓝主题",
+  "prompt": "Generate a professional WeChat public account cover image for the article titled \"我的AI助手旺财：三天时间构建的四大能力体系\" (My AI Assistant Wangcai: Building Four Major Capabilities in Three Days).\n\nArticle theme: AI assistant capability evolution, technology growth, content creation\nStyle requirements: Technology sense, clean, professional, visually impactful\nElements required: Include AI, robot, evolution, four major capabilities elements\nColor requirements: Technology blue, white, gray as main colors\nSize requirements: 900x383 pixels (WeChat public account cover image standard size)\nResolution: 2K\n\nVisual elements:\n1. A futuristic AI robot/assistant in the center\n2. Four glowing icons around it representing: Content Creation, Blog Writing, AI Image Generation, Text Humanization\n3. Clean blue and white color scheme with gradient background\n4. Subtle circuit board or data flow patterns\n5. Professional Chinese typography for the title\n6. Modern, sleek design suitable for technology content",
+  "size": "900x383",
+  "aspect_ratio": "2.35:1",
+  "colors": [
+    "#007AFF",
+    "#FFFFFF",
+    "#1A1A1A",
+    "#F0F8FF"
+  ],
+  "elements": [
+    "AI机器人/助手",
+    "四个能力图标",
+    "科技背景图案",
+    "中文标题文字",
+    "渐变色彩",
+    "光效元素"
+  ],
+  "api_key": "AIzaSyDUXba29bf86c_pjadKWftMH6u30kEpN9s",
+  "api_provider": "Google Gemini",
+  "generated_at": "2026-03-16T20:26:43.637799",
+  "status": "config_ready",
+  "note": "Use this prompt with image generation services like DALL-E 3, Midjourney, or Stable Diffusion"
+}

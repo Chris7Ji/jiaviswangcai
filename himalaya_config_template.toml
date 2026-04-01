@@ -1,0 +1,54 @@
+# Himalaya 邮件客户端配置模板
+# 保存为 ~/.config/himalaya/config.toml
+
+[accounts.qq]
+email = "86940135@qq.com"
+display-name = "AI新闻助手"
+default = true
+
+# QQ邮箱IMAP配置
+backend.type = "imap"
+backend.host = "imap.qq.com"
+backend.port = 993
+backend.encryption.type = "tls"
+backend.login = "86940135@qq.com"
+backend.auth.type = "password"
+# 密码存储方式（选择一种）：
+# 1. 使用系统钥匙串
+# backend.auth.cmd = "security find-generic-password -s 'himalaya-qq' -w"
+# 2. 使用pass密码管理器
+# backend.auth.cmd = "pass show email/qq"
+# 3. 直接输入密码（不推荐）
+# backend.auth.value = "你的授权码"
+
+# QQ邮箱SMTP配置（发送邮件）
+message.send.backend.type = "smtp"
+message.send.backend.host = "smtp.qq.com"
+message.send.backend.port = 587
+message.send.backend.encryption.type = "start-tls"
+message.send.backend.login = "86940135@qq.com"
+message.send.backend.auth.type = "password"
+# 同上，选择密码存储方式
+# message.send.backend.auth.cmd = "security find-generic-password -s 'himalaya-qq-smtp' -w"
+
+# 邮件发送设置
+message.save-copy = true
+message.save-copy-folder = "Sent"
+message.draft-folder = "Drafts"
+
+# 其他可选账户配置
+# [accounts.huawei]
+# email = "jiyingguo@huawei.com"
+# display-name = "Your Name"
+# 
+# backend.type = "imap"
+# backend.host = "imap.huawei.com"  # 需要确认华为邮箱服务器地址
+# backend.port = 993
+# backend.encryption.type = "tls"
+# backend.login = "jiyingguo@huawei.com"
+# backend.auth.type = "password"
+
+# 全局设置
+[global]
+downloads-dir = "~/Downloads/himalaya"
+text-editor = "vim"  # 或 "nano", "code --wait" 等

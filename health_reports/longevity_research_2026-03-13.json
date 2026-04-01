@@ -1,0 +1,214 @@
+{
+  "date": "2026-03-13",
+  "total_results": 220,
+  "unique_results": 209,
+  "high_quality_results": 15,
+  "authoritative_sources": 220,
+  "validated_results": 91,
+  "international_count": 15,
+  "domestic_count": 0,
+  "research_types": {
+    "clinical_trial": 15,
+    "review_study": 0,
+    "basic_research": 0,
+    "lifestyle": 0
+  },
+  "results": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11944422/",
+      "title": "Effect of Resistance Training on Older Adults with Sarcopenic Obesity",
+      "content": "studies was assessed using the PEDro scale and the GRADE system. Results: Eleven randomized clinical trials were analyzed qualitatively and nine were analyzed quantitatively. The meta-analysis demonstrated that exercise interventions revealed the positive effects of exercise mainly on physical performance ([SMD] = 0.36, [95% CI] = 0.03, 0.69, p = 0.003) and body composition ([SMD] = 0.35, [95% CI] = 0.12, 0.57, p = 0.003), with no significant differences in biomarkers ([SMD] = 0.1, [95% CI] = −0.28, 0.49, p = 0.52). Conclusions: Resistance training benefits older adults with SO, improving body composition and physical function, whereas there were no significant differences in blood biomarkers. The present review highlights the limitations of the existing evidence base. Many included [...] To better understand the effects of strength exercise in SO populations, it is essential to delve deeper into the underlying physiological processes and blood biomarkers associated with these clinical conditions. Although the involvement of biomarkers such as IL-8, TNF-α, IL-6, and IL-10 in SO-mediated processes has been established, evidence from clinical trials evaluating the impact of RT in this population is still lacking . The clinical trials available to date show inconsistent results. For example, a combined aerobic exercise and RT intervention in adults with SO was found to have a beneficial effect on these biomarkers . However, another clinical trial in older adults with SO, combining RT with protein supplementation, only found beneficial changes in IL-6, with no statistically [...] Regarding the analysis of the biomarkers, while this study did not yield statistically significant results, the potential positive effects of RT on key health markers cannot be entirely dismissed. It is important to consider that several factors may have influenced the lack of significant findings. For instance, the individual characteristics of the participants, such as baseline levels of inflammation or insulin resistance, may have played a role in modulating their response to RT. These factors should be carefully considered in future research to better understand how they influence biomarker outcomes.",
+      "score": 0.80771893,
+      "raw_content": null,
+      "quality_score": 0.85,
+      "validation_keywords": [
+        "clinical trial",
+        "statistically significant",
+        "meta-analysis"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41629813/",
+      "title": "Randomized, double-blind, placebo-controlled trial of fecal ...",
+      "content": "Clipboard\n My Bibliography\n Collections\n Citation manager\n\nDisplay options\n\nFormat\n\n## Save citation to file\n\n## Email citation\n\nEmail address has not been verified. Go to  My NCBI account settings  to confirm your email and then refresh this page.\n\n### Add to Collections\n\n### Add to My Bibliography\n\n## Your saved search\n\n## Create a file for external citation management software\n\n## Your RSS Feed\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2026 Feb 2;26(1):271.\n\n doi: 10.1186/s12877-025-06920-7.\n\n# Randomized, double-blind, placebo-controlled trial of fecal microbiota transplantation from young physically active donors to promote resilient aging: clinical trial protocol (ARMOR study) [...] PMID:  41629813\n PMCID:   PMC12947362\n DOI:   10.1186/s12877-025-06920-7\n\nItem in Clipboard\n\n# Randomized, double-blind, placebo-controlled trial of fecal microbiota transplantation from young physically active donors to promote resilient aging: clinical trial protocol (ARMOR study)\n\nCamila Astudillo-Guerrero et al.   BMC Geriatr.   .\n\nDisplay options\n\nFormat\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2026 Feb 2;26(1):271.\n\n doi: 10.1186/s12877-025-06920-7.\n\n### Authors",
+      "score": 0.5550741,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://www.nia.nih.gov/news/senolytic-therapy-shows-subtle-impact-age-related-bone-health-women",
+      "title": "Senolytic therapy shows subtle impact on age-related bone health in ...",
+      "content": "Clinical ResearchGerontologyWomen's Health\n\nAn NIA-funded clinical trial investigating whether a senolytic drug combination could improve bone health in older women found just limited benefits compared to a control group. These findings, published in Nature Medicine, suggest that using senolytic products to reverse the effects of aging in humans has just a subtle effect despite earlier promising evidence from mouse studies. These mixed trial results for senolytics — drugs that clear out senescent cells — add to a growing body of research in this area, which remains a topic of scientific and public interest.\n\nMicroscopic view of osteoporosis bone structure, showing gaps throughout. [...] In this study, Mayo Clinic researchers conducted a Phase 2 randomized clinical trial involving 60 postmenopausal women ages 62-88 to assess senolytic effects on bone. Bone is continuously both formed and degraded as we age. When degradation rates exceed formation rates, bone loss occurs and can lead to osteoporosis. Participants were divided into two groups: One group of 30 women received a senolytic drug combination (dasatinib and quercetin) over 20 weeks, while a control group of 30 similar women did not receive the treatment. Researchers evaluated effects on factors influencing bone loss in both groups by measuring an indicator of rate of bone degradation (the primary outcome) and a marker of rate of bone formation (the secondary outcome). The results showed no difference between the",
+      "score": 0.8591094,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "published in"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10692436/",
+      "title": "Dietary Supplementation With NAD+-Boosting Compounds in Humans",
+      "content": "The majority of early studies investigating dietary supplementation with NR were performed in healthy young, midlife, and older adults to gain preliminary insight into treatment safety and efficacy. Airhart et al. performed an open-label, nonrandomized trial to initially investigate the pharmacokinetics and NAD+-boosting capabilities of orally supplemented NR (26). Eight healthy men and women (aged 21–50 years) took increasing doses of NR (250 mg/d up to 2 000 mg/d) over an 8-day period. In this timeframe, NAD+ abundance in whole blood (measured by mass spectrometry) increased twofold on average and no clinically significant changes were seen in the prespecified laboratory safety endpoints (ie, serum potassium, creatine kinase, glucose, uric acid, and alanine aminotransferase). [...] In a multicenter, double-blind, placebo-controlled, parallel-group design clinical trial, Huang investigated the effects of 60 days of supplementation with NMN (300 mg/d) in 62 healthy men and women (age 40–65 years) (57). NAD+ levels in the serum (assessed by a colorimetric quantification kit) increased (~10%) after the intervention but functional outcomes, including the 6-minute walk test, blood pressure, insulin sensitivity, and well-being, were unchanged. Overall, this study supports the efficacy of NMN for increasing serum NAD+ abundance in healthy adults, though no clinical benefits were observed. [...] kinase, glucose, uric acid, and alanine aminotransferase). Furthermore, no changes in blood pressure, body weight, or white blood cell count were observed. There were slight reductions in hematocrit, hemoglobin, and platelet count, though these changes have not been observed in subsequent trials. This trial was not blinded nor placebo controlled, but it provided some initial evidence that supplementation with NR was safe in humans and could effectively boost NAD+ abundance.",
+      "score": 0.5760895,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10643772/",
+      "title": "Blazing a trail for the clinical use of rapamycin as a geroprotecTOR",
+      "content": "The Participatory Evaluation of Aging with Rapamycin for Longevity Study (PEARL), led by Dr. James Watson of the University of California, Los Angeles and Dr. Sajad Zalzala of AgelessRx, is now underway. A total of 150 subjects located throughout the USA aged 50–85 have been randomized to receive either 5 mg or 10 mg of rapamycin once per week or a placebo-control. The primary outcome of the 12-month-long trial will be changes in visceral fat as estimated by dual-energy X-ray absorptiometry (DXA). Secondary outcomes will include bone density, fat-free mass, changes in blood glucose, HbA1c, and electrolytes, and effects on liver and renal function, as well as adverse events. Outcomes relevant to molecular aging may also include microbiome analysis, DNA methylation clock, and PhenoAge [...] While these data will expand on the insight from a recent observational study , there may be some difficulties in interpreting the data in the absence of longitudinal data from each subject, blood samples prior to rapamycin initiation, and double-blinded placebo-control as well as the diverse dosing regimens. Despite these limitations, this cross-sectional comparison will begin to reveal if there are differences in rapamycin users versus non-users in clinical laboratory results as well as molecular and metabolic signatures associated with aging. Therefore, this study may be informative to the geroscience community and those interested in potentially enrolling in one of the physician-supervised clinical trials described within this review. [...] The Validating Benefits of Rapamycin for Reproductive Aging Treatment (VIBRANT) trial led by Drs. Samuel Williams and Yousin Suh at Columbia University will explore the benefits of rapamycin in women undergoing early ovarian failure. Fifty subjects are being actively recruited and will be randomized to either 5 mg of rapamycin once weekly or placebo for 3 months, and then followed for 9 months. This trial is based in part on studies in rodents showing that short-term treatment with rapamycin can increase ovarian lifespan [99, 100]. The primary endpoint of this study will be ovarian reserve determined by transvaginal ultrasound, with secondary endpoints related to concentration of reproductive hormones.",
+      "score": 0.8872928,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://www.nature.com/articles/s43856-025-00904-9",
+      "title": "Rapamycin treatment for Alzheimer's disease and related dementias",
+      "content": "The study was an open-label single-site phase 1 clinical trial of rapamycin (ClinicalTrials.gov NCT04200911) in older adults with a clinical diagnosis of MCI or mild dementia due to AD conducted at the University of Texas Health at San Antonio. Participants were recruited from the University of Texas Health Science University Department of Neurology, outside clinics, and media postings. The primary outcome was to determine whether the drug penetrated the CNS and was detectable in the CSF. The secondary outcomes were: (1) examine the safety and tolerability of the intervention in this population, (2) investigate baseline to post-treatment changes in ADRD and inflammatory biomarkers in plasma and CSF; and (3) assess changes in cognition, functional status, and physical functioning from [...] Given the mechanistic overlap between aging and AD, there has been growing interest in targeting the biology of aging for the treatment of AD4.\"),17.\"). Rapamycin is one of the best studied longevity-enhancing drugs in animal models with pleiotropic effects that may modulate multiple processes dysregulated in ADRD, including autophagy, cellular metabolism, inflammation, and cellular senescence47.\"). We herein present the results of an in-human trial of rapamycin for clinical AD. As an open-label pilot study, our primary aim was to evaluate CSF levels and the safety of rapamycin in older adults with ADRD. Our mass spectrometry assays did not detect rapamycin in study participant CSF, which is consistent with the agent’s high lipophilicity48.\"). There were, however, statistically [...] significant differences in blood pressure were observed20.\"). Therefore, further examination of systolic blood pressure in clinical trials of rapamycin for older adults with MCI and AD are needed. In our study, we did not observe clinically significant changes in safety labs. However, several erythrocyte parameters, including RDW, MCV, and MCH, demonstrated a statistically significant decrease from baseline to post-treatment. Our results are largely consistent with our prior trial in generally healthy older adults, which demonstrated decrements in red blood cell count, hemoglobin, hematocrit, RDW, MCV, and MCH in the active treatment relative to the placebo arm20.\"). Changes in erythrocyte parameters have been observed in association with rapamycin use in transplant recipients, with an",
+      "score": 0.84277284,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "statistically significant"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38378685/",
+      "title": "Fasting-mimicking diet causes hepatic and blood markers changes ...",
+      "content": "In mice, periodic cycles of a fasting mimicking diet (FMD) protect normal cells while killing damaged cells including cancer and autoimmune cells, reduce inflammation, promote multi-system regeneration, and extend longevity. Here, we performed secondary and exploratory analysis of blood samples from a randomized clinical trial (NCT02158897) and show that 3 FMD cycles in adult study participants are associated with reduced insulin resistance and other pre-diabetes markers, lower hepatic fat (as determined by magnetic resonance imaging) and increased lymphoid to myeloid ratio: an indicator of immune system age. Based on a validated measure of biological age predictive of morbidity and mortality, 3 FMD cycles were associated with a decrease of 2.5 years in median biological age, independent [...] # Contributed equally.\n\n PMID:  38378685\n PMCID:   PMC10879164\n DOI:   10.1038/s41467-024-45260-9\n\nItem in Clipboard\n\nRandomized Controlled Trial\n\n# Fasting-mimicking diet causes hepatic and blood markers changes indicating reduced biological age and disease risk\n\nSebastian Brandhorst et al.   Nat Commun.   .\n\nDisplay options\n\nFormat\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2024 Feb 20;15(1):1309.\n\n doi: 10.1038/s41467-024-45260-9.\n\n### Authors\n\nSebastian Brandhorst#1 , Morgan E Levine#2 , Min Wei1 , Mahshid Shelehchi1 , Todd E Morgan1 , Krishna S Nayak3 , Tanya Dorff4 , Kurt Hong5 , Eileen M Crimmins1   6 , Pinchas Cohen1 , Valter D Longo7   8\n\n### Affiliations",
+      "score": 0.89501935,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41372565/",
+      "title": "Effect of fasting-mimicking diet on markers of autophagy ... - PubMed",
+      "content": "We conducted a pilot randomized clinical trial to examine the effects of the fasting-mimicking diet (FMD) on autophagic flux and metabolic health markers in healthy humans. Thirty healthy participants were randomized to two oral formulations of FMD (ProLon and FMD2) or control for 8 days. Blood was collected at baseline, days 4 and 6 during intervention, and 48 h after completing FMD (Day 8). Effects on autophagic flux were measured in peripheral blood mononuclear cells (PBMC) using the ratio of LC3B-II/LC3B-I protein in samples treated with chloroquine (CQ) ex vivo. Metabolic outcomes measured included fasting plasma glucose, insulin, insulin growth factor-1, β-hydroxy-butyrate (BHB), and insulin resistance (HOMA-IR). One-way ANOVA or Kruskal-Wallis tests were used to determine [...] Keywords:  Autophagy; Clinical trial; Dietary intervention; Fasting-mimicking diet.\n\n© 2025. The Author(s).\n\nPubMed Disclaimer\n\n## Conflict of interest statement\n\nDeclarations. Ethics approval and consent to participate: The study was approved by local institutional review boards at each participating institution and was conducted according to the principles of the Declaration of Helsinki. All participants provided written informed consent prior to enrolment. The trial was registered with ClinicalTrials.org (NCT06115551). Consent for publication: Not applicable. Competing interests: The authors declare no competing interests.\n\n## References [...] ANOVA or Kruskal-Wallis tests were used to determine significant differences between groups, both at individual time points and changes from baseline to subsequent time points. Participants were 49.1 ± 11.8 years. Significant between-group differences were observed in changes from baseline to the end of the 6-day dietary intervention for body weight, fasting glucose, BHB, HOMA-IR, and autophagic flux (p < 0.05); however, differences were not significant across all time points. These results suggest that FMD may improve autophagic flux and markers of metabolic health. FMD may serve as a non-pharmaceutical intervention to modulate autophagy; however, further investigation with larger sample sizes is needed to confirm and extend these findings. This clinical trial was sponsored by L-Nutra",
+      "score": 0.88799405,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "p < 0.05"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276428/",
+      "title": "Stem cells to reverse aging - PMC - NIH",
+      "content": "treated in a double-blind controlled trial; the survival rate of patients treated with UCMSCs was significantly higher than that of patients in the conventional treatment group, and UCMSCs were deemed to be safe for the treatment of this disease. Cumulative studies have also investigated the use of UCMSCs in some systemic diseases and local pathological injuries, such as nervous system, immune system, cardiovascular system, kidney, liver, lung, and skin injuries. In many studies, UCMSCs have been combined with biomaterials and scaffolds for treatment, and biomaterials and stents can feasibly enhance the efficacy of SC treatments. [...] the aging process, all of which are anti-aging effects. Therefore, fully elucidating how SCs delay or reverse aging is crucial for their future clinical application. In addition, it is important to fully understand current research progress on the ability of SCs to reverse aging and, more importantly, to facilitate the development of increasingly effective anti-aging treatment strategies. This paper summarizes the SC types that have been used in anti-aging research Table . [...] Numerous animal experiments have suggested that BMSCs can delay or reverse aging. Zhou et al. injected BMSCs from young mice into old mice, and the aging of the spleen and the transcription of some genes related to SCs in old mice were partially or completely reversed. According to the database of the U.S. Library of Medicine, most of the 759 registered studies on BMSCs have completed phase I and phase II clinical trials. Studies investigating the treatment of cardiovascular diseases, acute leukemia, rheumatoid arthritis, and diabetes have completed phase III/IV clinical trials. A phase I clinical trial on the use of autologous BMSCs indicated that BMSCs were safe and feasible for the treatment of ALS, as no adverse reactions were observed, and symptoms were improved after treatment.",
+      "score": 0.99943846,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40137662/",
+      "title": "Effect of Resistance Training on Older Adults with Sarcopenic Obesity",
+      "content": "studies was assessed using the PEDro scale and the GRADE system. Results: Eleven randomized clinical trials were analyzed qualitatively and nine were analyzed quantitatively. The meta-analysis demonstrated that exercise interventions revealed the positive effects of exercise mainly on physical performance ([SMD] = 0.36, [95% CI] = 0.03, 0.69, p = 0.003) and body composition ([SMD] = 0.35, [95% CI] = 0.12, 0.57, p = 0.003), with no significant differences in biomarkers ([SMD] = 0.1, [95% CI] = -0.28, 0.49, p = 0.52). Conclusions: Resistance training benefits older adults with SO, improving body composition and physical function, whereas there were no significant differences in blood biomarkers. The present review highlights the limitations of the existing evidence base. Many included",
+      "score": 0.80735475,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "meta-analysis"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4403246/",
+      "title": "Practicality of Intermittent Fasting in Humans and its Effect ...",
+      "content": "expression of genes associated with aging and reduce oxidative stress and that these effects would be suppressed by anti-oxidant supplementation. To assess the tolerability of the diet and to explore effects on biological mechanisms related to aging and metabolism, we recruited a cohort of 24 healthy individuals in a double-crossover, double-blinded, randomized clinical trial. Study participants underwent two 3-week treatment periods—IF and IF with anti-oxidant (vitamins C and E) supplementation. We found strict adherence to study-provided diets and that participants found the diet tolerable, with no adverse clinical findings or weight change. We detected a marginal increase (2.7%) in SIRT3 expression due to the IF diet, but no change in expression of other genes or oxidative stress [...] ## Methods\n\n### Overview\n\nWe recruited a cohort of healthy individuals in a 10-week double-crossover, double-blinded, randomized clinical trial. Participants were initiated on an IF dieting paradigm, which was designed to promote weight stability, thus allowing us to assess the effect of IF in the absence of weight loss. We assessed expression of genes related to aging and protective responses as well as oxidative stress markers in the participants. In addition, we administered satisfaction surveys and collected extensive compliance data to assess the practicality of the IF dieting paradigm. The study was approved by the Institutional Review Board of the University of Florida and registered with ClinicalTrials.Gov (ID: NCT02132091).\n\n### Participant recruitment [...] There is a paucity of clinical studies exploring the effect of IF on protective cellular responses and examining the practicality of IF in human subjects. Namely, it is unknown if a protective ROS response occurs through mechanisms similar to those induced by CR. On the basis of previous studies,22–26 we hypothesized that the IF dieting paradigm would be well tolerated and could have beneficial effects on cellular oxidative stress and expression of genes related to aging and metabolism, and that anti-oxidant supplementation would negate the effect of the IF diet on these markers. To address this question, we performed a proof-of-principle clinical study in healthy human subjects to assess the safety and feasibility of an IF dieting regimen. Our IF dieting regimen maintains overall caloric",
+      "score": 0.8252664,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11715314/",
+      "title": "Brain effects of 5:2 intermittent fasting and the healthy living diet in a ...",
+      "content": "## Abstract\n\n### Background\n\nInsulin Resistance (IR) is implicated in brain aging and Alzheimer’s disease (AD) pathogenesis. Dietary changes may promote brain health in older adults with metabolic abnormalities. An extensive animal literature suggests pro‐cognitive and beneficial systemic and brain effects of intermittent fasting (IF) that may mitigate AD risk. We conducted a randomized clinical trial comparing brain effects and the potential for AD biomarker modulation of IF and a continuous diet.\n\n### Method\n\nForty overweight, cognitively intact individuals > 55 years old with peripheral IR were randomized (1:1) to 5:2 IF (2 days 480 Kcal/day; 5 non‐restricted days) or Healthy Living (HL) diet by USDA recommendations for 8 weeks.\n\n### Result [...] # Brain effects of 5:2 intermittent fasting and the healthy living diet in a randomized controlled trial\n\n### Apostolos Manolopoulos\n\n### Roger J Mullins\n\n### Francheska Delgado‐Peraza\n\n### Maja Mustapic\n\n### Carlos Nogueras‐Ortiz\n\n### Pamela J Yao\n\n### Mark R Cookson\n\n### Josephine M Egan\n\n### Sophia Frangou\n\n### Mark P Mattson\n\n### Dimitrios Kapogiannis\n\nCorrespondence\n, Apostolos Manolopoulos, National Institute on Aging/National Institutes of Health, Baltimore, MD, USA. Email: apostolos.manolopoulos@nih.gov\n\nCorresponding author.\n\nCollection date 2024 Dec.\n\nThis is an open access article under the terms of the  License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.\n\n## Abstract\n\n### Background",
+      "score": 0.7961819,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10519069/",
+      "title": "The effect of polyphenols on DNA methylation-assessed biological ...",
+      "content": "## Discussion\n\nIn this randomized trial, we observed no reductions in biological aging among the three diet intervention groups. However, we found that beyond weight loss, adherence to a Green-MED diet regimen, especially with a greater intake of specific polyphenol-rich foods, might be associated with slower biological aging. In addition, mAge changes corresponded to the dynamic of specific urine polyphenols, previously identified as related to a beneficial effect on adiposity and brain anatomy outcomes in the DIRECT PLUS. To the best of our knowledge, this is the first clinical trial suggesting a specific link between polyphenol intakes and less biological aging. [...] ### Conclusions\n\nThis study showed that MED and green-MED diets with increased polyphenols intake, such as green tea and Mankai, are inversely associated with biological aging. To the best of our knowledge, this is the first clinical trial to indicate a potential link between polyphenol intake, urine polyphenols, and biological aging.\n\n### Trial registration\n\nClinicalTrials.gov, NCT03020186.\n\n### Supplementary Information\n\nThe online version contains supplementary material available at 10.1186/s12916-023-03067-3.\n\nKeywords: Epigenetics, Weight loss, Green-MED diet, Urolithins, Tyrosol, Methylation age, Urine metabolomics\n\n## Background [...] The 18-month DIRECT-PLUS (dietary intervention randomized controlled trial polypenols-unprocessed) trial (ClinicalTrials.gov ID: NCT03020186) aimed to address the residual beneficial effect of a green Mediterranean diet, richer in green plants and lower in meat, compared with other healthy lifestyle strategies. The trial was initiated in May 2017 and was conducted in an isolated workplace (Nuclear Research Center Negev (NRCN), Dimona, Israel), where a monitored lunch was provided. This workplace includes a medical department where most medical measurements and lifestyle intervention sessions were held. Of the 378 volunteers, 294 met the inclusion criteria of age > 30 years and abdominal obesity (waist circumference (WC): men > 102 cm, women > 88 cm) or dyslipidemia (triglycerides > 150",
+      "score": 0.8332299,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11478989/",
+      "title": "Dietary Polyphenols as Anti-Aging Agents: Targeting the Hallmarks ...",
+      "content": "### Figure 1.\n\nOpen in a new tab\n\nThe anti-aging effects of polyphenols on different organs and tissues. Polyphenols have significant biological effects on different tissues and organs as indicated by in vivo preclinical studies and clinical trial data. They boost physiological functions that decline with age and lower the occurrence of age-associated pathologies. Upward arrows stand for up-regulation. Downward arrows stand for down-regulation.\n\nThis review synthesizes the anti-aging properties of different classes of polyphenols, emphasizing the targeting on the hallmarks of aging, aiming to offer strategies for postponing the aging process and extending good health.\n\n## 2. Biological Activities of Polyphenols [...] The role of anti-aging treatments, including polyphenols in the 12 hallmarks of aging. Explanation: Quercetin\\ itself is a natural polyphenolic compound. However, the senolytic drug combination group “quercetin + dasatinib” is more worthy of attention due to its anti-aging effect. Therefore, quercetin in this table refers to this drug combination group. NMN was originally a dietary supplement but has now been withdrawn by the FDA. GLP-1RA\\ refers to GLP-1 receptor agonists, widely used in obesity and diabetes. The latest research evidence indicates that it has potential anti-aging effects. “With clinical trials” means that there are clinical trial records of the compound on the official clinical trials website. “Approved by FDA for medication” means whether the FDA has approved this [...] | Polyphenols | Source | Age-Related Conditions | Model | Dosage | Anti-Aging Activity and Proposed Anti-Aging Mechanism |\n ---  ---  --- |\n| Resveratrol Inline graphic | Grapes, red wine, peanuts, and blueberries | Age-related motor deficits | Older adults | 500 mg/day, 1000 mg/day | A pilot randomized controlled trial indicates that the combined application of exercise training and resveratrol in elderly people with functional limitations could improve skeletal muscle mitochondrial function and exercise-related physical function indicators . |\n| Sarcopenic obesity | Sprague-Dawley (SD) rats | 0.4% of diet | Resveratrol could ameliorate mitochondrial dysfunction and oxidative stress, thereby improving protein metabolism and helping to prevent sarcopenic obesity in the elderly . |",
+      "score": 0.82425016,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "randomized controlled trial"
+      ],
+      "is_authoritative": true
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39199240/",
+      "title": "A Randomised, Double-Blind, Placebo-Controlled, Cross-Over ...",
+      "content": "PMID:  39199240\n PMCID:   PMC11352085\n DOI:   10.3390/antiox13080995\n\nItem in Clipboard\n\n# A Randomised, Double-Blind, Placebo-Controlled, Cross-Over Clinical Trial to Evaluate the Biological Effects and Safety of a Polyphenol Supplement on Healthy Ageing\n\nJoyce Ruifen Chong et al.   Antioxidants (Basel).   .\n\nDisplay options\n\nFormat\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2024 Aug 17;13(8):995.\n\n doi: 10.3390/antiox13080995.\n\n### Authors [...] Clipboard\n My Bibliography\n Collections\n Citation manager\n\nDisplay options\n\nFormat\n\n## Save citation to file\n\n## Email citation\n\nEmail address has not been verified. Go to  My NCBI account settings  to confirm your email and then refresh this page.\n\n### Add to Collections\n\n### Add to My Bibliography\n\n## Your saved search\n\n## Create a file for external citation management software\n\n## Your RSS Feed\n\nActions\n\n Search in PubMed\n Search in NLM Catalog\n Add to Search\n\n. 2024 Aug 17;13(8):995.\n\n doi: 10.3390/antiox13080995.\n\n# A Randomised, Double-Blind, Placebo-Controlled, Cross-Over Clinical Trial to Evaluate the Biological Effects and Safety of a Polyphenol Supplement on Healthy Ageing",
+      "score": 0.81489426,
+      "raw_content": null,
+      "quality_score": 0.7999999999999999,
+      "validation_keywords": [
+        "clinical trial",
+        "double-blind"
+      ],
+      "is_authoritative": true
+    }
+  ]
+}

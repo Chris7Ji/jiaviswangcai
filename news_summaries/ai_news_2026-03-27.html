@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI新闻日报 - 2026年3月16日</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        h3 {
+            color: #7f8c8d;
+        }
+        .overview {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        .news-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #2ecc71;
+        }
+        .source {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .analysis {
+            background: #e8f6f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 3px solid #1abc9c;
+        }
+        .trend {
+            background: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #3498db;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1a5276;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .footer {
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+        code {
+            background: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>🦞 OpenClaw日报 - 2026年03月27日</h1>
+<h2>📊 今日概览</h2>
+<ul><li>精选动态：2条（中文0条，英文2条）</li>
+<li>重点类别：[版本更新/平台集成/开发者工具]</li>
+<li>质量评级：⭐⭐⭐⭐⭐</li>
+</ul>
+<p>---</p>
+<h2>🚀 版本与功能</h2>
+<h3>1. OpenClaw v2026.3.24 发布（平台集成大版本）</h3>
+<p><strong>📰 来源</strong>：GitHub Release | <strong>🌐 语言</strong>：英 | <strong>✅ 验证状态</strong>：已验证</p>
+<p><strong>📝 核心内容</strong>：</p>
+<ul><li><strong>版本</strong>：v2026.3.24（Latest，2026-03-25 16:35发布）</li>
+<li><strong>发布时间</strong>：2026-03-25 16:35（约38小时前）</li>
+<li><strong>贡献者</strong>：vincentkoc, davidguttman, hnshah, VACInc, huntharo, gfzhx, sallyom, JonathanJing, amsminn, BunsDev, Kimbo7870, w-sss +10 others（<strong>22人</strong>）</li>
+<li><strong>反应</strong>：110人（77👍 8😄 16🎉 21❤️ 25🚀 7👀）</li>
+<li><strong>Commit数</strong>：<strong>184 commits</strong> to main since this release</li>
+</ul>
+<p><strong>📌 定位</strong>：平台集成与开发者工具重大更新版本</p>
+<p><strong>⚠️ Breaking变更</strong>：</p>
+<ul><li>无重大破坏性变更</li>
+</ul>
+<p><strong>🧩 新增功能（18项）</strong>：</p>
+<p>| 类别 | 功能 | PR | |------|------|-----| | <strong>Gateway/OpenAI</strong> | 新增 <code>/v1/models</code> 和 <code>/v1/embeddings</code> 端点，支持更广泛的客户端和RAG兼容性 | - | | <strong>Agents/tools</strong> | <code>/tools</code> 显示当前agent实际可用的工具，Control UI增加"Available Right Now"实时区域 | - | | <strong>Microsoft Teams</strong> | 迁移到官方Teams SDK，支持streaming 1:1回复、欢迎卡片、反馈机制、typing indicators | #51808 | | <strong>Microsoft Teams</strong> | 新增消息编辑和删除支持 | #49925 | | <strong>Skills/一键安装</strong> | 为coding-agent, gh-issues, openai-whisper-api, session-logs, tmux, trello, weather添加一键安装配方 | #53411 | | <strong>Control UI/技能</strong> | 新增状态过滤标签（All/Ready/Needs Setup/Disabled），详情弹窗显示依赖、开关、安装动作、API key入口 | #53411 | | <strong>Slack/交互回复</strong> | 恢复direct deliveries的丰富回复对等性，自动将Options:行渲染为buttons/selects | #53389 | | <strong>CLI/容器</strong> | 新增 <code>--container</code> 和 <code>OPENCLAW_CONTAINER</code> 参数，支持在Docker/Podman容器内运行openclaw命令 | #52651 | | <strong>Discord/自动线程</strong> | 新增 <code>autoThreadName: "generated"</code> 选项，支持LLM生成线程标题 | #43366 | | <strong>Plugins/hooks</strong> | 新增 <code>before_dispatch</code> hook，支持规范化的inbound元数据 | #50444 | | <strong>Control UI/markdown</strong> | agent工作区文件行改为可展开<code><details></code>，懒加载markdown预览 | #53411 | | <strong>Control UI/预览</strong> | 使用<code>@create-markdown/preview</code> v2系统主题，支持light/dark模式 | #53411 | | <strong>macOS/导航</strong> | 用可折叠树形侧边栏替换水平药丸导航 | #53411 | | <strong>CLI/skills</strong> | 将"missing"标签软化为"needs setup"，在<code>openclaw skills info</code>中显示API key设置指导 | #53411 | | <strong>Runtime/Node</strong> | 降低Node 22最低支持到22.14+ | - | | <strong>CLI/update</strong> | 在运行全局包安装前检查engines.node | - |</p>
+<p><strong>🔧 关键修复（15项）</strong>：</p>
+<p>| 类别 | 修复内容 | PR | |------|----------|-----| | <strong>安全/media</strong> | 关闭mediaUrl/fileUrl alias bypass，防止media-root限制被绕过 | #54034 | | <strong>Gateway/重启</strong> | 重启后通过heartbeat唤醒中断的agent session | #53940 | | <strong>Docker/安装</strong> | 避免pre-start openclaw-cli共享网络命名空间循环 | #53385 | | <strong>Gateway/通道</strong> | 保持通道启动顺序，隔离单通道启动失败 | #54215 | | <strong>Embedded/密钥</strong> | 防止未解析的SecretRef配置导致embedded agent崩溃 | #45838 | | <strong>WhatsApp/群组</strong> | 跟踪最近发送的消息ID，抑制匹配的群组回声 | #53624 | | <strong>Telegram/论坛</strong> | 当Telegram省略论坛元数据时恢复#General主题路由 | #53699 | | <strong>Discord/超时</strong> | 当inbound Discord worker超时时发送可见超时回复 | #53823 | | <strong>Telegram/照片</strong> | 预检照片尺寸和宽高比规则，无效时回退到文档发送 | #52545 | | <strong>Slack/运行时</strong> | 削减Slack DM回复开销，恢复Codex自动传输 | #53957 |</p>
+<p><strong>🔗 相关链接</strong>：</p>
+<ul><li>Release页面：https://github.com/openclaw/openclaw/releases/tag/v2026.3.24</li>
+<li>Compare：https://github.com/openclaw/openclaw/compare/v2026.3.24...main</li>
+</ul>
+<p>---</p>
+<h3>2. OpenClaw v2026.3.23/v2026.3.22 反应持续增长</h3>
+<p><strong>📰 来源</strong>：GitHub Release | <strong>🌐 语言</strong>：英 | <strong>✅ 验证状态</strong>：已验证</p>
+<p><strong>📝 核心内容</strong>：</p>
+<p>| 版本 | 发布日期 | 贡献者 | 当前反应 | 24h增长 | |------|----------|--------|----------|---------| | <strong>v2026.3.23</strong> | 03-23 23:15 | 15人 | 201人 | +30 | | <strong>v2026.3.22</strong> | 03-23 11:11 | 119人 | 218人 | +6 |</p>
+<p><strong>📌 说明</strong>：v2026.3.23和v2026.3.22在v2026.3.24发布后仍持续获得社区关注，反应数继续增长。</p>
+<p>---</p>
+<h2>📈 数据洞察</h2>
+<h3>GitHub 仓库状态（截至2026-03-27）</h3>
+<p>| 指标 | 数值 | 变化 | |------|------|------| | ⭐ Stars | 328,730 | +393 | | 👁 Watchers | 328,730 | - | | 🍴 Forks | 66,100 | +310 | | 🗣 语言 | TypeScript | - |</p>
+<h3>版本发布节奏（近4天）</h3>
+<p>| 版本 | 日期 | 类型 | 贡献者 | Commit数 | 反应 | |------|------|------|--------|----------|------| | <strong>v2026.3.24</strong> | 03-25 16:35 | 稳定版 | 22 | 184 | 110 | | <strong>v2026.3.24-beta.2</strong> | 03-25 14:11 | 预发布 | 1 | - | 25 | | <strong>v2026.3.24-beta.1</strong> | 03-25 11:54 | 预发布 | 33 | - | 23 | | <strong>v2026.3.23</strong> | 03-23 23:15 | 修复版 | 15 | - | 201 |</p>
+<p>---</p>
+<h2>🔮 趋势观察</h2>
+<p>1. <strong>Microsoft Teams战略</strong>：官方SDK迁移标志 Teams集成进入成熟阶段 2. <strong>Skills生态系统完善</strong>：一键安装recipe降低用户入门门槛 3. <strong>Control UI全面升级</strong>：从技能管理到文件预览全面重构 4. <strong>开发者工具增强</strong>：Docker容器支持、CLI/skills改进 5. <strong>安全持续加固</strong>：media dispatch安全修复、SecretRef处理改进</p>
+<p>---</p>
+<h2>🔐 安全更新</h2>
+<p>| 类别 | 修复内容 | PR | |------|----------|-----| | <strong>media dispatch bypass</strong> | 关闭mediaUrl/fileUrl alias bypass，防止media-root限制被绕过 | #54034 | | <strong>SecretRef处理</strong> | 防止未解析的SecretRef配置导致embedded agent崩溃 | #45838 |</p>
+<p>---</p>
+<p>*报告生成时间：2026-03-27 06:14 | 数据来源：GitHub openclaw/openclaw v2026.3.24 Release*</p>
+<div class="footer">
+    报告生成时间：2026-03-16 06:30 | 数据来源：Tavily API全球搜索<br>
+    AI新闻监控系统 - 每日自动生成
+</div>
+</body>
+</html>

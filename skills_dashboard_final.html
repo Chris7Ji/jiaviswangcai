@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Skills Dashboard - Top 10 最有用的技能</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .skill-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+            cursor: pointer;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .skill-header {
+            padding: 25px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .skill-rank {
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 1.1em;
+        }
+        
+        .skill-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+        
+        .skill-body {
+            padding: 25px;
+        }
+        
+        .skill-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+        
+        .skill-features {
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .feature-title:before {
+            content: "✨";
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            border-bottom: 1px solid #f8f8f8;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .skill-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .status-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .status-installed {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-path {
+            font-size: 0.85em;
+            color: #666;
+            font-family: monospace;
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .categories-section {
+            padding: 40px;
+            background: #f8f9fa;
+        }
+        
+        .categories-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .category-icon {
+            font-size: 2em;
+        }
+        
+        .category-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .category-count {
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .category-skills {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .category-skills li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f8f8f8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .category-skills li:last-child {
+            border-bottom: none;
+        }
+        
+        .skill-usage {
+            font-size: 0.85em;
+            color: #666;
+            background: #f8f9fa;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+        
+        .quick-actions {
+            padding: 40px;
+            background: white;
+        }
+        
+        .actions-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .action-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .action-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .action-name {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .action-desc {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        
+        .update-time {
+            margin-top: 20px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            
+            .stats-bar {
+                gap: 15px;
+            }
+            
+            .stat-item {
+                min-width: 120px;
+                padding: 10px 15px;
+            }
+            
+            .stat-value {
+                font-size: 1.5em;
+            }
+        }
+        
+        /* 排名颜色 */
+        .rank-1 .skill-rank { background: #FFD700; color: #856404; }
+        .rank-2 .skill-rank { background: #C0C0C0; color: #383D41; }
+        .rank-3 .skill-rank { background: #CD7F32; color: #721C24; }
+        .rank-4 .skill-rank { background: #E3F2FD; color: #1976D2; }
+        .rank-5 .skill-rank { background: #F3E5F5; color: #4A148C; }
+        .rank-6 .skill-rank { background: #E8F5E8; color: #1B5E20; }
+        .rank-7 .skill-rank { background: #FFF3E0; color: #E65100; }
+        .rank-8 .skill-rank { background: #FCE4EC; color: #880E4F; }
+        .rank-9 .skill-rank { background: #E1F5FE; color: #01579B; }
+        .rank-10 .skill-rank { background: #F1F8E9; color: #33691E; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>OpenClaw Skills Dashboard</h1>
+            <div class="subtitle">Top 10 最有用的技能 - 已安装并随时可用</div>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-value">10</div>
+                    <div class="stat-label">精选技能</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">总技能数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">已安装率</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">6</div>
+                    <div class="stat-label">技能类别</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top 10 技能网格 -->
+        <div class="skills-grid" id="skillsGrid">
+            <!-- 技能卡片将通过JavaScript动态生成 -->
+        </div>
+        
+        <!-- 技能分类 -->
+        <div class="categories-section">
+            <h2 class="categories-title">📚 技能分类概览</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- 分类卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 快速操作 -->
+        <div class="quick-actions">
+            <h2 class="actions-title">⚡ 快速操作</h2>
+            <div class="actions-grid">
+                <div class="action-card" onclick="showCommand('clawhub update')">
+                    <div class="action-icon">🔄</div>
+                    <div class="action-name">更新所有技能</div>
+                    <div class="action-desc">获取最新版本和功能</div>
+                </div>
+                <div class="action-card" onclick="showCommand('clawhub explore --limit 10')">
+                    <div class="action-icon">🔍</div>
+                    <div class="action-name">发现新技能</div>
+                    <div class="action-desc">浏览最新发布的技能</div>
+                </div>
+                <div class="action-card" onclick="showCommand('open /opt/homebrew/lib/node_modules/openclaw/skills/')">
+                    <div class="action-icon">📁</div>
+                    <div class="action-name">打开技能目录</div>
+                    <div class="action-desc">查看所有已安装技能</div>
+                </div>
+                <div class="action-card" onclick="showCommand('cat /opt/homebrew/lib/node_modules/openclaw/skills/github/SKILL.md | head -20')">
+                    <div class="action-icon">📄</div>
+                    <div class="action-name">查看技能文档</div>
+                    <div class="action-desc">学习如何使用技能</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>🎯 基于你的OpenClaw系统分析 - 所有技能已安装并可用</p>
+            <div class="footer-links">
+                <a href="https://docs.openclaw.ai" class="footer-link" target="_blank">官方文档</a>
+                <a href="https://clawhub.com" class="footer-link" target="_blank">技能市场</a>
+                <a href="https://github.com/openclaw/openclaw" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://discord.com/invite/clawd" class="footer-link" target="_blank">社区支持</a>
+            </div>
+            <div class="update-time">
+                报告生成时间: 2026-02-28 21:56 GMT+8 | OpenClaw版本: 最新稳定版
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Top 10 技能数据
+        const topSkills = [
+            {
+                rank: 1,
+                name: "github",
+                tag: "GitHub集成",
+                description: "GitHub仓库管理、Issue跟踪、PR审查、CI/CD监控",
+                features: [
+                    "查看PR状态和CI运行",
+                    "创建/评论Issue",
+                    "代码审查辅助",
+                    "仓库管理"
+                ],
+                path: "/opt/homebrew/lib/node_modules/openclaw/skills/github",
+                category: "开发工具"
+            },
+            {
+                rank: 2,
+                name: "gog",
+                tag: "Google Workspace CLI",
+                description: "Gmail、Calendar、Drive、Contacts、Sheets、Docs管理",
+                features: [
+                    "邮件搜索和管理",
+                    "日历事件查看",
+                    "Google Drive文件操作",
+                    "联系人管理"
+                ],
+                path: "/opt/homebrew/lib/node_modules/openclaw/skills/gog",
+                category: "云服务集成"
+            },
+            {
+                rank: 3,
+                name: "healthcheck",
+                tag: "系统健康检查",
+                description: "主机安全加固、风险配置、安全审计",
+                features: [
+                    "安全漏洞扫描",
+                    "防火墙配置检查",
+                    "SSH安全审计",
+                    "系统更新状态"
+                ],
+                path: "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck",
+                category: "生产力工具"
+            },
+            {
+                rank: 4,
+                name: "summarize",
+                tag: "内容摘要",
+                description: "URL、播客、本地文件的文本摘要和提取",
+                features: [
+                    "网页内容摘要",
+                    "视频转录摘要",
+                    "文档内容提取",
+                    "多语言支持"
+                ],
+                path: "/opt/homebrew/lib/node_modules/openclaw/skills/summarize",
+                category: "生产力工具"
+            },
+            {
+                rank: 5,
+                name: "video-frames",
+                tag: "视频帧提取",
+                description: "使用ffmpeg从视频中提取帧或短片",
+                features: [
+                    "视频帧截图",
+                    "GIF创建",
+                    "视频剪辑提取",
+                    "时间戳定位"
+                ],
+                path: "/opt/homebrew/lib/node_modules

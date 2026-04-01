@@ -1,0 +1,175 @@
+[
+  {
+    "layout": "cover",
+    "title": "OpenClaw AI 助手",
+    "subtitle": "配置与使用指南\n培训讲师：旺财\n2026年3月"
+  },
+  {
+    "layout": "two-column",
+    "action_title": "什么是 OpenClaw？",
+    "takeaway": "开源、可自托管的个人AI代理与自动化平台",
+    "columns": [
+      {
+        "title": "核心理念",
+        "bullets": [
+          "本地优先：部署在个人电脑/NAS",
+          "AI主动执行：不仅回答问题",
+          "模块化设计：可扩展技能系统"
+        ]
+      },
+      {
+        "title": "应用场景",
+        "bullets": [
+          "个人助理自动化",
+          "知识管理与研究",
+          "办公效率提升",
+          "健康生活管理",
+          "技术开发辅助"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "two-column",
+    "action_title": "核心配置",
+    "takeaway": "工作目录：~/.openclaw/workspace/",
+    "columns": [
+      {
+        "title": "核心文件",
+        "bullets": [
+          "AGENTS.md：Agent团队配置",
+          "SOUL.md：AI身份与原则",
+          "USER.md：用户信息",
+          "TOOLS.md：工具配置",
+          "MEMORY.md：长期记忆"
+        ]
+      },
+      {
+        "title": "模型配置",
+        "bullets": [
+          "moonshot/kimi-k2.5：默认对话",
+          "minimax/MiniMax-M2.5：快速响应",
+          "deepseek/deepseek-chat：代码分析"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "matrix",
+    "action_title": "已安装技能 (14个)",
+    "quadrants": [
+      {
+        "title": "搜索类",
+        "desc": "tavily-search\nmulti-search-engine\nweb_search"
+      },
+      {
+        "title": "通讯类",
+        "desc": "gog\nwacli\nfeishu"
+      },
+      {
+        "title": "开发类",
+        "desc": "github\ndebug-checklist"
+      },
+      {
+        "title": "效率类",
+        "desc": "office\nsummarize\nproactive-agent"
+      }
+    ]
+  },
+  {
+    "layout": "two-column",
+    "action_title": "定时任务配置",
+    "takeaway": "每天自动执行，无需手动操作",
+    "columns": [
+      {
+        "title": "已配置任务",
+        "bullets": [
+          "AI新闻每日摘要：06:30",
+          "OpenClaw新闻监控：06:00",
+          "健康长寿科研监控：08:30",
+          "火车出发提醒：指定日期"
+        ]
+      },
+      {
+        "title": "配置命令",
+        "bullets": [
+          "openclaw cron list：查看任务",
+          "openclaw cron add：添加任务",
+          "openclaw cron run：立即运行",
+          "openclaw cron disable：禁用任务"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "two-column",
+    "action_title": "集成服务",
+    "takeaway": "多渠道集成，消息无缝触达",
+    "columns": [
+      {
+        "title": "邮件服务",
+        "bullets": [
+          "发件箱：86940135@qq.com",
+          "SMTP：smtp.qq.com:587",
+          "支持华为邮箱同步"
+        ]
+      },
+      {
+        "title": "语音与消息",
+        "bullets": [
+          "TTS：Azure中文语音",
+          "飞书：即时消息推送",
+          "支持多账户切换"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "timeline",
+    "action_title": "应用案例：每日新闻自动推送",
+    "steps": [
+      {"title": "Step 1\n创建脚本", "desc": "定义搜索关键词和过滤规则"},
+      {"title": "Step 2\n配置任务", "desc": "设置定时执行和推送渠道"},
+      {"title": "Step 3\n自动运行", "desc": "每天06:30自动执行并发送"},
+      {"title": "Step 4\n优化迭代", "desc": "根据反馈调整内容质量"}
+    ]
+  },
+  {
+    "layout": "timeline",
+    "action_title": "应用案例：健康长寿科研监控",
+    "steps": [
+      {"title": "搜索维度", "desc": "38个维度覆盖运动/饮食/治疗"},
+      {"title": "质量验证", "desc": "来源权威性+研究设计+证据等级"},
+      {"title": "自动翻译", "desc": "英文内容翻译成中文"},
+      {"title": "定时发送", "desc": "每天08:30发送到邮箱和飞书"}
+    ]
+  },
+  {
+    "layout": "two-column",
+    "action_title": "高级功能",
+    "takeaway": "持续学习和自我优化",
+    "columns": [
+      {
+        "title": "记忆系统",
+        "bullets": [
+          "MEMORY.md：核心长期记忆",
+          "SESSION-STATE.md：当前状态",
+          "memory/：每日记录归档"
+        ]
+      },
+      {
+        "title": "Agent团队",
+        "bullets": [
+          "总指挥：任务派发与协调",
+          "笔杆子：内容创作",
+          "昇腾AI官：技术专家"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "cover",
+    "title": "开始使用 OpenClaw",
+    "subtitle": "从简单任务开始\n根据需求逐步添加技能\n利用定时任务实现自动化\n\n谢谢！"
+  }
+]

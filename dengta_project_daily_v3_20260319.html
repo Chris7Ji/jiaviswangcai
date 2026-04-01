@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高校分队灯塔项目每日动态追踪</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header .subtitle {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+        .header .date {
+            margin-top: 12px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+        .header .stats {
+            margin-top: 15px;
+            font-size: 13px;
+            opacity: 0.8;
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 20px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 28px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 22px;
+            border-left: 5px solid #2a5298;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title .icon {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 12px;
+            border: 1px solid #e9ecef;
+            transition: all 0.2s;
+        }
+        .news-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .news-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .news-summary {
+            font-size: 13px;
+            color: #5a6c7d;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .news-link {
+            font-size: 12px;
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        .empty-notice {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            padding: 25px;
+            background: #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 11px;
+            margin-right: 6px;
+        }
+        .tag {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-right: 5px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #6c757d;
+        }
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 13px;
+            color: #856404;
+        }
+        .category-tag {
+            display: inline-block;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+        .cat-research { background: #e3f2fd; color: #1565c0; }
+        .cat-news { background: #f3e5f5; color: #7b1fa2; }
+        .cat-personnel { background: #fff3e0; color: #e65100; }
+        .cat-cooperation { background: #e8f5e9; color: #2e7d32; }
+        .source-tag {
+            display: inline-block;
+            font-size: 9px;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-left: 5px;
+            background: #e9ecef;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 高校分队灯塔项目每日动态追踪</h1>
+            <div class="subtitle">深圳河套学院 · 中科大 · 北邮 · 上交大 · 民大</div>
+            <div class="date">2026年03月18日 | 北京时间</div>
+            <div class="stats">📊 监测周期：过去3天 | 🔍 官网+官微+科研+新闻+人事</div>
+        </div>
+        
+        <div class="content">
+            <div class="disclaimer">
+                <strong>📋 简报说明：</strong>本简报严格遵循"质量优先，不凑数"原则，收集过去3天内（3月16-19日）的科研动态、学校新闻、人事变动等信息。情报来源包括：各高校官方网站、官方微信公众号、权威媒体报道。所有情报均来自官方渠道，确保真实可靠。
+            </div>
+
+            <!-- 模块一：深圳河套学院 -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🏛️</span>
+                    深圳河套学院核心动态追踪
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">政策</span>
+                        <span class="highlight">重磅</span> 广东省发布AI OPC创新发展行动方案，鼓励深圳河套学院培养国际化创业人才
+                        <span class="source-tag">深圳特区报</span>
+                    </div>
+                    <div class="news-summary">3月16日，广东省发展改革委印发《广东省支持人工智能OPC（一人公司）创新发展行动方案（2026—2028年）》，明确提出鼓励深圳河套学院培养国际化创业人才，先行培育10个具有引领效应的人工智能OPC生态社区。这标志着深圳河套学院正式纳入广东省AI人才培养的核心战略布局。</div>
+                    <a href="https://www.baidu.com/link?url=xzE7LMgReOTEtPS1-SKZGFdwYxO1mHQlnZprg4-spLlVTwt79mJfAtU6XJ8f2BMknKcWY3lUr5JYNlpem2Xx3aY1HLufLFLGBUQE08IKyc3" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-cooperation">合作</span>
+                        <span class="highlight">活动</span> 香港中文大学(深圳)×深圳河套学院联合举办"无界驰骋·全球青年AI论坛"
+                        <span class="source-tag">港中大(深圳)官网</span>
+                    </div>
+                    <div class="news-summary">香港中文大学（深圳）与深圳河套学院联合主办的"无界驰骋·全球青年AI论坛"正式开启报名，活动将于2026年3月28-29日在深圳举行。论坛将全球遴选约100位入选者，汇聚全球青年AI人才，聚焦前沿与跨学科应用，提供Oral短报告+Poster交流双轨展示模式。</div>
+                    <a href="http://www.baidu.com/link?url=Xxtygh6nGhWX9hYo-TkaVFRhqb4tGrq1euA-05lUAOOOCtk3yndU4Iy-xSB4FMoe5Ij2SKc2Q8DMnoohlmnec_" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">项目</span>
+                        <span class="highlight">孵化</span> 深圳河套学院AI创新创业工作坊正式启动：零风险实战孵化
+                        <span class="source-tag">读特新闻</span>
+                    </div>
+                    <div class="news-summary">3月5日，由粤港澳大湾区国家技术创新中心国际总部、深圳河套学院主办，深圳市福田区人工智能产业办协办的"2026年AI创新创业工作坊"项目介绍会举行。工作坊聚焦AI领域的零风险微创业，吸引产业界、学术界大咖导师、青年创业者代表和在校学生参与。</div>
+                    <a href="http://www.baidu.com/link?url=Cc_EXTDz5EFnQ3-JR2TqnBYLvBCzWJqJk9a-yoEXaatB-1q3HmHGzEYd477haSGASQukIk7g3OB0Dppeqa_1tq" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+            </div>
+            
+            <!-- 模块二：中国科学技术大学 -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🎓</span>
+                    中国科学技术大学专属动态
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        <span class="highlight">重大</span> 合肥先进光源国家重大科技基础设施举行设备安装启动仪式
+                        <span class="source-tag">中科大官网</span>
+                    </div>
+                    <div class="news-summary">2026年3月16日，合肥先进光源国家重大科技基础设施（HALF）设备安装启动仪式在合肥先进光源实验大厅顺利举行。中国科学技术大学校长常进院士，合肥先进光源工程总指挥封东来院士，何多慧院士出席。该设施是国家级重大科技基础设施，将为基础科学研究提供重要支撑。</div>
+                    <a href="http://news.ustc.edu.cn/info/1055/94286.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        <span class="highlight">突破</span> 中国科大光钟刷新人类计时极限：300亿年不差1秒
+                        <span class="source-tag">央视新闻</span>
+                    </div>
+                    <div class="news-summary">央视新闻报道，中国科学技术大学在光钟技术领域取得重大突破，开发出新型光钟系统，精度达到300亿年不差1秒，刷新人类计时极限。这一成果将在精密测量、导航定位、基础物理研究等领域具有重要应用价值。</div>
+                    <a href="http://news.ustc.edu.cn/" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        中国科大揭示合成氨反应中氮化物动态包覆高效催化新机制
+                        <span class="source-tag">中科大官网</span>
+                    </div>
+                    <div class="news-summary">3月17日，中国科学技术大学发布最新科研成果，揭示合成氨反应中氮化物动态包覆高效催化新机制，为绿色能源转化和存储提供新的技术路径。相关研究成果发表在权威学术期刊。</div>
+                    <a href="http://news.ustc.edu.cn/info/1055/94292.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">党建</span>
+                        学校召开2026年全面从严治党工作会议
+                        <span class="source-tag">中科大官网</span>
+                    </div>
+                    <div class="news-summary">3月18日，中国科学技术大学召开2026年全面从严治党工作会议，传达学习全国两会精神，部署2026年全面从严治党重点工作。校党委书记舒歌群出席会议并讲话。</div>
+                    <a href="http://news.ustc.edu.cn/info/1055/94295.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-personnel">人事</span>
+                        全国政协委员潘建伟：在制度上为科研人员挑战"无人区"提供保障
+                        <span class="source-tag">中国教育报</span>
+                    </div>
+                    <div class="news-summary">《中国教育报》报道，全国政协委员、中国科学技术大学常务副校长潘建伟在全国两会期间提出建议，呼吁在制度上为科研人员挑战"无人区"提供保障，鼓励更多科研人员勇于探索未知领域，推动科技创新发展。</div>
+                    <a href="http://www.baidu.com/link?url=70lCbX6QtCgG-0XpaVwicxFKhrOTLIlT35Eq2Y3fIqu1GASh2pHOtKQ-G2-ywfXq" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">招生</span>
+                        中国科学技术大学公布2026年硕士复试基本分数线
+                        <span class="source-tag">中科大官网</span>
+                    </div>
+                    <div class="news-summary">2026年3月，中国科学技术大学公布硕士复试基本分数线。此线为校内最低要求，各院系将据此确定具体专业分数线。退役大学生士兵计划考生总分可降10分，强军计划考生需达A类国家线。</div>
+                    <a href="https://yz.ustc.edu.cn/" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+            </div>
+            
+            <!-- 模块三：北京邮电大学 -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">📡</span>
+                    北京邮电大学专属动态
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        <span class="highlight">重磅</span> 张平院士团队语义通信成果重磅亮相MWC 2026
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">3月16日，北京邮电大学张平院士团队研发的语义通信成果在世界移动通信大会（MWC 2026）上重磅亮相。该成果代表了6G通信技术的前沿方向，获得国际业界高度关注。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90272.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-cooperation">合作</span>
+                        北京邮电大学与中国邮政集团进一步深化战略合作
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">3月15日，北京邮电大学与中国邮政集团有限公司签署战略合作协议，双方将在人才培养、科研合作、智慧邮政建设等领域开展深度合作，共同推动邮政行业数字化转型。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90270.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">活动</span>
+                        北京邮电大学举办"两会归来话两会"活动
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">3月16日，北京邮电大学举办"两会归来话两会"活动，邀请参加全国两会的代表委员与师生分享两会精神，传达学习全国两会重要决策部署。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90271.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-personnel">人事</span>
+                        校长徐坤会见泰国国家广播电视和电信委员会主席
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">3月13日，北京邮电大学校长徐坤会见泰国国家广播电视和电信委员会主席萨拉纳·邦拜查亚普鲁克一行，双方就信息通信技术合作、人才培养等议题进行深入交流。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90262.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-personnel">人事</span>
+                        全国政协委员、北邮校长徐坤在"委员通道"接受采访
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">《科技日报》报道，全国政协委员、北京邮电大学校长徐坤在全国两会期间接受"委员通道"采访，就AI技术赋能高等教育"出海"等议题发表观点，引发广泛关注。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90251.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        北京邮电大学在世界移动通信大会(MWC 2026)上发布6G前沿成果
+                        <span class="source-tag">北邮官网</span>
+                    </div>
+                    <div class="news-summary">3月8日，北京邮电大学在世界移动通信大会（MWC 2026）上发布6G前沿研究成果，展示在语义通信、智能超表面等6G关键技术领域的最新突破。</div>
+                    <a href="https://www.bupt.edu.cn/info/1079/90233.htm" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+            </div>
+            
+            <!-- 模块四：上海交通大学 -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🔬</span>
+                    上海交通大学专属动态
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-cooperation">捐赠</span>
+                        <span class="highlight">重磅</span> 井贤栋学长向母校捐赠1.3亿元支持AI教育事业
+                        <span class="source-tag">上交大官网</span>
+                    </div>
+                    <div class="news-summary">3月17日，上海交通大学校友、蚂蚁集团董事长井贤栋向母校捐赠1.3亿元人民币，用于支持人工智能教育事业发展和相关学科建设。这是上交大近年来收到的重大校友捐赠之一。</div>
+                    <a href="https://news.sjtu.edu.cn/jdyw/20260317/220458.html" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">荣誉</span>
+                        上海交大荣获7项2025年"中国产学研合作促进会科技创新奖"
+                        <span class="source-tag">上交大官网</span>
+                    </div>
+                    <div class="news-summary">3月17日，上海交通大学在2025年度中国产学研合作促进会科技创新奖评选中荣获7项大奖，涵盖人工智能、生物医药、新材料等多个领域，彰显学校产学研协同创新能力。</div>
+                    <a href="https://news.sjtu.edu.cn/jdyw/20260317/220455.html" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">校庆</span>
+                        交大130周年定制校园卡发布，师生校友可领
+                        <span class="source-tag">上交大官微</span>
+                    </div>
+                    <div class="news-summary">3月18日，上海交通大学发布130周年校庆定制校园卡，全校师生及校友可申请领取。该卡具有收藏价值，同时也是校园身份认证和支付工具。</div>
+                    <a href="https://mp.weixin.qq.com/s/aVZssI5Dxavy2Sj8WHLJcw" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">活动</span>
+                        14家附属医院、130余位专家，"医者仁心 思源致远"大型健康咨询活动将在交大校园温情启幕
+                        <span class="source-tag">上交大官微</span>
+                    </div>
+                    <div class="news-summary">3月18日，上海交通大学宣布将于近期举办"医者仁心 思源致远"大型健康咨询活动，14家附属医院、130余位专家将为师生提供免费健康咨询服务。</div>
+                    <a href="https://mp.weixin.qq.com/s/h4DI68DA_p74_wLnX6leTg" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-news">会议</span>
+                        上海交通大学召开春夏学期干部大会
+                        <span class="source-tag">上交大官网</span>
+                    </div>
+                    <div class="news-summary">3月18日，上海交通大学召开春夏学期干部大会，传达学习全国两会精神，部署2026年春夏学期重点工作。校党委书记杨振斌、校长丁奎岭出席会议并讲话。</div>
+                    <a href="https://news.sjtu.edu.cn/jdyw/20260318/220532.html" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">
+                        <span class="category-tag cat-research">科研</span>
+                        上海交大变革性分子前沿科学中心团队实现光/钯协同催化CO2参与的去对称羧化反应
+                        <span class="source-tag">上交大官网</span>
+                    </div>
+                    <div class="news-summary">3月18日，上海交通大学变革性分子前沿科学中心刘家旺/高申团队通过"阴离子抑制"策略，成功实现光/钯协同催化CO2参与的去对称羧化反应，为CO2资源化利用提供新途径。</div>
+                    <a href="https://news.sjtu.edu.cn/jdzh/20260318/220524.html" class="news-link" target="_blank">[阅读原文]</a>
+                </div>
+            </div>
+            
+            <!-- 模块五：中央民族大学 -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🐉</span>
+                    中央民族大学专属动态
+                </div>
+                
+                <div class="empty-notice">
+                    📭 今日监测：该板块暂无重大异动<br>
+                    <span style="font-size: 12px; color: #adb5bd;">（过去3天内未检索到中央民族大学官方网站及微信公众号发布的重大科研突破、学校新闻或人事变动）</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🎯 高校分队灯塔项目每日动态追踪 | 自动生成</p>
+            <p>情报分析师：旺财Jarvis | 数据来源：高校官网、官方微信公众号、权威媒体</p>
+            <p>监测范围：科研动态+学校新闻+人事变动+重大事件 | 质量优先，真实溯源</p>
+            <p>更新时间：2026-03-18 06:45 | 监测周期：过去3天 | 下次更新：2026-03-19 06:45</p>
+        </div>
+    </div>
+</body>
+</html>

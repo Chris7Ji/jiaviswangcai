@@ -1,0 +1,37 @@
+邮件发送状态：待发送（需要QQ邮箱授权码）
+
+收件人：
+1. 86940135@qq.com
+2. jiyingguo@huawei.com
+
+发件人：86940135@qq.com
+
+主题：AI新闻每日摘要 2026-03-01
+
+邮件内容已准备就绪，保存在：
+1. /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_2026-03-01.md
+2. /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_2026-03-01.html
+
+要完成邮件发送，请执行以下步骤：
+
+1. 获取QQ邮箱授权码：
+   - 登录QQ邮箱网页版
+   - 进入"设置" → "账户"
+   - 找到"POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务"
+   - 开启"IMAP/SMTP服务"
+   - 按照提示获取16位授权码
+
+2. 设置环境变量：
+   export QQ_EMAIL_AUTH_CODE='你的授权码'
+
+3. 运行发送脚本：
+   python3 /Users/jiyingguo/.openclaw/workspace/send_ai_news_email.py
+
+或者将授权码直接添加到脚本中（不推荐，有安全风险）。
+
+今日AI新闻摘要已成功生成，包含3条重要新闻：
+1. 中国人形机器人频频"破圈"，具身智能迈入应用时代
+2. AI阅读的深刻变革与挑战  
+3. 人工智能成为制造业升级关键变量
+
+所有文件已保存到指定目录。

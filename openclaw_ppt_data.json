@@ -1,0 +1,350 @@
+[
+  {
+    "layout": "cover",
+    "title": "OpenClaw 使用指南",
+    "subtitle": "打造你的AI智能助理",
+    "speaker": "季英国",
+    "date": "2026年3月"
+  },
+  {
+    "layout": "two-column",
+    "title": "关于我 & 课程目标",
+    "columns": [
+      {
+        "title": "关于我（季）",
+        "content": [
+          "OpenClaw深度用户",
+          "华为昇腾生态建设者",
+          "AI技术爱好者",
+          "实战经验丰富"
+        ]
+      },
+      {
+        "title": "今天你将学到",
+        "content": [
+          "OpenClaw核心概念与架构",
+          "完整部署流程与最佳实践",
+          "记忆系统与Skills深度应用",
+          "6个真实案例演示"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "什么是OpenClaw？",
+    "content": [
+      "定义：OpenClaw是一个AI智能体平台，让AI从'聊天'进化到'执行'",
+      "核心区别：ChatGPT/Claude是问答对话、知识回答；OpenClaw是任务执行、操作外部系统",
+      "一句话总结：OpenClaw = 大模型大脑 + Skills手脚 + 记忆系统 + 多平台接入"
+    ]
+  },
+  {
+    "layout": "matrix",
+    "title": "OpenClaw 核心架构详解",
+    "quadrants": [
+      {
+        "title": "🧠 大脑 = 大语言模型",
+        "desc": "理解推理、任务规划、自然语言处理"
+      },
+      {
+        "title": "🔌 神经系统 = Gateway",
+        "desc": "信息传递、多平台接入、本地运行"
+      },
+      {
+        "title": "🦾 手脚 = Skills",
+        "desc": "执行操作、外部系统交互、任务完成"
+      },
+      {
+        "title": "📝 记忆 = Memory系统",
+        "desc": "经验积累、上下文保持、持续学习"
+      }
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "为什么选择OpenClaw？",
+    "content": [
+      "完全开源：GitHub 297k+ Stars，代码透明",
+      "本地部署：数据不出本地，隐私安全可控",
+      "多平台支持：20+消息渠道，微信钉钉飞书等",
+      "主动执行：定时任务、自动监控，真正解放双手",
+      "生态丰富：13,729+注册技能，5,490+精选技能"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "一键式安装与核心配置",
+    "content": [
+      "系统要求：macOS 12+ / Linux / Windows 10+ (WSL2) | Node.js 18+ | RAM 4GB+",
+      "一键安装：brew install node@20 → npm install -g openclaw → openclaw init → openclaw gateway start → openclaw configure",
+      "必装7个核心Skills：Clawsec安全防护、Tavily Search实时搜索、Multi Search Engine多引擎、Self-Improving自我进化、Proactive主动服务、GitHub代码管理、Office-Automation办公助手",
+      "验证安装：openclaw --version | openclaw gateway status | openclaw config list",
+      "网络标准化：npm config set registry https://registry.npmmirror.com"
+    ]
+  },
+  {
+    "layout": "table",
+    "title": "安装验证与常见问题排查",
+    "rows": [
+      ["问题", "原因", "解决方案"],
+      ["npm安装失败", "网络/镜像问题", "切换国内镜像"],
+      ["Gateway启动失败", "端口占用", "检查18789端口"],
+      ["API Key错误", "配置问题", "重新openclaw configure"],
+      ["技能安装失败", "网络限制", "手动安装或换网络"]
+    ]
+  },
+  {
+    "layout": "section",
+    "number": 2,
+    "title": "记忆系统与Skills深度应用",
+    "subtitle": "如何让AI记住你、理解你、持续进化？"
+  },
+  {
+    "layout": "content",
+    "title": "记忆系统架构全景",
+    "content": [
+      "为什么需要记忆系统：大模型每次对话都是'全新的'、无法跨会话保持上下文、无法积累经验和偏好",
+      "三层记忆体系：会话级记忆（当前对话，临时数据）、项目级记忆（持久化存储，核心配置）、技能级记忆（技能配置，行为规则）",
+      "核心记忆文件（7个）：SOUL.md身份定义、MEMORY.md核心记忆、AGENTS.md Agent配置、USER.md用户画像、TOOLS.md工具配置、LEARNINGS.md成功经验、ERRORS.md错误记录"
+    ]
+  },
+  {
+    "layout": "two-column",
+    "title": "Skills深度应用 - 信息获取类",
+    "columns": [
+      {
+        "title": "Tavily Search",
+        "content": [
+          "AI实时搜索，每月1000次免费",
+          "基础：search.sh '关键词'",
+          "深度：search.sh '关键词' advanced 10",
+          "默认使用Tavily（Boss偏好）"
+        ]
+      },
+      {
+        "title": "Multi Search Engine",
+        "content": [
+          "多引擎聚合，17个搜索引擎",
+          "站内搜索：site:zhihu.com",
+          "文件类型：filetype:pdf",
+          "多引擎对比：中文/英文/技术"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "three-column",
+    "title": "Skills深度应用 - 进化与办公",
+    "columns": [
+      {
+        "title": "Self-Improving",
+        "content": [
+          "自我进化Agent",
+          "自动记录错误和经验",
+          "持续学习优化"
+        ]
+      },
+      {
+        "title": "Proactive Agent",
+        "content": [
+          "主动服务",
+          "心跳机制15分钟",
+          "主动提醒推送"
+        ]
+      },
+      {
+        "title": "Office-Automation",
+        "content": [
+          "办公自动化",
+          "日程邮件文档",
+          "Excel数据分析"
+        ]
+      }
+    ]
+  },
+  {
+    "layout": "timeline",
+    "title": "记忆系统维护策略",
+    "steps": [
+      {
+        "title": "每周回顾\n（周日）",
+        "desc": "检查新增学习记录、识别重复模式、提取核心学习点、如记录>10条执行归档"
+      },
+      {
+        "title": "每月归档\n（月末）",
+        "desc": "归档到archive/monthly/、生成月度摘要、清理活跃记录≤10条"
+      },
+      {
+        "title": "每季审查\n（季末）",
+        "desc": "审查MEMORY.md、更新AGENTS.md、季度总结归档"
+      }
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "记忆检索优化实战",
+    "content": [
+      "问题：Memory Search太慢（300秒超时）",
+      "解决方案1：禁用慢速功能 memory_search.enabled = false",
+      "解决方案2：关键词索引系统（INDEX.md）快速定位信息",
+      "解决方案3：分类存储学习记录 by-topic/email.md、cron.md等",
+      "优化效果：5-300秒 → <1秒（300倍提升）",
+      "预加载核心文件：SOUL.md、MEMORY.md、INDEX.md"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "故障排查与调试",
+    "content": [
+      "响应慢：检查模型响应时间、禁用慢速功能",
+      "技能失效：clawhub list检查状态、查看技能日志",
+      "记忆丢失：检查记忆文件、验证文件内容",
+      "系统化排查流程：收集信息（version/status/日志）→ 定位问题（网络/API/技能测试）→ 解决问题（重启/重配/更新）"
+    ]
+  },
+  {
+    "layout": "section",
+    "number": 3,
+    "title": "实战案例深度解析",
+    "subtitle": "学以致用，实战为王"
+  },
+  {
+    "layout": "timeline",
+    "title": "案例1 - 定时任务自动化",
+    "steps": [
+      {
+        "title": "06:00\nOpenClaw新闻",
+        "desc": "Tavily搜索 → 整理Markdown → 生成HTML → 发送邮件 → 飞书通知"
+      },
+      {
+        "title": "06:30\nAI新闻",
+        "desc": "Tavily搜索 → 整理Markdown → 生成HTML → 发送邮件 → 飞书通知"
+      },
+      {
+        "title": "07:00\n健康科研",
+        "desc": "权威期刊搜索 → 整理报告 → 发送邮件 → 飞书通知"
+      },
+      {
+        "title": "07:30\n华为昇腾",
+        "desc": "官方渠道搜索 → 整理报告 → 发送邮件 → 飞书通知"
+      }
+    ]
+  },
+  {
+    "layout": "table",
+    "title": "案例2 - 邮件自动化系统",
+    "rows": [
+      ["任务", "时间", "收件人", "状态"],
+      ["OpenClaw新闻", "06:00", "QQ+华为邮箱", "✅ 正常"],
+      ["AI新闻", "06:30", "QQ+华为邮箱", "✅ 正常"],
+      ["健康科研", "07:00", "QQ+华为邮箱", "✅ 正常"],
+      ["华为昇腾", "07:30", "QQ+华为+飞书", "✅ 新增"]
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "案例3 - 语音交互系统",
+    "content": [
+      "场景：语音输入 + 语音回复",
+      "技术栈：Azure TTS引擎、音色zh-CN-XiaoyiNeural（年轻女声，活泼）、语速+30%、输出MP3",
+      "使用场景：新闻播报、消息提醒、内容朗读、多语言支持",
+      "流程：文本 → Azure TTS → MP3 → 飞书"
+    ]
+  },
+  {
+    "layout": "table",
+    "title": "案例4 - 智能内容生成",
+    "rows": [
+      ["内容类型", "耗时", "质量"],
+      ["AI新闻摘要", "5分钟", "⭐⭐⭐⭐⭐"],
+      ["竞品分析报告", "10分钟", "⭐⭐⭐⭐⭐"],
+      ["技术博客", "15分钟", "⭐⭐⭐⭐"],
+      ["微信公众号", "20分钟", "⭐⭐⭐⭐"]
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "案例5 - Agent团队协作",
+    "content": [
+      "Agent团队架构：总指挥(main)任务识别与分发、笔杆子(creator)内容创作、参谋(canmou)深度研究、进化官(jihua)代码开发、交易官(jiaoyi)股票监控、社区官(shequ)社区运营",
+      "公众号文章生成流程：老板提出需求 → 参谋Agent深度调研（3分29秒）→ 笔杆子Agent撰写文章（50秒）→ 尝试API自动发布 → 生成手工发布辅助工具",
+      "成果：调研报告 + 2800字文章 + 发布辅助工具、总耗时4分19秒（传统方式需数小时）"
+    ]
+  },
+  {
+    "layout": "matrix",
+    "title": "高级技巧 - 性能优化与安全",
+    "quadrants": [
+      {
+        "title": "性能优化",
+        "desc": "禁用慢速功能、关键词索引系统、预加载核心文件、5-300秒→<1秒"
+      },
+      {
+        "title": "数据安全",
+        "desc": "数据不出本地、不依赖云端、可完全离线运行"
+      },
+      {
+        "title": "隐私保护",
+        "desc": "聊天记录本地存储、API Key本地加密、自主控制数据"
+      },
+      {
+        "title": "安全配置",
+        "desc": "文件权限管理、环境变量保护、定期备份策略"
+      }
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "高级技巧 - 扩展与定制",
+    "content": [
+      "自定义Agent：配置专属Agent、指定模型和Skills",
+      "自定义Skill开发：创建Skill目录、编写SKILL.md、编写执行脚本、发布到ClawHub",
+      "Skill目录结构：SKILL.md（技能说明）、scripts/（可执行脚本）、assets/（资源文件）、_meta.json（元数据）",
+      "集成外部服务：企业微信、钉钉、Slack"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "价值总结与最佳实践",
+    "content": [
+      "OpenClaw核心价值：效率提升（自动化任务，效率提升10倍+）、成本降低（开源免费，本地部署）、能力扩展（5400+技能生态，持续进化）",
+      "DO：定期备份、记录经验、使用版本控制、启用Self-Improving",
+      "DON'T：硬编码敏感信息、忽视安全扫描、忽略学习记录",
+      "成功秘诀：从简单任务开始逐步自动化、建立记忆系统持续优化、多Agent协作分工明确、定期回顾提取模式"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "Q&A 与资源推荐",
+    "content": [
+      "Q: OpenClaw适合什么人群？A: 开发者、产品经理、运营人员、任何想提升效率的人",
+      "Q: 学习曲线如何？A: 基础使用30分钟上手，深度定制需要1-2周",
+      "Q: 与ChatGPT的关系？A: 互补关系。ChatGPT适合问答，OpenClaw适合执行",
+      "资源推荐：GitHub github.com/openclaw/openclaw、官方文档 docs.openclaw.ai、ClawHub技能市场 clawhub.com"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "附录 - 核心数据汇总",
+    "content": [
+      "GitHub Stars: 297,000+",
+      "技能数量: 13,729+（注册表）/ 5,490+（精选）",
+      "支持平台: 20+ 消息渠道",
+      "首次发布: 2025年11月",
+      "案例6耗时: 4分19秒",
+      "演讲时间分配：第一部分10分钟、第二部分15分钟、第三部分30分钟、Q&A 5分钟（总计60分钟）"
+    ]
+  },
+  {
+    "layout": "content",
+    "title": "金句汇总",
+    "content": [
+      "最好的产品，往往源于创始人自己的痛点。",
+      "问答式AI是过去，执行式AI才是未来。",
+      "AI不是要取代人，而是要取代那些让人烦死的工作。",
+      "未来已来，只是分布不均。",
+      "那些愿意拥抱变化的人，总是走在前面。"
+    ]
+  }
+]

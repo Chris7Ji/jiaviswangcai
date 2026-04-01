@@ -1,0 +1,9 @@
+开始时间: Sat Feb 28 22:28:52 CST 2026
+技能列表: docker aws telegram ffmpeg calendar python vscode vercel zoom openai
+= 100_skills_analysis_report.md AGENTS.md HEARTBEAT.md IDENTITY.md MEMORY.md QUICK_START.md SOUL.md TOOLS.md USER.md __pycache__ ai_news_cron_job.json ai_news_daily.sh ai_news_search_test.md auto_email_search.py auto_install_all.sh auto_voice_reply.py azure_speech_recognition.py azure_tts_correct.py azure_tts_integration.py azure_tts_simple.py azure_tts_test.py azure_voice_reply.mp3 complete_100_skills_system.sh daily_ai_news.js demo_reply.mp3 email_search_helper.py enable_auto_voice.py feishu_voice_handler.py feishu_voice_sender.py final_voice_system.py generate_azure_reply.py generate_tts_for_feishu.py headless_cms_comparison_2025.md headless_cms_comparison_table.html headless_cms_quick_comparison.md himalaya_config_template.toml imap_search_template.py install_100_skills_smart.sh install_top_skills.sh jarvis_final_voice.py jarvis_news_today.mp3 logs memory monitor_and_process.py news_summaries qq_gmail_search.py quick_100_skills_guide.md reports safe_email_search.py scripts search_meetings.py send_ai_news_email.py send_ai_news_simple.py send_email_test.py skill_100_installer.py skills skills_dashboard.html skills_dashboard_final.html test_pipeline_simple.py test_pipeline_simple2.py test_speech_recognition.py test_voice.mp3 tests top_skills_report.md voice_cron_config.json voice_integration_design.md voice_processing_pipeline.py voice_reply_for_mobile.mp3 vosk_speech_recognition.py 50
+[1/10] 安装: docker
+- Resolving docker
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ docker 安装成功
+等待 30秒避免速率限制...

@@ -1,0 +1,20 @@
+# 教育行业AI资讯日报定时任务配置
+# 每天早上8点执行
+
+# 添加以下行到crontab
+0 8 * * * /Users/jiyingguo/.openclaw/workspace/scripts/education_ai_daily.sh
+
+# 配置步骤：
+# 1. 执行: crontab -e
+# 2. 添加上面一行
+# 3. 保存退出
+
+# 或者使用以下命令直接添加：
+# (crontab -l 2>/dev/null; echo "0 8 * * * /Users/jiyingguo/.openclaw/workspace/scripts/education_ai_daily.sh") | crontab -
+
+# 查看当前crontab：
+# crontab -l
+
+# 删除任务：
+# crontab -e
+# 删除对应行

@@ -1,0 +1,14 @@
+{
+  "recipient": {
+    "name": "钢铁侠",
+    "feishu_open_id": "ou_b6c7778820b20031cd97bdc45d1cd9fa"
+  },
+  "channels": [
+    {
+      "type": "feishu",
+      "target": "ou_b6c7778820b20031cd97bdc45d1cd9fa"
+    }
+  ],
+  "agent_name": "旺财Jarvis",
+  "timezone": "Asia/Shanghai"
+}

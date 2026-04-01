@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1774099326174
+    },
+    "ui-ux-pro-max": {
+      "version": "0.1.0",
+      "installedAt": 1774523071095
+    }
+  }
+}

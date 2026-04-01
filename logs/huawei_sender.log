@@ -1,0 +1,8 @@
+2026-03-19 12:27:43,250 - HuaweiCompatibleSender - INFO - 开始发送邮件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-03-19.html
+2026-03-19 12:27:43,250 - HuaweiCompatibleSender - INFO - 邮件主题: 2026年3月19日 高校分队- AI 新闻每日简报
+2026-03-19 12:27:43,250 - HuaweiCompatibleSender - INFO - 收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-03-19 12:27:43,251 - HuaweiCompatibleSender - INFO - 使用QQ邮箱SMTP: 86940135@qq.com
+2026-03-19 12:27:44,307 - HuaweiCompatibleSender - INFO - 邮件发送成功: jiyingguo@huawei.com
+2026-03-19 12:27:45,131 - HuaweiCompatibleSender - INFO - 邮件发送成功: xushengsheng@huawei.com
+2026-03-19 12:27:45,963 - HuaweiCompatibleSender - INFO - 邮件发送成功: 86940135@qq.com
+2026-03-19 12:27:45,963 - HuaweiCompatibleSender - INFO - 所有邮件发送成功
