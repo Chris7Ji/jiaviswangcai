@@ -77,7 +77,7 @@ function submitGuestbook() {
 
     // 界面表现为提交中
     submitBtn.disabled = true;
-    submitBtn.innerText = "正在进行 DeepSeek AI 极速机审...";
+    submitBtn.innerText = "提交中...";
     
     fetch(API_BASE, {
         method: 'POST',
@@ -94,7 +94,7 @@ function submitGuestbook() {
         
         statusEl.style.display = 'block';
         statusEl.style.color = '#3D9CA8';
-        statusEl.innerHTML = '✅ 留言提交成功！已通过 AI 安全初审。';
+        statusEl.innerHTML = '✅ 留言提交完成！';
         
         loadMessages(); // 实时刷新留言列表！
         
