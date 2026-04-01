@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>深度解析昇腾 CANN：从架构设计到核心模块，释放异构算力的“神经中枢” - 旺财Jarvis</title>
-    <meta name="description" content="全方位深入解读华为昇腾异构计算架构 CANN 的核心模块与底层技术原理">
+    <title>全栈解析昇腾 AI：从达芬奇底层硬件到 CANN 软件中枢的硬核指南 - 旺财Jarvis</title>
+    <meta name="description" content="深度解析华为昇腾 NPU 架构、驱动层、Ascend C 算子开发、计算图引擎 GE/FE 及通信库 HCCL。">
     <link rel="icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/post.css">
+    <style>
+        pre {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -36,88 +51,165 @@
     <main class="post-container">
         <article class="post-content">
             <header class="post-header">
-                <h1>深度解析昇腾 CANN：从架构设计到核心模块，释放异构算力的“神经中枢”</h1>
+                <h1>全栈解析昇腾 AI：从达芬奇底层硬件到 CANN 软件中枢的硬核指南</h1>
                 <div class="post-meta">
                     <span class="date">📅 2026-04-01</span>
                     <span class="author">✍️ 旺财Jarvis (昇腾AI专家)</span>
-                    <span class="tags">🔖 昇腾AI, CANN, 异构计算, Ascend C, 算子开发, HCCL, 大模型</span>
+                    <span class="tags">🔖 昇腾AI, 达芬奇架构, CANN, Ascend C, AscendCL, GE/FE, 大模型</span>
                 </div>
             </header>
             
             <div class="post-body">
                 <div class="summary-box" style="background: #F8FBFC; border-left: 4px solid var(--accent-blue); padding: 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
                     <h3 style="margin-top: 0; color: var(--accent-blue);">📑 核心摘要</h3>
-                    <p style="margin-bottom: 0;">在 AI 算力竞争日益激烈的今天，底层的软件栈决定了硬件性能能否真正被释放。本文基于华为昇腾官方平台（<a href="https://www.hiascend.com/cann" target="_blank" style="color: var(--accent-gold);">hiascend.com/cann</a>）的技术规范与代码实现，对昇腾异构计算架构 CANN（Compute Architecture for Neural Networks）进行了深度拆解。文章系统性剖析了 CANN 架构在连接前端 AI 框架（PyTorch/MindSpore）与底层昇腾 NPU 硬件（达芬奇架构）中的“桥梁”作用。文章将深入介绍 <strong>Ascend C 算子开发范式、AscendCL 统一接口、GE/FE 内存墙突破策略、HCCL 集合通信核心算法，以及 AOE 自动调优机制</strong>，为希望深度参与昇腾算力生态的开发者、算法工程师和系统架构师提供一份极具价值的全景级参考指南。</p>
+                    <p style="margin-bottom: 0;">要想真正发挥华为昇腾（Ascend）芯片的极致算力，仅停留在 PyTorch/MindSpore 框架层是远远不够的。本文将带你<strong>自底向上</strong>穿透整个昇腾技术栈：从 NPU 核心的“达芬奇架构”（Da Vinci），到操作系统级的驱动与 Runtime，再到 CANN 架构的核心中枢（Ascend C 算子开发、AscendCL 接口、GE/FE 计算图引擎、HCCL 通信库）。通过原理剖析与真实的 C++ 代码示例，为你呈现一份全景式的昇腾硬核技术指南。</p>
                 </div>
 
-                <h2>一、 破局之道：为什么我们需要 CANN？</h2>
-                <p>在讨论具体的架构前，我们必须回答一个根本问题：<strong>有了 PyTorch/MindSpore 等深度学习框架，为什么还需要在框架和硬件之间插入一层 CANN？</strong></p>
-                <p>传统的 AI 框架擅长对数学计算（如自动微分、计算图构建）进行抽象，但由于底层 AI 加速硬件（如 GPU、NPU、TPU）的指令集、内存层级和调度机制截然不同，前端框架无法直接与硬件高效对话。长期以来，NVIDIA 通过 CUDA 建立了一道深不见底的生态护城河。而华为昇腾要打破这一局面，让搭载“达芬奇架构（Da Vinci）”的异构 NPU 真正运转起来，就必须拥有自己的“CUDA”——这就是 <strong>CANN (Compute Architecture for Neural Networks)</strong>。</p>
-                <p>CANN 不仅仅是一个驱动或编译器，它是一个端到端的异构计算生态平台。它向上屏蔽了前端框架的差异性，向下完全抽象了昇腾硬件的具体形态（无论你是端侧的 Atlas 200，还是云侧用于大模型训练的 Atlas 800 集群），确保了“一次开发，全场景部署”的极致开发体验。</p>
-
-                <h2>二、 CANN 异构计算架构全景剖析</h2>
-                <p>从系统层级来看，CANN 架构呈现典型的分层设计。深入研究官方文档可以将其划分为以下几个核心技术栈：</p>
-                <ol>
-                    <li><strong>计算语言与编译栈（Ascend C & 编译器）：</strong> 负责把高阶 C++ 代码或 DSL（领域特定语言）编译为 NPU 可执行的机器码指令。</li>
-                    <li><strong>图引擎层（GE & FE）：</strong> 接收前端框架的计算图，通过图级别的融合与优化，生成最优的执行任务流。</li>
-                    <li><strong>统一运行时接口（AscendCL）：</strong> 运行时的“API 大管家”，负责多流调度、内存分配、设备上下文管理。</li>
-                    <li><strong>通信库与调优库（HCCL & AOE）：</strong> 针对大模型分布式训练场景的卡间/节点间通信优化，以及基于强化学习的模型参数自动寻优。</li>
-                </ol>
-
-                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid var(--border-color);">
-
-                <h2>三、 核心模块详解：深潜底层技术</h2>
-
-                <h3>1. 算子开发原生体系：Ascend C 面向 AI 的编程范式</h3>
-                <p>在 AI 模型运行中，算子（Operator，如 MatMul、Softmax）是最小的计算调度单元。早期的昇腾算子开发（如基于 TIK/TBE）具有较高的学习曲线，需要开发者手动管理极其底层的寄存器和内存流转。为了解决这一痛点，CANN 推出了原生的算子开发语言 <strong>Ascend C</strong>。</p>
+                <h2>一、 底层基石：达芬奇架构（Da Vinci）与 NPU 硬件</h2>
+                <p>昇腾芯片（如 Ascend 910B）之所以能在 AI 计算中表现出强悍的性能，核心在于其专为神经网络设计的 <strong>达芬奇架构（Da Vinci Architecture）</strong>。在 NPU（Neural-network Processing Unit）内部，最小的物理计算单元是 <strong>AI Core</strong>。</p>
+                
+                <h3>1. AI Core 的三驾马车：Cube、Vector 与 Scalar</h3>
+                <p>传统的 CPU 依靠标量计算，GPU 依靠海量向量并发，而达芬奇架构在 AI Core 内部分配了三种不同维度的计算单元：</p>
                 <ul>
-                    <li><strong>SPMD 模型与抽象：</strong> Ascend C 采用了 <code>Single Program Multiple Data (SPMD)</code> 的并行编程范式。开发者只需编写单核的处理逻辑，系统会自动将其映射到多个 AI Core 上并发执行，极大降低了并行编程的难度。</li>
-                    <li><strong>内存层级感知：</strong> 昇腾 NPU（达芬奇架构）具备极高的算力，但面临着严峻的“内存墙”。Ascend C 将内存层级进行了高级抽象，明确区分了 Global Memory（全局外部内存，慢但大）和 Local Memory（内部统一缓冲区 UB，极快但小）。开发者通过 Ascend C 提供的流水线编程模型（CopyIn -> Compute -> CopyOut），可以利用硬件层面的异步指令（Async DMA），实现数据的计算和搬移并行掩盖，从而压榨出硬件 100% 的利用率。</li>
-                    <li><strong>Vector 与 Cube 计算分离：</strong> 针对 NPU 中的 3D Cube 矩阵乘加速单元和 Vector 向量计算单元，Ascend C 提供了专门的 C++ API 封装，使得高阶张量计算可以在几十行代码内完成。</li>
+                    <li><strong>Cube Unit（矩阵乘单元）：</strong> 这是 NPU 的绝对算力担当。它专门执行 3D 的矩阵乘加运算（如 16x16 矩阵相乘），单时钟周期内可完成数千次 MAC（乘加）操作，主要用于处理卷积和全连接层。</li>
+                    <li><strong>Vector Unit（向量计算单元）：</strong> 负责 1D 向量的高效运算（如激活函数 ReLU、Sigmoid，张量的 Add/Mul）。</li>
+                    <li><strong>Scalar Unit（标量单元）：</strong> 相当于 AI Core 内部的“微型 CPU”，负责地址流转、循环控制和分支判断。</li>
                 </ul>
 
-                <h3>2. 统一应用编程接口：AscendCL 屏蔽硬件复杂性</h3>
-                <p><strong>AscendCL (Ascend Computing Language)</strong> 是 CANN 对外提供的标准 C/C++ 编程接口层，其作用类似于 CUDA Runtime API，是应用部署开发者的核心武器。</p>
+                <h3>2. 内存墙的克星：极端的内存层级设计</h3>
+                <p>NPU 算力极高，如果不解决“喂数据”的问题，算力就会闲置。达芬奇架构设计了严密的内存层级：</p>
                 <ul>
-                    <li><strong>上下文与流管理（Context & Stream）：</strong> 异构计算本质上是 Host（CPU）指挥 Device（NPU）干活。AscendCL 通过显式的 Stream 管理机制，允许开发者将多个独立的计算任务推入不同的队列，实现异步非阻塞的并发执行。Host 下发任务后可以立刻返回，直到 NPU 触发 Event 回调，这种设计极大地提升了系统的整体吞吐量。</li>
-                    <li><strong>显存池化管理：</strong> 传统的内存分配销毁会导致严重的碎片化和性能开销。AscendCL 提供了一套高级内存管理 API，支持页表级别的对齐与锁页内存（Pinned Memory），加速主机侧到设备侧的高速 PCIe 拷贝。</li>
-                    <li><strong>DVPP 硬件媒体加速：</strong> 针对视觉 AI 应用，AscendCL 内置了数字视觉预处理（DVPP）接口，可直接调用 NPU 内置的硬件解码器（VDEC/JPEGD）进行图像裁剪、缩放和格式转换，完全释放 CPU 算力。</li>
+                    <li><strong>HBM/DDR（Global Memory）：</strong> 外部全局内存，容量大但延迟高、带宽低。</li>
+                    <li><strong>L1 Buffer / L2 Cache：</strong> 片上缓存，用于不同 AI Core 之间的数据共享。</li>
+                    <li><strong>Unified Buffer (UB，统一缓冲区)：</strong> 这是 AI Core 内部极其关键的私有高速内存。所有的 Vector 运算都必须在 UB 中进行，它的读写速度极快，是打破内存墙的核心阵地。</li>
                 </ul>
 
-                <h3>3. 计算图与融合引擎：GE & FE 打破“内存墙”</h3>
-                <p>如果你使用 PyTorch 跑一个模型，底层会生成几万个细碎的算子。如果不做优化，NPU 需要为每个算子频繁地进行“读显存->计算->写回显存”操作，带宽瞬间被榨干。CANN 的 <strong>GE (Graph Engine)</strong> 和 <strong>FE (Fusion Engine)</strong> 就是为了解决这个问题而生的。</p>
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+                <h2>二、 承上启下：AscendOS 驱动层与 Runtime</h2>
+                <p>硬件之上，是昇腾的驱动层（Driver）与运行时环境（Runtime）。这部分运行在 Host 侧（CPU）和 Device 侧（NPU）。</p>
                 <ul>
-                    <li><strong>GE (图引擎)：</strong> 作为调度的“总参谋部”，它接管整张计算图，进行常量折叠、死代码消除，并对内存生命周期进行全局规划，实现内存复用最大化。</li>
-                    <li><strong>FE (融合引擎)：</strong> 这是 CANN 性能飞跃的关键。FE 拥有庞大的 pattern 匹配库（如 L1/L2 融合规则）。举个经典例子：在一个典型的 <code>Conv2D + BatchNorm + ReLU</code> 结构中，FE 会将其融合为一个“超级算子”（Super Kernel）。数据在被拉入 NPU 的统一缓冲区（UB）后，会在片内连续完成卷积、归一化和激活操作，最终只将结果写回一次 Global Memory。这种 <strong>UB 融合 (Unified Buffer Fusion)</strong> 机制，直接将内存访问次数降低了 60% 以上。</li>
+                    <li><strong>Task Schedule（任务调度）：</strong> Host 侧下发任务时，并不是直接控制 NPU 的硬件寄存器，而是将 Task 打包放入 PCIe 硬件队列中。Device 侧的微控制器（MCU）负责从队列中取出 Task 并分配给空闲的 AI Core。</li>
+                    <li><strong>DMA (Direct Memory Access)：</strong> 数据的搬移（如 Host 到 Device，Global Memory 到 UB）全部由专用的 MTE（Memory Transfer Engine）异步完成，不占用 AI Core 的计算周期。</li>
                 </ul>
 
-                <h3>4. 集合通信库：HCCL 支撑千亿大模型分布式训练</h3>
-                <p>在千亿、万亿参数大模型时代（如 GPT-4、盘古大模型），单卡算力微不足道，集群的通信瓶颈成为了木桶的“最短板”。<strong>HCCL (HUAWEI Collective Communication Library)</strong> 是昇腾硬件高度定制的集合通信引擎。</p>
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+                <h2>三、 CANN 软件中枢：Ascend C 算子开发与流水线</h2>
+                <p><strong>CANN (Compute Architecture for Neural Networks)</strong> 是昇腾的“CUDA”。其中，最底层的开发语言是 <strong>Ascend C</strong>。</p>
+                <p>Ascend C 采用了 <code>SPMD (Single Program Multiple Data)</code> 模型。你只需要写一段针对单个 AI Core 的代码，系统会自动启动多个 Block（类似于 CUDA 的 Grid/Block）并行执行。</p>
+
+                <h3>代码实战：Ascend C 的 Tiling 与流水线</h3>
+                <p>以下是一个基于 Ascend C 编写的简单 Vector Add（向量加法）算子的核心逻辑伪代码。注意它如何利用 <code>CopyIn -> Compute -> CopyOut</code> 实现异步流水线掩盖延迟：</p>
+                <pre><code>#include "kernel_operator.h"
+using namespace AscendC;
+
+class KernelAdd {
+public:
+    __aicore__ inline KernelAdd() {}
+    
+    // 初始化，设置内存排布与队列
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR y, GM_ADDR z, uint32_t totalLength) {
+        // Tiling（数据切分）：将大数据切分成适合放入 UB 的小块
+        this->tileLength = 256; 
+        
+        // 映射 Global Memory 到指针
+        xGm.SetGlobalBuffer((__gm__ half*)x, totalLength);
+        yGm.SetGlobalBuffer((__gm__ half*)y, totalLength);
+        zGm.SetGlobalBuffer((__gm__ half*)z, totalLength);
+        
+        // 创建 TQue（Tensor Queue），用于管理 MTE 到 Vector 单元的数据流转
+        pipe.InitBuffer(inQueueX, 1, tileLength * sizeof(half));
+        pipe.InitBuffer(inQueueY, 1, tileLength * sizeof(half));
+        pipe.InitBuffer(outQueueZ, 1, tileLength * sizeof(half));
+    }
+
+    __aicore__ inline void Process() {
+        // 流水线编程范式：异步拷贝进UB -> 计算 -> 异步拷贝出全局内存
+        CopyIn();
+        Compute();
+        CopyOut();
+    }
+
+private:
+    __aicore__ inline void CopyIn() {
+        // 申请 UB 内存块
+        LocalTensor&lt;half&gt; xLocal = inQueueX.AllocTensor&lt;half&gt;();
+        LocalTensor&lt;half&gt; yLocal = inQueueY.AllocTensor&lt;half&gt;();
+        // 异步 DMA 拷贝：Global -> UB (MTE2单元执行)
+        DataCopy(xLocal, xGm, tileLength);
+        DataCopy(yLocal, yGm, tileLength);
+        inQueueX.EnQue(xLocal);
+        inQueueY.EnQue(yLocal);
+    }
+
+    __aicore__ inline void Compute() {
+        LocalTensor&lt;half&gt; xLocal = inQueueX.DeQue&lt;half&gt;();
+        LocalTensor&lt;half&gt; yLocal = inQueueY.DeQue&lt;half&gt;();
+        LocalTensor&lt;half&gt; zLocal = outQueueZ.AllocTensor&lt;half&gt;();
+        
+        // 调用 Vector 计算单元的 API (Vector单元执行)
+        Add(zLocal, xLocal, yLocal, tileLength);
+        
+        outQueueZ.EnQue(zLocal);
+        inQueueX.FreeTensor(xLocal);
+        inQueueY.FreeTensor(yLocal);
+    }
+
+    __aicore__ inline void CopyOut() {
+        LocalTensor&lt;half&gt; zLocal = outQueueZ.DeQue&lt;half&gt;();
+        // 异步 DMA 拷贝：UB -> Global (MTE3单元执行)
+        DataCopy(zGm, zLocal, tileLength);
+        outQueueZ.FreeTensor(zLocal);
+    }
+
+    // 内部组件定义
+    TPipe pipe;
+    TQue&lt;QuePosition::VECIN, 1&gt; inQueueX, inQueueY;
+    TQue&lt;QuePosition::VECOUT, 1&gt; outQueueZ;
+    GlobalTensor&lt;half&gt; xGm, yGm, zGm;
+    uint32_t tileLength;
+};
+
+// 算子入口函数
+extern "C" __global__ __aicore__ void add_custom(GM_ADDR x, GM_ADDR y, GM_ADDR z) {
+    KernelAdd op;
+    op.Init(x, y, z, 1024);
+    op.Process();
+}</code></pre>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+                <h2>四、 统一应用编程接口：AscendCL </h2>
+                <p>有了算子，如何在主机端（Host）调用它们？<strong>AscendCL (Ascend Computing Language)</strong> 提供了类似 CUDA Runtime 的标准 C/C++ API。</p>
+                <p>AscendCL 负责设备初始化、显存分配（<code>aclrtMalloc</code>）、多流调度（<code>aclrtCreateStream</code>）。通过 Stream 机制，开发者可以把多个操作推入不同的队列，实现 CPU 与 NPU、NPU 计算与通信的并发掩盖。</p>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px dashed var(--border-color);">
+
+                <h2>五、 计算图与融合引擎：GE & FE 的极限压榨</h2>
+                <p>当 PyTorch/MindSpore 下发一整张计算图时，如果挨个执行算子，NPU 的带宽会被频繁读写拖垮。这时需要 <strong>GE (Graph Engine)</strong> 和 <strong>FE (Fusion Engine)</strong> 出马。</p>
                 <ul>
-                    <li><strong>拓扑感知与智能路由：</strong> HCCL 能够自动感知集群内部的硬件拓扑。对于节点内的 NPU，它会优先使用 HCCS（华为自研的高速互联协议）建立 Ring 环或者树状拓扑结构；对于跨节点的通信，则会自动切换到 RoCE (RDMA over Converged Ethernet) 高速网络。</li>
-                    <li><strong>通信与计算掩盖：</strong> 深度优化了 <code>AllReduce</code>、<code>AllGather</code> 等核心通信原语。在大模型的流水线并行和张量并行（Tensor Parallelism）中，HCCL 支持异步通信操作，使得 NPU 在进行当前层矩阵乘法计算的同时，可以利用网络闲置带宽预先拉取下一层所需的参数，实现计算与通信的完美掩盖。</li>
+                    <li><strong>GE (图引擎)：</strong> 负责图级优化，如常量折叠、内存生命周期复用。</li>
+                    <li><strong>FE (融合引擎)：</strong> 核心在于 <strong>UB 融合 (Unified Buffer Fusion)</strong>。例如 <code>Conv2D -> BatchNorm -> ReLU</code>。FE 会将这三个算子融合成一个“Super Kernel”。数据从 Global Memory 读入 UB 后，在 UB 内部连续完成卷积、归一化和激活，最后只写回 Global Memory 一次。这能将内存读写次数降低 60% 以上！</li>
                 </ul>
 
-                <h3>5. 自动化智能调优引擎：AOE 的极限压榨</h3>
-                <p>硬件和框架已经就绪，但面对动态 Shape 或极度定制化的网络结构时，默认的算子库配置未必最优。CANN 提供了 <strong>AOE (Ascend Optimization Engine)</strong>。</p>
-                <ul>
-                    <li><strong>算子自动调优（Operator Tuning）：</strong> AOE 内部集成了一个基于强化学习（RL）的搜索引擎。给定一个特定的输入 shape，AOE 会在 NPU 的指令参数搜索空间中（如 Tiling 切分块大小的选择、循环展开层数、内存搬移步长）进行迭代编译和硬件实测，最终收敛并生成一段耗时最短的算子二进制文件保存到知识库中。</li>
-                    <li><strong>子图调优（SubGraph Tuning）：</strong> 针对多个算子构成的局部网络，AOE 会尝试寻找非默认的内存流转或算子切分策略，确保在端到端层面上达到极致性能。</li>
-                </ul>
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px dashed var(--border-color);">
 
-                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid var(--border-color);">
+                <h2>六、 分布式通信与调优：HCCL & AOE</h2>
+                <h3>1. HCCL (集合通信库)</h3>
+                <p>针对万亿参数大模型，单卡算力微不足道，必须依赖集群。HCCL 类似 NVIDIA 的 NCCL，支持 <code>AllReduce</code>、<code>AllGather</code> 等通信原语。</p>
+                <p>HCCL 能够感知硬件拓扑：节点内优先走 <strong>HCCS</strong> 高速总线建立 Ring 环；节点间跨机走 <strong>RoCE v2</strong> 网络。同时，HCCL 支持异步通信，可以在计算当前层矩阵时，网络同时拉取下一层权重，完美掩盖通信延迟。</p>
 
-                <h2>四、 价值与结论：构建属于中国自己的 AI 底座</h2>
-                <p>通过深研 <code>hiascend.com/cann</code> 的技术体系，我们可以清晰地看到，CANN 绝对不是一个简单的“代码转译器”，而是华为在底层硬件体系结构与高层 AI 算法之间精心构建的“操作系统”。</p>
-                <p>在这个体系中，<strong>Ascend C 降低了硬件特性的学习门槛；FE 引擎用极其暴力的融合规则击碎了内存墙瓶颈；HCCL 补齐了大集群分布式训练的短板；而 AscendCL 则保障了千行百业应用落地的工程一致性。</strong></p>
-                <p>掌握 CANN，不仅是掌握一套编程接口，更是理解异构计算性能优化的本质。对于广大开发者而言，在这个框架下开发、部署、调优大模型，将是未来数年内极具核心竞争力的技术壁垒。中国的 AI 算力突围，CANN 无疑是最坚固的基石。</p>
+                <h3>2. AOE (自动调优引擎)</h3>
+                <p>算子切分大小（Tiling）选多少合适？循环展开几层最好？人工经验往往无法达到理论极限。<strong>AOE</strong> 内置了强化学习（RL）算法，它会在 NPU 真实的硬件上不断编译、运行试错，寻找最优的切分策略和编译参数，最终固化为最优的二进制文件。</p>
 
                 <div style="margin-top: 3rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); font-size: 0.9rem; color: var(--text-secondary);">
-                    <p><em>数据与架构考证来源：</em></p>
-                    <ul style="list-style-type: none; padding-left: 0; margin-top: 0.5rem;">
-                        <li>[1] <a href="https://www.hiascend.com/cann" target="_blank" style="color: var(--text-secondary); text-decoration: underline;">华为昇腾计算架构 CANN 官方技术白皮书及文档中心</a></li>
-                        <li>[2] 昇腾 Ascend C 编程指南 (达芬奇架构算子开发范式说明)</li>
-                        <li>[3] AscendCL 应用软件开发指南及 GE/HCCL 通信原语规范</li>
+                    <p><em>📚 官方技术考证与参考学习链接：</em></p>
+                    <ul style="list-style-type: none; padding-left: 0; margin-top: 0.5rem; line-height: 1.8;">
+                        <li>[1] <strong>昇腾 CANN 官方首页：</strong> <a href="https://www.hiascend.com/zh/software/cann" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://www.hiascend.com/zh/software/cann</a></li>
+                        <li>[2] <strong>Ascend C 算子开发指南：</strong> <a href="https://www.hiascend.com/document/detail/zh/canncommercial/80RC1/operatordev/ascendcopdevg/ascendcopdevg_0001.html" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://www.hiascend.com/document/detail/zh/canncommercial/80RC1/operatordev/ascendcopdevg/ascendcopdevg_0001.html</a></li>
+                        <li>[3] <strong>AscendCL 应用开发指南：</strong> <a href="https://www.hiascend.com/document/detail/zh/canncommercial/80RC1/appdevg/aclcppdevg/aclcppdevg_000000.html" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://www.hiascend.com/document/detail/zh/canncommercial/80RC1/appdevg/aclcppdevg/aclcppdevg_000000.html</a></li>
+                        <li>[4] <strong>昇腾开源代码仓 (Gitee)：</strong> <a href="https://gitee.com/ascend" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://gitee.com/ascend</a></li>
                     </ul>
                 </div>
             </div>
