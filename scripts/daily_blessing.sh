@@ -165,8 +165,10 @@ FULL_PROMPT="Chinese blessing card, elegant flowing calligraphy text '${BLESSING
 echo "风景主题: ${SCENIC_INDEX}"
 
 # 生成图片
+export WORKSPACE="${WORKSPACE}"
+export FILENAME="${FILENAME}"
 cd "${WORKSPACE}" || exit 1
-uv run ~/.openclaw/workspace/skills/nano-banana-pro/scripts/generate_image.py \
+/opt/homebrew/bin/uv run ~/.openclaw/workspace/skills/nano-banana-pro/scripts/generate_image.py \
     --prompt "${FULL_PROMPT}" \
     --filename "${FILENAME}" \
     --resolution 2K \

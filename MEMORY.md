@@ -117,3 +117,21 @@
 - 实际安装技能：54个
 - 已按分类更新网站技能页面
 - 包含：AI技术、运营效率、内容创作、开发工具、竞品市场、系统自动化、日报周报、浏览器自动化
+
+## GitHub提交方式（2026-03-30）
+- **默认使用Git命令**提交GitHub，而不是网页操作
+- 网站目录：`/Users/jiyingguo/.openclaw/workspace/jiaviswangcai.ai`
+- 常用命令：
+  - `git -C /Users/jiyingguo/.openclaw/workspace/jiaviswangcai.ai status`
+  - `git -C /Users/jiyingguo/.openclaw/workspace/jiaviswangcai.ai add .`
+  - `git -C /Users/jiyingguo/.openclaw/workspace/jiaviswangcai.ai commit -m "描述"`
+  - `git -C /Users/jiyingguo/.openclaw/workspace/jiaviswangcai.ai push`
+- exec allowlist 已添加网站目录的git命令
+
+## 定时任务管理策略（2026-03-31）
+- **动态模型继承**：创建 Cron 任务时，**绝不使用** `--model` 参数硬编码绑定模型。让任务继承系统当前全局模型，防止沙箱环境下触发 `LiveSessionModelSwitchError` 导致大面积静默失败。
+- **强制失败告警**：核心业务 Cron 任务必须追加 `--failure-alert --failure-alert-after 1`，确保任务失败 1 次即刻触发飞书主动报警。
+
+## 私有知识星图与图谱链接规范 (2026-03-31)
+- **图谱构建机制**：目前已建立私有知识星图（GraphRAG）。系统会在每天夜间扫描 Markdown 文件，提取所有的 `[[WikiLink]]` 和 `#标签` 构建实体关联图。
+- **强制记录规范**：在写入 `LEARNINGS.md`、`ERRORS.md`、`PROGRESS.md` 等核心日志时，必须主动为核心实体打上方括号链接。例如：遇到网络报错应记录为 `[[报错_ETIMEDOUT]]`，提到某个模型应记录为 `[[Gemini]]`。这样可以让零散的知识点在图谱中自动产生链接，形成网状记忆。

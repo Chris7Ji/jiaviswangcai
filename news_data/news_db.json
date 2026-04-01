@@ -1,0 +1,49 @@
+{
+  "last_updated": "2026-03-31T01:27:56.580919",
+  "news_by_date": {
+    "2026-03-30": [
+      {
+        "title": "微软 Copilot 让 Anthropic 的 Claude 和 OpenAI 的 GPT 联手",
+        "summary": "为了推出其最新的 Copilot 功能，微软正同时依赖于 OpenAI 和 Anthropic 两家顶尖的 AI 实验室。微软押注其核心竞争优势不在于底层的大语言模型，而在于其庞大的数据和生态系统。这意味着未来用户在 Copilot 中可能会体验到多个顶级 AI 模型协同工作的效果。",
+        "url": "https://thenewstack.io/microsofts-copilot-llm-team/",
+        "source": "The New Stack",
+        "date": "2026-03-30"
+      },
+      {
+        "title": "英伟达CEO黄仁勋称“我们已实现AGI”，但业界对AGI的定义仍存分歧",
+        "summary": "上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认知分类等）仍然没有达成共识，反映出行业在评估 AI 真正智能水平时的挑战。",
+        "url": "https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/",
+        "source": "Fortune",
+        "date": "2026-03-30"
+      },
+      {
+        "title": "为什么 Anthropic 泄露的 AI 模型 'Mythos' 会带来网络安全风险",
+        "summary": "由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力也引发了前所未有的网络安全担忧，业界正密切关注其对现有网络防御体系的冲击。",
+        "url": "https://www.euronews.com/next/2026/03/30/what-is-anthropics-mythos-the-leaked-ai-model-that-poses-unprecedented-cybersecurity-risks",
+        "source": "Euronews",
+        "date": "2026-03-30"
+      },
+      {
+        "title": "GeForce Now 在 Apple Vision Pro 上的串流表现优于 Meta 头显",
+        "summary": "英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著提升了流媒体传输的稳定性和延迟表现，为空间计算平台带来了更强大的游戏生态支持。",
+        "url": "https://appleinsider.com/articles/26/03/30/geforce-now-streams-apple-vision-pro-faster-better-than-to-meta-headsets",
+        "source": "AppleInsider",
+        "date": "2026-03-30"
+      },
+      {
+        "title": "为什么说英伟达的股票图表是世界上最重要的",
+        "summary": "如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的关键风向标。",
+        "url": "https://finance.yahoo.com/news/why-nvidia-has-the-important-stock-chart-in-the-world-145416630.html",
+        "source": "Yahoo Finance",
+        "date": "2026-03-30"
+      },
+      {
+        "title": "玩家据称在沃尔玛仅花费 80 美元买到英伟达 RTX 5060 Ti 显卡",
+        "summary": "近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩家们纷纷前往当地超市清仓区“寻宝”的热潮。",
+        "url": "https://www.techradar.com/computing/gpu/gamer-reportedly-buys-nvidia-rtx-5060-ti-gpu-for-usd80-from-walmart-so-you-might-want-to-check-the-clearance-aisle",
+        "source": "TechRadar",
+        "date": "2026-03-30"
+      }
+    ]
+  }
+}

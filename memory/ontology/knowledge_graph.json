@@ -1,0 +1,2973 @@
+{
+  "nodes": [
+    {
+      "id": "doc:COVER_QUICK_GUIDE.md",
+      "type": "Document",
+      "label": "COVER_QUICK_GUIDE.md",
+      "properties": {
+        "path": "COVER_QUICK_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:WEICHAT_PUBLISH_INSTRUCTIONS.md",
+      "type": "Document",
+      "label": "WEICHAT_PUBLISH_INSTRUCTIONS.md",
+      "properties": {
+        "path": "WEICHAT_PUBLISH_INSTRUCTIONS.md"
+      }
+    },
+    {
+      "id": "doc:tavily_alternative_solution.md",
+      "type": "Document",
+      "label": "tavily_alternative_solution.md",
+      "properties": {
+        "path": "tavily_alternative_solution.md"
+      }
+    },
+    {
+      "id": "doc:小白友好版_Mac_mini_飞书_Deepseek_部署指导书.md",
+      "type": "Document",
+      "label": "小白友好版_Mac_mini_飞书_Deepseek_部署指导书.md",
+      "properties": {
+        "path": "小白友好版_Mac_mini_飞书_Deepseek_部署指导书.md"
+      }
+    },
+    {
+      "id": "doc:openclaw_article_2026-03-07.md",
+      "type": "Document",
+      "label": "openclaw_article_2026-03-07.md",
+      "properties": {
+        "path": "openclaw_article_2026-03-07.md"
+      }
+    },
+    {
+      "id": "doc:AI音乐生成使用指南.md",
+      "type": "Document",
+      "label": "AI音乐生成使用指南.md",
+      "properties": {
+        "path": "AI音乐生成使用指南.md"
+      }
+    },
+    {
+      "id": "doc:mac_mini_feishu_deepseek_guide.md",
+      "type": "Document",
+      "label": "mac_mini_feishu_deepseek_guide.md",
+      "properties": {
+        "path": "mac_mini_feishu_deepseek_guide.md"
+      }
+    },
+    {
+      "id": "doc:name_update_record.md",
+      "type": "Document",
+      "label": "name_update_record.md",
+      "properties": {
+        "path": "name_update_record.md"
+      }
+    },
+    {
+      "id": "doc:SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "SESSION-STATE.md"
+      }
+    },
+    {
+      "id": "doc:WECHAT_PUBLISH_GUIDE.md",
+      "type": "Document",
+      "label": "WECHAT_PUBLISH_GUIDE.md",
+      "properties": {
+        "path": "WECHAT_PUBLISH_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:工作汇报使用指南.md",
+      "type": "Document",
+      "label": "工作汇报使用指南.md",
+      "properties": {
+        "path": "工作汇报使用指南.md"
+      }
+    },
+    {
+      "id": "doc:working-buffer.md",
+      "type": "Document",
+      "label": "working-buffer.md",
+      "properties": {
+        "path": "working-buffer.md"
+      }
+    },
+    {
+      "id": "doc:ascend_ai_officer.md",
+      "type": "Document",
+      "label": "ascend_ai_officer.md",
+      "properties": {
+        "path": "ascend_ai_officer.md"
+      }
+    },
+    {
+      "id": "doc:multi_search_engine_analysis.md",
+      "type": "Document",
+      "label": "multi_search_engine_analysis.md",
+      "properties": {
+        "path": "multi_search_engine_analysis.md"
+      }
+    },
+    {
+      "id": "doc:今日会议提醒_10点.md",
+      "type": "Document",
+      "label": "今日会议提醒_10点.md",
+      "properties": {
+        "path": "今日会议提醒_10点.md"
+      }
+    },
+    {
+      "id": "doc:ai_news_search_test.md",
+      "type": "Document",
+      "label": "ai_news_search_test.md",
+      "properties": {
+        "path": "ai_news_search_test.md"
+      }
+    },
+    {
+      "id": "doc:PHASE2_COMPLETE.md",
+      "type": "Document",
+      "label": "PHASE2_COMPLETE.md",
+      "properties": {
+        "path": "PHASE2_COMPLETE.md"
+      }
+    },
+    {
+      "id": "doc:赛力斯M9_PPT大纲.md",
+      "type": "Document",
+      "label": "赛力斯M9_PPT大纲.md",
+      "properties": {
+        "path": "赛力斯M9_PPT大纲.md"
+      }
+    },
+    {
+      "id": "doc:INSTALL_COMPLETE.md",
+      "type": "Document",
+      "label": "INSTALL_COMPLETE.md",
+      "properties": {
+        "path": "INSTALL_COMPLETE.md"
+      }
+    },
+    {
+      "id": "doc:agent_skills_video_resources.md",
+      "type": "Document",
+      "label": "agent_skills_video_resources.md",
+      "properties": {
+        "path": "agent_skills_video_resources.md"
+      }
+    },
+    {
+      "id": "doc:wechat_article_openclaw.md",
+      "type": "Document",
+      "label": "wechat_article_openclaw.md",
+      "properties": {
+        "path": "wechat_article_openclaw.md"
+      }
+    },
+    {
+      "id": "doc:Mac_mini_飞书_Deepseek_部署指导书_完整版.md",
+      "type": "Document",
+      "label": "Mac_mini_飞书_Deepseek_部署指导书_完整版.md",
+      "properties": {
+        "path": "Mac_mini_飞书_Deepseek_部署指导书_完整版.md"
+      }
+    },
+    {
+      "id": "doc:skills_status_report.md",
+      "type": "Document",
+      "label": "skills_status_report.md",
+      "properties": {
+        "path": "skills_status_report.md"
+      }
+    },
+    {
+      "id": "doc:视频总结使用指南.md",
+      "type": "Document",
+      "label": "视频总结使用指南.md",
+      "properties": {
+        "path": "视频总结使用指南.md"
+      }
+    },
+    {
+      "id": "doc:主人信息更新记录.md",
+      "type": "Document",
+      "label": "主人信息更新记录.md",
+      "properties": {
+        "path": "主人信息更新记录.md"
+      }
+    },
+    {
+      "id": "doc:headless_cms_comparison_2025.md",
+      "type": "Document",
+      "label": "headless_cms_comparison_2025.md",
+      "properties": {
+        "path": "headless_cms_comparison_2025.md"
+      }
+    },
+    {
+      "id": "doc:TODO_WECHAT_PUBLISH.md",
+      "type": "Document",
+      "label": "TODO_WECHAT_PUBLISH.md",
+      "properties": {
+        "path": "TODO_WECHAT_PUBLISH.md"
+      }
+    },
+    {
+      "id": "doc:IDENTITY.md",
+      "type": "Document",
+      "label": "IDENTITY.md",
+      "properties": {
+        "path": "IDENTITY.md"
+      }
+    },
+    {
+      "id": "doc:PHASE1_COMPLETE.md",
+      "type": "Document",
+      "label": "PHASE1_COMPLETE.md",
+      "properties": {
+        "path": "PHASE1_COMPLETE.md"
+      }
+    },
+    {
+      "id": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
+      "type": "Document",
+      "label": "THIRD_PARTY_PUBLISH_GUIDE.md",
+      "properties": {
+        "path": "THIRD_PARTY_PUBLISH_GUIDE.md"
+      }
+    },
+    {
+      "id": "tag:1E3A5F",
+      "type": "Tag",
+      "label": "#1E3A5F",
+      "properties": {}
+    },
+    {
+      "id": "tag:F47C20",
+      "type": "Tag",
+      "label": "#F47C20",
+      "properties": {}
+    },
+    {
+      "id": "tag:333333",
+      "type": "Tag",
+      "label": "#333333",
+      "properties": {}
+    },
+    {
+      "id": "tag:F5F5F5",
+      "type": "Tag",
+      "label": "#F5F5F5",
+      "properties": {}
+    },
+    {
+      "id": "doc:complete_guide.md",
+      "type": "Document",
+      "label": "complete_guide.md",
+      "properties": {
+        "path": "complete_guide.md"
+      }
+    },
+    {
+      "id": "doc:PPT大纲_35页完整版.md",
+      "type": "Document",
+      "label": "PPT大纲_35页完整版.md",
+      "properties": {
+        "path": "PPT大纲_35页完整版.md"
+      }
+    },
+    {
+      "id": "doc:PROGRESS.md",
+      "type": "Document",
+      "label": "PROGRESS.md",
+      "properties": {
+        "path": "PROGRESS.md"
+      }
+    },
+    {
+      "id": "doc:HEARTBEAT.md",
+      "type": "Document",
+      "label": "HEARTBEAT.md",
+      "properties": {
+        "path": "HEARTBEAT.md"
+      }
+    },
+    {
+      "id": "doc:PHASE3_PLAN.md",
+      "type": "Document",
+      "label": "PHASE3_PLAN.md",
+      "properties": {
+        "path": "PHASE3_PLAN.md"
+      }
+    },
+    {
+      "id": "doc:skill_finder_guide.md",
+      "type": "Document",
+      "label": "skill_finder_guide.md",
+      "properties": {
+        "path": "skill_finder_guide.md"
+      }
+    },
+    {
+      "id": "doc:Agent状态报告_20260317.md",
+      "type": "Document",
+      "label": "Agent状态报告_20260317.md",
+      "properties": {
+        "path": "Agent状态报告_20260317.md"
+      }
+    },
+    {
+      "id": "doc:openclaw_research_report.md",
+      "type": "Document",
+      "label": "openclaw_research_report.md",
+      "properties": {
+        "path": "openclaw_research_report.md"
+      }
+    },
+    {
+      "id": "doc:web_search_setup_guide.md",
+      "type": "Document",
+      "label": "web_search_setup_guide.md",
+      "properties": {
+        "path": "web_search_setup_guide.md"
+      }
+    },
+    {
+      "id": "doc:test_pdf.md",
+      "type": "Document",
+      "label": "test_pdf.md",
+      "properties": {
+        "path": "test_pdf.md"
+      }
+    },
+    {
+      "id": "doc:健康长寿科研成果监控报告_20260310.md",
+      "type": "Document",
+      "label": "健康长寿科研成果监控报告_20260310.md",
+      "properties": {
+        "path": "健康长寿科研成果监控报告_20260310.md"
+      }
+    },
+    {
+      "id": "doc:headless_cms_quick_comparison.md",
+      "type": "Document",
+      "label": "headless_cms_quick_comparison.md",
+      "properties": {
+        "path": "headless_cms_quick_comparison.md"
+      }
+    },
+    {
+      "id": "doc:PHASE3_COMPLETE.md",
+      "type": "Document",
+      "label": "PHASE3_COMPLETE.md",
+      "properties": {
+        "path": "PHASE3_COMPLETE.md"
+      }
+    },
+    {
+      "id": "doc:WECHAT_PUBLISH_SETUP.md",
+      "type": "Document",
+      "label": "WECHAT_PUBLISH_SETUP.md",
+      "properties": {
+        "path": "WECHAT_PUBLISH_SETUP.md"
+      }
+    },
+    {
+      "id": "doc:MUSIC_GENERATOR_GUIDE.md",
+      "type": "Document",
+      "label": "MUSIC_GENERATOR_GUIDE.md",
+      "properties": {
+        "path": "MUSIC_GENERATOR_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:WEBSITE_SYNC_RULES.md",
+      "type": "Document",
+      "label": "WEBSITE_SYNC_RULES.md",
+      "properties": {
+        "path": "WEBSITE_SYNC_RULES.md"
+      }
+    },
+    {
+      "id": "doc:MEMORY.md",
+      "type": "Document",
+      "label": "MEMORY.md",
+      "properties": {
+        "path": "MEMORY.md"
+      }
+    },
+    {
+      "id": "doc:office_automation_temporary_guide.md",
+      "type": "Document",
+      "label": "office_automation_temporary_guide.md",
+      "properties": {
+        "path": "office_automation_temporary_guide.md"
+      }
+    },
+    {
+      "id": "doc:top_skills_report.md",
+      "type": "Document",
+      "label": "top_skills_report.md",
+      "properties": {
+        "path": "top_skills_report.md"
+      }
+    },
+    {
+      "id": "doc:COVER_IMAGE_GUIDE.md",
+      "type": "Document",
+      "label": "COVER_IMAGE_GUIDE.md",
+      "properties": {
+        "path": "COVER_IMAGE_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:AI视频制作使用指南.md",
+      "type": "Document",
+      "label": "AI视频制作使用指南.md",
+      "properties": {
+        "path": "AI视频制作使用指南.md"
+      }
+    },
+    {
+      "id": "doc:env_setup_guide.md",
+      "type": "Document",
+      "label": "env_setup_guide.md",
+      "properties": {
+        "path": "env_setup_guide.md"
+      }
+    },
+    {
+      "id": "doc:mac_mini_feishu_deepseek_guide_continued.md",
+      "type": "Document",
+      "label": "mac_mini_feishu_deepseek_guide_continued.md",
+      "properties": {
+        "path": "mac_mini_feishu_deepseek_guide_continued.md"
+      }
+    },
+    {
+      "id": "doc:USER.md",
+      "type": "Document",
+      "label": "USER.md",
+      "properties": {
+        "path": "USER.md"
+      }
+    },
+    {
+      "id": "doc:PHASE3_FINAL_COMPLETE.md",
+      "type": "Document",
+      "label": "PHASE3_FINAL_COMPLETE.md",
+      "properties": {
+        "path": "PHASE3_FINAL_COMPLETE.md"
+      }
+    },
+    {
+      "id": "doc:100_skills_analysis_report.md",
+      "type": "Document",
+      "label": "100_skills_analysis_report.md",
+      "properties": {
+        "path": "100_skills_analysis_report.md"
+      }
+    },
+    {
+      "id": "doc:voice_integration_design.md",
+      "type": "Document",
+      "label": "voice_integration_design.md",
+      "properties": {
+        "path": "voice_integration_design.md"
+      }
+    },
+    {
+      "id": "doc:Mac_mini_飞书_Deepseek_OpenClaw_部署指导书_v2.md",
+      "type": "Document",
+      "label": "Mac_mini_飞书_Deepseek_OpenClaw_部署指导书_v2.md",
+      "properties": {
+        "path": "Mac_mini_飞书_Deepseek_OpenClaw_部署指导书_v2.md"
+      }
+    },
+    {
+      "id": "doc:SOUL.md",
+      "type": "Document",
+      "label": "SOUL.md",
+      "properties": {
+        "path": "SOUL.md"
+      }
+    },
+    {
+      "id": "doc:PPT_TEXT_OUTLINE.md",
+      "type": "Document",
+      "label": "PPT_TEXT_OUTLINE.md",
+      "properties": {
+        "path": "PPT_TEXT_OUTLINE.md"
+      }
+    },
+    {
+      "id": "doc:MEMORY_backup_2026-03-11.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-11.md",
+      "properties": {
+        "path": "MEMORY_backup_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:agent_skills_video_trends_2026.md",
+      "type": "Document",
+      "label": "agent_skills_video_trends_2026.md",
+      "properties": {
+        "path": "agent_skills_video_trends_2026.md"
+      }
+    },
+    {
+      "id": "doc:AGENTS.md",
+      "type": "Document",
+      "label": "AGENTS.md",
+      "properties": {
+        "path": "AGENTS.md"
+      }
+    },
+    {
+      "id": "doc:short_term_plan_actions.md",
+      "type": "Document",
+      "label": "short_term_plan_actions.md",
+      "properties": {
+        "path": "short_term_plan_actions.md"
+      }
+    },
+    {
+      "id": "doc:PPT大纲_24页优化版.md",
+      "type": "Document",
+      "label": "PPT大纲_24页优化版.md",
+      "properties": {
+        "path": "PPT大纲_24页优化版.md"
+      }
+    },
+    {
+      "id": "doc:公众号文章_旺财能力介绍.md",
+      "type": "Document",
+      "label": "公众号文章_旺财能力介绍.md",
+      "properties": {
+        "path": "公众号文章_旺财能力介绍.md"
+      }
+    },
+    {
+      "id": "doc:skills_management.md",
+      "type": "Document",
+      "label": "skills_management.md",
+      "properties": {
+        "path": "skills_management.md"
+      }
+    },
+    {
+      "id": "doc:竞品研究使用指南.md",
+      "type": "Document",
+      "label": "竞品研究使用指南.md",
+      "properties": {
+        "path": "竞品研究使用指南.md"
+      }
+    },
+    {
+      "id": "doc:MASCOT.md",
+      "type": "Document",
+      "label": "MASCOT.md",
+      "properties": {
+        "path": "MASCOT.md"
+      }
+    },
+    {
+      "id": "tag:FFD700",
+      "type": "Tag",
+      "label": "#FFD700",
+      "properties": {}
+    },
+    {
+      "id": "tag:00CED1",
+      "type": "Tag",
+      "label": "#00CED1",
+      "properties": {}
+    },
+    {
+      "id": "tag:FF8C00",
+      "type": "Tag",
+      "label": "#FF8C00",
+      "properties": {}
+    },
+    {
+      "id": "tag:1E90FF",
+      "type": "Tag",
+      "label": "#1E90FF",
+      "properties": {}
+    },
+    {
+      "id": "tag:FFA500",
+      "type": "Tag",
+      "label": "#FFA500",
+      "properties": {}
+    },
+    {
+      "id": "tag:00BFFF",
+      "type": "Tag",
+      "label": "#00BFFF",
+      "properties": {}
+    },
+    {
+      "id": "doc:ONBOARDING.md",
+      "type": "Document",
+      "label": "ONBOARDING.md",
+      "properties": {
+        "path": "ONBOARDING.md"
+      }
+    },
+    {
+      "id": "doc:proactive-tracker.md",
+      "type": "Document",
+      "label": "proactive-tracker.md",
+      "properties": {
+        "path": "proactive-tracker.md"
+      }
+    },
+    {
+      "id": "doc:openclaw_ppt_outline.md",
+      "type": "Document",
+      "label": "openclaw_ppt_outline.md",
+      "properties": {
+        "path": "openclaw_ppt_outline.md"
+      }
+    },
+    {
+      "id": "doc:GITHUB_SKILL_GUIDE.md",
+      "type": "Document",
+      "label": "GITHUB_SKILL_GUIDE.md",
+      "properties": {
+        "path": "GITHUB_SKILL_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:MANUAL_PUBLISH_GUIDE.md",
+      "type": "Document",
+      "label": "MANUAL_PUBLISH_GUIDE.md",
+      "properties": {
+        "path": "MANUAL_PUBLISH_GUIDE.md"
+      }
+    },
+    {
+      "id": "tag:f47c20",
+      "type": "Tag",
+      "label": "#f47c20",
+      "properties": {}
+    },
+    {
+      "id": "doc:QUICK_START.md",
+      "type": "Document",
+      "label": "QUICK_START.md",
+      "properties": {
+        "path": "QUICK_START.md"
+      }
+    },
+    {
+      "id": "doc:quick_100_skills_guide.md",
+      "type": "Document",
+      "label": "quick_100_skills_guide.md",
+      "properties": {
+        "path": "quick_100_skills_guide.md"
+      }
+    },
+    {
+      "id": "doc:MEMORY_backup_2026-03-10.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-10.md",
+      "properties": {
+        "path": "MEMORY_backup_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:current_status_and_plan.md",
+      "type": "Document",
+      "label": "current_status_and_plan.md",
+      "properties": {
+        "path": "current_status_and_plan.md"
+      }
+    },
+    {
+      "id": "doc:TOOLS.md",
+      "type": "Document",
+      "label": "TOOLS.md",
+      "properties": {
+        "path": "TOOLS.md"
+      }
+    },
+    {
+      "id": "doc:fun_skills_temporary_guide.md",
+      "type": "Document",
+      "label": "fun_skills_temporary_guide.md",
+      "properties": {
+        "path": "fun_skills_temporary_guide.md"
+      }
+    },
+    {
+      "id": "doc:VIDEO_GENERATOR_GUIDE.md",
+      "type": "Document",
+      "label": "VIDEO_GENERATOR_GUIDE.md",
+      "properties": {
+        "path": "VIDEO_GENERATOR_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:jarviswangcai-clone/README.md",
+      "type": "Document",
+      "label": "README.md",
+      "properties": {
+        "path": "jarviswangcai-clone/README.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-02.md",
+      "type": "Document",
+      "label": "2026-03-02.md",
+      "properties": {
+        "path": "memory/2026-03-02.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-26.md",
+      "type": "Document",
+      "label": "2026-03-26.md",
+      "properties": {
+        "path": "memory/2026-03-26.md"
+      }
+    },
+    {
+      "id": "doc:memory/MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "properties": {
+        "path": "memory/MEMORY_SYSTEM_BUILD_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-06.md",
+      "type": "Document",
+      "label": "2026-03-06.md",
+      "properties": {
+        "path": "memory/2026-03-06.md"
+      }
+    },
+    {
+      "id": "doc:memory/working-buffer.md",
+      "type": "Document",
+      "label": "working-buffer.md",
+      "properties": {
+        "path": "memory/working-buffer.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-16.md",
+      "type": "Document",
+      "label": "2026-03-16.md",
+      "properties": {
+        "path": "memory/2026-03-16.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-22.md",
+      "type": "Document",
+      "label": "2026-03-22.md",
+      "properties": {
+        "path": "memory/2026-03-22.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-07.md",
+      "type": "Document",
+      "label": "2026-03-07.md",
+      "properties": {
+        "path": "memory/2026-03-07.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-17.md",
+      "type": "Document",
+      "label": "2026-03-17.md",
+      "properties": {
+        "path": "memory/2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-23.md",
+      "type": "Document",
+      "label": "2026-03-23.md",
+      "properties": {
+        "path": "memory/2026-03-23.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-03.md",
+      "type": "Document",
+      "label": "2026-03-03.md",
+      "properties": {
+        "path": "memory/2026-03-03.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-29-400-status-code-no-body.md",
+      "type": "Document",
+      "label": "2026-03-29-400-status-code-no-body.md",
+      "properties": {
+        "path": "memory/2026-03-29-400-status-code-no-body.md"
+      }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
+    },
+    {
+      "id": "doc:memory/2026-03-08.md",
+      "type": "Document",
+      "label": "2026-03-08.md",
+      "properties": {
+        "path": "memory/2026-03-08.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-14-0829.md",
+      "type": "Document",
+      "label": "2026-03-14-0829.md",
+      "properties": {
+        "path": "memory/2026-03-14-0829.md"
+      }
+    },
+    {
+      "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_GUIDE.md",
+      "properties": {
+        "path": "memory/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-29.md",
+      "type": "Document",
+      "label": "2026-03-29.md",
+      "properties": {
+        "path": "memory/2026-03-29.md"
+      }
+    },
+    {
+      "id": "doc:memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "type": "Document",
+      "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "properties": {
+        "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-19.md",
+      "type": "Document",
+      "label": "2026-03-19.md",
+      "properties": {
+        "path": "memory/2026-03-19.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-28-new-session.md",
+      "type": "Document",
+      "label": "2026-03-28-new-session.md",
+      "properties": {
+        "path": "memory/2026-03-28-new-session.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-29-dns-fix.md",
+      "type": "Document",
+      "label": "2026-03-29-dns-fix.md",
+      "properties": {
+        "path": "memory/2026-03-29-dns-fix.md"
+      }
+    },
+    {
+      "id": "doc:memory/ascend_cann_knowledge.md",
+      "type": "Document",
+      "label": "ascend_cann_knowledge.md",
+      "properties": {
+        "path": "memory/ascend_cann_knowledge.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-28-openclaw-config-tips.md",
+      "type": "Document",
+      "label": "2026-03-28-openclaw-config-tips.md",
+      "properties": {
+        "path": "memory/2026-03-28-openclaw-config-tips.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-30-1718.md",
+      "type": "Document",
+      "label": "2026-03-30-1718.md",
+      "properties": {
+        "path": "memory/2026-03-30-1718.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-20-ai-news-retry.md",
+      "type": "Document",
+      "label": "2026-03-20-ai-news-retry.md",
+      "properties": {
+        "path": "memory/2026-03-20-ai-news-retry.md"
+      }
+    },
+    {
+      "id": "doc:memory/user_preferences.md",
+      "type": "Document",
+      "label": "user_preferences.md",
+      "properties": {
+        "path": "memory/user_preferences.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-30.md",
+      "type": "Document",
+      "label": "2026-03-30.md",
+      "properties": {
+        "path": "memory/2026-03-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-29-自建Analytics方案.md",
+      "type": "Document",
+      "label": "2026-03-29-自建Analytics方案.md",
+      "properties": {
+        "path": "memory/2026-03-29-自建Analytics方案.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-04.md",
+      "type": "Document",
+      "label": "2026-03-04.md",
+      "properties": {
+        "path": "memory/2026-03-04.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-14.md",
+      "type": "Document",
+      "label": "2026-03-14.md",
+      "properties": {
+        "path": "memory/2026-03-14.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-30-1430.md",
+      "type": "Document",
+      "label": "2026-03-30-1430.md",
+      "properties": {
+        "path": "memory/2026-03-30-1430.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-01.md",
+      "type": "Document",
+      "label": "2026-03-01.md",
+      "properties": {
+        "path": "memory/2026-03-01.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-30-exec-debug.md",
+      "type": "Document",
+      "label": "2026-03-30-exec-debug.md",
+      "properties": {
+        "path": "memory/2026-03-30-exec-debug.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-03-15.md",
+      "type": "Document",
+      "label": "2026-03-15.md",
+      "properties": {
+        "path": "memory/2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:config/huawei_email_config.md",
+      "type": "Document",
+      "label": "huawei_email_config.md",
+      "properties": {
+        "path": "config/huawei_email_config.md"
+      }
+    },
+    {
+      "id": "doc:config/ai_news_final_config.md",
+      "type": "Document",
+      "label": "ai_news_final_config.md",
+      "properties": {
+        "path": "config/ai_news_final_config.md"
+      }
+    },
+    {
+      "id": "doc:config/news_quality_improvement.md",
+      "type": "Document",
+      "label": "news_quality_improvement.md",
+      "properties": {
+        "path": "config/news_quality_improvement.md"
+      }
+    },
+    {
+      "id": "doc:config/ai_news_quality_standard.md",
+      "type": "Document",
+      "label": "ai_news_quality_standard.md",
+      "properties": {
+        "path": "config/ai_news_quality_standard.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-28.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-28.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-28.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-19.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-19.md"
+      }
+    },
+    {
+      "id": "tag:44639",
+      "type": "Tag",
+      "label": "#44639",
+      "properties": {}
+    },
+    {
+      "id": "tag:26054",
+      "type": "Tag",
+      "label": "#26054",
+      "properties": {}
+    },
+    {
+      "id": "tag:43780",
+      "type": "Tag",
+      "label": "#43780",
+      "properties": {}
+    },
+    {
+      "id": "tag:50037",
+      "type": "Tag",
+      "label": "#50037",
+      "properties": {}
+    },
+    {
+      "id": "tag:50034",
+      "type": "Tag",
+      "label": "#50034",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-12.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-12.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-12.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-02.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-02.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-02.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_2026-03-16_formatted.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-03-16_formatted.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-03-16_formatted.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-12_enhanced.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-12_enhanced.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-12_enhanced.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-16.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-16.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-16.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-29.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-29.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-29.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-22.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-22.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-22.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-12_enhanced.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-12_enhanced.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-12_enhanced.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-06.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-06.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-06.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_enhanced_2026-03-03.md",
+      "type": "Document",
+      "label": "ai_news_enhanced_2026-03-03.md",
+      "properties": {
+        "path": "news_summaries/ai_news_enhanced_2026-03-03.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-17.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-17.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-28.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-28.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-28.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-07.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-07.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-07.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-12_enhanced.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md"
+      }
+    },
+    {
+      "id": "tag:42355",
+      "type": "Tag",
+      "label": "#42355",
+      "properties": {}
+    },
+    {
+      "id": "tag:42883",
+      "type": "Tag",
+      "label": "#42883",
+      "properties": {}
+    },
+    {
+      "id": "tag:41155",
+      "type": "Tag",
+      "label": "#41155",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-18.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-18.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-18.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-13.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-13.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-13.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-03.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-03.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-03.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-13.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-13.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-13.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-18.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-18.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-18.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-27.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-27.md"
+      }
+    },
+    {
+      "id": "tag:51808",
+      "type": "Tag",
+      "label": "#51808",
+      "properties": {}
+    },
+    {
+      "id": "tag:49925",
+      "type": "Tag",
+      "label": "#49925",
+      "properties": {}
+    },
+    {
+      "id": "tag:53411",
+      "type": "Tag",
+      "label": "#53411",
+      "properties": {}
+    },
+    {
+      "id": "tag:53389",
+      "type": "Tag",
+      "label": "#53389",
+      "properties": {}
+    },
+    {
+      "id": "tag:52651",
+      "type": "Tag",
+      "label": "#52651",
+      "properties": {}
+    },
+    {
+      "id": "tag:43366",
+      "type": "Tag",
+      "label": "#43366",
+      "properties": {}
+    },
+    {
+      "id": "tag:50444",
+      "type": "Tag",
+      "label": "#50444",
+      "properties": {}
+    },
+    {
+      "id": "tag:54034",
+      "type": "Tag",
+      "label": "#54034",
+      "properties": {}
+    },
+    {
+      "id": "tag:53940",
+      "type": "Tag",
+      "label": "#53940",
+      "properties": {}
+    },
+    {
+      "id": "tag:53385",
+      "type": "Tag",
+      "label": "#53385",
+      "properties": {}
+    },
+    {
+      "id": "tag:54215",
+      "type": "Tag",
+      "label": "#54215",
+      "properties": {}
+    },
+    {
+      "id": "tag:45838",
+      "type": "Tag",
+      "label": "#45838",
+      "properties": {}
+    },
+    {
+      "id": "tag:53624",
+      "type": "Tag",
+      "label": "#53624",
+      "properties": {}
+    },
+    {
+      "id": "tag:53699",
+      "type": "Tag",
+      "label": "#53699",
+      "properties": {}
+    },
+    {
+      "id": "tag:53823",
+      "type": "Tag",
+      "label": "#53823",
+      "properties": {}
+    },
+    {
+      "id": "tag:52545",
+      "type": "Tag",
+      "label": "#52545",
+      "properties": {}
+    },
+    {
+      "id": "tag:53957",
+      "type": "Tag",
+      "label": "#53957",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-15.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-15.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-08.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-08.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-08.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-28_09-12.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-28_09-12.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-28_09-12.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-23.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-23.md"
+      }
+    },
+    {
+      "id": "tag:51500",
+      "type": "Tag",
+      "label": "#51500",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-17.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-17.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-14_enhanced.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-14_enhanced.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-14_enhanced.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-03-16_quick.md",
+      "type": "Document",
+      "label": "health_longevity_2026-03-16_quick.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-03-16_quick.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-11.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-11.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-13.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-13.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-13.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-16.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-16.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-16.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-17_v2.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-17_v2.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-17_v2.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-27.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-27.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-27.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_20260320.md",
+      "type": "Document",
+      "label": "health_longevity_20260320.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_20260320.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/明日策略调整.md",
+      "type": "Document",
+      "label": "明日策略调整.md",
+      "properties": {
+        "path": "news_summaries/明日策略调整.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-12.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-12.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-12.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-23.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-23.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-23.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-26.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-26.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-26.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-16_fresh.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-16_fresh.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-16_fresh.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-14.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-14.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-14.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-09.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-09.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-09.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-21.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-21.md"
+      }
+    },
+    {
+      "id": "tag:48842",
+      "type": "Tag",
+      "label": "#48842",
+      "properties": {}
+    },
+    {
+      "id": "tag:43356",
+      "type": "Tag",
+      "label": "#43356",
+      "properties": {}
+    },
+    {
+      "id": "tag:50848",
+      "type": "Tag",
+      "label": "#50848",
+      "properties": {}
+    },
+    {
+      "id": "tag:51191",
+      "type": "Tag",
+      "label": "#51191",
+      "properties": {}
+    },
+    {
+      "id": "tag:51359",
+      "type": "Tag",
+      "label": "#51359",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-15.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-15.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-11.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-11.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-03-16_formatted.md",
+      "type": "Document",
+      "label": "health_longevity_2026-03-16_formatted.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-03-16_formatted.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-14.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-14.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-14.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-03-15.md",
+      "type": "Document",
+      "label": "health_longevity_2026-03-15.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-25.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-25.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-25.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-17.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-17.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-10.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-10.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-03-14.md",
+      "type": "Document",
+      "label": "health_longevity_2026-03-14.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-03-14.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-24.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-24.md"
+      }
+    },
+    {
+      "id": "tag:52930",
+      "type": "Tag",
+      "label": "#52930",
+      "properties": {}
+    },
+    {
+      "id": "tag:53004",
+      "type": "Tag",
+      "label": "#53004",
+      "properties": {}
+    },
+    {
+      "id": "tag:53034",
+      "type": "Tag",
+      "label": "#53034",
+      "properties": {}
+    },
+    {
+      "id": "tag:52949",
+      "type": "Tag",
+      "label": "#52949",
+      "properties": {}
+    },
+    {
+      "id": "tag:52970",
+      "type": "Tag",
+      "label": "#52970",
+      "properties": {}
+    },
+    {
+      "id": "tag:52962",
+      "type": "Tag",
+      "label": "#52962",
+      "properties": {}
+    },
+    {
+      "id": "tag:53035",
+      "type": "Tag",
+      "label": "#53035",
+      "properties": {}
+    },
+    {
+      "id": "tag:52599",
+      "type": "Tag",
+      "label": "#52599",
+      "properties": {}
+    },
+    {
+      "id": "tag:53020",
+      "type": "Tag",
+      "label": "#53020",
+      "properties": {}
+    },
+    {
+      "id": "tag:52228",
+      "type": "Tag",
+      "label": "#52228",
+      "properties": {}
+    },
+    {
+      "id": "tag:26100",
+      "type": "Tag",
+      "label": "#26100",
+      "properties": {}
+    },
+    {
+      "id": "tag:52992",
+      "type": "Tag",
+      "label": "#52992",
+      "properties": {}
+    },
+    {
+      "id": "tag:48762",
+      "type": "Tag",
+      "label": "#48762",
+      "properties": {}
+    },
+    {
+      "id": "tag:52909",
+      "type": "Tag",
+      "label": "#52909",
+      "properties": {}
+    },
+    {
+      "id": "tag:52922",
+      "type": "Tag",
+      "label": "#52922",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-07_short.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-07_short.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-07_short.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-16.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-16.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-16.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-16_formatted.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-16_formatted.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-16_formatted.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-20.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-20.md"
+      }
+    },
+    {
+      "id": "tag:20177",
+      "type": "Tag",
+      "label": "#20177",
+      "properties": {}
+    },
+    {
+      "id": "tag:17636",
+      "type": "Tag",
+      "label": "#17636",
+      "properties": {}
+    },
+    {
+      "id": "tag:16544",
+      "type": "Tag",
+      "label": "#16544",
+      "properties": {}
+    },
+    {
+      "id": "tag:17749",
+      "type": "Tag",
+      "label": "#17749",
+      "properties": {}
+    },
+    {
+      "id": "tag:14432",
+      "type": "Tag",
+      "label": "#14432",
+      "properties": {}
+    },
+    {
+      "id": "tag:19482",
+      "type": "Tag",
+      "label": "#19482",
+      "properties": {}
+    },
+    {
+      "id": "tag:19362",
+      "type": "Tag",
+      "label": "#19362",
+      "properties": {}
+    },
+    {
+      "id": "tag:18778",
+      "type": "Tag",
+      "label": "#18778",
+      "properties": {}
+    },
+    {
+      "id": "tag:12975",
+      "type": "Tag",
+      "label": "#12975",
+      "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-02-25.md",
+      "type": "Document",
+      "label": "ai_news_2026-02-25.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-02-25.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-30.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-03-30.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-03-30.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-14.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-14.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-14.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-03-12_enhanced.md",
+      "type": "Document",
+      "label": "health_longevity_2026-03-12_enhanced.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-03-12_enhanced.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-20.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-20.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-20.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-04.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-04.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-04.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_2026-03-10.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-03-10.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-10.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-10.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/cron_status_2026-03-04.md",
+      "type": "Document",
+      "label": "cron_status_2026-03-04.md",
+      "properties": {
+        "path": "news_summaries/cron_status_2026-03-04.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-11.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-11.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_report_2026-03-12.md",
+      "type": "Document",
+      "label": "openclaw_report_2026-03-12.md",
+      "properties": {
+        "path": "news_summaries/openclaw_report_2026-03-12.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-01.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-01.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-01.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-16_formatted.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-16_formatted.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-16_formatted.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-15.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-15.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-21.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-21.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-21.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-16_verified.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-16_verified.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-16_verified.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ascend_news_2026-03-18.md",
+      "type": "Document",
+      "label": "ascend_news_2026-03-18.md",
+      "properties": {
+        "path": "news_summaries/ascend_news_2026-03-18.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/ai_news_2026-03-05.md",
+      "type": "Document",
+      "label": "ai_news_2026-03-05.md",
+      "properties": {
+        "path": "news_summaries/ai_news_2026-03-05.md"
+      }
+    },
+    {
+      "id": "doc:health_reports/longevity_research_2026-03-10.md",
+      "type": "Document",
+      "label": "longevity_research_2026-03-10.md",
+      "properties": {
+        "path": "health_reports/longevity_research_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:health_reports/longevity_research_2026-03-13.md",
+      "type": "Document",
+      "label": "longevity_research_2026-03-13.md",
+      "properties": {
+        "path": "health_reports/longevity_research_2026-03-13.md"
+      }
+    },
+    {
+      "id": "doc:stock-monitor/SKILL.md",
+      "type": "Document",
+      "label": "SKILL.md",
+      "properties": {
+        "path": "stock-monitor/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:docs/OpenClaw_Training_Guide.md",
+      "type": "Document",
+      "label": "OpenClaw_Training_Guide.md",
+      "properties": {
+        "path": "docs/OpenClaw_Training_Guide.md"
+      }
+    },
+    {
+      "id": "doc:competitor-research/memory.md",
+      "type": "Document",
+      "label": "memory.md",
+      "properties": {
+        "path": "competitor-research/memory.md"
+      }
+    },
+    {
+      "id": "doc:技术跟踪/技术跟踪清单.md",
+      "type": "Document",
+      "label": "技术跟踪清单.md",
+      "properties": {
+        "path": "技术跟踪/技术跟踪清单.md"
+      }
+    },
+    {
+      "id": "doc:技术跟踪/Kimi对NPU优化流水线的启示.md",
+      "type": "Document",
+      "label": "Kimi对NPU优化流水线的启示.md",
+      "properties": {
+        "path": "技术跟踪/Kimi对NPU优化流水线的启示.md"
+      }
+    },
+    {
+      "id": "doc:技术跟踪/Kimi_Transformer突破_响应策略.md",
+      "type": "Document",
+      "label": "Kimi_Transformer突破_响应策略.md",
+      "properties": {
+        "path": "技术跟踪/Kimi_Transformer突破_响应策略.md"
+      }
+    },
+    {
+      "id": "doc:技术跟踪/Kimi_Transformer突破_20260316.md",
+      "type": "Document",
+      "label": "Kimi_Transformer突破_20260316.md",
+      "properties": {
+        "path": "技术跟踪/Kimi_Transformer突破_20260316.md"
+      }
+    },
+    {
+      "id": "doc:scripts/EDUCATION_AI_SETUP_GUIDE.md",
+      "type": "Document",
+      "label": "EDUCATION_AI_SETUP_GUIDE.md",
+      "properties": {
+        "path": "scripts/EDUCATION_AI_SETUP_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:temp_fun_skill/SKILL.md",
+      "type": "Document",
+      "label": "SKILL.md",
+      "properties": {
+        "path": "temp_fun_skill/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:daily_reports/2026-03-19-daily-report.md",
+      "type": "Document",
+      "label": "2026-03-19-daily-report.md",
+      "properties": {
+        "path": "daily_reports/2026-03-19-daily-report.md"
+      }
+    },
+    {
+      "id": "doc:daily_reports/2026-03-19-email-template.md",
+      "type": "Document",
+      "label": "2026-03-19-email-template.md",
+      "properties": {
+        "path": "daily_reports/2026-03-19-email-template.md"
+      }
+    },
+    {
+      "id": "doc:design-systems/ascend-shadcn-config.md",
+      "type": "Document",
+      "label": "ascend-shadcn-config.md",
+      "properties": {
+        "path": "design-systems/ascend-shadcn-config.md"
+      }
+    },
+    {
+      "id": "tag:0F172A",
+      "type": "Tag",
+      "label": "#0F172A",
+      "properties": {}
+    },
+    {
+      "id": "tag:1E293B",
+      "type": "Tag",
+      "label": "#1E293B",
+      "properties": {}
+    },
+    {
+      "id": "tag:22C55E",
+      "type": "Tag",
+      "label": "#22C55E",
+      "properties": {}
+    },
+    {
+      "id": "tag:F8FAFC",
+      "type": "Tag",
+      "label": "#F8FAFC",
+      "properties": {}
+    },
+    {
+      "id": "tag:94A3B8",
+      "type": "Tag",
+      "label": "#94A3B8",
+      "properties": {}
+    },
+    {
+      "id": "tag:334155",
+      "type": "Tag",
+      "label": "#334155",
+      "properties": {}
+    },
+    {
+      "id": "tag:007C92",
+      "type": "Tag",
+      "label": "#007C92",
+      "properties": {}
+    },
+    {
+      "id": "tag:0A1628",
+      "type": "Tag",
+      "label": "#0A1628",
+      "properties": {}
+    },
+    {
+      "id": "tag:E8F4F8",
+      "type": "Tag",
+      "label": "#E8F4F8",
+      "properties": {}
+    },
+    {
+      "id": "tag:00FFFF",
+      "type": "Tag",
+      "label": "#00FFFF",
+      "properties": {}
+    },
+    {
+      "id": "tag:7B61FF",
+      "type": "Tag",
+      "label": "#7B61FF",
+      "properties": {}
+    },
+    {
+      "id": "tag:FF00FF",
+      "type": "Tag",
+      "label": "#FF00FF",
+      "properties": {}
+    },
+    {
+      "id": "tag:050510",
+      "type": "Tag",
+      "label": "#050510",
+      "properties": {}
+    },
+    {
+      "id": "tag:E0E0FF",
+      "type": "Tag",
+      "label": "#E0E0FF",
+      "properties": {}
+    },
+    {
+      "id": "doc:design-systems/ascend-ecosystem-design-system.md",
+      "type": "Document",
+      "label": "ascend-ecosystem-design-system.md",
+      "properties": {
+        "path": "design-systems/ascend-ecosystem-design-system.md"
+      }
+    },
+    {
+      "id": "tag:000000",
+      "type": "Tag",
+      "label": "#000000",
+      "properties": {}
+    },
+    {
+      "id": "doc:.learnings/MONTHLY_ARCHIVE.md",
+      "type": "Document",
+      "label": "MONTHLY_ARCHIVE.md",
+      "properties": {
+        "path": ".learnings/MONTHLY_ARCHIVE.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/WEEKLY_REVIEW.md",
+      "type": "Document",
+      "label": "WEEKLY_REVIEW.md",
+      "properties": {
+        "path": ".learnings/WEEKLY_REVIEW.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/FEATURE_REQUESTS.md",
+      "type": "Document",
+      "label": "FEATURE_REQUESTS.md",
+      "properties": {
+        "path": ".learnings/FEATURE_REQUESTS.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/ERRORS.md",
+      "type": "Document",
+      "label": "ERRORS.md",
+      "properties": {
+        "path": ".learnings/ERRORS.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/PERFORMANCE.md",
+      "type": "Document",
+      "label": "PERFORMANCE.md",
+      "properties": {
+        "path": ".learnings/PERFORMANCE.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/INDEX.md",
+      "type": "Document",
+      "label": "INDEX.md",
+      "properties": {
+        "path": ".learnings/INDEX.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/GUIDE.md",
+      "type": "Document",
+      "label": "GUIDE.md",
+      "properties": {
+        "path": ".learnings/GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/LEARNINGS.md",
+      "type": "Document",
+      "label": "LEARNINGS.md",
+      "properties": {
+        "path": ".learnings/LEARNINGS.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/QUARTERLY_REVIEW.md",
+      "type": "Document",
+      "label": "QUARTERLY_REVIEW.md",
+      "properties": {
+        "path": ".learnings/QUARTERLY_REVIEW.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/README.md",
+      "type": "Document",
+      "label": "README.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/README.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/by-topic/email.md",
+      "type": "Document",
+      "label": "email.md",
+      "properties": {
+        "path": ".learnings/by-topic/email.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/by-topic/skills.md",
+      "type": "Document",
+      "label": "skills.md",
+      "properties": {
+        "path": ".learnings/by-topic/skills.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/by-topic/model-config.md",
+      "type": "Document",
+      "label": "model-config.md",
+      "properties": {
+        "path": ".learnings/by-topic/model-config.md"
+      }
+    },
+    {
+      "id": "doc:.learnings/by-topic/cron.md",
+      "type": "Document",
+      "label": "cron.md",
+      "properties": {
+        "path": ".learnings/by-topic/cron.md"
+      }
+    },
+    {
+      "id": "doc:venv_docx/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_docx/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_docx/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_docx/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:notes/areas/recurring-patterns.md",
+      "type": "Document",
+      "label": "recurring-patterns.md",
+      "properties": {
+        "path": "notes/areas/recurring-patterns.md"
+      }
+    },
+    {
+      "id": "doc:notes/areas/HEARTBEAT.md",
+      "type": "Document",
+      "label": "HEARTBEAT.md",
+      "properties": {
+        "path": "notes/areas/HEARTBEAT.md"
+      }
+    },
+    {
+      "id": "doc:notes/areas/proactive-tracker.md",
+      "type": "Document",
+      "label": "proactive-tracker.md",
+      "properties": {
+        "path": "notes/areas/proactive-tracker.md"
+      }
+    },
+    {
+      "id": "doc:notes/areas/outcome-journal.md",
+      "type": "Document",
+      "label": "outcome-journal.md",
+      "properties": {
+        "path": "notes/areas/outcome-journal.md"
+      }
+    },
+    {
+      "id": "doc:venv_ppt/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_ppt/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_ppt/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_ppt/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_ppt/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_ppt/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-28.md",
+      "type": "Document",
+      "label": "2026-02-28.md",
+      "properties": {
+        "path": "memory/archive/2026-02-28.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-13.md",
+      "type": "Document",
+      "label": "2026-02-13.md",
+      "properties": {
+        "path": "memory/archive/2026-02-13.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-27.md",
+      "type": "Document",
+      "label": "2026-02-27.md",
+      "properties": {
+        "path": "memory/archive/2026-02-27.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-23.md",
+      "type": "Document",
+      "label": "2026-02-23.md",
+      "properties": {
+        "path": "memory/archive/2026-02-23.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/history_2026-02_to_2026-03.md",
+      "type": "Document",
+      "label": "history_2026-02_to_2026-03.md",
+      "properties": {
+        "path": "memory/archive/history_2026-02_to_2026-03.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-14.md",
+      "type": "Document",
+      "label": "2026-02-14.md",
+      "properties": {
+        "path": "memory/archive/2026-02-14.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/voice_recognition_project.md",
+      "type": "Document",
+      "label": "voice_recognition_project.md",
+      "properties": {
+        "path": "memory/archive/voice_recognition_project.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-02-25.md",
+      "type": "Document",
+      "label": "2026-02-25.md",
+      "properties": {
+        "path": "memory/archive/2026-02-25.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
+      "target": "tag:1E3A5F",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
+      "target": "tag:F47C20",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
+      "target": "tag:333333",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
+      "target": "tag:F5F5F5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:FFD700",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:00CED1",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:FF8C00",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:1E90FF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:FFA500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MASCOT.md",
+      "target": "tag:00BFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:MANUAL_PUBLISH_GUIDE.md",
+      "target": "tag:f47c20",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/2026-03-29-400-status-code-no-body.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "target": "tag:44639",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "target": "tag:26054",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "target": "tag:43780",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "target": "tag:50037",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
+      "target": "tag:50034",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md",
+      "target": "tag:42355",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md",
+      "target": "tag:42883",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md",
+      "target": "tag:41155",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:51808",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:49925",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53389",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:52651",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:43366",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:50444",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53411",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:54034",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53940",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53385",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:54215",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:45838",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53624",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53699",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53823",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:52545",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:53957",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:54034",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-27.md",
+      "target": "tag:45838",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
+      "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:48842",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:43356",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:50848",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:51191",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-21.md",
+      "target": "tag:51359",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52930",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:53004",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:53034",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52949",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52970",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52962",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:53035",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52599",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:53020",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52228",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:26100",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52992",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:48762",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52909",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
+      "target": "tag:52922",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:20177",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:17636",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:16544",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:17749",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:14432",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:19482",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:19362",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:18778",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
+      "target": "tag:12975",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:0F172A",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:1E293B",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:22C55E",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:F8FAFC",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:94A3B8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:334155",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:0F172A",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:1E293B",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:22C55E",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:F8FAFC",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:94A3B8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:334155",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:22C55E",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:007C92",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:00BFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:00BFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:0A1628",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:E8F4F8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:00FFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:7B61FF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:FF00FF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:050510",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-shadcn-config.md",
+      "target": "tag:E0E0FF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:design-systems/ascend-ecosystem-design-system.md",
+      "target": "tag:000000",
+      "relation": "has_tag"
+    }
+  ]
+}
