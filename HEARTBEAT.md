@@ -41,6 +41,7 @@
 - [ ] 整理 memory/ 目录，归档旧日志
 - [ ] 执行每周回顾：检查LEARNINGS.md，提取核心模式
 - [ ] 执行记忆归档：如记录>10条，运行auto_archive.sh
+- [ ] **网站颜色对比度抽查**：检查 `jiaviswangcai.ai/css/` 下各 CSS 文件是否有新增的浅色文字规则，确认对比度安全（参考 CSS_GUIDELINES.md）
 
 ---
 
