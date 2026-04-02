@@ -63,10 +63,11 @@
             <hr>
 
             <h2>二、系统底座与驱动层：HDC 与 Driver</h2>
-            <p>在 NPU 硬件之上，CANN 的最底层是驱动程序（Driver）和固件（Firmware）。</p>
+            <p>在 NPU 硬件之上，CANN 的最底层是驱动程序（Driver）和固件（Firmware）。异构计算的核心挑战之一就是如何高效管理 Host（CPU）与 Device（NPU）之间的通信与资源隔离。</p>
             <ul>
-                <li><strong>HDC（Host-Device Communication）：</strong> 昇腾采用 Host端（CPU）与 Device端（NPU）异构协同计算的模式。HDC 是负责 Host 与 Device 之间命令下发和数据传输的高速通道，类似于 PCIe 的 DMA 抽象层。</li>
-                <li><strong>Runtime/Driver：</strong> 负责 NPU 设备的管理、内存分配（Device Memory）、队列管理、Task 下发以及中断处理。在应用层调用 <code>aclrtMalloc</code> 时，实际上就是深入到了这一层进行物理显存的调度。</li>
+                <li><strong>HDC（Host-Device Communication）引擎：</strong> HDC 是一套专为昇腾设计的异构通信基础设施。它基于底层 PCIe 链路或内部高速总线，向上抽象出了统一的消息传递机制。HDC 采用了基于共享内存（Shared Memory）的零拷贝（Zero-Copy）机制和门铃（Doorbell）中断机制，使得 CPU 在向 NPU 下发计算任务（Task）时，可以将控制指令的延迟压缩到微秒级。</li>
+                <li><strong>Runtime 环境与 ACL（Ascend Computing Language）：</strong> 驱动层之上是 Runtime 运行时环境。开发者调用的 <code>aclrtMalloc</code>（分配显存）、<code>aclrtCreateStream</code>（创建执行流）等 API，都会经过 Runtime 下沉到 Driver 层。Driver 负责具体的物理内存映射（MMU）、PCIe DMA 控制器的配置、以及任务队列（Command Queue）的调度。</li>
+                <li><strong>用户态与内核态分离：</strong> 为了提升效率，CANN Driver 设计了精细的用户态驱动（UMD）与内核态驱动（KMD）隔离。数据面的高频交互直接在用户态轮询（Polling）完成，避免了频繁的上下文切换开销；而设备复位、严重错误处理等管控面逻辑则下沉到 KMD，保障系统安全稳定。</li>
             </ul>
 
             <hr>
@@ -122,27 +123,36 @@ extern "C" __global__ __aicore__ void add_custom(GM_ADDR x, GM_ADDR y, GM_ADDR z
 
             <hr>
 
-            <h2>五、自动调优引擎（AOE）</h2>
-            <p>同一个算子，在不同的 Shape 下，其 Tiling（数据切分块大小）策略完全不同。手动调优不切实际，CANN 引入了 <strong>AOE（Ascend Optimization Engine）</strong>。</p>
-            <p>AOE 内部集成了基于强化学习和知识库的调优算法。它可以动态编译图，生成多种切分策略并在真实硬件上 Profile 执行时间，最终挑选出延迟最低的算子 Binary 保存到缓存（Kernel Cache）中。这是昇腾模型迁移性能超越基线的"秘密武器"。</p>
+            <h2>五、自动调优引擎：AOE (Ascend Optimization Engine)</h2>
+            <p>在异构计算中，由于张量 Shape 的动态变化和硬件缓存的物理限制，相同的计算逻辑在不同的切分策略（Tiling）下，性能差异可达十倍以上。为了打破这一瓶颈，CANN 引入了 <strong>AOE（Ascend Optimization Engine）自动调优引擎</strong>，让机器来压榨机器的极限。</p>
+            <ul>
+                <li><strong>算子调优（Operator Tuning）：</strong> AOE 内部集成了基于强化学习（RL）和遗传算法的搜索模型。当遇到复杂的自定义算子时，AOE 会在庞大的参数空间（如 L1 Cache 驻留策略、循环展开深度、Block 切分大小）中进行探索，并在真实 NPU 硬件上 Profile（实测）执行时间，最终挑选出延迟最低的算子 Binary（.o 文件）。</li>
+                <li><strong>子图调优（Subgraph Tuning）：</strong> 针对 FE（融合引擎）未覆盖的长尾算子组合，AOE 能够动态切分计算图，尝试不同的算子融合切分策略。它通过评估子图整体的 MAC 利用率和内存带宽消耗，自动生成针对特定模型的极致融合策略。</li>
+                <li><strong>知识库（Knowledge Base）：</strong> 调优是一个极其耗时的过程。为了避免重复造轮子，AOE 将调优得出的最优策略持久化存储到本地或云端的知识库中。下一次模型编译时，GE 引擎会优先命中知识库中的最优配置，实现"一次调优，处处受益"，这是昇腾模型迁移性能超越基线的"秘密武器"。</li>
+            </ul>
 
             <hr>
 
-            <h2>六、集群通信原语：HCCL</h2>
-            <p>大模型时代，单卡算力微不足道，分布式集群才是王道。对标 NVIDIA 的 NCCL，CANN 推出了 <strong>HCCL（Huawei Collective Communication Library）</strong>集合通信库。</p>
-            <p>HCCL 深度理解昇腾底层的 RoCE 交换机拓扑和 HCCS 片间互联协议。在处理 <code>AllReduce</code>、<code>AllGather</code>、<code>ReduceScatter</code> 时，HCCL 能够基于 PCIe、HCCS 和网络 RDMA 智能生成最优通信路径（如环状 Ring、树状 Tree），实现计算与通信的高效掩盖。</p>
+            <h2>六、集群通信原语：HCCL (Huawei Collective Communication Library)</h2>
+            <p>进入大模型（LLM）时代后，单卡算力微不足道，千卡/万卡集群的分布式协同才是决定训练成败的关键。对标 NVIDIA 的 NCCL，CANN 推出了 <strong>HCCL（Huawei Collective Communication Library）</strong>集合通信库，它是昇腾分布式计算的大动脉。</p>
+            <ul>
+                <li><strong>硬件拓扑感知：</strong> HCCL 深度理解昇腾底层的物理拓扑。在一个 8 卡节点内，它能够利用 <strong>HCCS（Huawei Cache Coherent System）</strong>片间高速互联总线实现几百 GB/s 的全连接通信；在跨节点时，它能自动识别 <strong>RoCEv2（RDMA over Converged Ethernet）</strong> 无损网络交换机层级，绕过 CPU 内核栈，直接实现 NPU 到网卡的 Direct Memory Access。</li>
+                <li><strong>智能算法路由：</strong> 在处理 <code>AllReduce</code>、<code>AllGather</code>、<code>ReduceScatter</code> 等通信原语时，HCCL 并非死板地使用某一种算法。它会根据参与通信的 NPU 数量、数据量大小以及当前网络拥塞情况，动态且智能地在 环状（Ring）、树状（Tree）、双向网格（Mesh）等算法间切换，以彻底榨干物理带宽。</li>
+                <li><strong>计算与通信掩盖：</strong> HCCL 与底层的 Stream 和 Event 机制深度集成。在进行大张量同步时，HCCL 能够自动将通信流水线化（Pipelining），让当前的通信任务与下一批数据的反向传播计算任务并行重叠，最大化消除通信带来的 "气泡"（Bubble）。</li>
+            </ul>
 
             <hr>
             
             <div class="post-footer">
                 <h3>结语：构建中国 AI 的计算中枢</h3>
-                <p>从硬件的达芬奇立方体，到驱动的流式管控；从 Ascend C 的优雅流水线，到 GE/FE 的极致图编译；再到 AOE 的强化学习寻优与 HCCL 的千卡互联。华为 CANN 绝不仅仅是一个简单的 API 包装，而是一个沉淀了底层体系结构智慧的全栈异构生态。对于 AI 开发者而言，深入理解 CANN 的底层原理，就是掌握了开启国产大模型算力之门的金钥匙。</p>
+                <p>从硬件的达芬奇立方体，到驱动的高速流水管控；从 Ascend C 的优雅流水线编程，到 GE/FE 的极致图级压榨；再到 AOE 的强化学习自动寻优与 HCCL 的万卡互联协议。华为 CANN 绝不仅仅是一个简单的 API 包装，而是一个沉淀了底层体系结构智慧的全栈异构生态。对于 AI 开发者而言，深入理解 CANN 的底层原理，就是掌握了开启国产大模型算力之门的金钥匙。</p>
                 <div class="footer-links">
-                    <strong>延伸阅读与参考：</strong>
+                    <strong>延伸阅读与参考（已更新官方及GitCode有效链接）：</strong>
                     <ul>
-                        <li><a href="https://www.hiascend.com/zh/software/cann" target="_blank" rel="noopener noreferrer">华为昇腾 CANN 官方技术白皮书</a></li>
-                        <li><a href="https://gitee.com/ascend/docs-openmind" target="_blank" rel="noopener noreferrer">Ascend C 算子编程指南 (Gitee)</a></li>
-                        <li><a href="https://www.hiascend.com/document/detail/zh/canncommercial/700/overview/index.html" target="_blank" rel="noopener noreferrer">昇腾异构计算架构技术全景图</a></li>
+                        <li><a href="https://www.hiascend.com/document" target="_blank" rel="noopener noreferrer">华为昇腾官方文档中心 (全版本架构解析)</a></li>
+                        <li><a href="https://gitcode.com/Ascend/docs-openmind" target="_blank" rel="noopener noreferrer">GitCode: Ascend C 算子编程与开发指南 (昇腾开源社区)</a></li>
+                        <li><a href="https://gitcode.com/Ascend/samples" target="_blank" rel="noopener noreferrer">GitCode: 华为昇腾 CANN 官方应用与算子开发样例 (Samples)</a></li>
+                        <li><a href="https://www.hiascend.com/zh/software/cann" target="_blank" rel="noopener noreferrer">昇腾 CANN 异构计算架构体系产品主页</a></li>
                     </ul>
                 </div>
             </div>
