@@ -178,6 +178,64 @@
     background: rgba(212, 168, 75, 0.05);
 }
 
+/* ============================================
+   Post Footer (延伸阅读与参考)
+   ============================================ */
+.post-footer {
+    background: #2C3E50;
+    color: #FFFFFF;
+    padding: 30px;
+    margin: 30px -30px -30px;
+}
+
+.post-footer h3 {
+    color: #D4A84B;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.post-footer p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.post-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.post-footer .footer-links strong {
+    color: #D4A84B;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.post-footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-footer .footer-links li {
+    margin-bottom: 8px;
+}
+
+.post-footer .footer-links a {
+    color: #7FDBFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.post-footer .footer-links a:hover {
+    color: #D4A84B;
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .post-page {

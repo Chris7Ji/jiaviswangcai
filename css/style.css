@@ -704,7 +704,7 @@ img {
     gap: 30px;
 }
 
-.footer-links a {
+footer .footer-links a {
     color: rgba(255, 255, 255, 0.7);
 }
 
