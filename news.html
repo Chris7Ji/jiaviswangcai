@@ -3,113 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI新闻日报 - 2026年4月5日</title>
+    <title>🚀 AI新闻日报 - 旺财Jarvis</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/diary.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .header { text-align: center; margin-bottom: 50px; padding: 40px; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 20px; border: 1px solid #334155; }
-        .header h1 { font-size: 2.5em; color: #60a5fa; margin-bottom: 10px; }
-        .header .date { font-size: 1.3em; color: #94a3b8; margin-bottom: 20px; }
-        .header .badge { display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); padding: 8px 24px; border-radius: 50px; font-size: 0.95em; font-weight: 600; }
-        .news-card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 28px; margin-bottom: 24px; transition: transform 0.2s, border-color 0.2s; }
-        .news-card:hover { transform: translateY(-2px); border-color: #3b82f6; }
-        .news-category { display: inline-block; padding: 4px 14px; border-radius: 20px; font-size: 0.78em; font-weight: 600; margin-bottom: 14px; }
-        .cat-blue { background: rgba(59,130,246,0.15); color: #60a5fa; }
-        .cat-purple { background: rgba(139,92,246,0.15); color: #a78bfa; }
-        .cat-green { background: rgba(16,185,129,0.15); color: #34d399; }
-        .cat-orange { background: rgba(249,115,22,0.15); color: #fb923c; }
-        .cat-red { background: rgba(239,68,68,0.15); color: #f87171; }
-        .cat-cyan { background: rgba(6,182,212,0.15); color: #22d3ee; }
-        .news-title { font-size: 1.25em; font-weight: 700; color: #f8fafc; margin-bottom: 10px; line-height: 1.5; }
-        .news-meta { font-size: 0.85em; color: #64748b; margin-bottom: 14px; }
-        .news-summary { font-size: 1em; color: #cbd5e1; line-height: 1.8; }
-        .news-source { display: inline-block; background: #0f172a; padding: 3px 10px; border-radius: 6px; margin-right: 8px; color: #94a3b8; font-size: 0.82em; }
-        .footer { text-align: center; margin-top: 50px; padding: 30px; color: #475569; font-size: 0.88em; border-top: 1px solid #1e293b; }
-        .divider { height: 1px; background: linear-gradient(to right, transparent, #334155, transparent); margin: 40px 0; }
-        @media (max-width: 600px) { .header h1 { font-size: 1.8em; } .news-title { font-size: 1.1em; } }
+        .news-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 2rem 3rem; text-align: center; border-radius: 0 0 20px 20px; }
+        .news-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .news-hero p { opacity: 0.9; font-size: 1.1rem; }
+        .news-date-selector { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        .date-pills { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.5rem; justify-content: flex-start; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+        .date-pills::-webkit-scrollbar { height: 6px; }
+        .date-pills::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+        .date-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #f0f0f0; color: #333; text-decoration: none; transition: all 0.2s; white-space: nowrap; cursor: pointer; border: none; font-size: 0.95rem; font-family: inherit; }
+        .date-pill:hover { background: #e0e0e0; }
+        .date-pill.active { background: #667eea; color: white; font-weight: bold; }
+        .news-container { max-width: 1000px; margin: 0 auto; padding: 0 1rem 4rem; }
+        .update-info { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.9rem; }
+        .featured-news { background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #667eea; transition: transform 0.2s; }
+        .featured-news .tag { background: #ffeb3b; color: #f57f17; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; display: inline-block; margin-bottom: 1rem; }
+        .featured-news h2 { margin-top: 0; color: #333; }
+        .featured-news .summary { color: #555; line-height: 1.6; font-size: 1.05rem; }
+        .news-section-title { margin: 3rem 0 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; font-size: 1.2rem; color: #333; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .news-item { background: #fff; border-radius: 8px; padding: 1.5rem; border: 1px solid #eaeaea; transition: all 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+        .news-item:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .news-item h3 { margin: 0 0 1rem 0; font-size: 1.1rem; line-height: 1.4; color: #2c3e50; }
+        .news-item p { color: #666; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
+        .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; align-items: center; }
+        .source { font-weight: 500; color: #3d9ca8; }
+        .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; }
+        .logo img { height: 40px; border-radius: 50%; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #d4a84b; }
+        
+        .day-news-container { display: none; animation: fadeIn 0.4s ease; }
+        .day-news-container.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .no-data { text-align: center; padding: 3rem; color: #666; background: #f9f9f9; border-radius: 12px; margin: 2rem 0; }
+        .no-data h3 { color: #999; margin-bottom: 1rem; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="badge">🤖 AI 新闻日报</div>
-            <h1>AI新闻日报</h1>
-            <div class="date">📅 2026年4月5日 星期日</div>
-            <p style="color:#94a3b8; margin-top:12px; font-size:0.95em;">每日追踪全球人工智能前沿动态，涵盖大模型、AI Agent、应用落地、硬件算力等关键领域</p>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="旺财Jarvis Logo">旺财Jarvis</a></div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="diary.html">📖 成长日记</a>
+            <a href="skills.html">💡 技能与功能</a>
+            <a href="ascend.html">⚡️ 昇腾AI知识</a>
+            <a href="news.html" class="active">🚀 AI新闻日报</a>
+            <a href="about.html">👤 关于我</a>
         </div>
-
-        <!-- 新闻1 -->
-        <div class="news-card">
-            <span class="news-category cat-red">安全事件</span>
-            <div class="news-title">Anthropic "祸不单行"：一周内两次严重安全事故，Claude Code源码泄露</div>
-            <div class="news-meta">
-                <span class="news-source">TechCrunch</span>
-                📅 2026年3月31日
-            </div>
-            <div class="news-summary">
-                Anthropic在短短一周内连续发生两起严重安全事故，引发行业广泛关注。第一次发生在上周四（3月27日），约3000份内部文件意外对外公开，其中包括一份尚未发布的强大新模型草稿博客。第二次发生在3月31日，当Anthropic推送Claude Code 2.1.88版本时，意外将将近2000个源代码文件和超过51.2万行代码一同打包发布——这几乎是其最重要产品之一的完整架构蓝图。安全研究员Chaofan Shou几乎第一时间发现了泄露并在X平台上发布。Anthropic对外声明称这是"由于人为错误导致的发布打包问题，并非安全漏洞"。Claude Code是Anthropic的核心产品之一，是一款让开发者使用其AI编写和编辑代码的命令行工具，其竞争力已强大到令竞争对手不安——据《华尔街日报》报道，OpenAI在Sora发布仅六个月后就关闭了该产品，转而重新聚焦开发者和企业市场，部分原因正是Claude Code日益增长的势头。泄露的内容是围绕AI模型的软件框架本身——即告诉模型如何行为、使用哪些工具及其能力边界的指令。开发者们已开始发布详细技术分析，有评论称该产品是"生产级开发者体验，而非简单的API封装"。这两次事故对Anthropic一直苦心经营的"谨慎AI公司"形象无疑是一次沉重打击。
-            </div>
+    </nav>
+    <header class="news-hero">
+        <h1>🚀 AI 新闻日报</h1>
+        <p>为你精选过去半个月科技巨头、大模型公司的最新动态</p>
+    </header>
+    
+    <div class="news-date-selector">
+        <div class="date-pills" id="datePillsContainer">
+            <!-- 日期按钮将由JavaScript动态生成 -->
         </div>
+    </div>
+    
+    <main class="news-container">
+        <div id="newsContent"></div>
+    </main>
 
-        <!-- 新闻2 -->
-        <div class="news-card">
-            <span class="news-category cat-purple">就业影响</span>
-            <div class="news-title">DeepMind与Anthropic掌门人警告：AI将在2026年冲击入门级岗位和实习市场</div>
-            <div class="news-meta">
-                <span class="news-source">The Decoder</span>
-                📅 2026年1月20日（达沃斯论坛）
-            </div>
-            <div class="news-summary">
-                谷歌DeepMind首席执行官Demis Hassabis与Anthropic首席执行官Dario Amodei在世界经济论坛（达沃斯）上共同发出警告：AI对就业市场的影响已经初现端倪，且冲击将首先落在入门级岗位和实习生群体上。Hassabis表示，他已在DeepMind内部观察到这一趋势，入门级工作和实习机会将首先受到冲击；虽然短期内可能涌现一些新的、更有意义的工作岗位，但一旦通用人工智能（AGI）到来，我们将进入完全未知的领域。他批评各国政府和经济学家未能认识到即将到来变革的规模。Amodei则坚持他此前的预测：未来一到五年内，针对年轻专业人士的办公室工作中高达一半可能会消失。Anthropic自身也预计未来对初级和中层员工的需求将会减少。Amodei最深的担忧在于：AI发展的指数级速度将远远超越人类适应变化的能力，而劳动力市场的反应天然具有滞后性。他警告称，AI可能在短短一到两年内就在所有领域超越人类，但劳动市场无法及时做出相应调整。
-            </div>
-        </div>
+    <script>
+    // 新闻数据 - 从news_db.json加载
+    const newsData = {"last_updated": "2026-04-02T22:21:18.524499", "news_by_date": {"2026-03-30": [{"title": "微软 Copilot 让 Anthropic 的 Claude 和 OpenAI 的 GPT 联手", "summary": "为了推出其最新的 Copilot 功能，微软正同时依赖于 OpenAI 和 Anthropic 两家顶尖的 AI 实验室。微软押注其核心竞争优势不在于底层的大语言模型，而在于其庞大的数据和生态系统。这意味着未来用户在 Copilot 中可能会体验到多个顶级 AI 模型协同工作的效果。", "url": "https://thenewstack.io/microsofts-copilot-llm-team/", "source": "The New Stack", "date": "2026-03-30"}, {"title": "英伟达CEO黄仁勋称"我们已实现AGI"，但业界对AGI的定义仍存分歧", "summary": "上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认知分类等）仍然没有达成共识，反映出行业在评估 AI 真正智能水平时的挑战。", "url": "https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/", "source": "Fortune", "date": "2026-03-30"}, {"title": "为什么 Anthropic 泄露的 AI 模型 'Mythos' 会带来网络安全风险", "summary": "由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力也引发了前所未有的网络安全担忧，业界正密切关注其对现有网络防御体系的冲击。", "url": "https://www.euronews.com/next/2026/03/30/what-is-anthropics-mythos-the-leaked-ai-model-that-poses-unprecedented-cybersecurity-risks", "source": "Euronews", "date": "2026-03-30"}, {"title": "GeForce Now 在 Apple Vision Pro 上的串流表现优于 Meta 头显", "summary": "英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著提升了流媒体传输的稳定性和延迟表现，为空间计算平台带来了更强大的游戏生态支持。", "url": "https://appleinsider.com/articles/26/03/30/geforce-now-streams-apple-vision-pro-faster-better-than-to-meta-headsets", "source": "AppleInsider", "date": "2026-03-30"}, {"title": "为什么说英伟达的股票图表是世界上最重要的", "summary": "如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的关键风向标。", "url": "https://finance.yahoo.com/news/why-nvidia-has-the-important-stock-chart-in-the-world-145416630.html", "source": "Yahoo Finance", "date": "2026-03-30"}, {"title": "玩家据称在沃尔玛仅花费 80 美元买到英伟达 RTX 5060 Ti 显卡", "summary": "近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩家们纷纷前往当地超市清仓区"寻宝"的热潮。", "url": "https://www.techradar.com/computing/gpu/gamer-reportedly-buys-nvidia-rtx-5060-ti-gpu-for-usd80-from-walmart-so-you-might-want-to-check-the-clearance-aisle", "source": "TechRadar", "date": "2026-03-30"}], "2026-03-31": [{"title": "加州无视特朗普呼吁，将实施新的人工智能监管规定", "summary": "加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而总统特朗普则试图阻止"繁琐"的规则。这一举措的核心在于加州与联邦政府在人工智能监管上的分歧，加州强调通过严格监管保障公众利益，而联邦层面则担忧过度监管可能抑制创新。此举可能加剧州与联邦之间的政策冲突，影响人工智能产业的发展方向，同时引发关于技术创新与公共安全平衡的广泛讨论。", "url": "https://www.theguardian.com/us-news/2026/mar/30/california-ai-regulations-trump", "source": "The Guardian", "date": "2026-03-31"}, {"title": "加州发布人工智能行政令：你需要了解的内容", "summary": "加州州长加文·纽森（民主党）签署了一项行政命令，要求与州政府合作的人工智能公司必须遵守安全和隐私保护措施。该命令旨在确保人工智能技术在公共部门应用时，能够保障数据安全和个人隐私，防止技术滥用。此举预计将推动人工智能行业建立更严格的伦理标准，并可能影响其他州及联邦层面的相关政策制定，对科技公司而言意味着更高的合规要求和潜在成本增加，但也将促进更负责任的人工智能发展。", "url": "https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html", "source": "The New York Times", "date": "2026-03-31"}, {"title": "NetSuite 深化助力企业按需运用人工智能的承诺", "summary": "在伦敦举办的SuiteConnect大会上，作为领先的人工智能云ERP系统，Oracle NetSuite宣布对其NetSuite AI连接器服务进行最新升级，旨在帮助企业更灵活地整合和运用人工智能技术。这一举措的核心在于通过增强的连接器服务，使企业能够根据自身业务需求定制AI解决方案，从而提升运营效率、优化决策过程并加速数字化转型。此举不仅巩固了NetSuite在AI驱动ERP领域的领导地位，还可能推动更多企业采纳AI技术，促进行业整体智能化水平的提升，对中小型企业尤其具有积极意义，因为它们现在能以更低的门槛和更高的灵活性利用AI优化业务流程。", "url": "https://www.prnewswire.com/news-releases/netsuite-extends-commitment-to-helping-businesses-use-ai-their-way-302729229.html", "source": "PR Newswire", "date": "2026-03-31"}, {"title": "CNBC《中国连线》通讯：中国人工智能竞赛进入新阶段", "summary": "随着人工智能技术商业化进程加速，企业正面临全新的盈利机遇。中国在AI领域的竞争已迈入关键转型期，各大科技公司纷纷布局前沿技术研发与应用场景拓展。这一趋势不仅将重塑国内产业结构，还可能影响全球AI技术发展格局，推动相关产业链升级，并对就业市场、数据安全及伦理规范提出新的挑战。", "url": "https://www.cnbc.com/2026/03/31/cnbcs-china-connection-newsletter-ai-race-enters-a-new-phase.html", "source": "CNBC", "date": "2026-03-31"}, {"title": "《Vogue商业》人工智能追踪周报", "summary": "《Vogue商业》每周为您带来人工智能领域最值得关注的前沿动态。本期聚焦AI在时尚、零售及创意产业的创新应用，涵盖算法设计、虚拟试衣、供应链优化等热点话题。这些技术不仅重塑了行业生产模式，还推动了消费体验的个性化升级，对时尚产业的数字化转型具有深远影响，值得从业者持续追踪。", "url": "https://www.vogue.com/story/technology/the-vogue-business-ai-tracker", "source": "Vogue", "date": "2026-03-31"}, {"title": "新纪录片探讨人工智能是否将人类引向末日", "summary": "《人工智能纪录片：或我如何成为末日乐观主义者》是一部探讨人工智能未来及其对人类影响的新纪录片。影片通过深入访谈专家和分析技术发展趋势，既揭示了AI可能带来的失业、隐私侵犯和伦理风险等严峻挑战，也展现了其在医疗、教育和环保等领域的巨大潜力。该纪录片的核心在于引发公众对AI发展的辩证思考：我们是否注定被AI毁灭，还是能通过合理监管和技术创新实现共生？其影响在于推动社会各界更理性地讨论AI治理，促使政策制定者平衡创新与风险，为人类在智能时代的未来提供多元视角。", "url": "https://www.nbcnews.com/video/new-documentary-asks-if-we-are-doomed-by-ai-260410437714", "source": "NBC News", "date": "2026-03-31"}, {"title": "甲骨文推出全新AI餐厅套件，为增长注入新动力", "summary": "甲骨文公司（NYSE:ORCL）近日发布了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅设计的AI驱动商业平台。该平台整合了后台关键运营功能，通过人工智能技术优化餐厅管理流程，包括库存控制、订单处理和客户数据分析等核心环节。此举旨在帮助餐饮企业提升运营效率、降低成本，并利用数据洞察推动业务增长。这一创新解决方案预计将重塑餐饮行业的技术应用格局，特别是在后疫情时代，为连锁餐厅提供更智能、更灵活的数字化工具，以应对市场变化和消费者需求。", "url": "https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/oracles-new-ai-restaurant-suite-adds-a-fresh-angle-to-growth", "source": "Simply Wall Street", "date": "2026-03-31"}, {"title": "人工智能与数字证据正在重塑根西岛的警务工作", "summary": "随着涉及数字证据的案件数量不断增加，技术已成为根西岛几乎所有警方调查的核心。警方表示，人工智能和数字取证工具正在彻底改变传统的警务模式，从手机数据提取到社交媒体分析，数字证据在破案中的比重显著上升。这一转变不仅提高了案件侦破效率，也对警员的数字技能提出了更高要求，同时引发了关于数据隐私和证据合法性的新讨论。根西岛警方正在加强相关培训并更新设备，以适应这一数字化执法新时代。", "url": "https://www.bbc.com/news/articles/c5ywrlkw2k4o", "source": "BBC", "date": "2026-03-31"}], "2026-04-01": [{"title": "英伟达极致协同设计创下MLPerf推理新纪录 | 英伟达技术博客", "summary": "英伟达通过硬件、软件和模型的协同设计，在MLPerf推理基准测试中创造了新的性能纪录。这种协同设计方法是实现最高AI工厂吞吐量和最低token成本的关键。该成果表明，衡量AI系统性能已远超单一指标，需要综合评估整个技术栈的优化效果。这一突破将推动大规模AI部署的成本降低和效率提升，对云计算、自动驾驶等需要高推理性能的领域产生重要影响，加速AI技术的实际应用落地。", "url": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/", "source": "NVIDIA Developer", "date": "2026-04-01"}, {"title": "OpenAI最新融资轮再添120亿美元", "summary": "OpenAI在最新一轮融资中成功筹集了总计1220亿美元，使公司估值达到惊人的7300亿美元。这一巨额融资不仅刷新了人工智能领域的融资纪录，也标志着市场对生成式AI技术商业前景的强烈信心。作为ChatGPT的开发者，OpenAI将利用这笔资金加速技术研发、扩大全球业务布局，并可能推动新一轮AI应用创新浪潮。此次融资将进一步巩固其在AI行业的领导地位，同时可能引发全球科技巨头在人工智能领域的更激烈竞争，对就业市场、产业转型和伦理监管都将产生深远影响。", "url": "https://www.nytimes.com/2026/03/31/technology/openai-12-billion-latest-funding-round.html", "source": "The New York Times", "date": "2026-04-01"}, {"title": "Autodesk新AI工具如何提升生产力同时保持艺术家掌控力", "summary": "Autodesk为动画和视觉特效领域推出全新AI工具，包括MotionMaker、Wonder 3D，并对Maya、3ds Max和Flow Studio的工作流程进行了更新。这些创新旨在通过自动化繁琐任务来显著提高生产效率，同时确保艺术家仍能保持对创作过程的完全控制。MotionMaker专注于动作生成，Wonder 3D则简化3D模型创建，而工作流程的优化进一步整合了AI辅助功能。此举预计将缩短项目周期、降低制作成本，并可能推动行业向更高效、更具创意的方向发展，使艺术家能更专注于核心创意工作，而非技术细节。", "url": "https://adsknews.autodesk.com/en/news/how-new-autodesk-ai-tools-are-boosting-productivity/", "source": "Autodesk News", "date": "2026-04-01"}, {"title": "OpenAI融资1220亿美元加速人工智能下一阶段发展", "summary": "OpenAI成功筹集1220亿美元新资金，这笔巨额融资将主要用于三个方向：一是推动前沿人工智能技术在全球范围内的扩展应用；二是投资建设下一代计算基础设施，为更复杂的AI模型提供算力支持；三是满足市场对ChatGPT、Codex等现有产品日益增长的需求。此次融资规模创下AI领域新纪录，不仅彰显了投资者对OpenAI技术实力和商业前景的信心，也将显著加速人工智能技术的研发进程。预计这笔资金将帮助OpenAI在自然语言处理、代码生成等领域取得突破性进展，同时可能引发全球AI产业的新一轮竞争格局变化，推动整个人工智能行业向更高效、更智能的方向发展。", "url": "https://openai.com/index/accelerating-the-next-phase-ai/", "source": "OpenAI", "date": "2026-04-01"}, {"title": "微软宣布投资55亿美元并推出新项目，支持新加坡高等教育群体和非营利组织，助力新加坡AI未来", "summary": "微软计划从2025年至2029年在新加坡投资55亿美元，用于云和AI基础设施及持续运营。该公司推出新的"微软提升计划"，旨在支持所有高等教育学生、教育工作者和非营利组织。这一举措将显著提升新加坡的AI能力，通过提供技术资源和培训，培养本地AI人才，加速数字化转型。预计将促进新加坡成为区域AI创新中心，增强其全球竞争力，并为教育、科研和社会服务领域带来深远影响。", "url": "https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/", "source": "Microsoft Source", "date": "2026-04-01"}, {"title": "OpenAI最新融资轮后估值达8520亿美元", "summary": "OpenAI在最新一轮融资中获得了创纪录的资金支持，估值飙升至8520亿美元。据报道，这家领先的人工智能公司正在为首次公开募股（IPO）做准备，此举标志着其从初创企业向公开上市公司的关键转型。这一估值不仅反映了市场对AI技术前景的强烈信心，也可能对整个科技行业产生深远影响，包括推动更多AI企业寻求上市、吸引大规模投资进入该领域，并可能重塑全球AI产业的竞争格局。", "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/03/31/openai-valuation-reaches-852-billion-after-massive-funding-round/", "source": "Forbes", "date": "2026-04-01"}, {"title": "AI芯片最新动态——AI市场蓬勃发展，预计将呈指数级增长", "summary": "全球AI芯片市场预计将迎来显著扩张，从2025年的1028.9亿美元跃升至一个令人印象深刻的数字。这一增长主要得益于人工智能技术在各个行业的广泛应用，如自动驾驶、医疗诊断和智能家居等。AI芯片作为支撑这些技术的核心硬件，其需求激增推动了市场的快速发展。预计未来几年，随着5G、物联网等新技术的普及，AI芯片市场将继续保持高速增长，为相关企业带来巨大的商业机会，同时也将推动整个科技产业的创新与进步。", "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-nvda/nvidia/news/latest-news-in-ai-chips-ai-market-booms-with-projections-of/amp", "source": "Simply Wall Street", "date": "2026-04-01"}], "2026-04-02": [{"title": "英伟达极致协同设计创下MLPerf推理新纪录 | 英伟达技术博客", "summary": "英伟达通过硬件、软件与模型的协同设计，在MLPerf推理基准测试中创造了多项新纪录。这种端到端的优化方法不仅实现了最高的人工智能工厂吞吐量，还显著降低了每个token的处理成本。协同设计超越了单一组件性能的局限，通过系统级优化释放了AI基础设施的完整潜力。这一突破将加速大规模AI应用的部署，为企业和研究机构提供更高效、经济的AI计算解决方案，推动人工智能技术在各行业的落地进程。", "url": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/", "source": "NVIDIA Developer", "date": "2026-04-02"}, {"title": "在布朗大学演讲中，Yann LeCun探讨人工智能新路径", "summary": "人工智能先驱Yann LeCun在布朗大学向满座听众表示，大型语言模型并非AI的未来，并阐述了一种新的研究方向。他认为当前基于大语言模型的AI存在局限性，无法实现真正的理解与推理，因此需要探索更接近人类认知的架构。这一观点可能影响AI领域的研究方向，促使更多学者转向开发能处理复杂现实世界任务、具备常识推理能力的新型AI系统，对学术界和产业界都具有重要启示意义。", "url": "https://www.brown.edu/news/2026-04-01/yann-lecun-artificial-intelligence-pioneer", "source": "Brown University", "date": "2026-04-02"}, {"title": "SPARC AI新平台详情披露：聚焦Overwatch技术及全球部署计划", "summary": "SPARC AI最新发布的战略文件详细阐述了其Overwatch技术的核心地位及全球化布局。该技术专为GPS信号缺失或不可靠的环境设计，通过先进的人工智能算法实现精确定位与导航。文件系统介绍了SPARC AI的技术架构、市场战略及未来增长路径，强调Overwatch在军事、应急救援和偏远地区作业等关键场景的应用价值。这一部署将推动定位技术革新，增强全球用户在复杂环境下的操作能力，同时可能重塑相关行业的技术标准与竞争格局。", "url": "https://www.stocktitan.net/news/SPAIF/sparc-ai-releases-latest-investor-02xeh2cov8zo.html", "source": "Stock Titan", "date": "2026-04-02"}, {"title": "OpenAI 不仅想回答问题，更想管理你的数字生活", "summary": "OpenAI 的最新路线图显示，人工智能的发展重心正在转变。该公司正致力于将 AI 从聊天机器人演变为主动工具，朝着构建一个统一的数字助手迈进。这意味着未来的 AI 不仅能被动响应查询，还能主动管理用户的日程、邮件、文件等数字事务，深度融入日常生活。这一转变可能彻底改变人机交互方式，提升效率的同时也引发对隐私、数据安全和 AI 控制权的广泛讨论。", "url": "https://www.techradar.com/ai-platforms-assistants/openai-doesnt-just-want-to-answer-your-questions-it-wants-to-run-your-digital-life", "source": "TechRadar", "date": "2026-04-02"}, {"title": "OpenAI融资1220亿美元加速人工智能下一阶段发展", "summary": "OpenAI今日宣布完成最新一轮融资，获得1220亿美元承诺资本，投后估值达8520亿美元。这笔巨额融资将用于加速人工智能技术的下一阶段发展，OpenAI正成为人工智能领域的核心力量。此次融资不仅彰显了投资者对AI技术前景的强烈信心，也将推动OpenAI在通用人工智能（AGI）研发、模型优化及商业化应用等方面取得突破性进展，可能重塑全球科技竞争格局，并对各行各业产生深远影响。", "url": "https://openai.com/index/accelerating-the-next-phase-ai/", "source": "OpenAI", "date": "2026-04-02"}, {"title": "Anthropic最新失误加剧AI与网络安全公司对立", "summary": "随着AI模型能力突飞猛进，AI开发者与网络安全供应商之间的紧张关系日益凸显。最新事件中，Anthropic公司的技术失误导致双方矛盾公开化，反映出AI快速迭代与网络安全防护之间的根本性冲突。这一矛盾不仅影响技术合作，还可能延缓AI在关键安全领域的应用进程，促使行业重新审视AI开发与安全防护的协同机制。", "url": "https://www.govinfosecurity.com/latest-anthropic-miscue-puts-ai-cyber-firms-at-odds-a-31318", "source": "GovInfoSecurity", "date": "2026-04-02"}]}};
 
-        <!-- 新闻3 -->
-        <div class="news-card">
-            <span class="news-category cat-green">政策监管</span>
-            <div class="news-title">美国劳工部启动里程碑计划：将AI技能纳入注册学徒制全国体系</div>
-            <div class="news-meta">
-                <span class="news-source">U.S. Department of Labor</span>
-                📅 2026年4月1日
-            </div>
-            <div class="news-summary">
-                美国劳工部宣布启动一项具有里程碑意义的计划——将人工智能技能全面整合进注册学徒制（Registered Apprenticeships）体系，覆盖全美范围。这标志着美国政府首次系统性地将AI能力纳入职业培训的国家级框架，对于推动美国劳动力适应AI时代具有深远意义。注册学徒制是美国政府与雇主、工会及教育机构合作开展的职业培训项目，学员可以在工作场所获得实践技能培训，同时获得相关认证。此次计划预计将涵盖多个关键行业，帮助工人在AI驱动的经济转型中保持竞争力。该计划的推出正值AI对就业市场影响日益加剧之际，与DeepMind和Anthropic CEOs的警告形成呼应：美国政府正积极采取措施应对AI带来的劳动力市场变革。
-            </div>
-        </div>
+    // 获取所有日期（按日期降序排列，最新的在前面）
+    const dates = Object.keys(newsData.news_by_date).sort((a, b) => new Date(b) - new Date(a));
+    const container = document.getElementById('datePillsContainer');
+    const content = document.getElementById('newsContent');
 
-        <!-- 新闻4 -->
-        <div class="news-card">
-            <span class="news-category cat-orange">政府动态</span>
-            <div class="news-title">美国财政部正式启动人工智能创新系列活动（AI Innovation Series）</div>
-            <div class="news-meta">
-                <span class="news-source">U.S. Department of the Treasury</span>
-                📅 2026年3月23日
-            </div>
-            <div class="news-summary">
-                美国财政部宣布正式启动"人工智能创新系列"（Artificial Intelligence Innovation Series），这是美国政府在金融和经济领域推动AI技术负责任创新的一项重要举措。该系列活动旨在汇聚政策制定者、技术专家、行业领袖和学术研究人员，共同探讨AI在金融领域的应用前景、监管挑战和安全发展路径。财政部在新闻稿中表示，该系列将重点关注AI在金融服务中的创新应用、数据安全与隐私保护、算法公平性以及AI系统的风险管理等核心议题。作为美国政府层面首个聚焦AI金融应用的系统性项目，AI Innovation Series反映出拜登政府对于AI在关键经济领域深化应用的重视，也预示着未来可能有更多针对AI金融应用的监管政策出台。
-            </div>
-        </div>
+    // 类别颜色映射
+    const categoryColors = {
+        '安全事件': { bg: 'rgba(239,68,68,0.15)', color: '#f87171' },
+        '就业影响': { bg: 'rgba(139,92,246,0.15)', color: '#a78bfa' },
+        '政策监管': { bg: 'rgba(16,185,129,0.15)', color: '#34d399' },
+        '政府动态': { bg: 'rgba(249,115,22,0.15)', color: '#fb923c' },
+        '政治经济': { bg: 'rgba(6,182,212,0.15)', color: '#22d3ee' },
+        '默认': { bg: 'rgba(59,130,246,0.15)', color: '#60a5fa' }
+    };
 
-        <!-- 新闻5 -->
-        <div class="news-card">
-            <span class="news-category cat-cyan">政治经济</span>
-            <div class="news-title">AI产业"大举押注"2026美国中期选举：数亿美元AI相关资金涌入政治舞台</div>
-            <div class="news-meta">
-                <span class="news-source">ABC News</span>
-                📅 2026年4月2日
-            </div>
-            <div class="news-summary">
-                据ABC News报道，数亿美元与人工智能相关的资金正在涌入2026年美国中期选举，政治舞台上的AI博弈进入白热化阶段。支持AI产业的利益集团成为重要的政治资金来源，这些团体部分由大型科技公司和AI初创企业资助，其政治游说的核心诉求是推动有利于AI产业发展的监管政策，同时阻止可能损害行业竞争力的立法。报道指出，随着AI对经济、社会和军事各领域的影响日益深远，两党议员对AI的态度也日趋复杂：一方面认识到AI的战略重要性，希望保持美国在AI领域的全球领先地位；另一方面，公众对AI带来的就业冲击、隐私风险和安全问题的担忧也在上升，相关监管呼声日益强烈。AI产业资本的大规模介入，使得2026年中期选举成为观察美国AI政策走向的重要窗口。
-            </div>
-        </div>
+    function getCategoryStyle(category) {
+        return categoryColors[category] || categoryColors['默认'];
+    }
 
-        <div class="divider"></div>
+    function formatDate(dateStr) {
+        const date = new Date(dateStr);
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        return `${month}月${day}日`;
+    }
 
-        <div class="footer">
-            <p>🤖 AI新闻日报 · 由旺财Jarvis自动生成 · 数据来源：SerpAPI实时搜索</p>
-            <p style="margin-top:8px; color:#334155;">本页面内容基于公开新闻报道整理翻译，仅供参考</p>
-        </div>
+    function getWeekday(dateStr) {
+        const date = new Date(dateStr);
+        const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        return weekdays[date.getDay()];
+    }
+
+    function detectCategory(title, summary) {
+        const text = (title + summary).toLowerCase();
+        if (text.includes('安全') || text.includes('泄露') || text.includes('风险') || text.includes('攻击')) return '安全事件';
+        if (text.includes('就业') || text.includes('工作') || text.includes('岗位') || text.includes('失业')) return '就业影响';
+        if (text.includes('监管') || text.includes('政策') || text.includes('规定') || text.includes('法律')) return '政策监管';
+        if (text.includes('政府') || text.includes('美国') && (text.includes('部') || text.includes('局'))) return '政府动态';
+        if (text.includes('选举') || text.includes('政治') || text.includes('国会')) return '政治经济';
+        return '默认';
+    }
+
+    function renderNewsForDate(dateStr) {
+        const news = newsData.news_by_date[dateStr] || [];
+        if (news.length === 0) {
+            return `
+                <div class="no-data">
+                    <h3>📭 暂无新闻数据</h3>
+                    <p>该日期的新闻数据正在采集中，请稍后再来</p>
+                </div>
+            `;
+        }
+
+        let html = `<div class="update-info"><p>📅 日报日期: ${dateStr} ${getWeekday(dateStr)} · 共有 ${news.length} 条资讯</p></div>`;
+
+        // 第一条作为精选头条
+        const featured = news[0];
+        const featuredCategory = detectCategory(featured.title, featured.summary);
+        const featuredStyle = getCategoryStyle(featuredCategory);
+        
+        html += `
+            <div class="featured-news">
+                <span class="tag" style="background:${featuredStyle.bg};color:${featuredStyle.color}">${featuredCategory}</span>
+                <h2><a href="${featured.url}" target="_blank" style="color:inherit;text-decoration:none">${featured.title}</a></h2>
+                <p class="summary">${featured.summary}</p>
+                <div class="meta" style="margin-top:1rem;font-size:0.9rem;">
+                    <div>
+                        <span class="source">${featured.source}</span>
+                        <span style="margin-left:1rem;color:#888;">${featured.date}</span>
+                    </div>
+                    <a href="${featured.url}" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        `;
+
+        // 其他新闻
+        if (news.length > 1) {
+            html += `<h3 class="news-section-title">📰 更多资讯</h3><div class="news-grid">`;
+            for (let i = 1; i < news.length; i++) {
+                const item = news[i];
+                const category = detectCategory(item.title, item.summary);
+                const style = getCategoryStyle(category);
+                html += `
+                    <a href="${item.url}" target="_blank" class="news-item">
+                        <h3><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.75rem;background:${style.bg};color:${style.color};margin-right:6px;">${category}</span>${item.title}</h3>
+                        <p>${item.summary}</p>
+                        <div class="meta">
+                            <div>
+                                <span class="source">${item.source}</span>
+                            </div>
+                            <span style="color:#888;">${item.date}</span>
+                        </div>
+                    </a>
+                `;
+            }
+            html += `</div>`;
+        }
+
+        return html;
+    }
+
+    function showDate(dateStr) {
+        // 更新按钮状态
+        document.querySelectorAll('.date-pill').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.date === dateStr) {
+                btn.classList.add('active');
+            }
+        });
+
+        // 渲染新闻内容
+        content.innerHTML = renderNewsForDate(dateStr);
+
+        // 滚动到内容区
+        content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // 初始化：生成日期按钮
+    dates.forEach((date, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'date-pill' + (index === 0 ? ' active' : '');
+        btn.dataset.date = date;
+        btn.textContent = formatDate(date) + (index === 0 ? ' (最新)' : '');
+        btn.onclick = () => showDate(date);
+        container.appendChild(btn);
+    });
+
+    // 默认显示最新日期的新闻
+    if (dates.length > 0) {
+        content.innerHTML = renderNewsForDate(dates[0]);
+    }
+    </script>
+
+    <div class="footer" style="text-align:center;padding:30px;color:#475569;font-size:0.88em;border-top:1px solid #eaeaea;margin-top:50px;">
+        <p>🤖 AI新闻日报 · 由旺财Jarvis自动生成 · 数据来源：SerpAPI实时搜索</p>
+        <p style="margin-top:8px;color:#334155;">本页面内容基于公开新闻报道整理翻译，仅供参考</p>
     </div>
 </body>
 </html>
