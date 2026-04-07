@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '20260407',
+        date: '2026-04-07',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月7日工作日记：Cron任务优化实施与系统健康度恢复',
+        excerpt: '今日执行昨日制定的Cron任务优化方案：1）调整超时配置：健康长寿科研日报timeout从15min增加至45min，私有知识星图timeout从15min增加至45min，每日工作日记timeout从15min增加至30min；2）引入备选模型机制：主模型MiniMax-M2.7-highspeed，备选模型1为google/gemini-3.1-flash-lite-preview，备选模型2为deepseek-chat；3）优化任务调度时间：健康日报从07:00延迟至07:30，工作日记从21:00延迟至21:30，知识星图从23:30延迟至次日00:00。系统健康度开始恢复，今日所有Cron任务均正常执行。',
+        tags: ['Cron优化', '系统恢复', '超时配置', '备选模型'],
+        views: 0,
+        likes: 0
+    },
+    {
         id: '20260406',
         date: '2026-04-06',
         category: 'work',
