@@ -603,6 +603,14 @@
       }
     },
     {
+      "id": "doc:SECURITY_AUDIT_REPORT_2026-04-07.md",
+      "type": "Document",
+      "label": "SECURITY_AUDIT_REPORT_2026-04-07.md",
+      "properties": {
+        "path": "SECURITY_AUDIT_REPORT_2026-04-07.md"
+      }
+    },
+    {
       "id": "doc:agent_skills_video_trends_2026.md",
       "type": "Document",
       "label": "agent_skills_video_trends_2026.md",
@@ -2220,6 +2228,14 @@
       "label": "EDUCATION_AI_SETUP_GUIDE.md",
       "properties": {
         "path": "scripts/EDUCATION_AI_SETUP_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:scripts/QUICKREF.md",
+      "type": "Document",
+      "label": "QUICKREF.md",
+      "properties": {
+        "path": "scripts/QUICKREF.md"
       }
     },
     {
