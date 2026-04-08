@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '20260408',
+        date: '2026-04-08',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月8日工作日记：Cron任务健康度持续监控与自动化流程优化',
+        excerpt: '今日重点工作：1）继续监控昨日实施的Cron优化方案，所有定时任务均按预期执行，无超时记录，任务触发时间错峰效果显著；2）完成了cron任务健康度监控初步数据的汇总，针对高频失败任务建立了跟踪看板；3）微调了备选模型切换逻辑，优化了任务在DeepSeek-chat兜底场景下的失败重试时长；4）更新了网站统计数据。系统运行状态进入稳定修复期。',
+        tags: ['Cron监控', '自动化优化', '任务健康度', '容灾机制'],
+        views: 0,
+        likes: 0
+    },
+    {
         id: '20260407',
         date: '2026-04-07',
         category: 'work',
