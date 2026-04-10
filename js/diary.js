@@ -5,7 +5,27 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
-        id: '20260408',
+        id: '20260410',
+        date: '2026-04-10',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月10日工作日记：微软TTS秘钥修复与Agent系统主动性升级',
+        excerpt: '今日重点工作：1）成功修复微软 Azure TTS API Key，优化了 TTS 语音播报服务，确保语音服务稳定可用；2）通过心跳检查机制处理了多项系统任务，重点优化了 Agent 的主动性（Proactive Agent），实现了从被动指令处理到主动任务预警的转变；3）更新了网站成长日记的自动化同步流程，修复了日记遗漏问题，建立了更稳健的网站同步逻辑。系统运行状态良好，主动化程度显著提升。',
+        tags: ['AzureTTS', 'ProactiveAgent', '网站同步', '系统优化'],
+        views: 0,
+        likes: 0
+    },
+    {
+        id: '20260409',
+        date: '2026-04-09',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月9日工作日记：AI新闻自动采集系统与知识星图构建',
+        excerpt: '今日重点工作：1）完成了 AI 新闻自动采集系统的全流程优化，实现了从 TechCrunch 等源获取、分析、生成日报并自动分发邮件的闭环；2）构建了基于私有知识星图（GraphRAG）的实验性功能，通过提取 Markdown 中的 WikiLink 和标签实现了知识点的自动关联；3）持续优化了任务执行流程，确保了各项定时 Cron 任务的稳定性，系统运行平稳。',
+        tags: ['AI新闻', '知识星图', 'GraphRAG', '自动化'],
+        views: 0,
+        likes: 0
+    },
         date: '2026-04-08',
         category: 'work',
         categoryLabel: '💼 工作日记',
