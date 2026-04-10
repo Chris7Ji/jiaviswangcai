@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>昇腾PyTorch插件深度解析与性能调优指南</title>
+    <!-- 引入美化后的 CSS -->
     <link rel="stylesheet" href="css/article.css">
+    <!-- 引入 marked.js 实现 Markdown 的高质量自动解析 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* 额外微调，确保 Markdown 解析后的元素样式美观 */
+        #md-output { padding: 2rem; background: #fff; border-radius: 8px; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
 </head>
 <body>
-    <article>
-        <h1>昇腾PyTorch插件深度解析与性能调优指南</h1>
-        <div id="content">
+    <article id="md-output"></article>
+    <script>
+        // 获取 Markdown 原文
+        const markdownSource = `
 # 昇腾 PyTorch 插件（torch_npu）架构与实现深度解析
 
 > 来源仓库：https://gitcode.com/Ascend/pytorch/
@@ -890,7 +899,9 @@ for data, target in dataloader:
 ---
 
 *本文基于 https://gitcode.com/Ascend/pytorch 仓库源码和文档分析整理，内容截至 2026-04-10。*
-        </div>
-    </article>
+        `;
+        // 使用 marked 解析为 HTML
+        document.getElementById('md-output').innerHTML = marked.parse(markdownSource);
+    </script>
 </body>
 </html>
