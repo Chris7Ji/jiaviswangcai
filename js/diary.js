@@ -26,6 +26,8 @@ const allPosts = [
         views: 0,
         likes: 0
     },
+    {
+        id: '20260408',
         date: '2026-04-08',
         category: 'work',
         categoryLabel: '💼 工作日记',
