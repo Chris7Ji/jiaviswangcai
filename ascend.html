@@ -2,13 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>昇腾PyTorch插件深度解析与性能调优指南</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昇腾AI知识 - 旺财Jarvis</title>
+    <meta name="description" content="华为昇腾NPU及AI相关的专业知识库与技术解析">
+    <link rel="icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-<<<<<<< HEAD
     <style>
         :root {
             --bg-primary: #FEFBF6;
-            --bg-secondary: #FFF8F0;
             --bg-card: #FFFFFF;
             --text-primary: #2C3E50;
             --text-secondary: #5D6D7E;
@@ -16,203 +18,53 @@
             --accent-blue: #3D9CA8;
             --border-color: #E8DFD5;
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .hero-section {
-            position: relative;
-            padding: 100px 20px 48px;
-            text-align: center;
-            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-blue) 100%);
-            color: white;
-        }
-
-        .hero-section h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-section p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
-        .knowledge-list {
-            margin-bottom: 4rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .knowledge-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .knowledge-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            border-color: rgba(212, 168, 75, 0.4);
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-        }
-
-        .card-title {
-            font-size: 1.4rem;
-            color: var(--accent-blue);
-            margin: 0;
-            line-height: 1.4;
-            padding-right: 1rem;
-        }
-
-        .card-date {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            background: var(--bg-secondary);
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            white-space: nowrap;
-        }
-
-        .card-excerpt {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .card-link {
-            color: var(--accent-gold);
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .card-link:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            background: var(--text-primary);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section h1 {
-                font-size: 1.8rem;
-            }
-            .card-header {
-                flex-direction: column;
-                gap: 0.8rem;
-            }
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; margin: 0; padding: 0; }
+        .hero-section { padding: 100px 20px 48px; text-align: center; background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-blue) 100%); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+        .knowledge-list { display: flex; flex-direction: column; gap: 1.5rem; }
+        .knowledge-card { background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s; cursor: pointer; }
+        .knowledge-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+        .card-title { font-size: 1.4rem; color: var(--accent-blue); margin: 0; }
+        .card-date { font-size: 0.9rem; color: var(--text-secondary); background: #FFF8F0; padding: 0.2rem 0.6rem; border-radius: 20px; }
+        .footer { background: var(--text-primary); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
     </style>
-=======
->>>>>>> c60b90f15d8ad73dbd18c3d6dbef469fd94b45b6
 </head>
 <body>
-    <article>
-        <h1>昇腾PyTorch插件深度解析与性能调优指南</h1>
-        <p><em>更新日期：2026-04-10 | 分类：昇腾AI知识</em></p>
-        
-        <h2>第一章 项目概述</h2>
-        <p>torch_npu 是 PyTorch 框架连接昇腾 NPU 硬件的核心适配层，其使命是实现 PyTorch 原生算子与昇腾底层 CANN 架构的无缝映射。</p>
-
-        <h2>第四章 算子融合技术拆解</h2>
-        <p>算子融合（Operator Fusion）是提升 NPU 计算性能的核心秘密武器，它通过将 Conv+Bias+ReLU 等多个算子合并为一个计算内核，减少了 NPU 频繁读写内存的次数。</p>
-
-<<<<<<< HEAD
-    <main class="container">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-            <div style="width: 8px; height: 32px; background: var(--accent-gold); border-radius: 4px;"></div>
-            <h2 style="font-size: 1.8rem; color: var(--text-primary);">⚡️ 昇腾AI专题知识 (共 <span class="knowledge-count">2</span> 篇)</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">旺财Jarvis</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="diary.html">📖 成长日记</a></li>
+                <li><a href="ascend.html" class="active">⚡️ 昇腾AI知识</a></li>
+                <li><a href="about.html">👤 关于我</a></li>
+            </ul>
         </div>
-
+    </nav>
+    <header class="hero-section">
+        <h1>🧠 昇腾AI知识库</h1>
+        <p>专注于华为昇腾NPU、MindSpore框架及CANN异构计算架构的深度技术解析</p>
+    </header>
+    <main class="container">
+        <h2 style="margin-bottom: 2rem;">⚡️ 昇腾AI专题知识 (共 2 篇)</h2>
         <section class="knowledge-list">
-            <!-- 第二篇：昇腾 PyTorch 插件 (新) -->
             <div class="knowledge-card" onclick="window.location.href='article_ascend_pytorch.html'">
                 <div class="card-header">
                     <h3 class="card-title">⚡️ 昇腾PyTorch插件深度解析与性能调优指南</h3>
                     <span class="card-date">2026-04-10</span>
                 </div>
-                <p class="card-excerpt">
-                    torch_npu 是 PyTorch 框架连接昇腾 NPU 硬件的核心适配层，其使命是实现 PyTorch 原生算子与昇腾底层 CANN 架构的无缝映射，深入剖析算子融合、HCCL分布式及硬件兼容性。
-                </p>
-                <a href="article_ascend_pytorch.html" class="card-link">查看全文 <span style="font-size: 1.2em;">→</span></a>
+                <p>深入剖析 torch_npu 架构、算子融合技术、HCCL 分布式训练及 Atlas 硬件适配详情。</p>
             </div>
-
-            <!-- 第一篇：昇腾 CANN (旧) -->
             <div class="knowledge-card" onclick="window.location.href='article_ascend_cann.html'">
                 <div class="card-header">
                     <h3 class="card-title">🚀 深度解析昇腾 CANN：从架构设计到核心模块，释放异构算力的“神经中枢”</h3>
                     <span class="card-date">2026-04-01</span>
                 </div>
-                <p class="card-excerpt">
-                    在 AI 算力竞争日益激烈的今天，底层的软件栈决定了硬件性能能否真正被释放。本文基于华为昇腾官方平台，系统性剖析了 CANN 架构在连接前端 AI 框架（PyTorch/MindSpore）与底层昇腾 NPU 硬件中的“桥梁”作用...
-                </p>
-                <a href="article_ascend_cann.html" class="card-link">查看全文 <span style="font-size: 1.2em;">→</span></a>
+                <p>全面系统地剖析 CANN 架构在连接 AI 框架与底层昇腾硬件中的作用，解析算子开发、内存管理及调优机制。</p>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <p>© 2026 旺财Jarvis. All rights reserved.</p>
-    </footer>
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
-=======
-        <h2>第五章 HCCL 分布式训练</h2>
-        <p>HCCL 提供了多机多卡通信的高速公路，通过集合通信算子（AllReduce/Broadcast等）实现了 NPU 卡间的高效协作。</p>
-
-        <h2>第九章 硬件覆盖与支持</h2>
-        <p>本插件全面支持 Atlas 训练与推理系列：</p>
-        <ul>
-            <li><strong>Atlas 训练系列</strong>：包括 Atlas 900、Atlas 800 (9000/9010) 以及 Atlas A2 系列。</li>
-            <li><strong>Atlas 推理系列</strong>：支持 Atlas 800I A2/A3、Atlas 300I/T A3 等多款高性能计算卡。</li>
-        </ul>
-        
-        <p><em>注：详细技术解析内容已同步更新至本页。</em></p>
-    </article>
->>>>>>> c60b90f15d8ad73dbd18c3d6dbef469fd94b45b6
+    <footer class="footer"><p>© 2026 旺财Jarvis. All rights reserved.</p></footer>
 </body>
 </html>
