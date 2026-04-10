@@ -5,32 +5,39 @@
     <title>昇腾PyTorch插件深度解析与性能调优指南</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .article-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; line-height: 1.8; color: #333; }
-        h1 { color: #3D9CA8; } h2 { color: #D4A84B; border-left: 5px solid #D4A84B; padding-left: 15px; margin-top: 2rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; line-height: 1.8; color: #2C3E50; }
+        h1 { color: #3D9CA8; border-bottom: 3px solid #D4A84B; padding-bottom: 1rem; }
+        h2 { color: #D4A84B; border-left: 5px solid #D4A84B; padding-left: 15px; margin-top: 2.5rem; }
+        code { background: #F4F4F4; padding: 2px 4px; border-radius: 4px; }
+        pre { background: #272822; color: #F8F8F2; padding: 1.5rem; border-radius: 8px; overflow-x: auto; }
     </style>
 </head>
 <body>
-    <article class="article-content">
+    <div class="container">
         <h1>昇腾PyTorch插件深度解析与性能调优指南</h1>
-        <p><em>发布日期：2026-04-10</em></p>
+        <p><em>发布日期：2026-04-10 | 分类：昇腾AI知识</em></p>
         
         <h2>第一章 项目概述</h2>
-        <p>torch_npu 是 PyTorch 框架连接昇腾 NPU 硬件的核心适配层，其使命是实现 PyTorch 原生算子与昇腾底层 CANN 架构的无缝映射，是发挥昇腾算力的关键驱动。</p>
-        
-        <h2>第四章 算子融合技术拆解</h2>
-        <p>算子融合（Operator Fusion）是提升 NPU 计算性能的核心秘密武器，它通过将 Conv+Bias+ReLU 等多个算子合并为一个计算内核，减少了 NPU 频繁读写内存的次数。在高并发推理场景下，融合后的算子执行效率比原始状态提升了约 30%-50%。</p>
-        
-        <h2>第五章 HCCL 分布式训练</h2>
-        <p>HCCL (Huawei Collective Communication Library) 提供了多机多卡通信的高速公路，通过 AllReduce, Broadcast, AllGather 等高效集合通信算子，实现了 NPU 卡间的高效协作，优化了拓扑结构下的传输延迟。</p>
-        
-        <h2>第九章 硬件覆盖与支持</h2>
-        <p>本插件全面支持 Atlas 训练与推理系列：</p>
+        <p>torch_npu 是 Ascend Extension for PyTorch 的核心插件，它在 PyTorch 原生 API 与昇腾底层 CANN 异构计算架构之间建立了一座高效桥梁，支持昇腾 NPU 实现高性能 AI 训练与推理。</p>
+
+        <h2>第二章 安装与版本适配</h2>
+        <p>适配昇腾环境需确保 CANN 包与 torch_npu 版本配套。推荐快速安装方法：</p>
+        <pre>pip3 install torch==2.1.0
+pip3 install torch-npu==2.1.0.post17</pre>
+
+        <h2>第三章 算子融合与计算优化</h2>
+        <p>算子融合技术将多个计算算子（如卷积+偏置+ReLU）合并，大幅减少内存读写带宽消耗。在昇腾架构下，通过图编译器自动进行算子融合，可使整体算力利用率（MFU）提升 30%-50%。</p>
+
+        <h2>第四章 HCCL 分布式训练核心</h2>
+        <p>HCCL 是昇腾分布式训练的引擎，提供高效的多机多卡集合通信能力。它在底层不仅优化了物理拓扑结构的通信路径，还通过算子并行计算与通信重叠技术（Communication-Computation Overlap），极大缓解了分布式计算中的带宽瓶颈。</p>
+
+        <h2>第五章 硬件支持全景图</h2>
         <ul>
-            <li><strong>Atlas 训练系列</strong>：包括 Atlas 900 集群、Atlas 800 (9000/9010) 以及最新的 Atlas A2 训练服务器系列。</li>
-            <li><strong>Atlas 推理系列</strong>：支持 Atlas 800I A2/A3、Atlas 300I/T A3 等多款高性能计算卡，广泛应用于推理任务加速。</li>
+            <li><strong>训练级支持</strong>：Atlas 训练系列（Atlas 900, Atlas 800 9000/9010）、Atlas A2/A3 集群超节点。</li>
+            <li><strong>推理级支持</strong>：Atlas 800I A2/A3、Atlas 300I/T A3 以及嵌入式异构子框，满足各类推理场景。</li>
         </ul>
         <hr>
         <p><a href="ascend.html">← 返回昇腾AI知识列表</a></p>
-    </article>
+    </div>
 </body>
 </html>
