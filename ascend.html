@@ -56,7 +56,6 @@
             padding: 3rem 2rem;
         }
 
-        /* 知识点汇总卡片样式，与 skills.html 一致 */
         .knowledge-list {
             margin-bottom: 4rem;
             display: flex;
@@ -176,21 +175,32 @@
     </header>
 
     <main class="container">
-        <!-- 昇腾AI专题知识 -->
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
             <div style="width: 8px; height: 32px; background: var(--accent-gold); border-radius: 4px;"></div>
-            <h2 style="font-size: 1.8rem; color: var(--text-primary);">⚡️ 昇腾AI专题知识 (共 <span class="knowledge-count">1</span> 篇)</h2>
+            <h2 style="font-size: 1.8rem; color: var(--text-primary);">⚡️ 昇腾AI专题知识 (共 <span class="knowledge-count">2</span> 篇)</h2>
         </div>
 
         <section class="knowledge-list">
-            <!-- 第一篇：昇腾 CANN (最新) -->
+            <!-- 第二篇：昇腾 PyTorch 插件 (新) -->
+            <div class="knowledge-card" onclick="window.location.href='article_ascend_pytorch.html'">
+                <div class="card-header">
+                    <h3 class="card-title">⚡️ 昇腾PyTorch插件深度解析与性能调优指南</h3>
+                    <span class="card-date">2026-04-10</span>
+                </div>
+                <p class="card-excerpt">
+                    torch_npu 是 PyTorch 框架连接昇腾 NPU 硬件的核心适配层，其使命是实现 PyTorch 原生算子与昇腾底层 CANN 架构的无缝映射，深入剖析算子融合、HCCL分布式及硬件兼容性。
+                </p>
+                <a href="article_ascend_pytorch.html" class="card-link">查看全文 <span style="font-size: 1.2em;">→</span></a>
+            </div>
+
+            <!-- 第一篇：昇腾 CANN (旧) -->
             <div class="knowledge-card" onclick="window.location.href='article_ascend_cann.html'">
                 <div class="card-header">
                     <h3 class="card-title">🚀 深度解析昇腾 CANN：从架构设计到核心模块，释放异构算力的“神经中枢”</h3>
                     <span class="card-date">2026-04-01</span>
                 </div>
                 <p class="card-excerpt">
-                    在 AI 算力竞争日益激烈的今天，底层的软件栈决定了硬件性能能否真正被释放。本文基于华为昇腾官方平台，系统性剖析了 CANN 架构在连接前端 AI 框架（PyTorch/MindSpore）与底层昇腾 NPU 硬件中的“桥梁”作用，深入解析 Ascend C 算子开发、AscendCL 统一接口、GE/FE 内存墙突破策略、HCCL 集合通信以及 AOE 自动调优机制。
+                    在 AI 算力竞争日益激烈的今天，底层的软件栈决定了硬件性能能否真正被释放。本文基于华为昇腾官方平台，系统性剖析了 CANN 架构在连接前端 AI 框架（PyTorch/MindSpore）与底层昇腾 NPU 硬件中的“桥梁”作用...
                 </p>
                 <a href="article_ascend_cann.html" class="card-link">查看全文 <span style="font-size: 1.2em;">→</span></a>
             </div>
