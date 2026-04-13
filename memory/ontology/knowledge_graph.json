@@ -97,6 +97,20 @@
       }
     },
     {
+      "id": "doc:hermes-agent-article.md",
+      "type": "Document",
+      "label": "hermes-agent-article.md",
+      "properties": {
+        "path": "hermes-agent-article.md"
+      }
+    },
+    {
+      "id": "concept:\"$ARCH\" == \"arm64\"",
+      "type": "Concept",
+      "label": "\"$ARCH\" == \"arm64\"",
+      "properties": {}
+    },
+    {
       "id": "doc:AI音乐生成使用指南.md",
       "type": "Document",
       "label": "AI音乐生成使用指南.md",
@@ -667,6 +681,14 @@
       }
     },
     {
+      "id": "doc:LEARNINGS.md",
+      "type": "Document",
+      "label": "LEARNINGS.md",
+      "properties": {
+        "path": "LEARNINGS.md"
+      }
+    },
+    {
       "id": "doc:MASCOT.md",
       "type": "Document",
       "label": "MASCOT.md",
@@ -955,6 +977,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-13.md",
+      "type": "Document",
+      "label": "2026-04-13.md",
+      "properties": {
+        "path": "memory/2026-04-13.md"
+      }
+    },
+    {
       "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
@@ -1080,6 +1110,14 @@
       "label": "2026-03-29-自建Analytics方案.md",
       "properties": {
         "path": "memory/2026-03-29-自建Analytics方案.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-13-安全审计与加固.md",
+      "type": "Document",
+      "label": "2026-04-13-安全审计与加固.md",
+      "properties": {
+        "path": "memory/2026-04-13-安全审计与加固.md"
       }
     },
     {
@@ -3549,6 +3587,11 @@
       "source": "doc:CSS_GUIDELINES.md",
       "target": "tag:2C3E50",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:hermes-agent-article.md",
+      "target": "concept:\"$ARCH\" == \"arm64\"",
+      "relation": "mentions"
     },
     {
       "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
