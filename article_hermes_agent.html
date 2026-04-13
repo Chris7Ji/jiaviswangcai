@@ -337,7 +337,7 @@
     <article>
 
         <div class="intro-note">
-            <strong>💡 前置说明：</strong>Hermes Agent 是由 Nous Research 开发的开源自主 AI 代理框架。本文将从技术原理、核心特性、架构解析三个维度进行深度剖析，并提供<strong>macOS 独立环境一键部署脚本</strong>，帮助开发者快速拥有属于自己的自主进化 AI 助手。
+            <strong>💡 前置说明：</strong>Hermes Agent 是由 Nous Research 开发的开源自主 AI 代理框架。本文将从技术原理、核心特性、架构解析三个维度进行深度剖析，并提供<strong>官方一键安装命令</strong>，帮助开发者快速拥有属于自己的自主进化 AI 助手。
         </div>
 
         <!-- 一、项目概述 -->
@@ -500,192 +500,67 @@ bash Miniconda3-latest-MacOSX-arm64.sh
 source ~/miniconda3/bin/activate
 conda init zsh</code></pre>
 
-        <h3>3.4 三、一键部署脚本（推荐）</h3>
+        <h3>3.4 三、官方一键安装（推荐）</h3>
 
-        <p>我们为您准备了完整的<strong>一键部署脚本</strong>，支持 Apple Silicon 和 Intel Mac 自动识别，整个过程全自动完成。</p>
+        <p>Hermes Agent 官方提供了<strong>一条命令搞定一切</strong>的安装方式，真正实现"零依赖、零配置"。官方使用 <code>uv</code> 作为包管理器（比 pip 快 10-100 倍），自动处理 Python 版本、环境隔离、依赖安装。</p>
 
         <div class="script-box">
-            <h4>📜 install_hermes.sh — Hermes Agent macOS 一键部署脚本</h4>
-            <pre><code>#!/bin/bash
-set -e
-
-# ============================================================
-# Hermes Agent - macOS 独立环境一键部署脚本
-# 版本: v1.0 | 日期: 2026-04-13
-# 支持: Apple Silicon (M1/M2/M3/M4) & Intel Mac
-# ============================================================
-
-echo "🚀 开始部署 Hermes Agent ..."
-
-# ---- 1. 检测芯片架构 ----
-ARCH=$(uname -m)
-if [[ "$ARCH" == "arm64" ]]; then
-    echo "✅ 检测到 Apple Silicon (M系列)"
-    CONDA_PREFIX="$HOME/miniconda3"
-else
-    echo "✅ 检测到 Intel Mac"
-    CONDA_PREFIX="$HOME/miniconda3"
-fi
-
-# ---- 2. 初始化 conda ----
-if ! command -v conda &> /dev/null; then
-    echo "❌ Conda 未安装，正在引导安装..."
-    curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
-    bash Miniconda3-latest-MacOSX-arm64.sh -b -p "$CONDA_PREFIX"
-    rm Miniconda3-latest-MacOSX-arm64.sh
-fi
-source "$CONDA_PREFIX/etc/profile.d/conda.sh"
-
-# ---- 3. 创建独立 conda 环境 ----
-ENV_NAME="hermes-agent"
-if conda env list | grep -q "^${ENV_NAME} "; then
-    echo "📦 环境 ${ENV_NAME} 已存在，跳过创建"
-else
-    echo "📦 创建 conda 环境: ${ENV_NAME} (Python 3.11) ..."
-    conda create -n ${ENV_NAME} python=3.11 -y
-fi
-
-# ---- 4. 激活环境并安装核心依赖 ----
-conda activate ${ENV_NAME}
-echo "📦 安装核心依赖 ..."
-
-pip install --upgrade pip
-
-# Hermes Agent 核心框架
-pip install hermes-agent-core
-
-# 工具集（文件/终端/API 操作）
-pip install hermes-agent-tools
-
-# 支持多种 LLM API（按需选择）
-pip install anthropic      # Claude API
-pip install openai        # OpenAI GPT API
-pip install dashscope      # 通义千问 API
-
-# 环境变量管理
-pip install python-dotenv
-
-# ---- 5. 安装 Hermes CLI ----
-echo "🔧 安装 Hermes CLI ..."
-pip install hermes-agent-cli
-
-# ---- 6. 配置 API Key ----
-CONFIG_DIR="$HOME/.hermes"
-mkdir -p "$CONFIG_DIR"
-
-if [ ! -f "$CONFIG_DIR/.env" ]; then
-    echo ""
-    echo "⚠️  请在下方填入您的 API Key（支持 Anthropic / OpenAI / 通义千问）:"
-    read -p "ANTHROPIC_API_KEY（Claude）: " ANTHROPIC_KEY
-    read -p "OPENAI_API_KEY（GPT，可选）: " OPENAI_KEY
-    read -p "DASHSCOPE_API_KEY（通义千问，可选）: " DASHSCOPE_KEY
-
-    cat > "$CONFIG_DIR/.env" << EOF
-# Hermes Agent 配置文件
-ANTHROPIC_API_KEY=${ANTHROPIC_KEY}
-OPENAI_API_KEY=${OPENAI_KEY:-}
-DASHSCOPE_API_KEY=${DASHSCOPE_KEY:-}
-LOG_LEVEL=INFO
-AGENT_MODE=autonomous
-HERMES_CONFIG_DIR=$CONFIG_DIR
-EOF
-    echo "✅ 配置文件已生成: $CONFIG_DIR/.env"
-fi
-
-# ---- 7. 创建快捷启动脚本 ----
-LAUNCHER="$HOME/.local/bin/hermes"
-mkdir -p "$(dirname $LAUNCHER)"
-cat > "$LAUNCHER" << 'LAUNCHER_EOF'
-#!/bin/bash
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate hermes-agent
-cd ~/hermes-workspace
-mkdir -p ~/hermes-workspace
-exec hermes run "$@"
-LAUNCHER_EOF
-chmod +x "$LAUNCHER"
-
-# ---- 8. 创建工作目录 ----
-mkdir -p ~/hermes-workspace
-
-# ---- 9. 验证安装 ----
-echo ""
-echo "🔍 验证安装 ..."
-python -c "import hermes_agent; print('✅ hermes-agent-core OK')" 2>/dev/null || echo "❌ 核心包验证失败"
-python -c "import hermes_agent_tools; print('✅ hermes-agent-tools OK')" 2>/dev/null || echo "❌ 工具包验证失败"
-hermes --version 2>/dev/null && echo "✅ CLI 工具 OK" || echo "⚠️ CLI 验证跳过"
-
-echo ""
-echo "🎉🎉🎉 部署完成！"
-echo "============================================"
-echo "   快速启动命令: hermes"
-echo "   或使用快捷命令: ~/hermes-workspace"
-echo "   配置文件: $CONFIG_DIR/.env"
-echo ""
-echo "📝 使用方法："
-echo "   1. 激活环境: conda activate hermes-agent"
-echo "   2. 进入工作区: cd ~/hermes-workspace"
-echo "   3. 启动交互: hermes run"
-echo "   4. 任务执行: hermes run \"你的任务描述\""
-echo "============================================"
-echo ""
-echo "💡 提示: 以后只需输入 'hermes' 即可启动！"</code></pre>
+            <h4>📜 官方一键安装命令</h4>
+            <pre><code># 官方一键安装（一条命令搞定一切）
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
         </div>
 
-        <h3>3.5 四、使用步骤详解</h3>
+        <h3>3.5 四、官方安装步骤详解</h3>
 
-        <h4>Step 1：保存并运行脚本</h4>
-        <pre><code># 1. 将上述脚本保存为 install_hermes.sh
-nano install_hermes.sh
+        <h4>Step 1：一键安装</h4>
+        <pre><code># 在终端执行这条命令，即可完成全部安装
+# 自动安装 uv、Python 3.11、克隆仓库、配置环境
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
 
-# 2. 赋予执行权限
-chmod +x install_hermes.sh
+        <h4>Step 2：配置模型</h4>
+        <pre><code># 交互式配置向导（推荐首次使用）
+hermes setup
 
-# 3. 一键运行（整个过程约 5-10 分钟）
-./install_hermes.sh</code></pre>
-
-        <h4>Step 2：配置 API Key</h4>
-        <p>脚本运行过程中会提示您输入 API Key，支持以下三种主流 LLM API：</p>
+# 或者手动选择模型提供商
+hermes model</code></pre>
+        <p>支持以下模型接入方式：</p>
 
         <div class="table-wrap">
             <table>
                 <thead>
-                    <tr><th>API 提供商</th><th>推荐模型</th><th>申请地址</th><th>特点</th></tr>
+                    <tr><th>接入方式</th><th>说明</th><th>适用场景</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Anthropic Claude</strong></td><td>Claude 3.5 Sonnet</td><td>console.anthropic.com</td><td>推理能力强，适合复杂任务</td></tr>
-                    <tr><td><strong>OpenAI GPT</strong></td><td>GPT-4o</td><td>platform.openai.com</td><td>生态成熟，工具支持完善</td></tr>
-                    <tr><td><strong>阿里通义千问</strong></td><td>Qwen-Max</td><td>dashscope.console.aliyun.com</td><td>中文理解优秀</td></tr>
+                    <tr><td><strong>Nous Portal</strong></td><td>OAuth 一键授权</td><td>官方推荐，最简单</td></tr>
+                    <tr><td><strong>OpenRouter</strong></td><td>API Key 接入 200+ 模型</td><td>需要 OpenRouter 账号</td></tr>
+                    <tr><td><strong>自定义 API</strong></td><td>任何 OpenAI 兼容端点</td><td>自建模型服务</td></tr>
+                    <tr><td><strong>本地 vLLM</strong></td><td>完全本地化运行</td><td>隐私敏感场景</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <h4>Step 3：启动 Hermes Agent</h4>
-        <pre><code># 方式一：交互模式（推荐首次使用）
-hermes run
+        <h4>Step 3：开始对话</h4>
+        <pre><code># 启动完整的交互式 CLI
+hermes</code></pre>
 
-# 方式二：直接执行具体任务
-hermes run "帮我分析当前目录下的日志文件，找出错误并生成报告"
+        <h4>Step 4：接入多平台消息（可选）</h4>
+        <pre><code># 引导式配置 Telegram/Discord/Slack/WhatsApp
+hermes gateway setup
 
-# 方式三：后台持续运行模式
-hermes run --daemon
+# 启动消息网关
+hermes gateway
 
-# 方式四：指定工作目录
-hermes run --workspace /path/to/project "部署这个应用到 Docker"</code></pre>
+# 安装为系统服务（后台运行）
+hermes gateway install</code></pre>
 
-        <h4>Step 4：验证安装成功</h4>
-        <pre><code># 检查版本
-hermes --version
-
-# 运行诊断
-hermes doctor
-
-# 测试基本功能
-hermes run "你好，请做一个简单的自我介绍"</code></pre>
+        <h4>Step 5：保持更新</h4>
+        <pre><code># 一键更新到最新版本
+hermes update</code></pre>
 
         <div class="highlight-box info">
-            <div class="hb-title">💡 首次使用建议</div>
-            建议首次运行时先执行 <code>hermes doctor</code> 进行环境诊断，确保所有依赖正常工作后，再开始正式使用。同时建议详细阅读输出的每一项检查结果，确保没有遗漏。
+            <div class="hb-title">💡 官方安装优势</div>
+            官方安装脚本使用 <strong>uv</strong> 包管理器，自动处理 Python 版本、环境隔离、所有依赖安装。无需 sudo 权限，一条命令即可完成全部配置。同时支持自动更新功能，确保始终使用最新版本。<br><br>
+            <strong>系统要求：</strong>Linux、macOS 或 WSL2（Windows 原生支持仍在实验中）
         </div>
 
         <!-- 四、安全性建议 -->
@@ -719,26 +594,20 @@ hermes run "你好，请做一个简单的自我介绍"</code></pre>
             <ul>
                 <li><strong>架构清晰</strong>：感知层 → 推理层 → 执行层，三层分工明确</li>
                 <li><strong>能力强大</strong>：目标理解、自主规划、工具调用、持续记忆、自我修正</li>
-                <li><strong>部署简单</strong>：独立 Conda 环境 + 一键部署脚本，5 分钟完成</li>
+                <li><strong>部署简单</strong>：官方一条命令安装，零配置，5 分钟完成</li>
                 <li><strong>完全可控</strong>：本地运行，开源可控，数据不出本地</li>
                 <li><strong>安全第一</strong>：遵循最小权限原则，定期审计操作日志</li>
             </ul>
         </div>
 
-        <h3>一键部署脚本使用说明</h3>
-        <p>只需执行以下三行命令，即可完成全部部署工作：</p>
+        <h3>🚀 官方一键安装（最简方式）</h3>
+        <p>只需执行以下<strong>一条命令</strong>，即可完成全部部署工作：</p>
 
-        <pre><code># 下载脚本
-curl -O https://raw.githubusercontent.com/nousresearch/hermes-agent/main/install_hermes.sh
-
-# 赋予执行权限
-chmod +x install_hermes.sh
-
-# 一键部署
-./install_hermes.sh</code></pre>
+        <pre><code># 官方一键安装（推荐）
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
 
         <div class="callout">
-            <span class="emoji">🚀</span>通过本文提供的<strong>一键部署脚本</strong>，您可以在 5 分钟内完成 Hermes Agent 的完整安装配置。整个过程全自动完成，包括环境创建、依赖安装、API Key 配置和验证。立即体验自主进化的 AI 助手，让它成为您开发路上的最强搭档！
+            <span class="emoji">🚀</span>通过官方<strong>一条命令安装</strong>，您可以在 5 分钟内完成 Hermes Agent 的完整安装配置。整个过程全自动完成，包括 uv 包管理器安装、Python 3.11 配置、环境隔离、依赖安装。官方安装还支持<strong>自动更新</strong>和<strong>多平台消息网关</strong>（Telegram/Discord/Slack/WhatsApp），是体验最完整的部署方式！
         </div>
 
         <!-- 六、参考资料 -->
