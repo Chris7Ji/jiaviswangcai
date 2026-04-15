@@ -721,7 +721,7 @@ const allPosts = [
         views: 0,
         likes: 0
     }
-
+];
 
 // State
 let currentFilter = 'all';
