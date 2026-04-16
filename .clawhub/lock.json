@@ -200,6 +200,10 @@
     "ai-data-analyst-cn": {
       "version": "1.0.0",
       "installedAt": 1774660276050
+    },
+    "memory-lancedb-hybrid": {
+      "version": "1.2.1",
+      "installedAt": 1776257062459
     }
   }
 }

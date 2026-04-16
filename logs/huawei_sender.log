@@ -6,3 +6,31 @@
 2026-03-19 12:27:45,131 - HuaweiCompatibleSender - INFO - 邮件发送成功: xushengsheng@huawei.com
 2026-03-19 12:27:45,963 - HuaweiCompatibleSender - INFO - 邮件发送成功: 86940135@qq.com
 2026-03-19 12:27:45,963 - HuaweiCompatibleSender - INFO - 所有邮件发送成功
+2026-04-14 07:41:41,082 - HuaweiCompatibleSender - INFO - 开始发送邮件: /Users/jiyingguo/.openclaw/workspace/news_summaries/ai_news_brief_2026-04-14.html
+2026-04-14 07:41:41,082 - HuaweiCompatibleSender - INFO - 邮件主题: 2026年3月19日 高校分队- AI 新闻每日简报
+2026-04-14 07:41:41,082 - HuaweiCompatibleSender - INFO - 收件人: liuwei44259@huawei.com, tiankunyang@huawei.com, qinhongyi2@huawei.com, jiawei18@huawei.com, jiyingguo@huawei.com, linfeng67@huawei.com, lvluling1@huawei.com, suqi1@huawei.com, susha@huawei.com, wangdongxiao@huawei.com, xiongguifang@huawei.com, xushengsheng@huawei.com, zhangqianfeng2@huawei.com, zhangyexing2@huawei.com, 86940135@qq.com
+2026-04-14 07:41:41,083 - HuaweiCompatibleSender - INFO - 使用QQ邮箱SMTP: 86940135@qq.com
+2026-04-14 07:41:41,969 - HuaweiCompatibleSender - INFO - 邮件发送成功: liuwei44259@huawei.com
+2026-04-14 07:41:42,755 - HuaweiCompatibleSender - INFO - 邮件发送成功: tiankunyang@huawei.com
+2026-04-14 07:41:43,811 - HuaweiCompatibleSender - INFO - 邮件发送成功: qinhongyi2@huawei.com
+2026-04-14 07:41:44,530 - HuaweiCompatibleSender - INFO - 邮件发送成功: jiawei18@huawei.com
+2026-04-14 07:41:45,453 - HuaweiCompatibleSender - INFO - 邮件发送成功: jiyingguo@huawei.com
+2026-04-14 07:41:46,270 - HuaweiCompatibleSender - INFO - 邮件发送成功: linfeng67@huawei.com
+2026-04-14 07:41:47,090 - HuaweiCompatibleSender - INFO - 邮件发送成功: lvluling1@huawei.com
+2026-04-14 07:41:47,789 - HuaweiCompatibleSender - INFO - 邮件发送成功: suqi1@huawei.com
+2026-04-14 07:41:48,482 - HuaweiCompatibleSender - INFO - 邮件发送成功: susha@huawei.com
+2026-04-14 07:41:49,122 - HuaweiCompatibleSender - INFO - 邮件发送成功: wangdongxiao@huawei.com
+2026-04-14 07:41:49,791 - HuaweiCompatibleSender - INFO - 邮件发送成功: xiongguifang@huawei.com
+2026-04-14 07:41:50,056 - HuaweiCompatibleSender - ERROR - 第1次尝试失败 - xushengsheng@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:41:55,442 - HuaweiCompatibleSender - ERROR - 第2次尝试失败 - xushengsheng@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:00,839 - HuaweiCompatibleSender - ERROR - 第3次尝试失败 - xushengsheng@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:01,319 - HuaweiCompatibleSender - ERROR - 第1次尝试失败 - zhangqianfeng2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:06,656 - HuaweiCompatibleSender - ERROR - 第2次尝试失败 - zhangqianfeng2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:12,082 - HuaweiCompatibleSender - ERROR - 第3次尝试失败 - zhangqianfeng2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:12,351 - HuaweiCompatibleSender - ERROR - 第1次尝试失败 - zhangyexing2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:17,730 - HuaweiCompatibleSender - ERROR - 第2次尝试失败 - zhangyexing2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:23,180 - HuaweiCompatibleSender - ERROR - 第3次尝试失败 - zhangyexing2@huawei.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:23,494 - HuaweiCompatibleSender - ERROR - 第1次尝试失败 - 86940135@qq.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:28,806 - HuaweiCompatibleSender - ERROR - 第2次尝试失败 - 86940135@qq.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:34,212 - HuaweiCompatibleSender - ERROR - 第3次尝试失败 - 86940135@qq.com: SMTP错误: Connection unexpectedly closed
+2026-04-14 07:42:34,212 - HuaweiCompatibleSender - WARNING - 部分邮件发送失败

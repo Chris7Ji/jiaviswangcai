@@ -22,7 +22,6 @@ SENDER_PASSWORD = os.environ.get("EMAIL_PASSWORD", "")  # 从环境变量获取�
 
 # 收件人列表
 RECIPIENTS = [
-    "86940135@qq.com",
     "jiyingguo@huawei.com"
 ]
 

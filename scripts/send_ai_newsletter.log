@@ -102,3 +102,7 @@
 2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:336] - ==================================================
 2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:337] - ✅ 任务完成！
 2026-03-19 12:10:23 - AINewsletter - INFO - [send_ai_newsletter.py:338] - ==================================================
+2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:321] - ==================================================
+2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:322] - 高校分队AI新闻简报邮件发送脚本启动
+2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:323] - ==================================================

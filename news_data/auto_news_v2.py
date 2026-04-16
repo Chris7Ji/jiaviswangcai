@@ -275,3 +275,4 @@ def run():
     run_cmd(['git', '-C', REPO_DIR, 'push'])
 
 print("Auto News Script Ready!")
+run()

@@ -7,7 +7,7 @@
 ## 核心配置（重要）
 
 ### TTS（必须Azure TTS，2026-03-22永久保存，2026-03-23修正）
-- API Key: `1C9HVfo8CWdYWU5x6n16fQjr0bnjWCr4MYRuMS1B3Ojd9LNEIbkKJQQJ99CBAC3pKaRXJ3w3AAAYACOGZ07P`
+- API Key: `7eDraYD542t0TLbtmJHYGVzvOEp3rx57IWKv7YDikrUSwnzDaBt4JQQJ99CBAC3pKaRXJ3w3AAAYACOGc788`
 - 端点: https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1
 - 音色: zh-CN-XiaoyiNeural
 - 格式: audio-16khz-32kbitrate-mono-mp3
@@ -137,3 +137,142 @@
 - **强制记录规范**：在写入 `LEARNINGS.md`、`ERRORS.md`、`PROGRESS.md` 等核心日志时，必须主动为核心实体打上方括号链接。例如：遇到网络报错应记录为 `[[报错_ETIMEDOUT]]`，提到某个模型应记录为 `[[Gemini]]`。这样可以让零散的知识点在图谱中自动产生链接，形成网状记忆。
 
 - 2026-03-31: **cron任务务必不绑定模型**，如果绑定特定模型会在模型更替或限流时导致后台定时任务失效挂起。建议解绑系统级cron的模型限制并增加重试与环境检查机制。
+
+## Compaction系统优化 (2026-04-16 11:45)
+
+### 问题分析
+学习 OpenClaw 官方文档 https://docs.openclaw.ai/concepts/compaction 后，对比现有系统配置发现以下问题：
+
+| 配置项 | 原值 | 新值 | 原因 |
+|--------|------|------|------|
+| lossless-claw.contextThreshold | 0.5 | 0.75 | 原值过低(50%)导致过早压缩，75%更合理 |
+| lossless-claw.freshTailCount | 12 | 32 | 原值过低，只保护12条消息，容易丢失近期上下文 |
+| lossless-claw.incrementalMaxDepth | -1 (无限) | 1 | 无限级联过于激进，限制为1级更安全 |
+| agents.defaults.compaction.notifyUser | 未配置 | true | 开启压缩通知，便于观察系统行为 |
+| agents.defaults.contextPruning | 未配置 | {mode: "cache-ttl", ttl: "5m"} | 启用会话修剪，减少工具输出膨胀 |
+
+### 关键概念
+- **Compaction**: 将旧对话总结成摘要存在transcript中
+- **Pruning**: 修剪旧工具输出，不保存，仅内存操作
+- **memoryFlush**: 压缩前自动将持久笔记写入磁盘
+- **freshTailCount**: 保护最新消息不被压缩
+
+### 参考文档
+- https://docs.openclaw.ai/concepts/compaction
+- https://docs.openclaw.ai/concepts/session-pruning
+- https://docs.openclaw.ai/concepts/memory
+
+## Memory-Search系统优化 (2026-04-16 11:58)
+
+### 文档学习
+学习 https://docs.openclaw.ai/concepts/memory-search 后进行以下优化：
+
+### 原有配置
+```json
+{
+  "enabled": true,
+  "provider": "gemini",
+  "model": "gemini-embedding-2-preview",
+  "outputDimensionality": 1536
+}
+```
+
+### 优化后配置
+```json
+{
+  "enabled": true,
+  "provider": "gemini",
+  "model": "gemini-embedding-2-preview",
+  "outputDimensionality": 1536,
+  "query": {
+    "hybrid": {
+      "temporalDecay": { "enabled": true },
+      "mmr": { "enabled": true }
+    }
+  }
+}
+```
+
+### 优化说明
+| 配置项 | 优化前 | 优化后 | 说明 |
+|--------|--------|--------|------|
+| query.hybrid.temporalDecay | 未配置 | enabled: true | 启用时间衰减，30天半衰期，最近笔记优先 |
+| query.hybrid.mmr | 未配置 | enabled: true | 启用MMR多样性，减少重复结果 |
+
+### 关键概念
+- **Vector Search**: 语义相似搜索（"gateway host" 匹配 "运行 OpenClaw 的机器"）
+- **BM25 Search**: 关键词精确搜索（ID、错误字符串、配置key）
+- **Hybrid Merge**: 两种搜索结果加权合并
+- **temporalDecay**: 老笔记逐渐降低权重，MEMORY.md 等常青文件不受影响
+- **MMR (Maximum Marginal Relevance)**: 减少冗余结果，确保top结果覆盖不同主题
+
+### 注意事项
+- memory-lancedb skill 已禁用（需要OpenAI API）
+- 内置 memorySearch 使用 Gemini 嵌入模型
+- 如遇CJK文本检索问题，运行: openclaw memory index --force
+
+## memory-lancedb-pro 安装尝试 (2026-04-16 下午)
+
+### 目标
+安装 memory-lancedb-pro 插件以使用本地 Ollama embeddings (nomic-embed-text)
+
+### 尝试过程
+1. 安装 memory-lancedb-pro 到 ~/.openclaw/extensions/
+2. 配置 embedding: baseUrl=http://localhost:11434/v1, model=nomic-embed-text
+3. 多次重启网关，但插件始终无法被 OpenClaw 发现
+
+### 问题
+OpenClaw 状态显示：
+```
+plugins.allow is empty; discovered non-bundled plugins may auto-load: lossless-claw, openclaw-web-search, openclaw-weixin
+```
+memory-lancedb-pro 不在发现列表中，即使文件存在于 ~/.openclaw/extensions/memory-lancedb-pro/
+
+### 结论（2026-04-16 确认）
+**用户决定：放弃 memory-lancedb-pro，继续使用内置 memorySearch**
+- memory-wiki 已启用（2026-04-16）
+- 继续使用 QMD + memorySearch (temporalDecay + MMR)
+- 这是最终决策，不再尝试 memory-lancedb 系列插件
+
+## memory-wiki 启用 (2026-04-16)
+
+### 配置
+- vaultMode: **bridge**
+- vault: ~/.openclaw/wiki/main
+- renderMode: **obsidian**
+- Obsidian CLI: 可选，未安装
+- Bridge: enabled (0 exported artifacts - 因为 QMD 未导出 public artifacts)
+- search: shared corpus=all
+
+### Vault 结构
+- entities/ - 实体
+- concepts/ - 概念
+- sources/ - 来源
+- syntheses/ - 综合
+- reports/ - 仪表板报告
+  - claim-health.md
+  - contradictions.md
+  - low-confidence.md
+  - open-questions.md
+  - stale-pages.md
+
+### 注意事项
+- Obsidian CLI 未安装（可选）
+- Bridge mode 等待 QMD 导出 artifacts 后自动导入
+- 或可切换为 isolated mode 作为独立知识库
+
+## Codex 集成完成 (2026-04-16)
+
+### 配置状态
+- Codex plugin: ✅ 已配置并连接成功
+- 可用模型: gpt-5.4, gpt-5.4-mini, gpt-5.3-codex, gpt-5.2-codex, gpt-5.1-codex-max, gpt-5.1-codex-mini
+- MCP servers: 2个已连接
+- Skills: 1个可用
+
+### 使用方式
+- `/model codex` - 切换到 Codex (gpt-5.4)
+- `/model codex/gpt-5.4-mini` - 使用 mini 版本
+- `/codex status` - 查看连接状态
+
+### 验证结果
+通过 /codex status 命令验证，app-server connected，所有模型可用。
