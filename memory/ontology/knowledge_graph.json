@@ -681,6 +681,14 @@
       }
     },
     {
+      "id": "doc:DIARY_INSTRUCTIONS.md",
+      "type": "Document",
+      "label": "DIARY_INSTRUCTIONS.md",
+      "properties": {
+        "path": "DIARY_INSTRUCTIONS.md"
+      }
+    },
+    {
       "id": "doc:LEARNINGS.md",
       "type": "Document",
       "label": "LEARNINGS.md",
@@ -1006,6 +1014,14 @@
       "label": "2026-03-29.md",
       "properties": {
         "path": "memory/2026-03-29.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "memory/2026-04-16.md"
       }
     },
     {
