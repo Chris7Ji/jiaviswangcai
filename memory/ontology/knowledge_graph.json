@@ -3535,6 +3535,26 @@
       }
     },
     {
+      "id": "doc:memory/ontology/feedback/daily-insights.md",
+      "type": "Document",
+      "label": "daily-insights.md",
+      "properties": {
+        "path": "memory/ontology/feedback/daily-insights.md"
+      }
+    },
+    {
+      "id": "concept:project-name",
+      "type": "Concept",
+      "label": "project-name",
+      "properties": {}
+    },
+    {
+      "id": "concept:wikilink",
+      "type": "Concept",
+      "label": "wikilink",
+      "properties": {}
+    },
+    {
       "id": "doc:venv_tavily/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md",
       "type": "Document",
       "label": "LICENSE.md",
@@ -4460,6 +4480,16 @@
       "source": "doc:archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/ontology/feedback/daily-insights.md",
+      "target": "concept:project-name",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/ontology/feedback/daily-insights.md",
+      "target": "concept:wikilink",
+      "relation": "mentions"
     },
     {
       "source": "doc:.learnings/LEARNINGS.md",
