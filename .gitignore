@@ -4,3 +4,10 @@ Surfshark.dmgSurfshark.dmg
 # Node.js dependencies
 node_modules/
 *.node
+
+# Python virtual environments
+.venv/
+venv/
+env/
+*.pyc
+__pycache__/
