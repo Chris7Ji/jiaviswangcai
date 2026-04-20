@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-16T05:25:18.025Z",
+  "entries": {
+    "memory:memory/2026-04-15.md:1:35": {
+      "key": "memory:memory/2026-04-15.md:1:35",
+      "path": "memory/2026-04-15.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-04-15 日志 ## Memory Search 配置记录 ### 配置过程 - 目标：为 OpenClaw 配置 memory search 功能（语义搜索） - 用户需求：使用 Google Gemini API Key 配置 embedding provider ### 配置结果 | 项目 | 状态 | 备注 | |------|------|------| | Memory Search | ✅ 已启用 | provider: gemini | | 模型 | ✅ gemini-embedding-2-preview | | | API Key | ✅ 已配置 | AIzaSyDUXba29bf86c_pjadKWftMH6u30kEpN9s | | API 测试 | ✅ 通过 | 成功返回 768 维 embeddings | | Vector Search | ❌ 不可用 | 缺少 memory-lancedb 插件 | ### Vector Search 问题 - **原因**：缺少 `memory-lancedb` 插件（提供 LanceDB 向量数据库后端） - **可用插件**：memory-lancedb-hybrid, memory-lancedb-setup - **安全警告**：VirusTotal 扫描发现这些插件包含可疑行为（文件路径混淆、base64 混淆命令） - **结论**：暂不安装，等待官方安全版本 ### OpenAI API Key 问题 - **问题**：之前配置的 OpenAI API Key 返回 `i",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.7283134361206813,
+      "maxScore": 0.47615208625793454,
+      "firstRecalledAt": "2026-04-15T12:51:52.964Z",
+      "lastRecalledAt": "2026-04-16T05:10:12.334Z",
+      "queryHashes": [
+        "e8c72188c9e1",
+        "276207fea7ed",
+        "cb84944f3c19",
+        "3ce84157c4d6",
+        "2b2db809b053",
+        "f6c1204048f6"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "openai",
+        "gemini-embedding-2-preview",
+        "memory-lancedb",
+        "memory-lancedb-hybrid",
+        "memory-lancedb-setup",
+        "日志"
+      ]
+    },
+    "memory:memory/2026-04-15.md:27:47": {
+      "key": "memory:memory/2026-04-15.md:27:47",
+      "path": "memory/2026-04-15.md",
+      "startLine": 27,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "- **解决方案**：改用 Gemini API Key ## 技术修复记录 ### exec --temp allowlist 问题 - **问题**：clawhub install 被 exec allowlist 阻断 - **解决方案**： ```bash openclaw config set --json 'exec.allowlist[\"clawhub install\"]=\"/bin/bash -c,exec --temp allowlist add -- /bin/bash -c (clawhub install|tail -n)\";' openclaw config set --json 'exec.allowlist[\"clawhub list\"]=\"/bin/bash -c,exec --temp allowlist add -- /bin/bash -c (clawhub list|tail -n)\";' ``` - **参考**：memory/2026-03-20.md 第 4 节 ## 待处理事项 - [ ] 监控 memory-lancedb 插件安全性更新 - [ ] 如需向量搜索，考虑等待官方安全版本或自行审查代码后安装 ## 备注 - BM25 全文搜索仍然可用，只是没有语义搜索功能 - Gemini API Key 工作正常，embedding 质量良好",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7983507272887602,
+      "maxScore": 0.461752323910826,
+      "firstRecalledAt": "2026-04-15T12:51:52.964Z",
+      "lastRecalledAt": "2026-04-16T05:25:18.025Z",
+      "queryHashes": [
+        "e8c72188c9e1",
+        "764148d65a85",
+        "f6c1204048f6",
+        "e564976bc0c3"
+      ],
+      "recallDays": [
+        "2026-04-15",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "embedding",
+        "exec.allowlist",
+        "bin/bash",
+        "memory/2026-03-20.md",
+        "memory-lancedb",
+        "解决",
+        "方案",
+        "改用"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:10": {
+      "key": "memory:memory/2026-03-31.md:1:10",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 记忆节点 [2026-03-31 22:48] ## 网站与AI新闻日报架构升级 (jarviswangcai.ai) - **UI 更新**：全站导航栏中的“技能”按钮统一修改为“💡 技能与功能”。 - **功能升级 (多日视图)**：AI新闻日报页面 (`news.html`) 重构，不再只显示单日信息，现支持展示过去半个月（最多15天）的历史日报。 - **技术实现**： - 通过 `news_data/auto_news_v2.py`（及辅助脚本 `rerender_news.py`）读取 `news_db.json` 中的历史数据（按日期分组）。 - 使用纯前端JS配合HTML模板生成多Tab/日期按钮界面 (`.date-pills`)。 - 页面加载时默认激活并展示当天（最新）的日报内容，用户可通过点击历史日期按钮切换内容块。 - 确保定时任务（22:00执行）在更新 `news.html` 时保留最新的导航结构和多日并排展示的完整 DOM 结构。",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8851678937673568,
+      "maxScore": 0.4830413043498993,
+      "firstRecalledAt": "2026-04-15T18:28:52.603Z",
+      "lastRecalledAt": "2026-04-15T22:02:23.031Z",
+      "queryHashes": [
+        "12253153a43b",
+        "777272fa89d1"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "jarviswangcai.ai",
+        "news.html",
+        "news-data/auto-news-v2.py",
+        "rerender-news.py",
+        "news-db.json",
+        "使用纯前端js配合html模板生成多tab/日期按钮界面",
+        "date-pills",
+        "记忆"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:12": {
+      "key": "memory:memory/2026-04-13.md:1:12",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## 2026-04-13: System Operational Status & Heartbeat Stabilization - **Status**: The system is fully autonomous. 10/10 automated cron pipelines (including AI news briefing, daily blessing, and proactive monitor) completed successfully today (April 13th). - **Key Observation**: System has transitioned from high-instability (April 3-4) to a stable operational baseline with zero performance degradation over the past 48 hours. - **Maintenance**: Routine heartbeat and memory audits performed. Knowledge graph is consistent (462 nodes / 204 connections). - **Pending Actions**: Git synchronization for knowledge_graph.json requires manual reconciliation due to accumulated untracked workspace files. N",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40922705233097073,
+      "maxScore": 0.40922705233097073,
+      "firstRecalledAt": "2026-04-15T22:02:23.031Z",
+      "lastRecalledAt": "2026-04-15T22:02:23.031Z",
+      "queryHashes": [
+        "777272fa89d1"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "10/10",
+        "high-instability",
+        "3-4",
+        "knowledge-graph.json",
+        "system",
+        "operational",
+        "status",
+        "heartbeat"
+      ]
+    },
+    "memory:memory/archive/2026-02-13.md:1:40": {
+      "key": "memory:memory/archive/2026-02-13.md:1:40",
+      "path": "memory/archive/2026-02-13.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-02-13 - Friday ## Initial Setup - **Time:** 22:18 GMT+8 (Asia/Shanghai) - **Event:** First boot of OpenClaw assistant - **Model:** deepseek/deepseek-chat ## Identity Established - **Assistant Name:** Jarvis (named by user) - **User Name:** Boss (user prefers to be called Boss) - **Timezone:** Asia/Shanghai - **Files Created:** - IDENTITY.md - Updated with name \"Jarvis\" - USER.md - Updated with \"Boss\" as preferred称呼 ## Configuration - Working directory: /Users/jiyingguo/.openclaw/workspace - Current session: main session (direct chat) - Channel: webchat (OpenClaw TUI) ## Notes - This is the first memory entry - Need to create MEMORY.md for long-term memory storage - All configu",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3271418362855911,
+      "maxScore": 0.47300496399402614,
+      "firstRecalledAt": "2026-04-16T03:06:06.630Z",
+      "lastRecalledAt": "2026-04-16T03:11:45.802Z",
+      "queryHashes": [
+        "276207fea7ed",
+        "783804a922d0"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "asia/shanghai",
+        "deepseek/deepseek-chat",
+        "identity.md",
+        "user.md",
+        "users/jiyingguo",
+        "openclaw/workspace",
+        "memory.md",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-03-29.md:1:49": {
+      "key": "memory:memory/2026-03-29.md:1:49",
+      "path": "memory/2026-03-29.md",
+      "startLine": 1,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "# 记忆节点 [2026-03-29 02:25 GMT+8] ## 网站域名配置完成 ### GitHub 仓库 - 仓库名：**jarviswangcai**（不是 jiaviswangcai！） - 仓库地址：https://github.com/Chris7Ji/jarviswangcai - GitHub Pages：https://chris7ji.github.io/jarviswangcai/ ### 域名配置（jarviswangcai.top） - 注册商：NameSilo ($1.88/年) - 购买日期：2026-03-28 - 到期：2027-03-28 - 域名管理器：/account/domains/25116563 ### DNS 配置 | 记录 | 类型 | 值 | 状态 | |------|------|-----|------| | @ | A | 91.195.240.123 | NameSilo 停车页 | | www | CNAME | chris7ji.github.io | ✅ GitHub Pages | | _domainconnect | TXT | www.namesilo.com/domainconnect | ✅ | ### 域名跳转（Domain Forwarding） - 状态：✅ 已启用 - 类型：301 (Permanent Forward) - 目标：https://www.jarviswangcai.top - 配置路径：NameSilo → Domain Manager → DNS → Doma",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8490145921707153,
+      "maxScore": 0.4249832332134247,
+      "firstRecalledAt": "2026-04-16T03:09:39.131Z",
+      "lastRecalledAt": "2026-04-16T03:11:45.802Z",
+      "queryHashes": [
+        "783804a922d0"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "chris7ji.github.io/jarviswangcai",
+        "jarviswangcai.top",
+        "1.88/年",
+        "account/domains/25116563",
+        "91.195.240.123",
+        "chris7ji.github.io",
+        "www.namesilo.com/domainconnect",
+        "www.jarviswangcai.top"
+      ]
+    },
+    "memory:memory/2026-04-16.md:24:44": {
+      "key": "memory:memory/2026-04-16.md:24:44",
+      "path": "memory/2026-04-16.md",
+      "startLine": 24,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "- 执行 `openclaw dreaming status` 报错 \"command not available\" - 说明当前版本的OpenClaw可能不支持此命令或需要特定插件 - 原计划分析Dreaming功能与现有记忆系统的对比，但因命令不可用暂停 ## 定时任务状态 | 任务 | 状态 | 备注 | |------|------|------| | OpenClaw每日新闻监控 (06:00) | ✅ 正常 | 4月14日文件已生成 | | 高校分队-AI新闻每日简报 (06:15) | ❌ 超时失败 | 4月14日起中断 | | 主动惊喜检查 (every 4h) | ❌ error | 持续失败 | ## 运行环境 - Host: jiyingguo的Mac mini - OS: Darwin 24.6.0 (arm64) - Model: minimax-portal/MiniMax-M2.7-highspeed - Default model: google/gemini-3.1-flash-lite-preview --- *记忆存档时间：2026-04-16 11:22*",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4596573442220686,
+      "maxScore": 0.4985811501741409,
+      "firstRecalledAt": "2026-04-16T03:23:42.223Z",
+      "lastRecalledAt": "2026-04-16T03:45:46.463Z",
+      "queryHashes": [
+        "848f73a12a40",
+        "7ac0f9161b3a",
+        "3e40acb46ab3"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "高校分队-ai新闻每日简报",
+        "24.6.0",
+        "执行",
+        "openclaw",
+        "dreaming",
+        "status",
+        "command",
+        "not"
+      ]
+    },
+    "memory:memory/archive/2026-02-28.md:75:88": {
+      "key": "memory:memory/archive/2026-02-28.md:75:88",
+      "path": "memory/archive/2026-02-28.md",
+      "startLine": 75,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "3. **文档建设**: 建立个人技能使用指南 4. **缓慢增长**: 在限制允许的情况下，每周增加1-2个新技能 ### ⏰ 时间记录 - **系统创建开始**: 2026-02-28 21:56 - **系统完成时间**: 2026-02-28 22:30 - **总耗时**: 约34分钟 - **记忆存储时间**: 2026-02-28 22:39 --- **关键洞察**: 拥有52个高质量技能已经是一个强大的基础。在当前clawhub速率限制下，最明智的策略是深度利用现有资源，而非急于追求数量目标。质量和使用深度比单纯的数量更重要。 **后续行动**: 从\"安装模式\"切换到\"使用模式\"，重点探索和掌握现有技能的实际应用。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45849163532257076,
+      "maxScore": 0.45849163532257076,
+      "firstRecalledAt": "2026-04-16T05:04:13.403Z",
+      "lastRecalledAt": "2026-04-16T05:04:13.403Z",
+      "queryHashes": [
+        "764148d65a85"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "每周增加1-2个新技能",
+        "建设",
+        "建立",
+        "个人",
+        "技能",
+        "使用",
+        "指南",
+        "缓慢"
+      ]
+    }
+  }
+}

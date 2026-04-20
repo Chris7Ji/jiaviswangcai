@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>旺财Jarvis - Canvas</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body { background: #121212; color: #eee; font-family: sans-serif; display: flex; height: 100vh; margin: 0; }
+        #sidebar { width: 300px; background: #181818; padding: 15px; border-right: 1px solid #333; overflow-y: auto; }
+        #main { flex-grow: 1; padding: 20px; display: flex; flex-direction: column; }
+        #graph { flex-grow: 1; border: 1px solid #444; border-radius: 8px; background: #1a1a1a; }
+        .skill-item { font-size: 12px; margin-bottom: 5px; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h3>🛠️ 已安装技能 (54)</h3>
+        <div id="skill-list"></div>
+    </div>
+    <div id="main">
+        <h3>🕸️ 私有知识星图</h3>
+        <div id="graph"></div>
+    </div>
+<script>
+    // 加载技能
+    fetch('/skills/data.txt').then(r=>r.text()).then(t=>{
+        document.getElementById('skill-list').innerHTML = t.split('\n').map(l=>'<div class="skill-item">'+l+'</div>').join('');
+    });
+    // 加载图谱
+    fetch('/knowledge_graph/entities.json').then(r=>r.json()).then(nodes=>{
+    fetch('/knowledge_graph/relations.json').then(r=>r.json()).then(edges=>{
+        new vis.Network(document.getElementById('graph'), {nodes:new vis.DataSet(nodes), edges:new vis.DataSet(edges)}, {});
+    })});
+</script>
+</body>
+</html>
