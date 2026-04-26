@@ -383,6 +383,18 @@
       }
     },
     {
+      "id": "tag:2",
+      "type": "Tag",
+      "label": "#2",
+      "properties": {}
+    },
+    {
+      "id": "tag:6",
+      "type": "Tag",
+      "label": "#6",
+      "properties": {}
+    },
+    {
       "id": "concept:WikiLink",
       "type": "Concept",
       "label": "WikiLink",
@@ -6681,12 +6693,6 @@
       "properties": {}
     },
     {
-      "id": "tag:2",
-      "type": "Tag",
-      "label": "#2",
-      "properties": {}
-    },
-    {
       "id": "tag:3",
       "type": "Tag",
       "label": "#3",
@@ -8291,6 +8297,16 @@
     {
       "source": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:F5F5F5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:PROGRESS.md",
+      "target": "tag:2",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:PROGRESS.md",
+      "target": "tag:6",
       "relation": "has_tag"
     },
     {
