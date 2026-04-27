@@ -5631,6 +5631,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
+      "type": "Document",
+      "label": "weekly-feedback.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
       "type": "Document",
       "label": "daily-insights.md",
