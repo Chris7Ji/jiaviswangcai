@@ -383,18 +383,6 @@
       }
     },
     {
-      "id": "tag:2",
-      "type": "Tag",
-      "label": "#2",
-      "properties": {}
-    },
-    {
-      "id": "tag:6",
-      "type": "Tag",
-      "label": "#6",
-      "properties": {}
-    },
-    {
       "id": "concept:WikiLink",
       "type": "Concept",
       "label": "WikiLink",
@@ -1953,6 +1941,44 @@
       "properties": {
         "path": "news_summaries/health_longevity_20260320.md"
       }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-04-29.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-04-29.md"
+      }
+    },
+    {
+      "id": "tag:60248",
+      "type": "Tag",
+      "label": "#60248",
+      "properties": {}
+    },
+    {
+      "id": "tag:59859",
+      "type": "Tag",
+      "label": "#59859",
+      "properties": {}
+    },
+    {
+      "id": "tag:59752",
+      "type": "Tag",
+      "label": "#59752",
+      "properties": {}
+    },
+    {
+      "id": "tag:67946",
+      "type": "Tag",
+      "label": "#67946",
+      "properties": {}
+    },
+    {
+      "id": "tag:59697",
+      "type": "Tag",
+      "label": "#59697",
+      "properties": {}
     },
     {
       "id": "doc:news_summaries/明日策略调整.md",
@@ -6821,6 +6847,12 @@
       "properties": {}
     },
     {
+      "id": "tag:2",
+      "type": "Tag",
+      "label": "#2",
+      "properties": {}
+    },
+    {
       "id": "tag:3",
       "type": "Tag",
       "label": "#3",
@@ -8429,16 +8461,6 @@
     },
     {
       "source": "doc:PROGRESS.md",
-      "target": "tag:2",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:PROGRESS.md",
-      "target": "tag:6",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:PROGRESS.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
     },
@@ -8815,6 +8837,41 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
       "target": "tag:58823",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:60248",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:59859",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:59752",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:67946",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:59697",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:60248",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
+      "target": "tag:59859",
       "relation": "has_tag"
     },
     {
