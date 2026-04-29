@@ -1,10 +1,10 @@
-# 📊 Obsidian知识每日洞察 - 2026-04-28
+# 📊 Obsidian知识每日洞察 - 2026-04-29
 
-生成时间：2026-04-28 09:02 (Asia/Shanghai)
+生成时间：2026-04-29 09:01 (Asia/Shanghai)
 
 ## 1) 响应率分析（基于昨日 daily-status）
 - 结论：**无法计算响应率**。
-- 原因：`daily-status/` 仍仅有模板文件，无昨日真实记录。
+- 原因：`daily-status/` 仍仅有模板文件，无真实记录。
 
 ## 2) 需要关注的项目（blockers）
 - 结论：**未检测到可分析的 blockers**。
@@ -18,8 +18,3 @@
 - 总实体：3（Organization 1，Person 1，Unknown 1）
 - 总关系：0
 - 问题：1 人缺邮箱，3 个孤立实体
-
-## 今日建议
-1. 在 `daily-status/` 新增昨日的真实状态记录。
-2. 在 `projects/` 新增实际项目文件并填写 blocker 字段。
-3. 在 `contacts/` 新增联系人并补充相关信息。
