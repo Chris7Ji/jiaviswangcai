@@ -1005,6 +1005,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-30-model-config.md",
+      "type": "Document",
+      "label": "2026-04-30-model-config.md",
+      "properties": {
+        "path": "memory/2026-04-30-model-config.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-03-03.md",
       "type": "Document",
       "label": "2026-03-03.md",
@@ -1181,6 +1189,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-30-model-config-update.md",
+      "type": "Document",
+      "label": "2026-04-30-model-config-update.md",
+      "properties": {
+        "path": "memory/2026-04-30-model-config-update.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-03-30-1718.md",
       "type": "Document",
       "label": "2026-03-30-1718.md",
@@ -1189,11 +1205,27 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-30-exec-denied.md",
+      "type": "Document",
+      "label": "2026-04-30-exec-denied.md",
+      "properties": {
+        "path": "memory/2026-04-30-exec-denied.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-03-20-ai-news-retry.md",
       "type": "Document",
       "label": "2026-03-20-ai-news-retry.md",
       "properties": {
         "path": "memory/2026-03-20-ai-news-retry.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-30-heartbeat-check.md",
+      "type": "Document",
+      "label": "2026-04-30-heartbeat-check.md",
+      "properties": {
+        "path": "memory/2026-04-30-heartbeat-check.md"
       }
     },
     {
