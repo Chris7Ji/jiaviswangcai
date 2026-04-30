@@ -5881,6 +5881,14 @@
       }
     },
     {
+      "id": "doc:notes/areas/PROGRESS.md",
+      "type": "Document",
+      "label": "PROGRESS.md",
+      "properties": {
+        "path": "notes/areas/PROGRESS.md"
+      }
+    },
+    {
       "id": "doc:notes/areas/HEARTBEAT.md",
       "type": "Document",
       "label": "HEARTBEAT.md",
@@ -5895,6 +5903,12 @@
       "properties": {
         "path": "notes/areas/proactive-tracker.md"
       }
+    },
+    {
+      "id": "tag:7",
+      "type": "Tag",
+      "label": "#7",
+      "properties": {}
     },
     {
       "id": "doc:notes/areas/outcome-journal.md",
@@ -6996,12 +7010,6 @@
       "id": "tag:3",
       "type": "Tag",
       "label": "#3",
-      "properties": {}
-    },
-    {
-      "id": "tag:7",
-      "type": "Tag",
-      "label": "#7",
       "properties": {}
     },
     {
@@ -10297,6 +10305,11 @@
     {
       "source": "doc:jiaviswangcai.ai/archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:notes/areas/proactive-tracker.md",
+      "target": "tag:7",
       "relation": "has_tag"
     },
     {
