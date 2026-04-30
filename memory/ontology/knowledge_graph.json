@@ -1005,14 +1005,6 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-30-model-config.md",
-      "type": "Document",
-      "label": "2026-04-30-model-config.md",
-      "properties": {
-        "path": "memory/2026-04-30-model-config.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-03-03.md",
       "type": "Document",
       "label": "2026-03-03.md",
@@ -1037,14 +1029,6 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-30-the-conversation-is-a-single-q.md",
-      "type": "Document",
-      "label": "2026-04-30-the-conversation-is-a-single-q.md",
-      "properties": {
-        "path": "memory/2026-04-30-the-conversation-is-a-single-q.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-03-08.md",
       "type": "Document",
       "label": "2026-03-08.md",
@@ -1058,14 +1042,6 @@
       "label": "2026-03-14-0829.md",
       "properties": {
         "path": "memory/2026-03-14-0829.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-30-the-conversation-is-about-1-a-.md",
-      "type": "Document",
-      "label": "2026-04-30-the-conversation-is-about-1-a-.md",
-      "properties": {
-        "path": "memory/2026-04-30-the-conversation-is-about-1-a-.md"
       }
     },
     {
@@ -1122,14 +1098,6 @@
       "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "properties": {
         "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-30-heartbeat-poll.md",
-      "type": "Document",
-      "label": "2026-04-30-heartbeat-poll.md",
-      "properties": {
-        "path": "memory/2026-04-30-heartbeat-poll.md"
       }
     },
     {
@@ -1213,27 +1181,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-30-model-config-update.md",
-      "type": "Document",
-      "label": "2026-04-30-model-config-update.md",
-      "properties": {
-        "path": "memory/2026-04-30-model-config-update.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-03-30-1718.md",
       "type": "Document",
       "label": "2026-03-30-1718.md",
       "properties": {
         "path": "memory/2026-03-30-1718.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-30-exec-denied.md",
-      "type": "Document",
-      "label": "2026-04-30-exec-denied.md",
-      "properties": {
-        "path": "memory/2026-04-30-exec-denied.md"
       }
     },
     {
@@ -1245,11 +1197,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-30-heartbeat-check.md",
+      "id": "doc:memory/2026-04-30.md",
       "type": "Document",
-      "label": "2026-04-30-heartbeat-check.md",
+      "label": "2026-04-30.md",
       "properties": {
-        "path": "memory/2026-04-30-heartbeat-check.md"
+        "path": "memory/2026-04-30.md"
       }
     },
     {
@@ -6713,6 +6665,30 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-30-model-config.md",
+      "type": "Document",
+      "label": "2026-04-30-model-config.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-model-config.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-30-the-conversation-is-a-single-q.md",
+      "type": "Document",
+      "label": "2026-04-30-the-conversation-is-a-single-q.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-the-conversation-is-a-single-q.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-30-the-conversation-is-about-1-a-.md",
+      "type": "Document",
+      "label": "2026-04-30-the-conversation-is-about-1-a-.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-the-conversation-is-about-1-a-.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-02-13.md",
       "type": "Document",
       "label": "2026-02-13.md",
@@ -6729,11 +6705,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-30-heartbeat-poll.md",
+      "type": "Document",
+      "label": "2026-04-30-heartbeat-poll.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-heartbeat-poll.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-02-23.md",
       "type": "Document",
       "label": "2026-02-23.md",
       "properties": {
         "path": "memory/archive/2026-02-23.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-30-model-config-update.md",
+      "type": "Document",
+      "label": "2026-04-30-model-config-update.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-model-config-update.md"
       }
     },
     {
@@ -6753,11 +6745,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-30-exec-denied.md",
+      "type": "Document",
+      "label": "2026-04-30-exec-denied.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-exec-denied.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/voice_recognition_project.md",
       "type": "Document",
       "label": "voice_recognition_project.md",
       "properties": {
         "path": "memory/archive/voice_recognition_project.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-30-heartbeat-check.md",
+      "type": "Document",
+      "label": "2026-04-30-heartbeat-check.md",
+      "properties": {
+        "path": "memory/archive/2026-04-30-heartbeat-check.md"
       }
     },
     {
