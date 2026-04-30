@@ -25,12 +25,25 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: false
+
+      - name: Remove unnecessary directories (skills, scripts, node_modules, etc.)
+        run: |
+          rm -rf skills/
+          rm -rf scripts/
+          rm -rf archive/
+          rm -rf .learnings/
+          rm -rf memory/
+          rm -rf node_modules/
+          echo "Cleaned up - keeping only static site files"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
