@@ -26,15 +26,34 @@ jobs:
         with:
           submodules: false
 
-      - name: Remove unnecessary directories (skills, scripts, node_modules, etc.)
+      - name: Prepare deploy directory
         run: |
-          rm -rf skills/
-          rm -rf scripts/
-          rm -rf archive/
-          rm -rf .learnings/
-          rm -rf memory/
-          rm -rf node_modules/
-          echo "Cleaned up - keeping only static site files"
+          mkdir _deploy
+          # Copy all HTML files
+          find . -maxdepth 1 -name "*.html" -exec cp {} _deploy/ \;
+          # Copy JS and CSS
+          cp -r js/ _deploy/ 2>/dev/null || true
+          cp -r css/ _deploy/ 2>/dev/null || true
+          # Copy images/ and assets/ directories
+          cp -r images/ _deploy/ 2>/dev/null || true
+          cp -r assets/ _deploy/ 2>/dev/null || true
+          cp -r img/ _deploy/ 2>/dev/null || true
+          # Copy root images
+          cp *.png *.jpg *.jpeg *.svg *.ico *.webp _deploy/ 2>/dev/null || true
+          # Copy CNAME and .nojekyll
+          cp CNAME _deploy/ 2>/dev/null || true
+          cp .nojekyll _deploy/ 2>/dev/null || true
+          # Copy robots.txt and sitemap if they exist
+          cp robots.txt _deploy/ 2>/dev/null || true
+          cp sitemap.xml _deploy/ 2>/dev/null || true
+          # Copy any nested HTML directories
+          for dir in article projects; do
+            if [ -d "$dir" ]; then cp -r "$dir" _deploy/; fi
+          done
+          echo "=== Deploy directory ==="
+          find _deploy -type f | wc -l
+          echo "files ready to deploy"
+          du -sh _deploy/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -42,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_deploy'
 
       - name: Deploy to GitHub Pages
         id: deployment
