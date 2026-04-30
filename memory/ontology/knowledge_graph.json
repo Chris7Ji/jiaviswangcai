@@ -1037,6 +1037,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-30-the-conversation-is-a-single-q.md",
+      "type": "Document",
+      "label": "2026-04-30-the-conversation-is-a-single-q.md",
+      "properties": {
+        "path": "memory/2026-04-30-the-conversation-is-a-single-q.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-03-08.md",
       "type": "Document",
       "label": "2026-03-08.md",
@@ -1050,6 +1058,14 @@
       "label": "2026-03-14-0829.md",
       "properties": {
         "path": "memory/2026-03-14-0829.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-30-the-conversation-is-about-1-a-.md",
+      "type": "Document",
+      "label": "2026-04-30-the-conversation-is-about-1-a-.md",
+      "properties": {
+        "path": "memory/2026-04-30-the-conversation-is-about-1-a-.md"
       }
     },
     {
@@ -1106,6 +1122,14 @@
       "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "properties": {
         "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-30-heartbeat-poll.md",
+      "type": "Document",
+      "label": "2026-04-30-heartbeat-poll.md",
+      "properties": {
+        "path": "memory/2026-04-30-heartbeat-poll.md"
       }
     },
     {
@@ -5894,6 +5918,14 @@
       "label": "recurring-patterns.md",
       "properties": {
         "path": "notes/areas/recurring-patterns.md"
+      }
+    },
+    {
+      "id": "doc:notes/areas/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "notes/areas/SESSION-STATE.md"
       }
     },
     {
