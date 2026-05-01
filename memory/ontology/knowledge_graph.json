@@ -2607,6 +2607,14 @@
       }
     },
     {
+      "id": "doc:notes/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "notes/SESSION-STATE.md"
+      }
+    },
+    {
       "id": "doc:技术跟踪/技术跟踪清单.md",
       "type": "Document",
       "label": "技术跟踪清单.md",
