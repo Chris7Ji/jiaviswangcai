@@ -965,27 +965,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-20-new-session.md",
-      "type": "Document",
-      "label": "2026-04-20-new-session.md",
-      "properties": {
-        "path": "memory/2026-04-20-new-session.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-03-07.md",
       "type": "Document",
       "label": "2026-03-07.md",
       "properties": {
         "path": "memory/2026-03-07.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-20-0634.md",
-      "type": "Document",
-      "label": "2026-04-20-0634.md",
-      "properties": {
-        "path": "memory/2026-04-20-0634.md"
       }
     },
     {
@@ -1034,22 +1018,6 @@
       "label": "2026-03-08.md",
       "properties": {
         "path": "memory/2026-03-08.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-03-14-0829.md",
-      "type": "Document",
-      "label": "2026-03-14-0829.md",
-      "properties": {
-        "path": "memory/2026-03-14-0829.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-10-session-start.md",
-      "type": "Document",
-      "label": "2026-04-10-session-start.md",
-      "properties": {
-        "path": "memory/2026-04-10-session-start.md"
       }
     },
     {
@@ -1291,27 +1259,11 @@
       "properties": {}
     },
     {
-      "id": "doc:memory/2026-03-30-1430.md",
-      "type": "Document",
-      "label": "2026-03-30-1430.md",
-      "properties": {
-        "path": "memory/2026-03-30-1430.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-03-01.md",
       "type": "Document",
       "label": "2026-03-01.md",
       "properties": {
         "path": "memory/2026-03-01.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-20-0632.md",
-      "type": "Document",
-      "label": "2026-04-20-0632.md",
-      "properties": {
-        "path": "memory/2026-04-20-0632.md"
       }
     },
     {
@@ -6695,6 +6647,22 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-20-new-session.md",
+      "type": "Document",
+      "label": "2026-04-20-new-session.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-new-session.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-20-0634.md",
+      "type": "Document",
+      "label": "2026-04-20-0634.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0634.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-04-30-model-config.md",
       "type": "Document",
       "label": "2026-04-30-model-config.md",
@@ -6711,11 +6679,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-03-14-0829.md",
+      "type": "Document",
+      "label": "2026-03-14-0829.md",
+      "properties": {
+        "path": "memory/archive/2026-03-14-0829.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-04-30-the-conversation-is-about-1-a-.md",
       "type": "Document",
       "label": "2026-04-30-the-conversation-is-about-1-a-.md",
       "properties": {
         "path": "memory/archive/2026-04-30-the-conversation-is-about-1-a-.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-10-session-start.md",
+      "type": "Document",
+      "label": "2026-04-10-session-start.md",
+      "properties": {
+        "path": "memory/archive/2026-04-10-session-start.md"
       }
     },
     {
@@ -6804,6 +6788,22 @@
       "label": "2026-02-25.md",
       "properties": {
         "path": "memory/archive/2026-02-25.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-03-30-1430.md",
+      "type": "Document",
+      "label": "2026-03-30-1430.md",
+      "properties": {
+        "path": "memory/archive/2026-03-30-1430.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-20-0632.md",
+      "type": "Document",
+      "label": "2026-04-20-0632.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0632.md"
       }
     },
     {
