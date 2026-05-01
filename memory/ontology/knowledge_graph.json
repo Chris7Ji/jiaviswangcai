@@ -10249,6 +10249,11 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:notes/areas/proactive-tracker.md",
+      "target": "tag:2",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
       "target": "concept:私有知识星图自动构建",
       "relation": "mentions"
