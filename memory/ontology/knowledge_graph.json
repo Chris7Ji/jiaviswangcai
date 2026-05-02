@@ -5887,6 +5887,12 @@
       "properties": {}
     },
     {
+      "id": "tag:8",
+      "type": "Tag",
+      "label": "#8",
+      "properties": {}
+    },
+    {
       "id": "doc:notes/areas/outcome-journal.md",
       "type": "Document",
       "label": "outcome-journal.md",
@@ -7042,12 +7048,6 @@
       "id": "tag:3",
       "type": "Tag",
       "label": "#3",
-      "properties": {}
-    },
-    {
-      "id": "tag:8",
-      "type": "Tag",
-      "label": "#8",
       "properties": {}
     },
     {
@@ -10267,6 +10267,11 @@
     {
       "source": "doc:notes/areas/proactive-tracker.md",
       "target": "tag:2",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:notes/areas/proactive-tracker.md",
+      "target": "tag:8",
       "relation": "has_tag"
     },
     {
