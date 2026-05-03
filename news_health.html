@@ -3,188 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 — 2026年5月3日</title>
+<title>健康长寿科研简报 | 2026年5月4日</title>
 <style>
-  :root {
-    --bg: #f5f0e8;
-    --card-bg: #fffef9;
-    --text: #2c2416;
-    --text-secondary: #5c5240;
-    --accent: #8b7355;
-    --accent-light: #d4c5a9;
-    --border: #e0d5c0;
-    --tag-bg: #f0e6d2;
-  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.8;
-    padding: 2rem 1rem;
-  }
-  .container { max-width: 800px; margin: 0 auto; }
-  header {
-    text-align: center;
-    padding: 2rem 0 1.5rem;
-    border-bottom: 2px solid var(--accent-light);
-    margin-bottom: 2rem;
-  }
-  header h1 {
-    font-size: 2rem;
-    color: var(--accent);
-    letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-  }
-  header .subtitle {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-  }
-  .story {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem 1.8rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s;
-  }
-  .story:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-  .story .number {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    width: 28px; height: 28px;
-    line-height: 28px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-right: 0.5rem;
-    flex-shrink: 0;
-  }
-  .story h2 {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: flex-start;
-  }
-  .story h2 span.title-text { flex: 1; }
-  .story .meta {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.8rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .story .meta .source {
-    background: var(--tag-bg);
-    padding: 0.15rem 0.6rem;
-    border-radius: 4px;
-    font-weight: 600;
-  }
-  .story .abstract {
-    font-size: 0.95rem;
-    line-height: 1.9;
-    text-align: justify;
-  }
-  .story a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--accent-light);
-  }
-  .story a:hover { border-bottom-style: solid; }
-  footer {
-    text-align: center;
-    padding: 2rem 0 1rem;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    border-top: 1px solid var(--border);
-    margin-top: 2rem;
-  }
-  @media (max-width: 600px) {
-    body { padding: 1rem 0.5rem; }
-    .story { padding: 1rem 1.2rem; }
-    header h1 { font-size: 1.5rem; }
-    .story h2 { font-size: 1.05rem; }
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f0f4f8; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+  .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 30px; border-radius: 16px; margin-bottom: 30px; position: relative; overflow: hidden; }
+  .header::after { content: '🔬🧬'; position: absolute; right: 20px; bottom: 10px; font-size: 60px; opacity: 0.15; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: 1px; }
+  .header .subtitle { font-size: 14px; opacity: 0.85; }
+  .header .date { font-size: 13px; opacity: 0.7; margin-top: 12px; }
+  .section-title { font-size: 18px; font-weight: 600; color: #667eea; margin: 30px 0 16px; padding-left: 12px; border-left: 4px solid #667eea; }
+  .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+  .card .badge { display: inline-block; font-size: 11px; padding: 2px 10px; border-radius: 20px; font-weight: 500; margin-bottom: 10px; }
+  .badge-nature { background: #e8f5e9; color: #2e7d32; }
+  .badge-science { background: #e3f2fd; color: #1565c0; }
+  .badge-top { background: #fff3e0; color: #e65100; }
+  .badge-health { background: #fce4ec; color: #c62828; }
+  .badge-cell { background: #f3e5f5; color: #7b1fa2; }
+  .card .source { font-size: 13px; color: #888; margin-bottom: 8px; }
+  .card .source a { color: #667eea; text-decoration: none; }
+  .card .source a:hover { text-decoration: underline; }
+  .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 10px; color: #1a1a2e; line-height: 1.4; }
+  .card .meta { font-size: 12px; color: #999; margin-bottom: 12px; }
+  .card .summary { font-size: 15px; color: #444; line-height: 1.8; }
+  .card .summary strong { color: #1a1a2e; }
+  .footer { text-align: center; color: #aaa; font-size: 12px; padding: 30px 0; border-top: 1px solid #eee; margin-top: 20px; }
 </style>
 </head>
 <body>
 <div class="container">
 
-<header>
-  <h1>🔬 健康长寿科研简报</h1>
-  <p class="subtitle">2026年5月3日 · 周日 · 第18周</p>
-  <p class="subtitle">旺财Jarvis 自动生成 · 数据来源：SerpAPI</p>
-</header>
-
-<!-- Story 1 -->
-<div class="story">
-  <h2><span class="number">1</span><span class="title-text">细胞重编程逆转衰老：Altos Labs 推动"返老还童"疗法走向临床</span></h2>
-  <div class="meta">
-    <span class="source">The New York Times</span>
-    <span>2026-04-27</span>
-  </div>
-  <p class="abstract">
-    一项具有里程碑意义的长寿研究正在将"细胞重编程"从实验室推向人体试验。由互联网企业家 Yuri Milner 等投资人出资 30 亿美元创立的 Altos Labs，正在利用山中因子（Yamanaka factors）对衰老细胞进行"部分重编程"，使其恢复年轻状态而不丢失细胞身份。该技术有望治疗数百种与年龄相关的疾病，甚至逆转衰老过程。与此同时，Life Biosciences 公司即将启动首个部分重编程人体临床试验，针对青光眼患者的视网膜神经细胞进行基因治疗，利用三种山中因子（去除致癌风险较高的 c-Myc）在抗生素调控下实现安全的细胞年轻化。如果试验成功，这一突破可能将数十亿美元的长寿产业推向主流医学的中心舞台。
-  </p>
+<div class="header">
+  <h1>🧬 健康长寿科研简报</h1>
+  <div class="subtitle">Longevity &amp; Healthspan Research Briefing</div>
+  <div class="date">📅 2026年5月4日（星期一）</div>
 </div>
 
-<!-- Story 2 -->
-<div class="story">
-  <h2><span class="number">2</span><span class="title-text">中国科学十大进展：破解"炎性衰老"密码，开辟精准干预新路径</span></h2>
-  <div class="meta">
-    <span class="source">新华网 / 国家自然科学基金委员会</span>
-    <span>2026-03-28</span>
+<p style="font-size:15px;color:#555;margin-bottom:24px;background:#e8f5e9;padding:16px 20px;border-radius:10px;">
+本周简报精选5项最新健康长寿领域重大科研突破，涵盖细胞重编程人体试验、美国政府1.44亿美元抗衰计划、中国"炎性衰老"原创突破、长寿科学生物协调新理论，以及GLP-1药物全人群有效性研究。
+</p>
+
+<div class="section-title">🔬 突破性研究</div>
+
+<!-- Item 1: SciAm Partial Reprogramming -->
+<div class="card">
+  <span class="badge badge-nature">Nature / Scientific American</span>
+  <div class="source">📰 <a href="https://www.scientificamerican.com/article/this-method-to-reverse-cellular-aging-is-about-to-be-tested-in-humans/" target="_blank">Scientific American</a></div>
+  <h2>细胞重编程逆转衰老进入人体试验阶段：\"倒拨细胞时钟\"能否安全实现？</h2>
+  <div class="meta">📆 2026年4月13日 | ✍️ Heidi Ledford</div>
+  <div class="summary">
+    <strong>颠覆性细胞重编程技术即将首次进入人体临床试验。</strong>这一突破基于山中伸弥获得诺贝尔奖的细胞重编程技术——通过导入特定基因将成体细胞逆转为类似胚胎干细胞的状态。科学家将其改造为\"部分重编程\"方案，即仅将细胞\"倒拨\"到更年轻的状态而非完全还原为干细胞，避免致癌风险。
+    <br><br>
+    该技术的核心理念源于哈佛医学院和 Whitehead 研究所遗传学家 Yuancheng Ryan Lu 的研究。他花费三年时间尝试不同方案后，成功通过向小鼠眼内导入三个关键基因（Oct4、Sox2、Klf4，组合简称 OSK），使衰老的视网膜神经细胞恢复了年轻态的基因表达和再生能力。这种逆转不仅恢复了视力相关指标，更为青光眼等年龄相关性疾病的治疗开辟了全新路径。
+    <br><br>
+    将于今年启动的I期临床试验将首先验证该方案在人类中的安全性——核心风险在于细胞过度重编程可能失去正常功能甚至癌变。如果成功，这一技术有望扩展到肾脏、肝脏甚至大脑等重要器官的再生修复，从根本上改变人类对衰老的认知和干预方式。
+    <br><br>
+    <em>来源：Nature杂志特约报道（Scientific American联合转载）</em>
   </div>
-  <p class="abstract">
-    中国科学院动物研究所刘光慧团队联合多家单位的"炎性衰老机制解析与多维靶向干预"研究入选2025年度"中国科学十大进展"。研究团队首次绘制出跨越人类50年生命周期的多器官衰老全景蛋白质组图谱，精准锁定约50岁是人体衰老的关键转折点，并首次提出"血管衰老中枢"新框架。在干预策略上，团队发现肾脏产生的内源代谢物甜菜碱能够直接抑制促炎激酶TBK1，在分子层面精准模拟运动的抗炎、抗衰老效果，堪称天然"运动模拟分子"。此外，团队运用合成生物学技术对长寿基因FOXO3进行精准编辑，成功构建了抗衰、抗应激、安全可控的工程化人源干细胞，在老年灵长类动物实验中实现多组织衰老指标的显著逆转。该研究建立了AI衰老评估、小分子药物、工程化干细胞三位一体的干预体系。
-  </p>
 </div>
 
-<!-- Story 3 -->
-<div class="story">
-  <h2><span class="number">3</span><span class="title-text">美国 ARPA-H 投入1.44亿美元，推动抗衰老药物临床试验基础设施建设</span></h2>
-  <div class="meta">
-    <span class="source">科学网 / 中国科学报</span>
-    <span>2026-04-09</span>
+<!-- Item 2: ARPA-H PROSPR $144M -->
+<div class="card">
+  <span class="badge badge-science">美国政府 / ARPA-H</span>
+  <div class="source">📰 <a href="https://news.sciencenet.cn/htmlnews/2026/4/562817.shtm" target="_blank">科学网 / 中国科学报</a></div>
+  <h2>美国ARPA-H投入1.44亿美元启动PROSPR项目，首次为抗衰老药物审批\"铺设轨道\"</h2>
+  <div class="meta">📆 2026年4月9日 | ✍️ 文乐乐</div>
+  <div class="summary">
+    <strong>美国健康高级研究计划局（ARPA-H）向7个团队发放总额1.44亿美元合同，旨在首次为抗衰老治疗药物的III期临床试验奠定基础。</strong>该项目名为\"延长健康韧性主动解决方案\"（PROSPR），资助团队包括4个学术机构和3家生物技术公司。
+    <br><br>
+    项目核心挑战在于：要证明某种药物能延长人类寿命，传统方法需要长达数十年的随访。为此，研究人员迫切需要可靠的衰老替代生物标志物——可测量的指标如DNA甲基化模式、步行速度、甚至面部皱纹变化等。PROSPR项目的一个重要目标就是验证一种能够追踪衰老进程、对干预产生反应并通过监管审核的生物标志物。
+    <br><br>
+    多个团队已规划临床试验方案：一些团队将分析大型健康数据集中二甲双胍、雷帕霉素等已获批药物对衰老的影响数据；巴克抗衰研究所的团队则计划开发家用检测工具包，让用户自行测定\"衰老评分\"。项目管理者Andrew Brack预测，在PROSPR推动下，未来5年内长寿研究领域将迎来重大变革。
+    <br><br>
+    <em>ARPA-H（美国健康高级研究计划局）成立于2022年，对标DARPA模式，聚焦高风险高回报的健康研究项目。</em>
   </div>
-  <p class="abstract">
-    美国健康高级研究计划局（ARPA-H）近日向7个团队（4个来自学术界，3个来自生物技术公司）拨付了总额高达1.44亿美元的合同，启动"延长健康韧性主动解决方案"（PROSPR）项目。该项目旨在为延长健康寿命的干预措施的III期临床试验奠定基础，核心目标之一是验证一种能够追踪衰老进程、对干预措施产生反应并通过监管机构审核的生物标志物。项目管理者预测，未来5年内长寿研究领域将迎来巨大变化。研究团队计划分析大型健康数据集和可穿戴设备数据，设计出能够预测未来20年死亡、疾病和住院风险的综合衰老评分指标，并开发家用检测工具包。多位专家认为这标志着首次尝试将从实验动物中获得的抗衰老成功经验系统性地应用到人类身上。
-  </p>
 </div>
 
-<!-- Story 4 -->
-<div class="story">
-  <h2><span class="number">4</span><span class="title-text">GLP-1减肥药对不同年龄、种族和体重人群均表现出显著疗效</span></h2>
-  <div class="meta">
-    <span class="source">Johns Hopkins Bloomberg School of Public Health</span>
-    <span>2026-03-02</span>
+<!-- Item 3: Xinhua Chinese Breakthrough -->
+<div class="card">
+  <span class="badge badge-top">中国科学十大进展 / 新华网</span>
+  <div class="source">📰 <a href="https://www.news.cn/tech/20260328/694e1202f85142c58c44c6e747cbbc36/c.html" target="_blank">新华网</a></div>
+  <h2>中国科学家破解\"炎性衰老\"密码：绘制50年生命多器官衰老图谱，发现天然\"运动模拟分子\"</h2>
+  <div class="meta">📆 2026年3月28日 | ✍️ 新华社</div>
+  <div class="summary">
+    <strong>中国科学院动物研究所刘光慧团队联合多家科研单位，在衰老机制研究领域取得原创性重大突破，入选2025年度\"中国科学十大进展\"。</strong>该研究首次绘制出跨越人类50年生命周期的多器官衰老全景蛋白质组图谱，结合人工智能与超高灵敏度质谱，精准锁定<strong>约50岁是人体衰老的关键转折点</strong>。
+    <br><br>
+    研究团队证实，蛋白质稳态失衡、淀粉样蛋白异常沉积、慢性炎症应激是驱动器官衰老与功能衰退的核心机制。团队提出全新的\"血管衰老中枢\"理论框架，揭示血管通过分泌促衰蛋白成为系统性衰老与慢性炎症的关键驱动枢纽。
+    <br><br>
+    在干预靶点方面，研究取得两项惊人突破：<strong>① 天然运动模拟分子——甜菜碱：</strong>肾脏产生的内源代谢物甜菜碱可直接抑制促炎激酶TBK1，精准模拟运动的抗炎、抗衰老效果。口服甜菜碱可显著改善老年机体的代谢、肾功能、运动能力与认知功能，为无法充分运动的人群提供安全可行的抗衰新方案。<strong>② 工程化抗衰干细胞：</strong>团队运用合成生物学技术精准编辑长寿基因FOXO3，构建出安全可控、异体通用的\"现货型\"工程化人源干细胞。在老年灵长类动物实验中，干细胞输注显著逆转多组织衰老指标——未成熟神经元年龄逆转约6-7岁，卵母细胞年龄逆转近5岁。
+    <br><br>
+    <em>该研究建立了\"AI衰老评估 + 小分子药物 + 工程化干细胞\"三位一体的精准干预新范式，标志着中国衰老生物学研究迈入国际领先行列。</em>
   </div>
-  <p class="abstract">
-    约翰霍普金斯大学彭博公共卫生学院最新分析显示，GLP-1受体激动剂类减肥药物在不同人群中均展现出可比的有效性。研究发现，女性服用GLP-1药物后平均减重约起始体重的11%，男性约为7%。该研究覆盖了不同年龄、种族和起始体重的患者群体，证实GLP-1药物作为肥胖治疗的变革性手段具有广泛适用性。与此同时，WHO于2025年将GLP-1疗法纳入基本药物清单用于管理2型糖尿病高危人群，并于2026年初发布针对成人肥胖的GLP-1疗法全球指南。这一系列进展标志着肥胖治疗正从单一疾病管理向综合性慢病预防和健康老龄化方向迈进。
-  </p>
 </div>
 
-<!-- Story 5 -->
-<div class="story">
-  <h2><span class="number">5</span><span class="title-text">新型长寿药物SRN-901延长小鼠剩余寿命33%，靶向多重衰老通路</span></h2>
-  <div class="meta">
-    <span class="source">Lifespan Research Institute (Rejuvenation Roundup)</span>
-    <span>2026-04-30</span>
+<!-- Item 4: EurekAlert / Targeting Longevity 2026 -->
+<div class="card">
+  <span class="badge badge-cell">EurekAlert / 科学界共识</span>
+  <div class="source">📰 <a href="https://www.eurekalert.org/news-releases/1116021" target="_blank">EurekAlert!</a>（AAAS）</div>
+  <h2>Targeting Longevity 2026：科学家转变衰老观念——从\"修复衰老\"转向\"维护生物协调\"</h2>
+  <div class="meta">📆 2026年2月10日 | 柏林长寿峰会</div>
+  <div class="summary">
+    <strong>全球顶尖衰老科学家在2026年柏林\"Targeting Longevity\"峰会上达成重要共识：应该从根本上转变抗衰老研究的思维框架——从\"修复衰老损伤\"转向\"维护生物系统的协调性\"。</strong>
+    <br><br>
+    这一范式转换基于一个深刻观察：衰老不仅是细胞和组织的简单磨损，更是生物系统各层级（分子、细胞、组织、器官）之间协调性的系统性丧失。过去十年，抗衰老研究主要聚焦于\"修复特定损伤\"——清除衰老细胞（Senolytics）、补充NAD+、激活长寿蛋白等。然而，科学家现在认识到，即使修复了局部损伤，如果不恢复系统整体的协调性，效果也难以持久。
+    <br><br>
+    新框架强调：健康长寿的关键在于维持分子网络、细胞通信和器官间的协调与同步。研究建议从\"系统生物学\"角度重新定义衰老干预策略，并探索多维干预手段（如运动、饮食限制、药物组合疗法）在维持生物协调性方面的协同作用。这一理论框架有望为未来联合疗法设计提供全新的指导原则。
+    <br><br>
+    <em>Targeting Longevity峰会是全球衰老研究领域最具影响力的学术会议之一，每年汇集来自各个学科的顶级衰老科学家。</em>
   </div>
-  <p class="abstract">
-    一项发表于2026年4月的研究报告显示，新型长寿候选药物SRN-901在18月龄老年小鼠中实现了33%的剩余中位寿命延长。SRN-901通过同时靶向多条衰老相关通路发挥作用，不仅延长了寿命，还显著改善了健康寿命（healthspan）指标。此外，本月多项研究进一步拓展了抗衰老干预的维度：维生素C在食蟹猴中被证实可延缓由铁积累驱动的"铁衰老"（ferro-aging）过程；研究还发现同时补充NMN和芹菜素（apigenin）可协同恢复老年小鼠的肌肉功能和骨骼结构；针对食欲激素ghrelin受体进行抑制可改善老年小鼠肌肉功能并对抗肌少症。这些发现共同指向一个趋势：抗衰老干预正从单一通路向多靶点协同策略演进。
-  </p>
 </div>
 
-<footer>
-  <p>📬 本简报由旺财Jarvis自动生成 · 每周日07:00发布</p>
-  <p>数据来源：NYT · Scientific American · 科学网 · 新华网 · Johns Hopkins · Lifespan.io</p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;color:#999;">Generated: 2026-05-03T07:00:00+08:00</p>
-</footer>
+<!-- Item 5: Johns Hopkins GLP-1 -->
+<div class="card">
+  <span class="badge badge-health">约翰霍普金斯大学</span>
+  <div class="source">📰 <a href="https://publichealth.jhu.edu/2026/glp-1-weight-loss-drugs-comparably-effective-for-patients-across-age-race-and-starting-weight" target="_blank">Johns Hopkins Bloomberg School of Public Health</a></div>
+  <h2>GLP-1减肥药在不同年龄、种族和体重人群中效果一致，8万人真实世界研究揭示</h2>
+  <div class="meta">📆 2026年3月2日</div>
+  <div class="summary">
+    <strong>约翰霍普金斯大学布隆伯格公共卫生学院开展的大规模真实世界研究（8万+参与者）证实：GLP-1受体激动剂减肥效果在不同年龄、种族和初始体重人群中广泛一致。</strong>这项发表在JAMA子刊上的研究，分析了涵盖不同年龄组（18-75+岁）、各种族群体（白人、非裔、亚裔、西班牙裔等）和不同BMI范围的广泛人群数据。
+    <br><br>
+    研究关键发现：使用GLP-1受体激动剂后，女性平均减重约11%的初始体重，男性约7%，效果显著且在各亚组间差异较小。研究还确认，GLP-1药物的心血管获益（心血管事件降低约20%）独立于糖尿病状态，提示这类药物可能对健康老龄化具有额外裨益——因为肥胖和心血管疾病是加速衰老的两大核心风险因素。
+    <br><br>
+    <strong>行业背景：</strong>GLP-1市场在2026年持续高速扩张。WHO于2025年12月首次发布GLP-1药物治疗肥胖的全球指南，将其列入基本药物清单。美国CMS预计2026年7月起将GLP-1纳入Medicare Part D覆盖范围。新一代三联激动剂（如retatrutide）的III期临床试验正在推进中，有望实现更高程度的体重减轻。
+    <br><br>
+    <em>GLP-1受体激动剂通过模拟肠道激素GLP-1，调节食欲和血糖，是目前最受瞩目的代谢健康干预手段。</em>
+  </div>
+</div>
+
+<div class="section-title">📊 本周数据速览</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px;">
+  <div style="background:white;border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+    <div style="font-size:28px;font-weight:700;color:#667eea;">$1.44亿</div>
+    <div style="font-size:12px;color:#888;margin-top:4px;">美国政府ARPA-H抗衰老研究投入</div>
+  </div>
+  <div style="background:white;border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+    <div style="font-size:28px;font-weight:700;color:#764ba2;">50岁</div>
+    <div style="font-size:12px;color:#888;margin-top:4px;">中国团队发现人体衰老关键转折点</div>
+  </div>
+  <div style="background:white;border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+    <div style="font-size:28px;font-weight:700;color:#2e7d32;">约6-7年</div>
+    <div style="font-size:12px;color:#888;margin-top:4px;">工程化干细胞使灵长类神经元年龄逆转</div>
+  </div>
+  <div style="background:white;border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+    <div style="font-size:28px;font-weight:700;color:#c62828;">11%</div>
+    <div style="font-size:12px;color:#888;margin-top:4px;">GLP-1药物平均体重减轻效果（女性）</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>🤖 由旺财Jarvis自动生成 | 数据来源：Scientific American, Nature, ScienceNet, Xinhua, EurekAlert, Johns Hopkins</p>
+  <p>📡 搜索源：SerpAPI | 生成时间：2026-05-04 07:00 (CST)</p>
+  <p style="margin-top:8px;font-size:11px;">⚠️ 本简报仅供参考，如有疑问请以原始论文为准。</p>
+</div>
 
 </div>
 </body>
