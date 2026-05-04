@@ -1867,6 +1867,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/OPENCLAW_REPORT_FORMAT.md",
+      "type": "Document",
+      "label": "OPENCLAW_REPORT_FORMAT.md",
+      "properties": {
+        "path": "news_summaries/OPENCLAW_REPORT_FORMAT.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/health_longevity_2026-03-16_quick.md",
       "type": "Document",
       "label": "health_longevity_2026-03-16_quick.md",
@@ -2524,6 +2532,14 @@
       "label": "ai_news_2026-03-01.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-01.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/sample_new_format.md",
+      "type": "Document",
+      "label": "sample_new_format.md",
+      "properties": {
+        "path": "news_summaries/sample_new_format.md"
       }
     },
     {
