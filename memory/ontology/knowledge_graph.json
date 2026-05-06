@@ -1797,6 +1797,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-07.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-07.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-05-07.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/ascend_news_2026-03-14.md",
       "type": "Document",
       "label": "ascend_news_2026-03-14.md",
