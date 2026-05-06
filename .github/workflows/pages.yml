@@ -34,12 +34,11 @@ jobs:
           # Copy JS and CSS
           cp -r js/ _deploy/ 2>/dev/null || true
           cp -r css/ _deploy/ 2>/dev/null || true
-          # Copy images/ and assets/ directories
+          # Copy images/ directory (all referenced images)
           cp -r images/ _deploy/ 2>/dev/null || true
           cp -r assets/ _deploy/ 2>/dev/null || true
           cp -r img/ _deploy/ 2>/dev/null || true
-          # Copy root images
-          cp *.png *.jpg *.jpeg *.svg *.ico *.webp _deploy/ 2>/dev/null || true
+          # Do NOT copy root-level images - they are large generated files not referenced by pages
           # Copy CNAME and .nojekyll
           cp CNAME _deploy/ 2>/dev/null || true
           cp .nojekyll _deploy/ 2>/dev/null || true
